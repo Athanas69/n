@@ -48,6 +48,54 @@ const db = raw as unknown as Db;
 export const CITY_NAMES = Object.keys(db.cities);
 export const DEFAULT_CITY = "Tokyo";
 
+export const CITY_REGIONS: Record<string, string> = {
+  Tokyo: "Asie",
+  Bangkok: "Asie",
+  Istanbul: "Europe",
+  Seoul: "Asie",
+  Singapore: "Asie",
+  "Hong Kong": "Asie",
+  Kyoto: "Asie",
+  Shanghai: "Asie",
+  Mumbai: "Asie",
+  Ubud: "Asie",
+  Paris: "Europe",
+  Rome: "Europe",
+  London: "Europe",
+  Barcelona: "Europe",
+  Amsterdam: "Europe",
+  Berlin: "Europe",
+  Lisbon: "Europe",
+  Vienna: "Europe",
+  Prague: "Europe",
+  Athens: "Europe",
+  Venice: "Europe",
+  "New York": "Amériques",
+  "Los Angeles": "Amériques",
+  "San Francisco": "Amériques",
+  "Mexico City": "Amériques",
+  "Rio de Janeiro": "Amériques",
+  "Buenos Aires": "Amériques",
+  Toronto: "Amériques",
+  Marrakech: "Afrique & Moyen-Orient",
+  Dubai: "Afrique & Moyen-Orient",
+  "Cape Town": "Afrique & Moyen-Orient",
+  Cairo: "Afrique & Moyen-Orient",
+  Doha: "Afrique & Moyen-Orient",
+  Nairobi: "Afrique & Moyen-Orient",
+  Sydney: "Océanie",
+};
+
+export function citiesByRegion(): [string, string[]][] {
+  const groups: Record<string, string[]> = {};
+  for (const name of CITY_NAMES) {
+    const region = CITY_REGIONS[name] ?? "Autres";
+    (groups[region] ??= []).push(name);
+  }
+  const order = ["Europe", "Asie", "Amériques", "Afrique & Moyen-Orient", "Océanie", "Autres"];
+  return order.filter((r) => groups[r]?.length).map((r) => [r, groups[r]]);
+}
+
 export function citySlug(name: string) {
   return name.toLowerCase().replace(/\s+/g, "-");
 }
