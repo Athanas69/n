@@ -273,6 +273,24 @@
           "Local · cafés · calme",
           "Une ambiance plus locale et tranquille.",
           "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Chinatown (Yaowarat)",
+          "Street food · nuit · authentique",
+          "Néons, bijouteries et le meilleur street food de nuit de Bangkok.",
+          "https://images.unsplash.com/photo-1694501898583-7caca30dde01?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Thonglor",
+          "Branché · cafés · vie nocturne haut de gamme",
+          "Le quartier le plus tendance : cafés design, bars à cocktails et restaurants.",
+          "https://images.unsplash.com/photo-1604499491554-48ac04733640?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Chatuchak",
+          "Marché · shopping · local",
+          "Le plus grand marché du week-end au monde, plus de 8000 stands.",
+          "https://images.unsplash.com/photo-1668589425978-81089ef9de64?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -328,13 +346,37 @@
           "Monti",
           "Boutiques · culture · food",
           "Charmant et très pratique près du Colisée.",
-          "https://images.unsplash.com/photo-1526481280695-3c687fd643ed?auto=format&fit=crop&w=900&q=86"
+          "https://images.unsplash.com/photo-1569230516306-5a8cb5586399?auto=format&fit=crop&w=900&q=86"
         ],
         [
           "Prati",
           "Calme · Vatican · famille",
           "Plus résidentiel et confortable pour un séjour posé.",
           "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Vaticano / Borgo",
+          "Vatican · musées · pèlerinage",
+          "Saint-Pierre et les musées du Vatican, quartier calme et organisé pour les visites.",
+          "https://images.unsplash.com/photo-1696407868324-460a69a81c11?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Testaccio",
+          "Marché · gastronomie · authentique",
+          "Le quartier gourmand des Romains, loin des pièges à touristes.",
+          "https://images.unsplash.com/photo-1606141396269-fd018eb08d80?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "San Lorenzo",
+          "Étudiant · bohème · street art",
+          "Ambiance universitaire, bars à petits prix et fresques murales.",
+          "https://images.unsplash.com/photo-1662065710845-00ab6f8a7a92?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Esquilino",
+          "Multiculturel · Termini · pratique",
+          "Près de la gare centrale, le quartier le plus multiculturel de Rome.",
+          "https://images.unsplash.com/photo-1590084038766-bdec409bbb47?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -397,6 +439,30 @@
           "Local · food · nightlife",
           "Côté asiatique, marchés et scène locale.",
           "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Balat",
+          "Maisons colorées · authentique · photogénique",
+          "L’ancien quartier juif, ruelles pentues et façades colorées.",
+          "https://images.unsplash.com/photo-1752400745456-f70b512be8be?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Beşiktaş",
+          "Bosphore · résidentiel · vie locale",
+          "Bord du Bosphore, Ortaköy et une ambiance locale animée.",
+          "https://images.unsplash.com/photo-1564407727371-3eece6c58961?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Üsküdar",
+          "Rive asiatique · calme · authentique",
+          "Le visage plus calme et local d’Istanbul, côté Asie.",
+          "https://images.unsplash.com/photo-1602941800793-78c44baca4d8?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Nişantaşı",
+          "Luxe · shopping · chic",
+          "Boutiques de luxe et immeubles élégants, le quartier chic d’Istanbul.",
+          "https://images.unsplash.com/photo-1717778443446-0c5e5c0cb901?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -465,6 +531,24 @@
           "Famille · calme · parc",
           "Très agréable si vous voulez un rythme plus posé.",
           "https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "SoHo",
+          "Shopping · architecture · design",
+          "Immeubles en fonte du XIXe et boutiques de créateurs.",
+          "https://images.unsplash.com/photo-1578655346479-43374d29a412?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Harlem",
+          "Culture · histoire · jazz",
+          "Berceau du jazz et de la Renaissance de Harlem, brownstones emblématiques.",
+          "https://images.unsplash.com/photo-1512820087087-70594ef6287e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Brooklyn Heights",
+          "Vue skyline · calme · résidentiel",
+          "La meilleure vue sur Manhattan depuis la Promenade, quartier résidentiel paisible.",
+          "https://images.unsplash.com/photo-1634497773104-935ae3b6879d?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -514,19 +598,31 @@
           "Guéliz",
           "Moderne · food · jeune",
           "Restaurants, cafés et shopping.",
-          "https://images.unsplash.com/photo-1597212720158-c52d4cbb3b9a?auto=format&fit=crop&w=900&q=86"
+          "https://images.unsplash.com/photo-1624805098931-098c0d918b34?auto=format&fit=crop&w=900&q=86"
         ],
         [
           "Hivernage",
           "Premium · nightlife",
           "Hôtels, clubs et confort.",
-          "https://images.unsplash.com/photo-1597212720158-c52d4cbb3b9a?auto=format&fit=crop&w=900&q=86"
+          "https://images.unsplash.com/photo-1705765278530-f0c3f363304e?auto=format&fit=crop&w=900&q=86"
         ],
         [
           "Palmeraie",
           "Resort · calme",
           "Resorts et grands espaces, moins pratique à pied.",
           "https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kasbah",
+          "Historique · palais · calme",
+          "L’ancien quartier royal, palais Bahia et tombeaux saadiens.",
+          "https://images.unsplash.com/photo-1737927427538-9f9b4ea4ab02?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Sidi Ghanem",
+          "Design · artisanat contemporain",
+          "Zone industrielle reconvertie en quartier design et concept-stores.",
+          "https://images.unsplash.com/photo-1569440703669-96e2f05df5e4?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -589,6 +685,24 @@
           "Budget · culture · transport",
           "Plus local et meilleur rapport prix.",
           "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Palm Jumeirah",
+          "Luxe · plage · iconique",
+          "L’île artificielle emblématique, resorts de luxe et plages privées.",
+          "https://images.unsplash.com/photo-1696880400805-4cce1bc866ac?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Al Fahidi",
+          "Historique · authentique · musées",
+          "Le vieux Dubaï : maisons à tours à vent et ruelles préservées.",
+          "https://images.unsplash.com/photo-1683479781517-e31fcb3c4b4f?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Deira",
+          "Souks · authentique · Dubai Creek",
+          "Souks aux épices et à l’or, abras traditionnels sur la crique.",
+          "https://images.unsplash.com/photo-1579524655638-351438cb80d2?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -651,6 +765,24 @@
           "Créatif · budget · food",
           "Plus local et créatif.",
           "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "V&A Waterfront",
+          "Port · shopping · vue Table Mountain",
+          "Port animé avec vue sur Table Mountain, restaurants et boutiques.",
+          "https://images.unsplash.com/photo-1759440038373-5c8a325c5c01?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bo-Kaap",
+          "Maisons colorées · culturel · photogénique",
+          "Maisons colorées historiques du quartier malais du Cap.",
+          "https://images.unsplash.com/photo-1570527141186-e391a3914c42?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Observatory",
+          "Étudiant · alternatif · bars",
+          "Ambiance bohème et alternative, bars et musique live.",
+          "https://images.unsplash.com/photo-1786609871222-c42fbb1225a8?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -719,6 +851,24 @@
           "Premium · shopping · nightlife",
           "Moderne et haut de gamme.",
           "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bukchon Hanok Village",
+          "Traditionnel · maisons hanok · photogénique",
+          "Village de maisons traditionnelles hanok entre deux palais royaux.",
+          "https://images.unsplash.com/photo-1581958414928-f410016e5988?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Ikseon-dong",
+          "Hanok · cafés branchés · contraste",
+          "Maisons traditionnelles reconverties en cafés et boutiques design.",
+          "https://images.unsplash.com/photo-1683252834881-9d6ed688659e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Yeouido",
+          "Affaires · Han River · cerisiers",
+          "Quartier d’affaires sur une île de la rivière Han, célèbre pour ses cerisiers en fleurs.",
+          "https://images.unsplash.com/photo-1635555926145-5d26759d62ef?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
