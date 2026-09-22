@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ALFRED_EVENT } from "@/lib/notify";
 import { citySlug } from "@/lib/data";
 import { useTrips } from "@/lib/store";
+import { ArrowheadMark } from "./Mark";
 
 export function AlfredFab() {
   return (
@@ -12,7 +13,8 @@ export function AlfredFab() {
       className="alfredfab"
       onClick={() => window.dispatchEvent(new Event(ALFRED_EVENT))}
     >
-      Alfred
+      <ArrowheadMark size={16} />
+      Demander à Alfred
     </button>
   );
 }
