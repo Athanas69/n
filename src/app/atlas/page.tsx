@@ -1,56 +1,20 @@
 import Link from "next/link";
-import DestGrid from "@/components/DestGrid";
-import { CITY_NAMES, getCity } from "@/lib/data";
+import CitySearch from "@/components/CitySearch";
+import { CITY_NAMES } from "@/lib/data";
 
 export default function AtlasHome() {
-  const tokyo = getCity("Tokyo");
   return (
     <>
-      <section className="hero shell">
-        <div className="hero-grid">
-          <div className="reveal">
-            <div className="eyebrow">Guide premium · réservation · assistance</div>
-            <h1>Préparez le voyage, pas quinze onglets.</h1>
-            <p>
-              Atlas commence par comprendre la ville, puis relie quartiers, hôtels, vols, transport, eSIM, articles
-              et arrivée sur place.
-            </p>
-            <div className="actions">
-              <Link href="/atlas/destinations" className="btn primary">
-                Choisir une destination
-              </Link>
-              <Link href="/atlas/tokyo" className="btn">
-                Voir Tokyo
-              </Link>
-            </div>
-            <div className="bookingbar">
-              <div className="bookcell">
-                <small>Destination</small>
-                <b>Tokyo</b>
-              </div>
-              <div className="bookcell">
-                <small>Aller</small>
-                <b>10 oct.</b>
-              </div>
-              <div className="bookcell">
-                <small>Retour</small>
-                <b>24 oct.</b>
-              </div>
-              <div className="bookcell">
-                <small>Voyageurs</small>
-                <b>4</b>
-              </div>
-              <Link href="/atlas/flights?city=tokyo" className="btn primary">
-                Vols & hôtels
-              </Link>
-            </div>
-          </div>
-          <div className="hero-photo reveal">
-            <img src={tokyo.hero} alt="Tokyo" />
-            <div className="hero-caption">
-              <h3>Votre Tokyo commence par le bon quartier.</h3>
-              <p>Comprendre avant de réserver.</p>
-            </div>
+      <section className="hero shell" style={{ paddingBottom: 60 }}>
+        <div className="reveal" style={{ maxWidth: 760, margin: "0 auto", textAlign: "center" }}>
+          <div className="eyebrow">Guide premium · réservation · assistance</div>
+          <h1>Préparez le voyage, pas quinze onglets.</h1>
+          <p style={{ margin: "0 auto" }}>
+            Atlas commence par comprendre la ville, puis relie quartiers, hôtels, vols, transport, eSIM, articles et
+            arrivée sur place. {CITY_NAMES.length} destinations couvertes en profondeur.
+          </p>
+          <div style={{ display: "flex", justifyContent: "center", marginTop: 26 }}>
+            <CitySearch />
           </div>
         </div>
       </section>
@@ -93,14 +57,35 @@ export default function AtlasHome() {
       </section>
 
       <section className="section shell reveal">
-        <div className="section-head">
+        <div className="band">
           <div>
-            <div className="eyebrow">Guides villes</div>
-            <h2>Commencez par comprendre l’endroit.</h2>
+            <div className="eyebrow" style={{ color: "#b8d5c8" }}>
+              Une destination précise en tête ?
+            </div>
+            <h2>Cherchez-la, plutôt que de la parcourir.</h2>
+            <p>
+              Atlas n’affiche pas une liste de villes à faire défiler. Tapez ce que vous cherchez, on vous emmène
+              directement au bon dossier de préparation.
+            </p>
+            <Link href="/atlas/destinations" className="btn">
+              Parcourir toutes les destinations
+            </Link>
           </div>
-          <p>Chaque ville est conçue comme un dossier complet de préparation.</p>
+          <div className="steps">
+            <div className="step">
+              <b>Une ville</b>
+              <small>« Kyoto », « Lisbonne »…</small>
+            </div>
+            <div className="step">
+              <b>Un pays</b>
+              <small>« Japon », « Italie »…</small>
+            </div>
+            <div className="step">
+              <b>Une envie</b>
+              <small>Bientôt : « plage », « montagne », « nightlife »…</small>
+            </div>
+          </div>
         </div>
-        <DestGrid names={CITY_NAMES.slice(0, 8)} />
       </section>
     </>
   );
