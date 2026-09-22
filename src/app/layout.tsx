@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Space_Grotesk, Fraunces } from "next/font/google";
 import Toast from "@/components/Toast";
+import ScrollReveal from "@/components/ScrollReveal";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <Toast />
+        <ScrollReveal />
       </body>
     </html>
   );

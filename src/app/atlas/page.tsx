@@ -8,7 +8,7 @@ export default function AtlasHome() {
     <>
       <section className="hero shell">
         <div className="hero-grid">
-          <div className="reveal on">
+          <div className="reveal">
             <div className="eyebrow">Guide premium · réservation · assistance</div>
             <h1>Préparez le voyage, pas quinze onglets.</h1>
             <p>
@@ -45,7 +45,7 @@ export default function AtlasHome() {
               </Link>
             </div>
           </div>
-          <div className="hero-photo reveal on">
+          <div className="hero-photo reveal">
             <img src={tokyo.hero} alt="Tokyo" />
             <div className="hero-caption">
               <h3>Votre Tokyo commence par le bon quartier.</h3>
@@ -55,7 +55,7 @@ export default function AtlasHome() {
         </div>
       </section>
 
-      <section className="section shell reveal on">
+      <section className="section shell reveal">
         <div className="section-head">
           <div>
             <div className="eyebrow">Votre Travel OS</div>
@@ -92,7 +92,7 @@ export default function AtlasHome() {
         </div>
       </section>
 
-      <section className="section shell reveal on">
+      <section className="section shell reveal">
         <div className="section-head">
           <div>
             <div className="eyebrow">Guides villes</div>

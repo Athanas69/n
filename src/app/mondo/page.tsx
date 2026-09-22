@@ -7,7 +7,7 @@ export default function MondoHome() {
     <>
       <section className="hero shell">
         <div className="hero-grid">
-          <div className="reveal on">
+          <div className="reveal">
             <div className="eyebrow">Communauté & organisation</div>
             <h1>Le voyage commence par les bonnes personnes.</h1>
             <p>
@@ -23,7 +23,7 @@ export default function MondoHome() {
               </Link>
             </div>
           </div>
-          <div className="hero-photo reveal on">
+          <div className="hero-photo reveal">
             <img src="/assets/mondo-hero.jpg" alt="Mondo" />
             <div className="hero-caption">
               <h3>Une route, des inconnus, puis une histoire.</h3>
@@ -33,7 +33,7 @@ export default function MondoHome() {
         </div>
       </section>
 
-      <section className="section shell reveal on">
+      <section className="section shell reveal">
         <div className="section-head">
           <div>
             <div className="eyebrow">Voyages ouverts</div>
@@ -44,7 +44,7 @@ export default function MondoHome() {
         <TripGrid />
       </section>
 
-      <section className="section shell reveal on">
+      <section className="section shell reveal">
         <div className="band">
           <div>
             <div className="eyebrow" style={{ color: "#b8d5c8" }}>
@@ -77,7 +77,7 @@ export default function MondoHome() {
         </div>
       </section>
 
-      <section className="section shell reveal on">
+      <section className="section shell reveal">
         <div className="section-head">
           <div>
             <div className="eyebrow">Confiance</div>
@@ -109,7 +109,7 @@ export default function MondoHome() {
         </div>
       </section>
 
-      <section className="section shell reveal on">
+      <section className="section shell reveal">
         <div className="section-head">
           <div>
             <div className="eyebrow">Voyageurs</div>

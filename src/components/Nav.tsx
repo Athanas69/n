@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { citySlug, DEFAULT_CITY } from "@/lib/data";
 import Mark from "./Mark";
@@ -14,6 +15,7 @@ const mondoLinks = [
 ];
 
 export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
+  const pathname = usePathname();
   const [lastCity, setLastCity] = useState(DEFAULT_CITY);
 
   useEffect(() => {
@@ -34,6 +36,11 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
 
   const links = mode === "MONDO" ? mondoLinks : atlasLinks;
 
+  function isActive(href: string) {
+    if (href === "/mondo" || href === "/atlas") return pathname === href;
+    return pathname === href || pathname.startsWith(href + "/");
+  }
+
   return (
     <header className="nav">
       <div className="shell navin">
@@ -45,7 +52,7 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
         </Link>
         <nav className="navlinks">
           {links.map((l) => (
-            <Link key={l.href} href={l.href}>
+            <Link key={l.href} href={l.href} className={isActive(l.href) ? "navactive" : ""}>
               {l.label}
             </Link>
           ))}
