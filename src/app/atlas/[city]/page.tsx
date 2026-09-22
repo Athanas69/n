@@ -17,6 +17,7 @@ import LiveWeather from "@/components/LiveWeather";
 import CurrencyConverter from "@/components/CurrencyConverter";
 import FavoriteButton from "@/components/FavoriteButton";
 import TripPrepBanner from "@/components/TripPrepBanner";
+import PracticalInfo from "@/components/PracticalInfo";
 
 export function generateStaticParams() {
   return CITY_NAMES.map((name) => ({ city: citySlug(name) }));
@@ -110,6 +111,17 @@ export default async function CityPage({
             <LiveWeather lat={coords.lat} lon={coords.lon} targetDate={sp.checkin} />
           </div>
         )}
+      </section>
+
+      <section className="section shell" id="practical">
+        <div className="section-head">
+          <div>
+            <div className="eyebrow">Avant de partir</div>
+            <h2>Tout ce qu’il faut savoir, en un coup d’œil.</h2>
+          </div>
+          <p>Visa, prise, urgences, pourboire, langue, décalage — ce qu’on cherche d’habitude sur cinq sites différents.</p>
+        </div>
+        <PracticalInfo country={c.country} />
       </section>
 
       <section className="section shell" id="understand">
