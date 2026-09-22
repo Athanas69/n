@@ -189,7 +189,7 @@ export default async function CityPage({
           <article className="transport">
             <h2>{c.transport}</h2>
             <div className="metro">
-              <MetroMap city={c} />
+              <MetroMap city={c} cityName={cityName} />
             </div>
             <p>Schéma simplifié, conçu pour comprendre le réseau en quelques secondes.</p>
             {c.transitTicket && (

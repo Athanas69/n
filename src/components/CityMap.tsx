@@ -1,4 +1,5 @@
 import type { City } from "@/lib/data";
+import { REAL_TRANSIT } from "@/lib/transitLines";
 
 const DOT_COLORS = ["#6e72d9", "#df9b47", "#4ba36d", "#b168a7", "#5a9db7"];
 
@@ -42,7 +43,64 @@ const WOBBLE = [
 const XS = [40, 142, 244, 396, 498, 600];
 const HUBS = [244, 498];
 
-export function MetroMap({ city }: { city: City }) {
+export function MetroMap({ city, cityName }: { city: City; cityName: string }) {
+  const realLines = REAL_TRANSIT[cityName];
+
+  if (realLines) {
+    const rowH = 78;
+    const h = 40 + realLines.length * rowH;
+    const rows = realLines.map((l, i) => ({
+      ...l,
+      y: 50 + i * rowH,
+      wobble: WOBBLE[i % WOBBLE.length],
+    }));
+    return (
+      <>
+        <svg viewBox={`0 0 640 ${h}`}>
+          {rows.map((r) => {
+            const pts = XS.map((x, k) => `${x},${r.y + r.wobble[k]}`).join(" ");
+            return (
+              <g key={r.name}>
+                <polyline points={pts} fill="none" stroke={r.color} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+                {XS.map((x, k) => {
+                  const cy = r.y + r.wobble[k];
+                  const labelUp = k % 2 === 0;
+                  return (
+                    <g key={x}>
+                      <circle cx={x} cy={cy} r={5} fill="#fff" stroke={r.color} strokeWidth={3} />
+                      <text
+                        x={x}
+                        y={labelUp ? cy - 12 : cy + 20}
+                        fontSize={8.5}
+                        fontFamily="var(--font-dm-sans)"
+                        fill="#3a4640"
+                        textAnchor="middle"
+                      >
+                        {r.stations[k]}
+                      </text>
+                    </g>
+                  );
+                })}
+              </g>
+            );
+          })}
+        </svg>
+        <div className="metrolegend">
+          {rows.map((r) => (
+            <span key={r.name}>
+              <i style={{ background: r.color }} />
+              {r.name}
+            </span>
+          ))}
+          <span className="metrolegend-hub">
+            <i className="metrolegend-hubdot" />
+            Station
+          </span>
+        </div>
+      </>
+    );
+  }
+
   const lines = city.transport.split(" · ").slice(0, 5);
   const h = 70 + lines.length * 46;
   const rows = lines.map((l, i) => ({
