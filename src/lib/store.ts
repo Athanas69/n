@@ -173,3 +173,32 @@ export function useTrips(): UserTrip[] {
 export function useProfile(): Profile {
   return useWatch(PROFILE_KEY, getProfile, DEFAULT_PROFILE);
 }
+
+// ---- Backup (export / import) ----
+// Everything lives in this browser's localStorage only — no account, no
+// server. Export/import is the honest way to protect against clearing
+// site data or switching devices.
+
+export type Backup = {
+  version: 1;
+  exportedAt: string;
+  favorites: Favorite[];
+  trips: UserTrip[];
+  profile: Profile;
+};
+
+export function exportBackup(): Backup {
+  return {
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    favorites: getFavorites(),
+    trips: getTrips(),
+    profile: getProfile(),
+  };
+}
+
+export function importBackup(data: Backup) {
+  if (Array.isArray(data.favorites)) write(FAVORITES_KEY, data.favorites);
+  if (Array.isArray(data.trips)) write(TRIPS_KEY, data.trips);
+  if (data.profile) write(PROFILE_KEY, data.profile);
+}

@@ -143,7 +143,7 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
                 </div>
               ))}
             </div>
-            <form onSubmit={addDay} className="formgrid" style={{ marginTop: 14 }}>
+            <form onSubmit={addDay} className="formgrid no-print" style={{ marginTop: 14 }}>
               <label className="field">
                 <small>Étape / jour</small>
                 <input placeholder="Jour 1 — Arrivée" value={dayTitle} onChange={(e) => setDayTitle(e.target.value)} />
@@ -178,7 +178,7 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
               ))}
               {trip.packing.length === 0 && <p className="muted">Rien dans la valise pour l’instant.</p>}
             </div>
-            <form onSubmit={addPacking} style={{ display: "flex", gap: 6, marginTop: 12 }}>
+            <form onSubmit={addPacking} className="no-print" style={{ display: "flex", gap: 6, marginTop: 12 }}>
               <input
                 className="field"
                 style={{ flex: 1, border: "1px solid var(--line)" }}
@@ -193,13 +193,16 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
           </aside>
         </div>
 
-        <div className="actions" style={{ marginTop: 20 }}>
+        <div className="actions no-print" style={{ marginTop: 20 }}>
           <Link href={`/atlas/${citySlug(trip.city)}`} className="btn primary">
             Préparer {trip.city} dans Atlas
           </Link>
           <Link href="/mondo/trips" className="btn">
             Tous vos voyages
           </Link>
+          <button type="button" className="btn" onClick={() => window.print()}>
+            Imprimer / PDF
+          </button>
           <button type="button" className="btn" onClick={handleDelete} style={{ marginLeft: "auto", color: "#b3413f" }}>
             Supprimer ce voyage
           </button>

@@ -6,6 +6,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import AlfredPanel, { AlfredFab } from "@/components/AlfredPanel";
 import { useProfile, saveProfile, useTrips, useFavorites } from "@/lib/store";
+import DataBackup from "@/components/DataBackup";
 
 const INTEREST_OPTIONS = [
   "Aventure",
@@ -162,6 +163,9 @@ export default function ProfilePage() {
                 ))
               )}
             </article>
+          </div>
+          <div style={{ marginTop: 11 }}>
+            <DataBackup />
           </div>
         </section>
       )}
