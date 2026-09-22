@@ -24,9 +24,18 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Mondo × Atlas — North Star",
+  title: {
+    default: "Mondo × Atlas",
+    template: "%s · Mondo × Atlas",
+  },
   description:
     "Mondo × Atlas — trouvez vos compagnons, organisez le voyage, préparez chaque ville et réservez dans une seule expérience.",
+  manifest: "/manifest.webmanifest",
+  applicationName: "Mondo × Atlas",
+};
+
+export const viewport = {
+  themeColor: "#18211d",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

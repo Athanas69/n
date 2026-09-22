@@ -11,9 +11,25 @@ import RememberCity from "@/components/RememberCity";
 import { SimpleMap, MetroMap } from "@/components/CityMap";
 import { CITY_NAMES, citySlug, cityNameFromSlug, getCity } from "@/lib/data";
 import { getArticleSlugForTitle } from "@/lib/articles";
+import { CITY_COORDS } from "@/lib/coords";
+import LiveWeather from "@/components/LiveWeather";
+import CurrencyConverter from "@/components/CurrencyConverter";
+import FavoriteButton from "@/components/FavoriteButton";
 
 export function generateStaticParams() {
   return CITY_NAMES.map((name) => ({ city: citySlug(name) }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ city: string }> }) {
+  const { city: slug } = await params;
+  const cityName = cityNameFromSlug(slug);
+  if (!cityName) return {};
+  const c = getCity(cityName);
+  return {
+    title: `${cityName} — guide, quartiers, hôtels`,
+    description: c.intro,
+    openGraph: { images: [c.hero] },
+  };
 }
 
 const GUIDE_ACTIONS = [
@@ -31,6 +47,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
   if (!cityName) notFound();
 
   const c = getCity(cityName);
+  const coords = CITY_COORDS[cityName];
 
   return (
     <>
@@ -42,7 +59,12 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
             <div className="eyebrow" style={{ color: "#fff" }}>
               {c.country}
             </div>
-            <h1>{cityName}</h1>
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+              <h1>{cityName}</h1>
+              <FavoriteButton
+                favorite={{ id: `city:${cityName}`, type: "city", city: cityName, name: cityName, image: c.hero }}
+              />
+            </div>
             <p>{c.intro}</p>
           </div>
         </div>
@@ -65,6 +87,11 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
             <b>{c.transport}</b>
           </div>
         </div>
+        {coords && (
+          <div style={{ marginTop: 8 }}>
+            <LiveWeather lat={coords.lat} lon={coords.lon} />
+          </div>
+        )}
       </section>
 
       <section className="section shell" id="understand">
@@ -85,6 +112,8 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
             <p className="muted" style={{ fontSize: 9 }}>
               Vue explicative Atlas : elle sert à comprendre la ville, pas à remplacer une carte GPS.
             </p>
+            <h3 style={{ marginTop: 16 }}>Convertisseur</h3>
+            <CurrencyConverter currency={c.currency} />
           </aside>
         </div>
       </section>

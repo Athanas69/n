@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NotifyButton from "./NotifyButton";
+import FavoriteButton from "./FavoriteButton";
 import { getHotels, citySlug } from "@/lib/data";
 
 const IMAGES = [
@@ -20,6 +21,17 @@ export default function HotelGrid({ city }: { city: string }) {
               <span className="verified" style={{ position: "absolute", left: 10, top: 10 }}>
                 {h.tier}
               </span>
+              <FavoriteButton
+                className="favbtn-float"
+                favorite={{
+                  id: `hotel:${city}:${h.name}:${h.tier}`,
+                  type: "hotel",
+                  city,
+                  name: h.name,
+                  image: h.image ?? IMAGES[i % 3],
+                  meta: `${h.price} € · ${h.neighborhood}`,
+                }}
+              />
             </div>
             <div className="staybody">
               <h3>{h.name}</h3>

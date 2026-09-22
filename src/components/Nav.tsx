@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { citySlug, DEFAULT_CITY } from "@/lib/data";
+import { useFavorites, useProfile } from "@/lib/store";
 import Mark from "./Mark";
 
 const mondoLinks = [
@@ -16,6 +17,14 @@ const mondoLinks = [
 
 export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
   const pathname = usePathname();
+  const favorites = useFavorites();
+  const profile = useProfile();
+  const initials = profile.name
+    .split(" ")
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
   const [lastCity, setLastCity] = useState(DEFAULT_CITY);
 
   useEffect(() => {
@@ -58,6 +67,9 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
           ))}
         </nav>
         <div className="navright">
+          <Link href="/favorites" className="navfav" aria-label="Favoris">
+            ♥{favorites.length > 0 && <span className="navfav-count">{favorites.length}</span>}
+          </Link>
           <div className="switch">
             <Link href="/mondo" className={mode === "MONDO" ? "on" : ""}>
               Mondo
@@ -67,7 +79,7 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
             </Link>
           </div>
           <Link href="/profile" className="avatar navavatar">
-            NA
+            {initials}
           </Link>
         </div>
       </div>
