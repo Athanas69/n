@@ -84,6 +84,16 @@ export const CITY_REGIONS: Record<string, string> = {
   Doha: "Afrique & Moyen-Orient",
   Nairobi: "Afrique & Moyen-Orient",
   Sydney: "Océanie",
+  Chicago: "Amériques",
+  Miami: "Amériques",
+  Montreal: "Amériques",
+  Vancouver: "Amériques",
+  Munich: "Europe",
+  Dublin: "Europe",
+  Budapest: "Europe",
+  Stockholm: "Europe",
+  "Kuala Lumpur": "Asie",
+  Beijing: "Asie",
 };
 
 export function citiesByRegion(): [string, string[]][] {

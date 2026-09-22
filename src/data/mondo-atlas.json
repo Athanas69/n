@@ -2279,6 +2279,500 @@
         "Où prendre un bon petit-déjeuner",
         "San Francisco avec un petit budget"
       ]
+    },
+    "Chicago": {
+      "country": "États-Unis",
+      "currency": "USD",
+      "best": "mai–sept.",
+      "airport": "ORD / MDW",
+      "transport": "L Train · Bus · Métra",
+      "transitTicket": "Ventra Card, trajet : 2,50 $",
+      "esim": "Fortement recommandée",
+      "intro": "Chicago est une ville d’architecture, entre gratte-ciel pionniers, lac Michigan et culture du deep-dish.",
+      "hero": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Millennium Park",
+          "Art public · Cloud Gate · central",
+          "Le fameux « Bean » et un parc au cœur des gratte-ciel.",
+          "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "River North",
+          "Architecture · croisière · galeries",
+          "Croisières d’architecture sur la rivière Chicago.",
+          "https://images.unsplash.com/photo-1718980888858-16365e9e5a80?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "O’Hare (ORD)",
+          "L Train (Blue Line)",
+          "≈ 45 min vers le centre, direct 24h/24."
+        ],
+        [
+          "Midway (MDW)",
+          "L Train (Orange Line)",
+          "≈ 30 min vers le Loop."
+        ],
+        [
+          "Les deux",
+          "Taxi / Uber",
+          "≈ 35-50 $ selon aéroport et trafic."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Chicago ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Chicago en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Chicago avec un petit budget"
+      ]
+    },
+    "Miami": {
+      "country": "États-Unis",
+      "currency": "USD",
+      "best": "déc.–avr.",
+      "airport": "MIA",
+      "transport": "Metrorail · Metromover · Bus",
+      "transitTicket": "EASY Card, trajet : 2,25 $ · Metromover gratuit",
+      "esim": "Fortement recommandée",
+      "intro": "Miami mélange Art déco, plages ensoleillées et influences latino-américaines toute l’année.",
+      "hero": "https://images.unsplash.com/photo-1603888613934-ee2f7d143dd0?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "South Beach",
+          "Art déco · plage · nightlife",
+          "Façades Art déco pastel et la plage la plus célèbre de Floride.",
+          "https://images.unsplash.com/photo-1603888613934-ee2f7d143dd0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Wynwood",
+          "Street art · galeries · branché",
+          "Fresques monumentales et scène artistique en plein essor.",
+          "https://images.unsplash.com/photo-1548209454-8548045387bc?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "MIA",
+          "Metrorail (Orange Line)",
+          "≈ 25 min vers le centre."
+        ],
+        [
+          "MIA",
+          "SuperShuttle",
+          "Navette partagée pratique avec bagages."
+        ],
+        [
+          "MIA",
+          "Taxi / Uber",
+          "≈ 25-35 $ vers South Beach."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Miami ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Miami en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Miami avec un petit budget"
+      ]
+    },
+    "Munich": {
+      "country": "Allemagne",
+      "currency": "EUR",
+      "best": "mai–sept.",
+      "airport": "MUC",
+      "transport": "U-Bahn · S-Bahn · Tram",
+      "transitTicket": "Ticket unique : 3,90 € · Pass journée : 8,80 €",
+      "esim": "Optionnelle pour voyageurs UE",
+      "intro": "Munich équilibre tradition bavaroise, brasseries historiques et l’un des plus grands parcs urbains d’Europe.",
+      "hero": "https://images.unsplash.com/photo-1682495867747-aa7ae4dbf9fd?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Marienplatz",
+          "Historique · Rathaus · central",
+          "L’hôtel de ville néogothique et son célèbre carillon.",
+          "https://images.unsplash.com/photo-1682495867747-aa7ae4dbf9fd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Englischer Garten",
+          "Parc · détente · surf urbain",
+          "L’un des plus grands parcs urbains au monde, surf sur l’Eisbach.",
+          "https://images.unsplash.com/photo-1588744349807-e5f0e99abed0?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "MUC",
+          "S-Bahn (S1/S8)",
+          "≈ 45 min vers le centre."
+        ],
+        [
+          "MUC",
+          "Bus Lufthansa Express",
+          "Alternative directe vers la gare centrale."
+        ],
+        [
+          "MUC",
+          "Taxi",
+          "≈ 60-70 € vers le centre."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Munich ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Munich en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Munich avec un petit budget"
+      ]
+    },
+    "Dublin": {
+      "country": "Irlande",
+      "currency": "EUR",
+      "best": "mai–sept.",
+      "airport": "DUB",
+      "transport": "Luas (tram) · Bus · DART",
+      "transitTicket": "Carte Leap, trajet bus : ≈ 2 €",
+      "esim": "Optionnelle pour voyageurs UE",
+      "intro": "Dublin tient dans un mouchoir de poche : pubs historiques, littérature et bord de mer accessible en train.",
+      "hero": "https://images.unsplash.com/photo-1651127403819-6c15d8b5f589?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Temple Bar",
+          "Pubs · musique live · animé",
+          "Le quartier des pubs et de la musique traditionnelle irlandaise.",
+          "https://images.unsplash.com/photo-1651127403819-6c15d8b5f589?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Trinity College",
+          "Historique · bibliothèque · étudiant",
+          "Le Long Room et le Livre de Kells, cœur académique de Dublin.",
+          "https://images.unsplash.com/photo-1646435517735-076ec89e610d?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "DUB",
+          "Bus Airlink",
+          "≈ 30 min vers le centre-ville."
+        ],
+        [
+          "DUB",
+          "Bus Dublin Express",
+          "Alternative directe vers plusieurs points centraux."
+        ],
+        [
+          "DUB",
+          "Taxi",
+          "≈ 25-30 € vers le centre."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Dublin ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Dublin en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Dublin avec un petit budget"
+      ]
+    },
+    "Budapest": {
+      "country": "Hongrie",
+      "currency": "HUF",
+      "best": "avr.–juin · sept.–oct.",
+      "airport": "BUD",
+      "transport": "Métro · Tram · Bus",
+      "transitTicket": "Ticket unique : 450 HUF · Pass 24h : 2 500 HUF",
+      "esim": "Optionnelle pour voyageurs UE",
+      "intro": "Budapest se partage entre Buda la vallonnée et Pest l’animée, reliées par des ponts sur le Danube.",
+      "hero": "https://images.unsplash.com/photo-1616432902940-b7a1acbc60b3?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Quartier des bars-ruines",
+          "Nightlife · alternatif · Erzsébetváros",
+          "Bars insolites installés dans d’anciens bâtiments délabrés.",
+          "https://images.unsplash.com/photo-1788882681232-4dd3b1016ccd?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "BUD",
+          "Bus 100E",
+          "≈ 40 min vers le centre, direct."
+        ],
+        [
+          "BUD",
+          "Navette miniBUD",
+          "Réservation à l’avance, dépose à l’hôtel."
+        ],
+        [
+          "BUD",
+          "Taxi officiel (Főtaxi)",
+          "≈ 20-25 € vers le centre."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Budapest ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Budapest en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Budapest avec un petit budget"
+      ]
+    },
+    "Stockholm": {
+      "country": "Suède",
+      "currency": "SEK",
+      "best": "mai–août",
+      "airport": "ARN (Arlanda)",
+      "transport": "Métro (Tunnelbana) · Bus · Ferry",
+      "transitTicket": "Ticket SL, trajet : ≈ 39 SEK",
+      "esim": "Optionnelle pour voyageurs UE",
+      "intro": "Stockholm s’étend sur 14 îles, entre vieille ville médiévale et design scandinave minimaliste.",
+      "hero": "https://images.unsplash.com/photo-1596636478939-59fed7a083f2?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Gamla Stan",
+          "Vieille ville · pavés · historique",
+          "La vieille ville médiévale, ruelles pavées et façades colorées.",
+          "https://images.unsplash.com/photo-1596636478939-59fed7a083f2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Södermalm",
+          "Branché · vues · cafés",
+          "Quartier créatif avec les meilleures vues sur la ville.",
+          "https://images.unsplash.com/photo-1553798081-85009962337f?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "Arlanda",
+          "Arlanda Express",
+          "≈ 20 min vers le centre, rapide mais cher."
+        ],
+        [
+          "Arlanda",
+          "Bus Flygbussarna",
+          "≈ 45 min, alternative économique."
+        ],
+        [
+          "Arlanda",
+          "Taxi",
+          "Tarif fixe ≈ 500-600 SEK, à négocier avant le départ."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Stockholm ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Stockholm en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Stockholm avec un petit budget"
+      ]
+    },
+    "Kuala Lumpur": {
+      "country": "Malaisie",
+      "currency": "MYR",
+      "best": "déc.–fév.",
+      "airport": "KUL",
+      "transport": "LRT · Monorail · MRT",
+      "transitTicket": "Ticket unique : ≈ 1-5 MYR selon distance",
+      "esim": "Très utile dès l’arrivée",
+      "intro": "Kuala Lumpur juxtapose tours futuristes, marchés multiculturels et jungle tropicale aux portes de la ville.",
+      "hero": "https://images.unsplash.com/photo-1508062878650-88b52897f298?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "KLCC",
+          "Tours Petronas · shopping · moderne",
+          "Les tours jumelles emblématiques et leur parc au pied des gratte-ciel.",
+          "https://images.unsplash.com/photo-1508062878650-88b52897f298?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bukit Bintang",
+          "Shopping · nightlife · street food",
+          "Le quartier commerçant et nocturne le plus animé de la ville.",
+          "https://images.unsplash.com/photo-1679113230029-a11884eb7293?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "KUL",
+          "KLIA Ekspres",
+          "≈ 28 min vers KL Sentral, direct."
+        ],
+        [
+          "KUL",
+          "Bus",
+          "≈ 60-90 min, économique."
+        ],
+        [
+          "KUL",
+          "Taxi / Grab",
+          "≈ 30-40 min selon trafic."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Kuala Lumpur ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Kuala Lumpur en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Kuala Lumpur avec un petit budget"
+      ]
+    },
+    "Beijing": {
+      "country": "Chine",
+      "currency": "CNY",
+      "best": "mars–mai · sept.–oct.",
+      "airport": "PEK / PKX",
+      "transport": "Métro · Bus · Taxi",
+      "transitTicket": "Métro trajet : ≈ 3-9 CNY selon distance",
+      "esim": "Très utile dès l’arrivée",
+      "intro": "Pékin conjugue la grandeur impériale de la Cité interdite et les ruelles hutong plus intimes.",
+      "hero": "https://images.unsplash.com/photo-1614555383820-941c466f1b52?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Cité interdite",
+          "Impérial · monuments · historique",
+          "L’ancien palais impérial, cœur historique de la Chine.",
+          "https://images.unsplash.com/photo-1614555383820-941c466f1b52?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Hutong",
+          "Ruelles · traditionnel · authentique",
+          "Ruelles traditionnelles à explorer en vélo ou pousse-pousse.",
+          "https://images.unsplash.com/photo-1774404541165-65604e3de17e?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "Capital (PEK)",
+          "Airport Express + Métro",
+          "≈ 40 min vers le centre."
+        ],
+        [
+          "Daxing (PKX)",
+          "Daxing Airport Express",
+          "≈ 20 min vers le centre, aéroport plus récent."
+        ],
+        [
+          "Les deux",
+          "Taxi",
+          "≈ 60-90 min selon trafic."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Beijing ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Beijing en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Beijing avec un petit budget"
+      ]
+    },
+    "Montreal": {
+      "country": "Canada",
+      "currency": "CAD",
+      "best": "juin–sept.",
+      "airport": "YUL",
+      "transport": "Métro (STM) · Bus · Vélo",
+      "transitTicket": "Ticket OPUS, trajet : 3,75 CAD",
+      "esim": "Recommandée",
+      "intro": "Montréal garde un charme européen dans son Vieux-Port, avec une identité francophone bien affirmée.",
+      "hero": "https://images.unsplash.com/photo-1770488767468-234694839ede?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Vieux-Montréal",
+          "Pavés · européen · historique",
+          "Rues pavées et architecture du XVIIe siècle au bord du fleuve.",
+          "https://images.unsplash.com/photo-1770488767468-234694839ede?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Plateau Mont-Royal",
+          "Escaliers colorés · bohème · cafés",
+          "Maisons à escaliers extérieurs typiques et ambiance créative.",
+          "https://images.unsplash.com/photo-1576375801517-45814f908aa4?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "YUL",
+          "Bus 747",
+          "≈ 45-60 min vers le centre, 24h/24."
+        ],
+        [
+          "YUL",
+          "Taxi",
+          "Tarif fixe ≈ 45 CAD vers le centre."
+        ],
+        [
+          "YUL",
+          "Uber",
+          "Souvent comparable au taxi selon la demande."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Montreal ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Montreal en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Montreal avec un petit budget"
+      ]
+    },
+    "Vancouver": {
+      "country": "Canada",
+      "currency": "CAD",
+      "best": "juin–sept.",
+      "airport": "YVR",
+      "transport": "SkyTrain · Bus · SeaBus",
+      "transitTicket": "Carte Compass, trajet : ≈ 3-6 CAD selon zones",
+      "esim": "Recommandée",
+      "intro": "Vancouver combine gratte-ciel, forêt tropicale et montagnes enneigées visibles depuis le centre-ville.",
+      "hero": "https://images.unsplash.com/photo-1664813128436-a5c35a42e78b?auto=format&fit=crop&w=1800&q=90",
+      "neighborhoods": [
+        [
+          "Stanley Park",
+          "Nature · vélo · vue",
+          "Immense parc urbain avec sentier côtier et vue sur les montagnes.",
+          "https://images.unsplash.com/photo-1664813128436-a5c35a42e78b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gastown",
+          "Historique · pavés · horloge à vapeur",
+          "Le quartier historique, célèbre pour son horloge à vapeur.",
+          "https://images.unsplash.com/photo-1601310960741-599135fc3337?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "YVR",
+          "Canada Line (SkyTrain)",
+          "≈ 25 min vers le centre, direct."
+        ],
+        [
+          "YVR",
+          "Taxi",
+          "≈ 35-40 CAD vers le centre."
+        ],
+        [
+          "YVR",
+          "Navette hôtel",
+          "Disponible pour certains grands hôtels."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir à Vancouver ?",
+        "Comment rejoindre le centre depuis l’aéroport",
+        "Vancouver en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Vancouver avec un petit budget"
+      ]
     }
   },
   "hotels": {
@@ -4875,6 +5369,746 @@
       {
         "name": "Haight-Ashbury Suites",
         "neighborhood": "Haight-Ashbury",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Chicago": [
+      {
+        "name": "Millennium Park House",
+        "neighborhood": "Millennium Park",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "River North Stay",
+        "neighborhood": "River North",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Millennium Park Hotel",
+        "neighborhood": "Millennium Park",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Millennium Park Suites",
+        "neighborhood": "Millennium Park",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "River North Rooms",
+        "neighborhood": "River North",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Millennium Park Lodge",
+        "neighborhood": "Millennium Park",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Millennium Park Residence",
+        "neighborhood": "Millennium Park",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "River North Hotel",
+        "neighborhood": "River North",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Millennium Park Suites",
+        "neighborhood": "Millennium Park",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Miami": [
+      {
+        "name": "South Beach House",
+        "neighborhood": "South Beach",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Wynwood Stay",
+        "neighborhood": "Wynwood",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "South Beach Hotel",
+        "neighborhood": "South Beach",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "South Beach Suites",
+        "neighborhood": "South Beach",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Wynwood Rooms",
+        "neighborhood": "Wynwood",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "South Beach Lodge",
+        "neighborhood": "South Beach",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "South Beach Residence",
+        "neighborhood": "South Beach",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Wynwood Hotel",
+        "neighborhood": "Wynwood",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "South Beach Suites",
+        "neighborhood": "South Beach",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Munich": [
+      {
+        "name": "Marienplatz House",
+        "neighborhood": "Marienplatz",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Englischer Garten Stay",
+        "neighborhood": "Englischer Garten",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Marienplatz Hotel",
+        "neighborhood": "Marienplatz",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Marienplatz Suites",
+        "neighborhood": "Marienplatz",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Englischer Garten Rooms",
+        "neighborhood": "Englischer Garten",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Marienplatz Lodge",
+        "neighborhood": "Marienplatz",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Marienplatz Residence",
+        "neighborhood": "Marienplatz",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Englischer Garten Hotel",
+        "neighborhood": "Englischer Garten",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Marienplatz Suites",
+        "neighborhood": "Marienplatz",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Dublin": [
+      {
+        "name": "Temple Bar House",
+        "neighborhood": "Temple Bar",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Trinity College Stay",
+        "neighborhood": "Trinity College",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Temple Bar Hotel",
+        "neighborhood": "Temple Bar",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Temple Bar Suites",
+        "neighborhood": "Temple Bar",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Trinity College Rooms",
+        "neighborhood": "Trinity College",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Temple Bar Lodge",
+        "neighborhood": "Temple Bar",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Temple Bar Residence",
+        "neighborhood": "Temple Bar",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Trinity College Hotel",
+        "neighborhood": "Trinity College",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Temple Bar Suites",
+        "neighborhood": "Temple Bar",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Budapest": [
+      {
+        "name": "Quartier des bars-ruines House",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Quartier des bars-ruines Stay",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Quartier des bars-ruines Hotel",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Quartier des bars-ruines Suites",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Quartier des bars-ruines Rooms",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Quartier des bars-ruines Lodge",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Quartier des bars-ruines Residence",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Quartier des bars-ruines Hotel",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Quartier des bars-ruines Suites",
+        "neighborhood": "Quartier des bars-ruines",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Stockholm": [
+      {
+        "name": "Gamla Stan House",
+        "neighborhood": "Gamla Stan",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Södermalm Stay",
+        "neighborhood": "Södermalm",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Gamla Stan Hotel",
+        "neighborhood": "Gamla Stan",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Gamla Stan Suites",
+        "neighborhood": "Gamla Stan",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Södermalm Rooms",
+        "neighborhood": "Södermalm",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Gamla Stan Lodge",
+        "neighborhood": "Gamla Stan",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Gamla Stan Residence",
+        "neighborhood": "Gamla Stan",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Södermalm Hotel",
+        "neighborhood": "Södermalm",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Gamla Stan Suites",
+        "neighborhood": "Gamla Stan",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Kuala Lumpur": [
+      {
+        "name": "KLCC House",
+        "neighborhood": "KLCC",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Bukit Bintang Stay",
+        "neighborhood": "Bukit Bintang",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "KLCC Hotel",
+        "neighborhood": "KLCC",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "KLCC Suites",
+        "neighborhood": "KLCC",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Bukit Bintang Rooms",
+        "neighborhood": "Bukit Bintang",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "KLCC Lodge",
+        "neighborhood": "KLCC",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "KLCC Residence",
+        "neighborhood": "KLCC",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Bukit Bintang Hotel",
+        "neighborhood": "Bukit Bintang",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "KLCC Suites",
+        "neighborhood": "KLCC",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Beijing": [
+      {
+        "name": "Cité interdite House",
+        "neighborhood": "Cité interdite",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Hutong Stay",
+        "neighborhood": "Hutong",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Cité interdite Hotel",
+        "neighborhood": "Cité interdite",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Cité interdite Suites",
+        "neighborhood": "Cité interdite",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Hutong Rooms",
+        "neighborhood": "Hutong",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Cité interdite Lodge",
+        "neighborhood": "Cité interdite",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Cité interdite Residence",
+        "neighborhood": "Cité interdite",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Hutong Hotel",
+        "neighborhood": "Hutong",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Cité interdite Suites",
+        "neighborhood": "Cité interdite",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Montreal": [
+      {
+        "name": "Vieux-Montréal House",
+        "neighborhood": "Vieux-Montréal",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Plateau Mont-Royal Stay",
+        "neighborhood": "Plateau Mont-Royal",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Vieux-Montréal Hotel",
+        "neighborhood": "Vieux-Montréal",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Vieux-Montréal Suites",
+        "neighborhood": "Vieux-Montréal",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Plateau Mont-Royal Rooms",
+        "neighborhood": "Plateau Mont-Royal",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Vieux-Montréal Lodge",
+        "neighborhood": "Vieux-Montréal",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Vieux-Montréal Residence",
+        "neighborhood": "Vieux-Montréal",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Plateau Mont-Royal Hotel",
+        "neighborhood": "Plateau Mont-Royal",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Vieux-Montréal Suites",
+        "neighborhood": "Vieux-Montréal",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Vancouver": [
+      {
+        "name": "Stanley Park House",
+        "neighborhood": "Stanley Park",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Gastown Stay",
+        "neighborhood": "Gastown",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Stanley Park Hotel",
+        "neighborhood": "Stanley Park",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Stanley Park Suites",
+        "neighborhood": "Stanley Park",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Gastown Rooms",
+        "neighborhood": "Gastown",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Stanley Park Lodge",
+        "neighborhood": "Stanley Park",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Stanley Park Residence",
+        "neighborhood": "Stanley Park",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Gastown Hotel",
+        "neighborhood": "Gastown",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Stanley Park Suites",
+        "neighborhood": "Stanley Park",
         "tier": "Premium",
         "price": 306,
         "score": 8.4,
