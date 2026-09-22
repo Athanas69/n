@@ -6,24 +6,22 @@ export default function EntryPage() {
     <main className="entry">
       <Link href="/mondo" className="entry-side">
         <img
-          src="https://images.unsplash.com/photo-1763420164089-10b47cc3c7c2?auto=format&fit=crop&w=1800&q=85"
+          src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=2400&q=90"
           alt="Mondo"
         />
         <div className="entry-info">
-          <div className="entry-eyebrow">Mondo</div>
-          <h2>La communauté</h2>
-          <p className="entry-dek">Trouvez vos compagnons de voyage et organisez le départ ensemble.</p>
+          <h2>MONDO</h2>
+          <p className="entry-dek">La communauté — trouvez vos compagnons de voyage.</p>
         </div>
       </Link>
       <Link href="/atlas" className="entry-side">
         <img
-          src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?auto=format&fit=crop&w=1800&q=85"
+          src="https://images.unsplash.com/photo-1786897162869-b0ccd067affd?auto=format&fit=crop&w=2400&q=90"
           alt="Atlas"
         />
         <div className="entry-info">
-          <div className="entry-eyebrow">Atlas</div>
-          <h2>L’exploration</h2>
-          <p className="entry-dek">Comprenez chaque ville et préparez-la comme un local.</p>
+          <h2>ATLAS</h2>
+          <p className="entry-dek">L’exploration — préparez chaque ville comme un local.</p>
         </div>
       </Link>
       <div className="entry-mark">

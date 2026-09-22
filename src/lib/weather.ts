@@ -32,8 +32,8 @@ export type WeatherNow = {
   daily: { date: string; max: number; min: number; code: number }[];
 };
 
-export async function fetchWeather(lat: number, lon: number): Promise<WeatherNow> {
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min,weather_code&timezone=auto&forecast_days=6`;
+export async function fetchWeather(lat: number, lon: number, days = 6): Promise<WeatherNow> {
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min,weather_code&timezone=auto&forecast_days=${days}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error("weather fetch failed");
   const data = await res.json();

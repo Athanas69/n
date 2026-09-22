@@ -1,21 +1,33 @@
 import Link from "next/link";
-import CitySearch from "@/components/CitySearch";
+import AtlasSearchBar from "@/components/AtlasSearchBar";
 import { CITY_NAMES } from "@/lib/data";
 
 export default function AtlasHome() {
   return (
     <>
-      <section className="hero shell" style={{ paddingBottom: 60 }}>
-        <div className="reveal" style={{ maxWidth: 760, margin: "0 auto", textAlign: "center" }}>
-          <div className="eyebrow">Guide premium · réservation · assistance</div>
-          <h1>Préparez le voyage, pas quinze onglets.</h1>
-          <p style={{ margin: "0 auto" }}>
-            Atlas commence par comprendre la ville, puis relie quartiers, hôtels, vols, transport, eSIM, articles et
-            arrivée sur place. {CITY_NAMES.length} destinations couvertes en profondeur.
-          </p>
-          <div style={{ display: "flex", justifyContent: "center", marginTop: 26 }}>
-            <CitySearch />
+      <section className="hero shell">
+        <div className="hero-grid">
+          <div className="reveal">
+            <div className="eyebrow">Guide premium · réservation · assistance</div>
+            <h1>Préparez le voyage, pas quinze onglets.</h1>
+            <p>
+              Dites-nous où et quand : Atlas relie quartiers, hôtels, vols, transport, eSIM et arrivée sur place
+              pour {CITY_NAMES.length} destinations, directement personnalisées pour vos dates.
+            </p>
           </div>
+          <div className="hero-photo reveal">
+            <img
+              src="https://images.unsplash.com/photo-1786897162869-b0ccd067affd?auto=format&fit=crop&w=1800&q=90"
+              alt="Atlas"
+            />
+            <div className="hero-caption">
+              <h3>Le monde est immense. Votre voyage ne doit pas l’être.</h3>
+              <p>Une destination, toutes les informations.</p>
+            </div>
+          </div>
+        </div>
+        <div className="reveal" style={{ marginTop: 30 }}>
+          <AtlasSearchBar />
         </div>
       </section>
 
@@ -64,8 +76,8 @@ export default function AtlasHome() {
             </div>
             <h2>Cherchez-la, plutôt que de la parcourir.</h2>
             <p>
-              Atlas n’affiche pas une liste de villes à faire défiler. Tapez ce que vous cherchez, on vous emmène
-              directement au bon dossier de préparation.
+              Atlas n’affiche pas une liste de villes à faire défiler. Indiquez vos dates, on prépare directement
+              votre séjour.
             </p>
             <Link href="/atlas/destinations" className="btn">
               Parcourir toutes les destinations
@@ -81,8 +93,8 @@ export default function AtlasHome() {
               <small>« Japon », « Italie »…</small>
             </div>
             <div className="step">
-              <b>Une envie</b>
-              <small>Bientôt : « plage », « montagne », « nightlife »…</small>
+              <b>Vos dates</b>
+              <small>météo et budget personnalisés</small>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import OpenAlfredButton from "@/components/OpenAlfredButton";
 import HotelGrid from "@/components/HotelGrid";
 import DistrictMap from "@/components/DistrictMap";
 import { hoodAnchor } from "@/lib/hoodAnchor";
+import { hoodSlug } from "@/lib/hoodSlug";
 import CityNav from "@/components/CityNav";
 import RememberCity from "@/components/RememberCity";
 import { SimpleMap, MetroMap } from "@/components/CityMap";
@@ -15,6 +16,7 @@ import { CITY_COORDS } from "@/lib/coords";
 import LiveWeather from "@/components/LiveWeather";
 import CurrencyConverter from "@/components/CurrencyConverter";
 import FavoriteButton from "@/components/FavoriteButton";
+import TripPrepBanner from "@/components/TripPrepBanner";
 
 export function generateStaticParams() {
   return CITY_NAMES.map((name) => ({ city: citySlug(name) }));
@@ -41,13 +43,21 @@ const GUIDE_ACTIONS = [
   "Comparer le budget",
 ];
 
-export default async function CityPage({ params }: { params: Promise<{ city: string }> }) {
+export default async function CityPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ city: string }>;
+  searchParams: Promise<{ checkin?: string; checkout?: string; travelers?: string }>;
+}) {
   const { city: slug } = await params;
   const cityName = cityNameFromSlug(slug);
   if (!cityName) notFound();
 
   const c = getCity(cityName);
   const coords = CITY_COORDS[cityName];
+  const sp = await searchParams;
+  const hasTripPrep = Boolean(sp.checkin && sp.checkout && sp.travelers);
 
   return (
     <>
@@ -87,9 +97,17 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
             <b>{c.transport}</b>
           </div>
         </div>
+        {hasTripPrep && (
+          <TripPrepBanner
+            city={cityName}
+            checkin={sp.checkin!}
+            checkout={sp.checkout!}
+            travelers={Number(sp.travelers)}
+          />
+        )}
         {coords && (
           <div style={{ marginTop: 8 }}>
-            <LiveWeather lat={coords.lat} lon={coords.lon} />
+            <LiveWeather lat={coords.lat} lon={coords.lon} targetDate={sp.checkin} />
           </div>
         )}
       </section>
@@ -124,12 +142,12 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
             <div className="eyebrow">Quartiers</div>
             <h2>Choisissez l’ambiance avant l’adresse.</h2>
           </div>
-          <p>Cliquez une zone sur la carte pour ouvrir sa fiche juste en dessous.</p>
+          <p>Cliquez une zone sur la carte, ou une fiche ci-dessous, pour ouvrir le guide du quartier.</p>
         </div>
-        <DistrictMap neighborhoods={c.neighborhoods} />
+        <DistrictMap neighborhoods={c.neighborhoods} city={cityName} />
         <div className="hoodgrid" style={{ marginTop: 14 }}>
           {c.neighborhoods.map((h) => (
-            <article className="hood" id={hoodAnchor(h[0])} key={h[0]}>
+            <Link className="hood" id={hoodAnchor(h[0])} key={h[0]} href={`/atlas/${citySlug(cityName)}/quartiers/${hoodSlug(h[0])}`}>
               <img src={h[3]} alt={h[0]} />
               <div className="hoodbody">
                 <h3>{h[0]}</h3>
@@ -143,7 +161,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                   ))}
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

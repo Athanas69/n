@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { citySlug, DEFAULT_CITY } from "@/lib/data";
 import { useFavorites, useProfile } from "@/lib/store";
 import Mark from "./Mark";
+import NavHotelPreview from "./NavHotelPreview";
 
 const mondoLinks = [
   { href: "/mondo", label: "Accueil" },
@@ -60,11 +61,20 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
           {mode}
         </Link>
         <nav className="navlinks">
-          {links.map((l) => (
-            <Link key={l.href} href={l.href} className={isActive(l.href) ? "navactive" : ""}>
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) =>
+            mode === "ATLAS" && l.label === "Hôtels" ? (
+              <div className="navitem-hover" key={l.href}>
+                <Link href={l.href} className={isActive(l.href) ? "navactive" : ""}>
+                  {l.label}
+                </Link>
+                <NavHotelPreview city={lastCity} />
+              </div>
+            ) : (
+              <Link key={l.href} href={l.href} className={isActive(l.href) ? "navactive" : ""}>
+                {l.label}
+              </Link>
+            )
+          )}
         </nav>
         <div className="navright">
           <Link href="/favorites" className="navfav" aria-label="Favoris">
