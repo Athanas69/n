@@ -4,12 +4,12 @@ import NotifyButton from "@/components/NotifyButton";
 import ScrollButton from "@/components/ScrollButton";
 import OpenAlfredButton from "@/components/OpenAlfredButton";
 import HotelGrid from "@/components/HotelGrid";
-import DistrictMap from "@/components/DistrictMap";
+import NeighborhoodMap, { HOODMAP_PALETTE } from "@/components/NeighborhoodMap";
 import { hoodAnchor } from "@/lib/hoodAnchor";
 import { hoodSlug } from "@/lib/hoodSlug";
 import CityNav from "@/components/CityNav";
 import RememberCity from "@/components/RememberCity";
-import { SimpleMap, MetroMap } from "@/components/CityMap";
+import { MetroMap } from "@/components/CityMap";
 import { CITY_NAMES, citySlug, cityNameFromSlug, getCity } from "@/lib/data";
 import { getArticleSlugForTitle } from "@/lib/articles";
 import { CITY_COORDS } from "@/lib/coords";
@@ -125,13 +125,17 @@ export default async function CityPage({
             </div>
           </article>
           <aside className="snapshot">
-            <h3>Les quartiers en un coup d’œil</h3>
-            {cityName === "Tokyo" ? <img src="/assets/tokyo-map.jpg" alt="Carte Tokyo" /> : <SimpleMap city={c} />}
-            <p className="muted" style={{ fontSize: 9 }}>
-              Vue explicative Atlas : elle sert à comprendre la ville, pas à remplacer une carte GPS.
-            </p>
-            <h3 style={{ marginTop: 16 }}>Convertisseur</h3>
+            <h3>Convertisseur</h3>
             <CurrencyConverter currency={c.currency} />
+            <div className="joinrequest" style={{ marginTop: 14 }}>
+              <b>{c.neighborhoods.length} quartiers cartographiés</b>
+              <p className="muted" style={{ margin: "4px 0 10px", fontSize: 12 }}>
+                Chacun a sa fiche complète : ambiance, hôtels, transport.
+              </p>
+              <ScrollButton target="hoods" className="btn">
+                Voir la carte interactive ↓
+              </ScrollButton>
+            </div>
           </aside>
         </div>
       </section>
@@ -142,25 +146,14 @@ export default async function CityPage({
             <div className="eyebrow">Quartiers</div>
             <h2>Choisissez l’ambiance avant l’adresse.</h2>
           </div>
-          <p>Cliquez une zone sur la carte, ou une fiche ci-dessous, pour ouvrir le guide du quartier.</p>
+          <p>Survolez un point sur la carte, ou choisissez dans la liste, pour ouvrir le guide du quartier.</p>
         </div>
-        <DistrictMap neighborhoods={c.neighborhoods} city={cityName} />
-        <div className="hoodgrid" style={{ marginTop: 14 }}>
-          {c.neighborhoods.map((h) => (
-            <Link className="hood" id={hoodAnchor(h[0])} key={h[0]} href={`/atlas/${citySlug(cityName)}/quartiers/${hoodSlug(h[0])}`}>
-              <img src={h[3]} alt={h[0]} />
-              <div className="hoodbody">
-                <h3>{h[0]}</h3>
-                <span className="tag">{h[1]}</span>
-                <p>{h[2]}</p>
-                <div className="hoodtags">
-                  {h[1].split(" · ").map((tag) => (
-                    <span className="tag" key={tag}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
+        <NeighborhoodMap neighborhoods={c.neighborhoods} city={cityName} />
+        <div className="hoodlegend">
+          {c.neighborhoods.map((h, i) => (
+            <Link key={h[0]} id={hoodAnchor(h[0])} href={`/atlas/${citySlug(cityName)}/quartiers/${hoodSlug(h[0])}`}>
+              <i style={{ background: HOODMAP_PALETTE[i % HOODMAP_PALETTE.length] }}>{i + 1}</i>
+              {h[0]}
             </Link>
           ))}
         </div>
