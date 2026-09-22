@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Mark from "./Mark";
 
 export default function Footer() {
   return (
@@ -6,7 +7,10 @@ export default function Footer() {
       <div className="footergrid">
         <div>
           <div className="brand">
-            <span className="brandmark">M</span>MONDO
+            <span className="brandmark">
+              <Mark />
+            </span>
+            MONDO
           </div>
           <h3>
             Rencontrer.

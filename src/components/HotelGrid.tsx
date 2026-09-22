@@ -14,9 +14,9 @@ export default function HotelGrid({ city }: { city: string }) {
     <>
       <div className="hotelgrid">
         {hotels.map((h, i) => (
-          <article className="stay" key={h.name}>
+          <article className="stay" key={h.name + h.tier}>
             <div className="stayimg">
-              <img src={IMAGES[i % 3]} alt={h.name} />
+              <img src={h.image ?? IMAGES[i % 3]} alt={h.name} />
               <span className="verified" style={{ position: "absolute", left: 10, top: 10 }}>
                 {h.tier}
               </span>

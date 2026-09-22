@@ -86,51 +86,141 @@
       "esim": "Optionnelle pour voyageurs UE",
       "neighborhoods": [
         [
-          "Le Marais",
-          "Central · bars · food",
-          "Très vivant, compact et pratique si vous aimez marcher et sortir.",
-          "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=86"
+          "1er",
+          "Louvre · Tuileries · luxe",
+          "Le cœur monumental de Paris : le Louvre, le Palais-Royal et les jardins des Tuileries.",
+          "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=900&q=86"
         ],
         [
-          "Saint-Germain",
-          "Cafés · culture · romantique",
-          "Paris classique, galeries, cafés et belles promenades.",
-          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=86"
+          "2e",
+          "Bourse · Sentier · passages",
+          "Discret et central, connu pour ses passages couverts du XIXe siècle et son quartier de la mode.",
+          "https://images.unsplash.com/photo-1775137590064-c6d5d025e486?auto=format&fit=crop&w=900&q=86"
         ],
         [
-          "Pigalle",
-          "Nightlife · musique · jeune",
-          "Bars, salles de concert et soirées tardives.",
-          "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=86"
+          "3e",
+          "Haut Marais · design · galeries",
+          "Boutiques indépendantes, galeries d’art et la Place des Vosges toute proche.",
+          "https://images.unsplash.com/photo-1787397487256-9678dc356fa7?auto=format&fit=crop&w=900&q=86"
         ],
         [
-          "Montmartre",
-          "Vues · romantique · culture",
-          "Ambiance village, relief et vues remarquables.",
-          "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=900&q=86"
+          "4e",
+          "Marais · Notre-Dame · historique",
+          "Île de la Cité, Notre-Dame et le Marais animé : le Paris le plus ancien.",
+          "https://images.unsplash.com/photo-1574870310056-79c4b3c7d449?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "5e",
+          "Quartier Latin · étudiant · Panthéon",
+          "Sorbonne, Panthéon et librairies : l’âme étudiante et intellectuelle de Paris.",
+          "https://images.unsplash.com/photo-1565200380227-ede88b62b5a0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "6e",
+          "Saint-Germain · cafés · chic",
+          "Cafés littéraires, galeries et l’une des plus belles promenades de la rive gauche.",
+          "https://images.unsplash.com/photo-1652900245928-eb5ee5d2ec29?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "7e",
+          "Tour Eiffel · Invalides · résidentiel",
+          "La Tour Eiffel, les Invalides et Orsay, dans un cadre résidentiel chic.",
+          "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "8e",
+          "Champs-Élysées · affaires · luxe",
+          "Arc de Triomphe, avenue des Champs-Élysées et sièges d’entreprises.",
+          "https://images.unsplash.com/photo-1650531365199-b24fcecc1fd2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "9e",
+          "Opéra · grands magasins · nightlife",
+          "Palais Garnier, grands magasins et bars animés jusqu’à Pigalle.",
+          "https://images.unsplash.com/photo-1650772868326-585230bb132c?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "10e",
+          "Canal Saint-Martin · bobo · bars",
+          "Le canal, ses berges et une scène de bars et restaurants très prisée.",
+          "https://images.unsplash.com/photo-1609874456535-e5b953b17157?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "11e",
+          "Bastille · Oberkampf · nightlife",
+          "L’un des quartiers les plus animés le soir, jeune et dense en bars.",
+          "https://images.unsplash.com/photo-1775187751114-eb60d9e349df?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "12e",
+          "Bercy · Vincennes · familial",
+          "Bercy Village, le bois de Vincennes tout proche : vert et familial.",
+          "https://images.unsplash.com/photo-1474831626379-cfcad2ba6309?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "13e",
+          "Chinatown · street art · Butte-aux-Cailles",
+          "Gastronomie asiatique, fresques monumentales et petites rues villageoises.",
+          "https://images.unsplash.com/photo-1551126345-ffdd531d1643?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "14e",
+          "Montparnasse · résidentiel · calme",
+          "Tour Montparnasse, cinémas et un rythme résidentiel plus calme.",
+          "https://images.unsplash.com/photo-1724925271090-60da5d8176e9?auto=format&fit=crop&w=900&q=86"
         ],
         [
           "15e",
-          "Famille · calme · budget",
-          "Plus résidentiel et souvent plus simple côté budget.",
-          "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=86"
+          "Résidentiel · familial · budget",
+          "Le plus peuplé de Paris : calme, pratique et souvent plus abordable.",
+          "https://images.unsplash.com/photo-1624388621606-9f837720c14c?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "16e",
+          "Trocadéro · chic · vues Tour Eiffel",
+          "Passy et Trocadéro : résidentiel huppé avec la plus belle vue sur la Tour Eiffel.",
+          "https://images.unsplash.com/photo-1751852277850-933a75585210?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "17e",
+          "Batignolles · familial · montant",
+          "Quartier en pleine évolution autour du parc Martin Luther King.",
+          "https://images.unsplash.com/photo-1595591329639-ed0d8bc49446?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "18e",
+          "Montmartre · Sacré-Cœur · artistique",
+          "Ambiance village, ruelles pavées et vue panoramique depuis le Sacré-Cœur.",
+          "https://images.unsplash.com/photo-1787835218223-874a427c4f39?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "19e",
+          "Buttes-Chaumont · vert · familial",
+          "Le plus grand parc à l’anglaise de Paris, prisé pour les pique-niques.",
+          "https://images.unsplash.com/photo-1731666596207-218e26803e51?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "20e",
+          "Belleville · multiculturel · street art",
+          "Père Lachaise, fresques et l’un des quartiers les plus multiculturels de Paris.",
+          "https://images.unsplash.com/photo-1775743037609-226feca3bf2f?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
         [
           "CDG",
           "RER B",
-          "Vers Gare du Nord, Châtelet et correspondances."
+          "≈ 50 min vers Châtelet · billet 11,80 € (inclut le RER)."
         ],
         [
           "Orly",
-          "Métro 14",
-          "Très pratique vers plusieurs hubs centraux."
+          "Métro 14 (Orlyval)",
+          "≈ 30 min vers Châtelet · billet 13,10 €."
         ],
         [
           "Les deux",
-          "Taxi",
-          "Pratique porte-à-porte avec bagages."
+          "Taxi / VTC",
+          "Forfait CDG ≈ 55 € · Orly ≈ 35 €, porte-à-porte avec bagages."
         ]
       ],
       "articles": [
@@ -140,7 +230,8 @@
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
         "Paris avec 100 € par jour"
-      ]
+      ],
+      "transitTicket": "Ticket t+ : 2,15 € · Carnet de 10 : 17,35 € · Pass Navigo Jour : 8,65 €"
     },
     "Bangkok": {
       "country": "Thaïlande",
@@ -731,7 +822,8 @@
         "tier": "Budget",
         "price": 55,
         "score": 8.0,
-        "desc": "Prix minimum sans sacrifier l’emplacement."
+        "desc": "Prix minimum sans sacrifier l’emplacement.",
+        "image": "https://images.unsplash.com/photo-1644589104114-41ea93fc02e7?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "Saint-Germain Stay",
@@ -739,7 +831,8 @@
         "tier": "Budget",
         "price": 72,
         "score": 8.2,
-        "desc": "Prix minimum sans sacrifier l’emplacement."
+        "desc": "Prix minimum sans sacrifier l’emplacement.",
+        "image": "https://images.unsplash.com/photo-1592229505726-ca121723b8ef?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "Pigalle Hotel",
@@ -747,7 +840,8 @@
         "tier": "Budget",
         "price": 89,
         "score": 8.4,
-        "desc": "Prix minimum sans sacrifier l’emplacement."
+        "desc": "Prix minimum sans sacrifier l’emplacement.",
+        "image": "https://images.unsplash.com/photo-1544097935-e6d136448533?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "Montmartre Suites",
@@ -755,7 +849,8 @@
         "tier": "Confort",
         "price": 171,
         "score": 8.6,
-        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+        "desc": "Le meilleur équilibre entre confort, quartier et budget.",
+        "image": "https://images.unsplash.com/photo-1714615040970-d09686192d12?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "15e Rooms",
@@ -763,7 +858,8 @@
         "tier": "Confort",
         "price": 188,
         "score": 8.8,
-        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+        "desc": "Le meilleur équilibre entre confort, quartier et budget.",
+        "image": "https://images.unsplash.com/photo-1526816222984-8362d302d9c3?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "Le Marais House",
@@ -771,7 +867,8 @@
         "tier": "Confort",
         "price": 205,
         "score": 9.0,
-        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+        "desc": "Le meilleur équilibre entre confort, quartier et budget.",
+        "image": "https://images.unsplash.com/photo-1546940084-6333670a0666?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "Saint-Germain Stay",
@@ -779,7 +876,8 @@
         "tier": "Premium",
         "price": 272,
         "score": 8.0,
-        "desc": "Confort prioritaire, service et chambre plus soignés."
+        "desc": "Confort prioritaire, service et chambre plus soignés.",
+        "image": "https://images.unsplash.com/photo-1782233543052-e147fc9f4903?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "Pigalle Hotel",
@@ -787,7 +885,8 @@
         "tier": "Premium",
         "price": 289,
         "score": 8.2,
-        "desc": "Confort prioritaire, service et chambre plus soignés."
+        "desc": "Confort prioritaire, service et chambre plus soignés.",
+        "image": "https://images.unsplash.com/photo-1588932636397-884f0184d820?auto=format&fit=crop&w=900&q=88"
       },
       {
         "name": "Montmartre Suites",
@@ -795,7 +894,8 @@
         "tier": "Premium",
         "price": 306,
         "score": 8.4,
-        "desc": "Confort prioritaire, service et chambre plus soignés."
+        "desc": "Confort prioritaire, service et chambre plus soignés.",
+        "image": "https://images.unsplash.com/photo-1644589104114-41ea93fc02e7?auto=format&fit=crop&w=900&q=88"
       }
     ],
     "Bangkok": [

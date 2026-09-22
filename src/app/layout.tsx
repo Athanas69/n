@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Manrope } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import Toast from "@/components/Toast";
 import "./globals.css";
 
@@ -9,8 +9,8 @@ const dmSans = DM_Sans({
   weight: ["400", "500", "600"],
 });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-display",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${dmSans.variable} ${manrope.variable}`}>
+    <html lang="fr" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
       <body>
         {children}
         <Toast />

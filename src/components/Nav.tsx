@@ -3,11 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { citySlug, DEFAULT_CITY } from "@/lib/data";
-
-const brandLabel: Record<"MONDO" | "ATLAS", string> = {
-  MONDO: "M",
-  ATLAS: "A",
-};
+import Mark from "./Mark";
 
 const mondoLinks = [
   { href: "/mondo", label: "Accueil" },
@@ -42,7 +38,9 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
     <header className="nav">
       <div className="shell navin">
         <Link href={mode === "MONDO" ? "/mondo" : "/atlas"} className="brand">
-          <span className="brandmark">{brandLabel[mode]}</span>
+          <span className="brandmark">
+            <Mark />
+          </span>
           {mode}
         </Link>
         <nav className="navlinks">

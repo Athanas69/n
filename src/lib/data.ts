@@ -11,6 +11,7 @@ export type City = {
   best: string;
   airport: string;
   transport: string;
+  transitTicket?: string;
   esim: string;
   neighborhoods: Neighborhood[];
   airportRoutes: AirportRoute[];
@@ -24,6 +25,7 @@ export type Hotel = {
   neighborhood: string;
   score: number;
   price: number;
+  image?: string;
 };
 
 export type Trip = {

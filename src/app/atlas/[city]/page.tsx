@@ -1,12 +1,16 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import NotifyButton from "@/components/NotifyButton";
 import ScrollButton from "@/components/ScrollButton";
 import OpenAlfredButton from "@/components/OpenAlfredButton";
 import HotelGrid from "@/components/HotelGrid";
+import DistrictMap from "@/components/DistrictMap";
+import { hoodAnchor } from "@/lib/hoodAnchor";
 import CityNav from "@/components/CityNav";
 import RememberCity from "@/components/RememberCity";
 import { SimpleMap, MetroMap } from "@/components/CityMap";
 import { CITY_NAMES, citySlug, cityNameFromSlug, getCity } from "@/lib/data";
+import { getArticleSlugForTitle } from "@/lib/articles";
 
 export function generateStaticParams() {
   return CITY_NAMES.map((name) => ({ city: citySlug(name) }));
@@ -91,11 +95,12 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
             <div className="eyebrow">Quartiers</div>
             <h2>Choisissez l’ambiance avant l’adresse.</h2>
           </div>
-          <p>Atlas explique chaque zone avec des mots simples et une photo qui raconte l’atmosphère.</p>
+          <p>Cliquez une zone sur la carte pour ouvrir sa fiche juste en dessous.</p>
         </div>
-        <div className="hoodgrid">
+        <DistrictMap neighborhoods={c.neighborhoods} />
+        <div className="hoodgrid" style={{ marginTop: 14 }}>
           {c.neighborhoods.map((h) => (
-            <article className="hood" key={h[0]}>
+            <article className="hood" id={hoodAnchor(h[0])} key={h[0]}>
               <img src={h[3]} alt={h[0]} />
               <div className="hoodbody">
                 <h3>{h[0]}</h3>
@@ -140,6 +145,12 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
               <MetroMap city={c} />
             </div>
             <p>Schéma simplifié, conçu pour comprendre le réseau en quelques secondes.</p>
+            {c.transitTicket && (
+              <div className="route">
+                <h3>Prix des titres de transport</h3>
+                <p>{c.transitTicket}</p>
+              </div>
+            )}
           </article>
           <article className="transport">
             <h2>{c.airport} → ville</h2>
@@ -178,7 +189,9 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
           <p>Chaque article doit pouvoir déclencher une action : choisir un quartier, filtrer un vol, ajouter une journée ou réserver.</p>
         </div>
         <div className="articlegrid">
-          {c.articles.map((a, i) => (
+          {c.articles.map((a, i) => {
+            const slug = getArticleSlugForTitle(cityName, a);
+            return (
             <article className={`article ${i < 2 ? "actionarticle" : ""}`} key={a}>
               <div>
                 <div className="eyebrow">{cityName}</div>
@@ -191,11 +204,18 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                   {GUIDE_ACTIONS[i]} →
                 </div>
               )}
-              <NotifyButton className="btn" message="Article éditorial à produire dans le CMS Atlas.">
-                Lire le guide
-              </NotifyButton>
+              {slug ? (
+                <Link href={`/atlas/${citySlug(cityName)}/guides/${slug}`} className="btn">
+                  Lire le guide
+                </Link>
+              ) : (
+                <NotifyButton className="btn" message="Article éditorial à produire dans le CMS Atlas.">
+                  Lire le guide
+                </NotifyButton>
+              )}
             </article>
-          ))}
+            );
+          })}
         </div>
       </section>
 
