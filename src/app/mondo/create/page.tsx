@@ -24,6 +24,7 @@ export default function CreateTripPage() {
   const [travelers, setTravelers] = useState(2);
   const [budget, setBudget] = useState(1500);
   const [notes, setNotes] = useState("");
+  const [story, setStory] = useState("");
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -36,6 +37,7 @@ export default function CreateTripPage() {
       travelers,
       budgetPerPerson: budget,
       notes,
+      story,
       days: [],
       packing: [],
       createdAt: Date.now(),
@@ -101,12 +103,21 @@ export default function CreateTripPage() {
                 />
               </label>
               <label className="field full">
-                <small>L’idée</small>
+                <small>L’idée en une ligne</small>
                 <textarea
-                  rows={4}
+                  rows={2}
                   placeholder="Culture, food, quelques soirées, rythme tranquille…"
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
+                />
+              </label>
+              <label className="field full">
+                <small>Présentez le voyage</small>
+                <textarea
+                  rows={6}
+                  placeholder="Qui organise, pourquoi cette destination, à quoi ressemblera le séjour, qui est le bienvenu… Comme une vraie annonce, pas juste une case à remplir."
+                  value={story}
+                  onChange={(e) => setStory(e.target.value)}
                 />
               </label>
             </div>

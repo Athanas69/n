@@ -13,7 +13,13 @@ export default async function TripDetailPage({ params }: { params: Promise<{ slu
   if (!trip) notFound();
 
   const city = getCity(trip.city);
-  const steps = trip.route.split(" → ");
+  const routeLabel = trip.route.map((s) => s.city).join(" → ");
+  const initials = trip.organizer
+    .split(" ")
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
   return (
     <>
@@ -26,7 +32,7 @@ export default async function TripDetailPage({ params }: { params: Promise<{ slu
             </div>
             <h1>{trip.title}</h1>
             <p>
-              {trip.route} · {trip.dates}
+              {routeLabel} · {trip.dates}
             </p>
           </div>
         </div>
@@ -52,15 +58,33 @@ export default async function TripDetailPage({ params }: { params: Promise<{ slu
         </div>
       </section>
 
+      <section className="section shell" style={{ paddingTop: 30, paddingBottom: 0 }}>
+        <article className="membercard" style={{ padding: 22, maxWidth: 760 }}>
+          <div className="memberhead">
+            <span className="memberavatar" style={{ background: "var(--ink)" }}>
+              {initials}
+            </span>
+            <div>
+              <h3 style={{ fontSize: 17 }}>{trip.organizer}</h3>
+              <small className="muted">Organisateur · {trip.members.length} voyageurs déjà inscrits</small>
+            </div>
+          </div>
+          <p style={{ fontSize: 13, lineHeight: 1.7, marginTop: 4 }}>{trip.story}</p>
+        </article>
+      </section>
+
       <section className="section shell" style={{ paddingTop: 30 }}>
         <div className="cityintro">
           <article className="storybox">
             <div className="eyebrow">Itinéraire</div>
             <h2>Le trajet du groupe.</h2>
             <div className="timeline" style={{ marginTop: 16 }}>
-              {steps.map((s) => (
-                <div className="timeitem" key={s}>
-                  <b>{s}</b>
+              {trip.route.map((s) => (
+                <div className="timeitem" key={s.city}>
+                  <b>
+                    {s.city} · {s.nights} nuit{s.nights > 1 ? "s" : ""}
+                  </b>
+                  <p className="muted">{s.highlight}</p>
                 </div>
               ))}
             </div>

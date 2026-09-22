@@ -17,7 +17,7 @@ export default function TripGrid() {
                 <h3>{t.title}</h3>
               </Link>
               <p className="muted">
-                {t.route} · {t.dates}
+                {t.route.map((s) => s.city).join(" → ")} · {t.dates}
               </p>
               <div className="tripmeta">
                 <div className="faces">

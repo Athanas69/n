@@ -85,6 +85,7 @@ export type UserTrip = {
   travelers: number;
   budgetPerPerson: number;
   notes: string;
+  story: string;
   days: ItineraryDay[];
   packing: PackingItem[];
   createdAt: number;

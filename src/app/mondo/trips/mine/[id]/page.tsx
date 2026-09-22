@@ -3,7 +3,7 @@
 import { use, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useTrips, saveTrip, deleteTrip, newPackingId, type ItineraryDay, type PackingItem } from "@/lib/store";
+import { useTrips, saveTrip, deleteTrip, newPackingId, useProfile, type ItineraryDay, type PackingItem } from "@/lib/store";
 import { getCity, citySlug } from "@/lib/data";
 import { CITY_COORDS } from "@/lib/coords";
 import LiveWeather from "@/components/LiveWeather";
@@ -18,6 +18,13 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
   const trips = useTrips();
   const trip = trips.find((t) => t.id === id);
   const router = useRouter();
+  const profile = useProfile();
+  const initials = profile.name
+    .split(" ")
+    .map((w) => w[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
   const [dayTitle, setDayTitle] = useState("");
   const [dayNotes, setDayNotes] = useState("");
@@ -123,6 +130,23 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
             <LiveWeather lat={coords.lat} lon={coords.lon} />
           </div>
         )}
+      </section>
+
+      <section className="section shell" style={{ paddingTop: 10, paddingBottom: 0 }}>
+        <article className="membercard" style={{ padding: 22, maxWidth: 760 }}>
+          <div className="memberhead">
+            <span className="memberavatar" style={{ background: "var(--ink)" }}>
+              {initials}
+            </span>
+            <div>
+              <h3 style={{ fontSize: 17 }}>{profile.name}</h3>
+              <small className="muted">Organisateur · {trip.travelers} voyageur{trip.travelers > 1 ? "s" : ""}</small>
+            </div>
+          </div>
+          <p style={{ fontSize: 13, lineHeight: 1.7, whiteSpace: "pre-wrap", marginTop: 4 }}>
+            {trip.story || "Aucune présentation pour l’instant — décrivez ce voyage pour que d’autres voyageurs comprennent l’ambiance avant de demander à rejoindre."}
+          </p>
+        </article>
       </section>
 
       <section className="section shell" style={{ paddingTop: 10 }}>

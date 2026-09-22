@@ -2,8 +2,15 @@ type MarkProps = { size?: number; className?: string };
 
 export function AtlasMark({ size = 22, className }: MarkProps) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
-      <path d="M12 0C12 6.075 6.075 12 0 12C6.075 12 12 17.925 12 24C12 17.925 17.925 12 24 12C17.925 12 12 6.075 12 0Z" />
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <circle cx="12" cy="12" r="9.8" stroke="currentColor" strokeWidth="1.6" />
+      <path
+        d="M15.6 8.4l-2.3 5-5 2.3 2.3-5 5-2.3Z"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
