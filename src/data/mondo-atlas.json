@@ -1,0 +1,1422 @@
+{
+  "cities": {
+    "Tokyo": {
+      "country": "Japon",
+      "hero": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Tokyo n’est pas une seule ville : Shibuya, Asakusa, Ginza ou Ueno offrent des séjours presque différents.",
+      "currency": "JPY",
+      "best": "mars–mai · oct.–nov.",
+      "airport": "Haneda / Narita",
+      "transport": "Tokyo Metro · Toei · JR",
+      "esim": "Très utile dès l’arrivée",
+      "neighborhoods": [
+        [
+          "Shibuya",
+          "Nightlife · food · shopping",
+          "Idéal si vous voulez sortir le soir, marcher beaucoup et rester au cœur du Tokyo contemporain.",
+          "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Shinjuku",
+          "Transport · nightlife · premier voyage",
+          "Le grand compromis : trains, restaurants, bars et accès extrêmement pratique.",
+          "https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Asakusa",
+          "Tradition · calme · culture",
+          "Une base plus traditionnelle, plus calme, idéale pour temples et rythme tranquille.",
+          "https://images.unsplash.com/photo-1542931287-023b922fa89b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Ginza",
+          "Premium · gastronomie · calme",
+          "Luxe, grands magasins et gastronomie, avec une ambiance plus posée le soir.",
+          "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Ueno",
+          "Budget · culture · transport",
+          "Musées, parc, marché et tarifs souvent plus accessibles.",
+          "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Akihabara",
+          "Anime · gaming · shopping",
+          "Pour l’électronique, le manga et la culture gaming.",
+          "https://images.unsplash.com/photo-1554797589-7241bb691973?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "Haneda",
+          "Keikyu / Monorail",
+          "Le plus simple pour Shinagawa, Hamamatsucho et connexions centrales."
+        ],
+        [
+          "Narita",
+          "Narita Express",
+          "Pratique vers Tokyo et Shinjuku."
+        ],
+        [
+          "Narita",
+          "Skyliner",
+          "Très pertinent vers Ueno / Nippori."
+        ]
+      ],
+      "articles": [
+        "Quel quartier choisir pour un premier voyage ?",
+        "Haneda ou Narita ?",
+        "Tokyo en 5 jours",
+        "Le métro sans stress",
+        "Manger après 22 h",
+        "Tokyo sous la pluie",
+        "Combien coûte une journée ?",
+        "Les erreurs qui font perdre du temps"
+      ]
+    },
+    "Paris": {
+      "country": "France",
+      "hero": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1800&q=90",
+      "intro": "À Paris, le quartier change le rythme du séjour : sortir, marcher, musées, cafés ou calme résidentiel.",
+      "currency": "EUR",
+      "best": "avr.–juin · sept.–oct.",
+      "airport": "CDG / Orly",
+      "transport": "Métro · RER · Tram",
+      "esim": "Optionnelle pour voyageurs UE",
+      "neighborhoods": [
+        [
+          "Le Marais",
+          "Central · bars · food",
+          "Très vivant, compact et pratique si vous aimez marcher et sortir.",
+          "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Saint-Germain",
+          "Cafés · culture · romantique",
+          "Paris classique, galeries, cafés et belles promenades.",
+          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Pigalle",
+          "Nightlife · musique · jeune",
+          "Bars, salles de concert et soirées tardives.",
+          "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Montmartre",
+          "Vues · romantique · culture",
+          "Ambiance village, relief et vues remarquables.",
+          "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "15e",
+          "Famille · calme · budget",
+          "Plus résidentiel et souvent plus simple côté budget.",
+          "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "CDG",
+          "RER B",
+          "Vers Gare du Nord, Châtelet et correspondances."
+        ],
+        [
+          "Orly",
+          "Métro 14",
+          "Très pratique vers plusieurs hubs centraux."
+        ],
+        [
+          "Les deux",
+          "Taxi",
+          "Pratique porte-à-porte avec bagages."
+        ]
+      ],
+      "articles": [
+        "Quel arrondissement choisir ?",
+        "CDG ou Orly : comment rejoindre votre hôtel",
+        "Paris en 3 jours",
+        "Les quartiers pour sortir",
+        "Où prendre un bon petit-déjeuner",
+        "Paris avec 100 € par jour"
+      ]
+    },
+    "Bangkok": {
+      "country": "Thaïlande",
+      "hero": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Bangkok se vit très différemment selon que vous soyez près du BTS, dans la vieille ville ou au bord du fleuve.",
+      "currency": "THB",
+      "best": "nov.–févr.",
+      "airport": "BKK / DMK",
+      "transport": "BTS · MRT · Airport Rail Link",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Sukhumvit",
+          "Nightlife · transport · food",
+          "Très pratique pour un premier séjour grâce au BTS et à l’offre nocturne.",
+          "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Silom",
+          "Nightlife · central · food",
+          "Central, animé et bien connecté.",
+          "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Riverside",
+          "Premium · romantique · culture",
+          "Très belle ambiance de fleuve, hôtels premium et temples.",
+          "https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Old Town",
+          "Culture · budget · temples",
+          "Le Bangkok historique et religieux.",
+          "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Ari",
+          "Local · cafés · calme",
+          "Une ambiance plus locale et tranquille.",
+          "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "BKK",
+          "Airport Rail Link",
+          "Rapide vers Phaya Thai puis BTS."
+        ],
+        [
+          "DMK",
+          "Red Line",
+          "Connexion vers Bang Sue puis MRT."
+        ],
+        [
+          "Les deux",
+          "Taxi / VTC",
+          "Simple avec bagages ou arrivée tardive."
+        ]
+      ],
+      "articles": [
+        "Sukhumvit ou Silom ?",
+        "BTS/MRT : comment choisir son quartier",
+        "48 h à Bangkok",
+        "Street food sans perdre une journée",
+        "Quel budget quotidien ?",
+        "Depuis BKK ou DMK"
+      ]
+    },
+    "Rome": {
+      "country": "Italie",
+      "hero": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Rome est très marchable, mais le quartier décide si vous vivez monuments, trattorias ou soirées.",
+      "currency": "EUR",
+      "best": "avr.–juin · sept.–oct.",
+      "airport": "Fiumicino / Ciampino",
+      "transport": "Metro · Tram · Bus",
+      "esim": "Optionnelle pour voyageurs UE",
+      "neighborhoods": [
+        [
+          "Centro Storico",
+          "Monuments · premier voyage",
+          "Tout à pied et carte postale, mais plus touristique.",
+          "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Trastevere",
+          "Food · nightlife · jeune",
+          "Ruelles, restaurants et soirées.",
+          "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Monti",
+          "Boutiques · culture · food",
+          "Charmant et très pratique près du Colisée.",
+          "https://images.unsplash.com/photo-1526481280695-3c687fd643ed?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Prati",
+          "Calme · Vatican · famille",
+          "Plus résidentiel et confortable pour un séjour posé.",
+          "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "FCO",
+          "Leonardo Express",
+          "Direct vers Termini."
+        ],
+        [
+          "FCO",
+          "Train régional",
+          "Utile selon votre quartier."
+        ],
+        [
+          "CIA",
+          "Bus / taxi",
+          "Le plus simple selon heure d’arrivée."
+        ]
+      ],
+      "articles": [
+        "Centro Storico ou Trastevere ?",
+        "Rome en 3 jours",
+        "Fiumicino → centre",
+        "Où manger sans tomber dans les pièges",
+        "Rome à pied",
+        "Budget réel"
+      ]
+    },
+    "Istanbul": {
+      "country": "Turquie",
+      "hero": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Istanbul est deux continents, plusieurs centres et des ferries qui font partie du quotidien.",
+      "currency": "TRY",
+      "best": "avr.–mai · sept.–oct.",
+      "airport": "IST / SAW",
+      "transport": "Metro · Tram · Ferry",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Sultanahmet",
+          "Histoire · premier voyage",
+          "Parfait pour les monuments, plus calme le soir.",
+          "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Karaköy",
+          "Food · design · nightlife",
+          "Cafés, bars, Galata et ferries.",
+          "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Beyoğlu",
+          "Nightlife · shopping · musique",
+          "Très vivant autour d’Istiklal.",
+          "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kadıköy",
+          "Local · food · nightlife",
+          "Côté asiatique, marchés et scène locale.",
+          "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "IST",
+          "Métro",
+          "Connexion au réseau urbain."
+        ],
+        [
+          "SAW",
+          "Métro",
+          "Très pertinent pour Kadıköy."
+        ],
+        [
+          "Les deux",
+          "Bus aéroport / taxi",
+          "Simple selon quartier."
+        ]
+      ],
+      "articles": [
+        "Europe ou Asie : où dormir ?",
+        "Comprendre les ferries",
+        "IST ou SAW",
+        "48 h à Istanbul",
+        "Où manger à Kadıköy",
+        "Budget quotidien"
+      ]
+    },
+    "New York": {
+      "country": "États-Unis",
+      "hero": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1800&q=90",
+      "intro": "New York est une ville où la ligne de métro de votre hôtel peut compter autant que l’arrondissement.",
+      "currency": "USD",
+      "best": "avr.–juin · sept.–nov.",
+      "airport": "JFK / LGA / EWR",
+      "transport": "Subway · AirTrain · Rail",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Lower East Side",
+          "Nightlife · food · jeune",
+          "Bars, restaurants et énergie nocturne.",
+          "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Greenwich Village",
+          "Food · musique · walkable",
+          "Jazz, restaurants et rues agréables.",
+          "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Midtown",
+          "Premier voyage · central",
+          "Pratique mais moins intime.",
+          "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Williamsburg",
+          "Créatif · nightlife · jeune",
+          "Brooklyn, bars, food et ambiance locale.",
+          "https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Upper West Side",
+          "Famille · calme · parc",
+          "Très agréable si vous voulez un rythme plus posé.",
+          "https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "JFK",
+          "AirTrain + LIRR",
+          "Rapide vers Manhattan."
+        ],
+        [
+          "JFK",
+          "AirTrain + Subway",
+          "Option économique."
+        ],
+        [
+          "EWR",
+          "AirTrain + NJ Transit",
+          "Vers Penn Station."
+        ]
+      ],
+      "articles": [
+        "Quel quartier pour une première fois ?",
+        "JFK, EWR ou LGA ?",
+        "New York en 5 jours",
+        "Le métro expliqué simplement",
+        "Budget quotidien",
+        "Que faire le soir"
+      ]
+    },
+    "Marrakech": {
+      "country": "Maroc",
+      "hero": "https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Médina, Guéliz, Hivernage ou Palmeraie : Marrakech peut être immersion, city-break ou resort.",
+      "currency": "MAD",
+      "best": "mars–mai · sept.–nov.",
+      "airport": "RAK",
+      "transport": "Bus · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Médina",
+          "Culture · immersion · food",
+          "Riads, souks et vraie immersion.",
+          "https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Guéliz",
+          "Moderne · food · jeune",
+          "Restaurants, cafés et shopping.",
+          "https://images.unsplash.com/photo-1597212720158-c52d4cbb3b9a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Hivernage",
+          "Premium · nightlife",
+          "Hôtels, clubs et confort.",
+          "https://images.unsplash.com/photo-1597212720158-c52d4cbb3b9a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Palmeraie",
+          "Resort · calme",
+          "Resorts et grands espaces, moins pratique à pied.",
+          "https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "RAK",
+          "Taxi",
+          "Le plus simple vers Médina, Guéliz ou Hivernage."
+        ],
+        [
+          "RAK",
+          "Bus",
+          "Option économique."
+        ],
+        [
+          "RAK",
+          "Transfert privé",
+          "Utile pour arrivée tardive ou riad difficile d’accès."
+        ]
+      ],
+      "articles": [
+        "Médina ou Guéliz ?",
+        "Comment choisir son riad",
+        "Depuis l’aéroport",
+        "Marrakech en 3 jours",
+        "Combien prévoir par jour",
+        "Les erreurs à éviter"
+      ]
+    },
+    "Dubai": {
+      "country": "Émirats arabes unis",
+      "hero": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Dubaï est très étendue : le quartier et l’accès métro/taxi doivent être choisis selon votre programme.",
+      "currency": "AED",
+      "best": "nov.–mars",
+      "airport": "DXB",
+      "transport": "Metro · Tram · Taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Downtown",
+          "Premier voyage · shopping · premium",
+          "Burj Khalifa, Dubai Mall et centralité.",
+          "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Dubai Marina",
+          "Nightlife · plage · jeune",
+          "Promenade, bars, plage et ambiance internationale.",
+          "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "JBR",
+          "Plage · famille · facile",
+          "Séjour balnéaire très accessible.",
+          "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bur Dubai",
+          "Budget · culture · transport",
+          "Plus local et meilleur rapport prix.",
+          "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "DXB",
+          "Red Line",
+          "Très bonne option si l’hôtel est proche du métro."
+        ],
+        [
+          "DXB",
+          "Taxi",
+          "Simple et souvent pertinent à plusieurs."
+        ],
+        [
+          "DXB",
+          "Transfert hôtel",
+          "À comparer selon arrivée."
+        ]
+      ],
+      "articles": [
+        "Marina ou Downtown ?",
+        "Se déplacer sans exploser le budget taxi",
+        "Dubaï en 4 jours",
+        "Depuis DXB",
+        "Où dormir pas cher",
+        "Petit-déjeuner : hôtel ou dehors ?"
+      ]
+    },
+    "Cape Town": {
+      "country": "Afrique du Sud",
+      "hero": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1800&q=90",
+      "intro": "À Cape Town, l’océan, la montagne et les distances rendent le quartier particulièrement important.",
+      "currency": "ZAR",
+      "best": "nov.–mars",
+      "airport": "CPT",
+      "transport": "MyCiTi · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "City Bowl",
+          "Central · food · nightlife",
+          "Très bonne base pour un premier séjour.",
+          "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Camps Bay",
+          "Plage · premium · sunsets",
+          "Magnifique mais plus cher.",
+          "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Sea Point",
+          "Walkable · food · mer",
+          "Excellent équilibre entre promenade et ville.",
+          "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Woodstock",
+          "Créatif · budget · food",
+          "Plus local et créatif.",
+          "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "CPT",
+          "Taxi / VTC",
+          "Le plus simple."
+        ],
+        [
+          "CPT",
+          "Transfert hôtel",
+          "Pertinent pour première arrivée."
+        ],
+        [
+          "Ville",
+          "MyCiTi",
+          "Utile ensuite selon quartier."
+        ]
+      ],
+      "articles": [
+        "Sea Point ou Camps Bay ?",
+        "Depuis l’aéroport",
+        "Cape Town sans voiture ?",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ]
+    },
+    "Seoul": {
+      "country": "Corée du Sud",
+      "hero": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Séoul combine énormes distances, excellent métro et quartiers très typés.",
+      "currency": "KRW",
+      "best": "avr.–mai · sept.–oct.",
+      "airport": "ICN",
+      "transport": "Subway · AREX · Bus",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Hongdae",
+          "Jeune · nightlife · musique",
+          "Étudiants, clubs, cafés et concerts.",
+          "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Myeongdong",
+          "Shopping · premier voyage",
+          "Très pratique et central.",
+          "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Itaewon",
+          "International · nightlife · food",
+          "Bars et cuisines internationales.",
+          "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Insadong",
+          "Tradition · culture · calme",
+          "Maisons de thé et ambiance plus traditionnelle.",
+          "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gangnam",
+          "Premium · shopping · nightlife",
+          "Moderne et haut de gamme.",
+          "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "ICN",
+          "AREX Express",
+          "Direct vers Seoul Station."
+        ],
+        [
+          "ICN",
+          "AREX All-stop",
+          "Plus de correspondances utiles."
+        ],
+        [
+          "ICN",
+          "Airport Limousine Bus",
+          "Pratique pour certains hôtels."
+        ]
+      ],
+      "articles": [
+        "Hongdae ou Myeongdong ?",
+        "AREX : comment rejoindre Séoul",
+        "Le métro sans stress",
+        "Séoul en 5 jours",
+        "Food guide",
+        "Budget quotidien"
+      ]
+    }
+  },
+  "hotels": {
+    "Tokyo": [
+      {
+        "name": "Shibuya House",
+        "neighborhood": "Shibuya",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Shinjuku Stay",
+        "neighborhood": "Shinjuku",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Asakusa Hotel",
+        "neighborhood": "Asakusa",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Ginza Suites",
+        "neighborhood": "Ginza",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Ueno Rooms",
+        "neighborhood": "Ueno",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Akihabara House",
+        "neighborhood": "Akihabara",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Shibuya Stay",
+        "neighborhood": "Shibuya",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Shinjuku Hotel",
+        "neighborhood": "Shinjuku",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Asakusa Suites",
+        "neighborhood": "Asakusa",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Paris": [
+      {
+        "name": "Le Marais House",
+        "neighborhood": "Le Marais",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Saint-Germain Stay",
+        "neighborhood": "Saint-Germain",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Pigalle Hotel",
+        "neighborhood": "Pigalle",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Montmartre Suites",
+        "neighborhood": "Montmartre",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "15e Rooms",
+        "neighborhood": "15e",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Le Marais House",
+        "neighborhood": "Le Marais",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Saint-Germain Stay",
+        "neighborhood": "Saint-Germain",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Pigalle Hotel",
+        "neighborhood": "Pigalle",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Montmartre Suites",
+        "neighborhood": "Montmartre",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Bangkok": [
+      {
+        "name": "Sukhumvit House",
+        "neighborhood": "Sukhumvit",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Silom Stay",
+        "neighborhood": "Silom",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Riverside Hotel",
+        "neighborhood": "Riverside",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Old Town Suites",
+        "neighborhood": "Old Town",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Ari Rooms",
+        "neighborhood": "Ari",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Sukhumvit House",
+        "neighborhood": "Sukhumvit",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Silom Stay",
+        "neighborhood": "Silom",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Riverside Hotel",
+        "neighborhood": "Riverside",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Old Town Suites",
+        "neighborhood": "Old Town",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Rome": [
+      {
+        "name": "Centro Storico House",
+        "neighborhood": "Centro Storico",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Trastevere Stay",
+        "neighborhood": "Trastevere",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Monti Hotel",
+        "neighborhood": "Monti",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Prati Suites",
+        "neighborhood": "Prati",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Centro Storico Rooms",
+        "neighborhood": "Centro Storico",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Trastevere House",
+        "neighborhood": "Trastevere",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Monti Stay",
+        "neighborhood": "Monti",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Prati Hotel",
+        "neighborhood": "Prati",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Centro Storico Suites",
+        "neighborhood": "Centro Storico",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Istanbul": [
+      {
+        "name": "Sultanahmet House",
+        "neighborhood": "Sultanahmet",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Karaköy Stay",
+        "neighborhood": "Karaköy",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Beyoğlu Hotel",
+        "neighborhood": "Beyoğlu",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Kadıköy Suites",
+        "neighborhood": "Kadıköy",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Sultanahmet Rooms",
+        "neighborhood": "Sultanahmet",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Karaköy House",
+        "neighborhood": "Karaköy",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Beyoğlu Stay",
+        "neighborhood": "Beyoğlu",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Kadıköy Hotel",
+        "neighborhood": "Kadıköy",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Sultanahmet Suites",
+        "neighborhood": "Sultanahmet",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "New York": [
+      {
+        "name": "Lower East Side House",
+        "neighborhood": "Lower East Side",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Greenwich Village Stay",
+        "neighborhood": "Greenwich Village",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Midtown Hotel",
+        "neighborhood": "Midtown",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Williamsburg Suites",
+        "neighborhood": "Williamsburg",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Upper West Side Rooms",
+        "neighborhood": "Upper West Side",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Lower East Side House",
+        "neighborhood": "Lower East Side",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Greenwich Village Stay",
+        "neighborhood": "Greenwich Village",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Midtown Hotel",
+        "neighborhood": "Midtown",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Williamsburg Suites",
+        "neighborhood": "Williamsburg",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Marrakech": [
+      {
+        "name": "Médina House",
+        "neighborhood": "Médina",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Guéliz Stay",
+        "neighborhood": "Guéliz",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Hivernage Hotel",
+        "neighborhood": "Hivernage",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Palmeraie Suites",
+        "neighborhood": "Palmeraie",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Médina Rooms",
+        "neighborhood": "Médina",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Guéliz House",
+        "neighborhood": "Guéliz",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Hivernage Stay",
+        "neighborhood": "Hivernage",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Palmeraie Hotel",
+        "neighborhood": "Palmeraie",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Médina Suites",
+        "neighborhood": "Médina",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Dubai": [
+      {
+        "name": "Downtown House",
+        "neighborhood": "Downtown",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Dubai Marina Stay",
+        "neighborhood": "Dubai Marina",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "JBR Hotel",
+        "neighborhood": "JBR",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Bur Dubai Suites",
+        "neighborhood": "Bur Dubai",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Downtown Rooms",
+        "neighborhood": "Downtown",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Dubai Marina House",
+        "neighborhood": "Dubai Marina",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "JBR Stay",
+        "neighborhood": "JBR",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Bur Dubai Hotel",
+        "neighborhood": "Bur Dubai",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Downtown Suites",
+        "neighborhood": "Downtown",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Cape Town": [
+      {
+        "name": "City Bowl House",
+        "neighborhood": "City Bowl",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Camps Bay Stay",
+        "neighborhood": "Camps Bay",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Sea Point Hotel",
+        "neighborhood": "Sea Point",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Woodstock Suites",
+        "neighborhood": "Woodstock",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "City Bowl Rooms",
+        "neighborhood": "City Bowl",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Camps Bay House",
+        "neighborhood": "Camps Bay",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Sea Point Stay",
+        "neighborhood": "Sea Point",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Woodstock Hotel",
+        "neighborhood": "Woodstock",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "City Bowl Suites",
+        "neighborhood": "City Bowl",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Seoul": [
+      {
+        "name": "Hongdae House",
+        "neighborhood": "Hongdae",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.0,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Myeongdong Stay",
+        "neighborhood": "Myeongdong",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Itaewon Hotel",
+        "neighborhood": "Itaewon",
+        "tier": "Budget",
+        "price": 89,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Insadong Suites",
+        "neighborhood": "Insadong",
+        "tier": "Confort",
+        "price": 171,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Gangnam Rooms",
+        "neighborhood": "Gangnam",
+        "tier": "Confort",
+        "price": 188,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Hongdae House",
+        "neighborhood": "Hongdae",
+        "tier": "Confort",
+        "price": 205,
+        "score": 9.0,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Myeongdong Stay",
+        "neighborhood": "Myeongdong",
+        "tier": "Premium",
+        "price": 272,
+        "score": 8.0,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Itaewon Hotel",
+        "neighborhood": "Itaewon",
+        "tier": "Premium",
+        "price": 289,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      },
+      {
+        "name": "Insadong Suites",
+        "neighborhood": "Insadong",
+        "tier": "Premium",
+        "price": 306,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ]
+  },
+  "trip": {
+    "title": "Japon · 14 jours",
+    "dates": "10–24 octobre",
+    "budget": "2 000 € / personne",
+    "members": [
+      "Nassim",
+      "Sarah",
+      "Amine",
+      "Clara"
+    ],
+    "route": [
+      "Tokyo · 5 nuits",
+      "Kyoto · 4 nuits",
+      "Osaka · 5 nuits"
+    ],
+    "decisions": [
+      {
+        "q": "Kyoto : 3 ou 4 nuits ?",
+        "result": "4 nuits",
+        "status": "Décidé"
+      },
+      {
+        "q": "Shibuya ou Shinjuku ?",
+        "result": "Vote en cours",
+        "status": "Ouvert"
+      }
+    ]
+  }
+}
