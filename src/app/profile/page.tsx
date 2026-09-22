@@ -20,7 +20,7 @@ const preferences: [string, number][] = [
 
 export default function ProfilePage() {
   return (
-    <main>
+    <main className="theme-mondo">
       <Nav mode="MONDO" />
       <section className="hero shell" style={{ paddingBottom: 20 }}>
         <div className="eyebrow">Profil voyageur</div>

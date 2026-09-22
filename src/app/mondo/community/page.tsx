@@ -1,4 +1,5 @@
 import TripGrid from "@/components/TripCard";
+import MemberGrid from "@/components/MemberGrid";
 
 export default function CommunityPage() {
   return (
@@ -10,6 +11,16 @@ export default function CommunityPage() {
       </section>
       <section className="section shell" style={{ paddingTop: 10 }}>
         <TripGrid />
+      </section>
+      <section className="section shell" style={{ paddingTop: 0 }}>
+        <div className="section-head">
+          <div>
+            <div className="eyebrow">Voyageurs</div>
+            <h2>Des profils vérifiés, pas des inconnus.</h2>
+          </div>
+          <p>Chaque membre construit sa réputation voyage après voyage : avis, voyages complétés, centres d’intérêt.</p>
+        </div>
+        <MemberGrid />
       </section>
     </>
   );

@@ -4,7 +4,7 @@ import AlfredPanel, { AlfredFab } from "@/components/AlfredPanel";
 
 export default function MondoLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main>
+    <main className="theme-mondo">
       <Nav mode="MONDO" />
       {children}
       <Footer />

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk } from "next/font/google";
+import { DM_Sans, Space_Grotesk, Fraunces } from "next/font/google";
 import Toast from "@/components/Toast";
 import "./globals.css";
 
@@ -15,6 +15,13 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
 });
 
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  axes: ["opsz", "SOFT"],
+});
+
 export const metadata: Metadata = {
   title: "Mondo × Atlas — North Star",
   description:
@@ -23,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
+    <html lang="fr" className={`${dmSans.variable} ${spaceGrotesk.variable} ${fraunces.variable}`}>
       <body>
         {children}
         <Toast />

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TripGrid from "@/components/TripCard";
+import MemberGrid from "@/components/MemberGrid";
 
 export default function MondoHome() {
   return (
@@ -74,6 +75,51 @@ export default function MondoHome() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="section shell reveal on">
+        <div className="section-head">
+          <div>
+            <div className="eyebrow">Confiance</div>
+            <h2>Voyager avec des inconnus, en confiance.</h2>
+          </div>
+          <p>Mondo construit la confiance avant le départ, pas après un problème.</p>
+        </div>
+        <div className="prepare">
+          <div>
+            <span>🪪</span>
+            <b>Profils vérifiés</b>
+            <small>identité confirmée avant de rejoindre un groupe</small>
+          </div>
+          <div>
+            <span>⭐</span>
+            <b>Avis après chaque voyage</b>
+            <small>la réputation se construit voyage après voyage</small>
+          </div>
+          <div>
+            <span>💬</span>
+            <b>Discussion avant décision</b>
+            <small>jamais d’acceptation à l’aveugle</small>
+          </div>
+          <div>
+            <span>🛟</span>
+            <b>Alfred en soutien</b>
+            <small>un contact humain en cas de problème sur place</small>
+          </div>
+        </div>
+      </section>
+
+      <section className="section shell reveal on">
+        <div className="section-head">
+          <div>
+            <div className="eyebrow">Voyageurs</div>
+            <h2>Rejoignez une communauté active.</h2>
+          </div>
+          <Link href="/mondo/community" className="btn">
+            Voir tous les profils
+          </Link>
+        </div>
+        <MemberGrid />
       </section>
     </>
   );

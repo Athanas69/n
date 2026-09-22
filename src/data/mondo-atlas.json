@@ -73,7 +73,8 @@
         "Tokyo sous la pluie",
         "Combien coûte une journée ?",
         "Les erreurs qui font perdre du temps"
-      ]
+      ],
+      "transitTicket": "Ticket unique : ¥180–330 selon distance · Tokyo Subway Ticket 24h : ¥800"
     },
     "Paris": {
       "country": "France",
@@ -298,7 +299,8 @@
         "Street food sans perdre une journée",
         "Quel budget quotidien ?",
         "Depuis BKK ou DMK"
-      ]
+      ],
+      "transitTicket": "Ticket unique : ฿16–59 selon la ligne · One Day Pass BTS : ฿150"
     },
     "Rome": {
       "country": "Italie",
@@ -359,7 +361,8 @@
         "Où manger sans tomber dans les pièges",
         "Rome à pied",
         "Budget réel"
-      ]
+      ],
+      "transitTicket": "Billet BIT (100 min, tous modes) : 1,50 € · Pass Roma 24h : 7 €"
     },
     "Istanbul": {
       "country": "Turquie",
@@ -420,7 +423,8 @@
         "48 h à Istanbul",
         "Où manger à Kadıköy",
         "Budget quotidien"
-      ]
+      ],
+      "transitTicket": "Istanbulkart (rechargeable) : ≈ 27 TRY/trajet · correspondances à tarif réduit sous 2h"
     },
     "New York": {
       "country": "États-Unis",
@@ -487,7 +491,8 @@
         "Le métro expliqué simplement",
         "Budget quotidien",
         "Que faire le soir"
-      ]
+      ],
+      "transitTicket": "Ticket unique (OMNY/MetroCard) : 2,90 $ · Pass illimité 7 jours : 34 $"
     },
     "Marrakech": {
       "country": "Maroc",
@@ -548,7 +553,8 @@
         "Marrakech en 3 jours",
         "Combien prévoir par jour",
         "Les erreurs à éviter"
-      ]
+      ],
+      "transitTicket": "Bus urbain : ≈ 4–6 MAD · Petit taxi (course courte) : ≈ 10–20 MAD"
     },
     "Dubai": {
       "country": "Émirats arabes unis",
@@ -609,7 +615,8 @@
         "Depuis DXB",
         "Où dormir pas cher",
         "Petit-déjeuner : hôtel ou dehors ?"
-      ]
+      ],
+      "transitTicket": "Carte Nol : AED 3–8,5 selon zones · Nol Red Ticket (journée) : AED 20"
     },
     "Cape Town": {
       "country": "Afrique du Sud",
@@ -670,7 +677,8 @@
         "3 jours parfaits",
         "Budget réel",
         "Les erreurs à éviter"
-      ]
+      ],
+      "transitTicket": "MyCiTi (carte myconnect) : ≈ ZAR 15–30 selon distance"
     },
     "Seoul": {
       "country": "Corée du Sud",
@@ -737,7 +745,8 @@
         "Séoul en 5 jours",
         "Food guide",
         "Budget quotidien"
-      ]
+      ],
+      "transitTicket": "T-money : ₩1 400–1 550 selon distance · Seoul Citypass+ (journée) : ≈ ₩15 000"
     }
   },
   "hotels": {

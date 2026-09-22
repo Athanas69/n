@@ -39,7 +39,7 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
       <div className="shell navin">
         <Link href={mode === "MONDO" ? "/mondo" : "/atlas"} className="brand">
           <span className="brandmark">
-            <Mark />
+            <Mark mode={mode} />
           </span>
           {mode}
         </Link>

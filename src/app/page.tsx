@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Mark from "@/components/Mark";
+import { AtlasMark, MondoMark } from "@/components/Mark";
 
 export default function EntryPage() {
   return (
@@ -12,6 +12,7 @@ export default function EntryPage() {
         <div className="entry-info">
           <div className="entry-eyebrow">Mondo</div>
           <h2>La communauté</h2>
+          <p className="entry-dek">Trouvez vos compagnons de voyage et organisez le départ ensemble.</p>
         </div>
       </Link>
       <Link href="/atlas" className="entry-side">
@@ -22,10 +23,17 @@ export default function EntryPage() {
         <div className="entry-info">
           <div className="entry-eyebrow">Atlas</div>
           <h2>L’exploration</h2>
+          <p className="entry-dek">Comprenez chaque ville et préparez-la comme un local.</p>
         </div>
       </Link>
       <div className="entry-mark">
-        <Mark size={26} />
+        <span className="entry-mark-ring" />
+        <span className="entry-mark-icon entry-mark-mondo">
+          <MondoMark size={16} />
+        </span>
+        <span className="entry-mark-icon entry-mark-atlas">
+          <AtlasMark size={18} />
+        </span>
       </div>
     </main>
   );

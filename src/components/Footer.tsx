@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Mark from "./Mark";
+import { MondoMark } from "./Mark";
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <div className="brand">
             <span className="brandmark">
-              <Mark />
+              <MondoMark />
             </span>
             MONDO
           </div>

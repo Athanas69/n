@@ -31,39 +31,63 @@ export function SimpleMap({ city }: { city: City }) {
   );
 }
 
-const METRO_COLORS = ["#e25a57", "#3b8edb", "#4ba36d", "#d19a3f"];
+const METRO_COLORS = ["#e25a57", "#3b8edb", "#4ba36d", "#d19a3f", "#9b6bd1"];
+
+const WOBBLE = [
+  [0, 0, 0, 0, 0, 0],
+  [0, -22, -22, 22, 22, 0],
+  [0, 18, -18, -18, 18, 0],
+];
+
+const XS = [40, 142, 244, 396, 498, 600];
+const HUBS = [244, 498];
 
 export function MetroMap({ city }: { city: City }) {
-  const lines = city.transport.split(" · ").slice(0, 4);
+  const lines = city.transport.split(" · ").slice(0, 5);
+  const h = 70 + lines.length * 46;
+  const rows = lines.map((l, i) => ({
+    name: l,
+    color: METRO_COLORS[i % METRO_COLORS.length],
+    y: 46 + i * 46,
+    wobble: WOBBLE[i % WOBBLE.length],
+  }));
+
   return (
-    <svg viewBox="0 0 620 300">
-      {lines.map((l, i) => {
-        const y = 60 + i * 65;
-        return (
-          <g key={l}>
-            <path
-              d={`M45 ${y} C160 ${y - 30} 270 ${y + 28} 390 ${y} S520 ${y - 25} 575 ${y}`}
-              fill="none"
-              stroke={METRO_COLORS[i]}
-              strokeWidth={8}
-              strokeLinecap="round"
-            />
-            {[80, 200, 320, 440, 555].map((x, k) => (
-              <circle key={x} cx={x} cy={y + (k % 2 ? 4 : -3)} r={7} fill="#fff" stroke={METRO_COLORS[i]} strokeWidth={4} />
-            ))}
-            <text x={45} y={y - 14} fontSize={11} fontFamily="var(--font-dm-sans)" fill="#4b5a52">
-              {l}
-            </text>
+    <>
+      <svg viewBox={`0 0 640 ${h}`}>
+        {rows.map((r) => {
+          const pts = XS.map((x, k) => `${x},${r.y + r.wobble[k]}`).join(" ");
+          return (
+            <g key={r.name}>
+              <polyline points={pts} fill="none" stroke={r.color} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
+              {XS.map((x, k) => (
+                <circle key={x} cx={x} cy={r.y + r.wobble[k]} r={4.5} fill="#fff" stroke={r.color} strokeWidth={3} />
+              ))}
+              <text x={XS[0]} y={r.y - 12} fontSize={10.5} fontWeight={600} fontFamily="var(--font-dm-sans)" fill="#27332d">
+                {r.name}
+              </text>
+            </g>
+          );
+        })}
+        {HUBS.map((hx) => (
+          <g key={hx}>
+            <circle cx={hx} cy={h / 2} r={11} fill="#fff" stroke="#27332d" strokeWidth={3} />
+            <circle cx={hx} cy={h / 2} r={4} fill="#27332d" />
           </g>
-        );
-      })}
-      <rect x={245} y={108} width={135} height={70} rx={15} fill="#fff" stroke="#dbe3de" />
-      <text x={267} y={139} fontSize={12} fontFamily="var(--font-dm-sans)" fontWeight={600} fill="#243129">
-        Hub central
-      </text>
-      <text x={267} y={157} fontSize={9} fontFamily="var(--font-dm-sans)" fill="#6d7a73">
-        correspondances
-      </text>
-    </svg>
+        ))}
+      </svg>
+      <div className="metrolegend">
+        {rows.map((r) => (
+          <span key={r.name}>
+            <i style={{ background: r.color }} />
+            {r.name}
+          </span>
+        ))}
+        <span className="metrolegend-hub">
+          <i className="metrolegend-hubdot" />
+          Correspondance
+        </span>
+      </div>
+    </>
   );
 }
