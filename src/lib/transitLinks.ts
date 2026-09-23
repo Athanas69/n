@@ -1,9 +1,9 @@
 export const TRANSIT_LINKS: Record<string, { label: string; url: string }> = {
-  Paris: { label: "Île-de-France Mobilités", url: "https://www.iledefrance-mobilites.fr" },
-  Tokyo: { label: "Tokyo Metro", url: "https://www.tokyometro.jp" },
+  Paris: { label: "Île-de-France Mobilités", url: "https://www.iledefrance-mobilites.fr/le-reseau/plans" },
+  Tokyo: { label: "Tokyo Metro", url: "https://www.tokyometro.jp/en/subwaymap/index.html" },
   Kyoto: { label: "Kyoto City Subway & Bus", url: "https://www.city.kyoto.lg.jp/kotsu/" },
-  London: { label: "Transport for London", url: "https://tfl.gov.uk" },
-  "New York": { label: "MTA", url: "https://new.mta.info" },
+  London: { label: "Transport for London", url: "https://tfl.gov.uk/maps/track/tube" },
+  "New York": { label: "MTA", url: "https://new.mta.info/maps" },
   Rome: { label: "ATAC", url: "https://www.atac.roma.it" },
   Barcelona: { label: "TMB", url: "https://www.tmb.cat" },
   Berlin: { label: "BVG", url: "https://www.bvg.de" },

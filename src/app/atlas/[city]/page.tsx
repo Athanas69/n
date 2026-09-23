@@ -95,7 +95,7 @@ export default async function CityPage({
             <div className="eyebrow">Avant de partir</div>
             <h2>Tout ce qu’il faut savoir, en un coup d’œil.</h2>
           </div>
-          <p>Devise, météo, visa, prise, urgences, langue — ce qu’on cherche d’habitude sur cinq sites différents.</p>
+          <p>Devise, météo, visa, prise, urgences — ce qu’on cherche d’habitude sur cinq sites différents.</p>
         </div>
         {coords && (
           <div style={{ marginBottom: 12 }}>
@@ -107,7 +107,6 @@ export default async function CityPage({
           extra={[
             ["Devise", c.currency],
             ["Meilleure période", c.best],
-            ["Aéroport", c.airport],
             ["Réseau", c.transport],
           ]}
         />

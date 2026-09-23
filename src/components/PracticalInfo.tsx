@@ -13,9 +13,6 @@ export default function PracticalInfo({
     ["Visa", info.visa],
     ["Prise électrique", info.plug],
     ["Urgences", info.emergency],
-    ["Pourboire", info.tipping],
-    ["Langue", info.language],
-    ["Fuseau horaire", info.timezone],
   ];
   return (
     <div className="practicalgrid">
