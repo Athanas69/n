@@ -12,10 +12,6 @@ function wikipediaUrl(city: string) {
   return `https://en.wikipedia.org/wiki/${encodeURIComponent(page)}`;
 }
 
-function googleMapsUrl(city: string, country: string) {
-  return `https://www.google.com/maps/place/${encodeURIComponent(`${city}, ${country}`)}`;
-}
-
 // Curated, hand-verified links to real, actively-maintained outside sources —
 // for food/culture coverage that changes faster than this site can keep up
 // with editorially. Every entry below was opened and checked live before
@@ -51,7 +47,7 @@ const EXTRA: Record<string, CityResource[]> = {
   ],
 };
 
-export function getCityResources(city: string, country?: string): CityResource[] {
+export function getCityResources(city: string): CityResource[] {
   const base: CityResource[] = [
     {
       label: "Wikivoyage",
@@ -64,14 +60,7 @@ export function getCityResources(city: string, country?: string): CityResource[]
       url: wikipediaUrl(city),
     },
   ];
-  if (country) {
-    base.push({
-      label: "Google Maps",
-      description: "Repérer la ville, les quartiers et les avis sur place.",
-      url: googleMapsUrl(city, country),
-    });
-  }
-  return [...base, ...(EXTRA[city] ?? [])];
+  return [...base, ...(EXTRA[city] ?? [])].slice(0, 3);
 }
 
 export const CITY_RESOURCES: Record<string, CityResource[]> = Object.fromEntries(

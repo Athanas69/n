@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import NotifyButton from "@/components/NotifyButton";
-import ScrollButton from "@/components/ScrollButton";
 import OpenAlfredButton from "@/components/OpenAlfredButton";
 import HotelGrid from "@/components/HotelGrid";
 import NeighborhoodRealMap from "@/components/NeighborhoodRealMap";
@@ -57,7 +56,7 @@ export default async function CityPage({
   const c = getCity(cityName);
   const coords = CITY_COORDS[cityName];
   const transitLink = TRANSIT_LINKS[cityName];
-  const resources = getCityResources(cityName, c.country);
+  const resources = getCityResources(cityName);
   const sp = await searchParams;
   const hasTripPrep = Boolean(sp.checkin && sp.checkout && sp.travelers);
 
@@ -99,11 +98,13 @@ export default async function CityPage({
           </div>
           <p>Devise, météo, visa, prise, urgences — ce qu’on cherche d’habitude sur cinq sites différents.</p>
         </div>
-        {coords && (
-          <div style={{ marginBottom: 12 }}>
-            <LiveWeather lat={coords.lat} lon={coords.lon} targetDate={sp.checkin} />
+        <div className="practicalrow">
+          {coords && <LiveWeather lat={coords.lat} lon={coords.lon} targetDate={sp.checkin} />}
+          <div className="fxconverter-card">
+            <small>Convertisseur</small>
+            <CurrencyConverter currency={c.currency} />
           </div>
-        )}
+        </div>
         <PracticalInfo
           country={c.country}
           extra={[
@@ -112,34 +113,6 @@ export default async function CityPage({
             ["Réseau", c.transport],
           ]}
         />
-      </section>
-
-      <section className="section shell panel-tint tint-blue" id="understand">
-        <div className="cityintro">
-          <article className="storybox">
-            <div className="eyebrow">Avant de réserver</div>
-            <h2>Quel {cityName} voulez-vous vivre ?</h2>
-            <p>{c.intro}</p>
-            <div className="actions">
-              <ScrollButton target="hoods" className="btn primary">
-                Comparer les quartiers
-              </ScrollButton>
-            </div>
-          </article>
-          <aside className="snapshot">
-            <h3>Convertisseur</h3>
-            <CurrencyConverter currency={c.currency} />
-            <div className="joinrequest" style={{ marginTop: 14 }}>
-              <b>{c.neighborhoods.length} quartiers cartographiés</b>
-              <p className="muted" style={{ margin: "4px 0 10px", fontSize: 12 }}>
-                Repérez-les sur la carte pour choisir où poser vos valises.
-              </p>
-              <ScrollButton target="hoods" className="btn">
-                Voir la carte interactive ↓
-              </ScrollButton>
-            </div>
-          </aside>
-        </div>
       </section>
 
       <section className="section shell" id="hoods">
@@ -277,10 +250,10 @@ export default async function CityPage({
         <section className="section shell" id="resources">
           <div className="section-head">
             <div>
-              <div className="eyebrow">Pour aller plus loin</div>
-              <h2>Ce qu’un site figé ne peut pas suivre.</h2>
+              <div className="eyebrow">Sources externes</div>
+              <h2>Pour aller plus loin.</h2>
             </div>
-            <p>Les nouvelles adresses et les tendances du moment évoluent plus vite qu’un guide éditorial — ces sources restent à jour en continu, pendant que la nôtre gère l’organisation.</p>
+            <p>Les nouvelles adresses et les tendances du moment, mises à jour en continu par d’autres — pendant qu’Atlas gère l’organisation.</p>
           </div>
           <div className="cityresources-list">
             {resources.map((r) => (
