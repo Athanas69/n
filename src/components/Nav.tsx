@@ -20,6 +20,7 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
   const pathname = usePathname();
   const favorites = useFavorites();
   const profile = useProfile();
+  const [menuOpen, setMenuOpen] = useState(false);
   const initials = profile.name
     .split(" ")
     .map((w) => w[0])
@@ -35,6 +36,10 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (stored) setLastCity(stored);
   }, []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   const atlasLinks = [
     { href: "/atlas", label: "Accueil" },
@@ -60,7 +65,15 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
           </span>
           {mode}
         </Link>
-        <nav className="navlinks">
+        <nav className={menuOpen ? "navlinks open" : "navlinks"}>
+          <div className="navlinks-switch">
+            <Link href="/mondo" className={mode === "MONDO" ? "on" : ""}>
+              Mondo
+            </Link>
+            <Link href="/atlas" className={mode === "ATLAS" ? "on" : ""}>
+              Atlas
+            </Link>
+          </div>
           {links.map((l) =>
             mode === "ATLAS" && l.href === "/atlas/hotels" ? (
               <div className="navitem-hover" key={l.href}>
@@ -92,6 +105,16 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
           <Link href="/profile" className="avatar navavatar">
             {initials}
           </Link>
+          <button
+            type="button"
+            className={menuOpen ? "navburger open" : "navburger"}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((o) => !o)}
+          >
+            <span />
+            <span />
+          </button>
         </div>
       </div>
     </header>
