@@ -8,11 +8,11 @@ export default function AtlasHome() {
       <section className="hero shell">
         <div className="hero-grid">
           <div className="reveal">
-            <div className="eyebrow">Guide premium · réservation · assistance</div>
+            <div className="eyebrow">Plus qu’un guide de voyage</div>
             <h1>Préparez le voyage, pas quinze onglets.</h1>
             <p>
-              Dites-nous où et quand : Atlas relie quartiers, hôtels, vols, transport, eSIM et arrivée sur place
-              pour {CITY_NAMES.length} destinations, directement personnalisées pour vos dates.
+              Dites-nous où vous partez et quand. Atlas s’occupe du reste : quartiers, hôtels, vols, transport et
+              connexion sur place, réunis pour vos dates exactes, sur {CITY_NAMES.length} destinations.
             </p>
           </div>
           <div className="hero-photo reveal">
@@ -26,7 +26,7 @@ export default function AtlasHome() {
             </div>
           </div>
         </div>
-        <div className="reveal" style={{ marginTop: 30 }}>
+        <div className="reveal" style={{ marginTop: 44 }}>
           <AtlasSearchBar />
           <p className="searchhint">
             Une ville, un pays ou juste vos dates — pas de liste à faire défiler.{" "}
