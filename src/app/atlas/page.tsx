@@ -28,6 +28,10 @@ export default function AtlasHome() {
         </div>
         <div className="reveal" style={{ marginTop: 30 }}>
           <AtlasSearchBar />
+          <p className="searchhint">
+            Une ville, un pays ou juste vos dates — pas de liste à faire défiler.{" "}
+            <Link href="/atlas/destinations">Ou parcourez les {CITY_NAMES.length} destinations →</Link>
+          </p>
         </div>
       </section>
 
@@ -64,38 +68,6 @@ export default function AtlasHome() {
             <span>📶</span>
             <b>eSIM</b>
             <small>connecté dès l’arrivée</small>
-          </div>
-        </div>
-      </section>
-
-      <section className="section shell reveal">
-        <div className="band">
-          <div>
-            <div className="eyebrow" style={{ color: "#b8d5c8" }}>
-              Une destination précise en tête ?
-            </div>
-            <h2>Cherchez-la, plutôt que de la parcourir.</h2>
-            <p>
-              Atlas n’affiche pas une liste de villes à faire défiler. Indiquez vos dates, on prépare directement
-              votre séjour.
-            </p>
-            <Link href="/atlas/destinations" className="btn">
-              Parcourir toutes les destinations
-            </Link>
-          </div>
-          <div className="steps">
-            <div className="step">
-              <b>Une ville</b>
-              <small>« Kyoto », « Lisbonne »…</small>
-            </div>
-            <div className="step">
-              <b>Un pays</b>
-              <small>« Japon », « Italie »…</small>
-            </div>
-            <div className="step">
-              <b>Vos dates</b>
-              <small>météo et budget personnalisés</small>
-            </div>
           </div>
         </div>
       </section>

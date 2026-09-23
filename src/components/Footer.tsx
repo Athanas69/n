@@ -1,22 +1,30 @@
 import Link from "next/link";
-import { MondoMark } from "./Mark";
+import { MondoMark, AtlasMark } from "./Mark";
 
-export default function Footer() {
+export default function Footer({ mode = "MONDO" }: { mode?: "MONDO" | "ATLAS" }) {
   return (
     <footer className="footer shell">
       <div className="footergrid">
         <div>
           <div className="brand">
             <span className="brandmark">
-              <MondoMark />
+              {mode === "MONDO" ? <MondoMark /> : <AtlasMark />}
             </span>
-            MONDO
+            {mode}
           </div>
-          <h3>
-            Rencontrer.
-            <br />
-            Organiser. Partir.
-          </h3>
+          {mode === "MONDO" ? (
+            <h3>
+              Rencontrer.
+              <br />
+              Organiser. Partir.
+            </h3>
+          ) : (
+            <h3>
+              Explorer.
+              <br />
+              Comprendre. Réserver.
+            </h3>
+          )}
         </div>
         <div>
           <h4>Mondo</h4>

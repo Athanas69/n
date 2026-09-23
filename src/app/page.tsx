@@ -11,8 +11,7 @@ export default function EntryPage() {
         <img src="/assets/entry-atlas.jpg" alt="Atlas — L’aventure" />
       </Link>
       <div className="entry-mark">
-        <span className="entry-mark-ring" />
-        <ArrowheadMark size={22} />
+        <ArrowheadMark size={30} />
       </div>
     </main>
   );

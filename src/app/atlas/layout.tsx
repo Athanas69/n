@@ -7,7 +7,7 @@ export default function AtlasLayout({ children }: { children: React.ReactNode })
     <main>
       <Nav mode="ATLAS" />
       {children}
-      <Footer />
+      <Footer mode="ATLAS" />
       <AlfredFab />
       <AlfredPanel />
     </main>

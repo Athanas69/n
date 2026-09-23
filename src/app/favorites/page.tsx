@@ -90,7 +90,7 @@ export default function FavoritesPage() {
         </section>
       )}
 
-      <Footer />
+      <Footer mode="ATLAS" />
       <AlfredFab />
       <AlfredPanel />
     </main>
