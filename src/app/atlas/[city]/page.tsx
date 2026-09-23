@@ -9,7 +9,6 @@ import { hoodAnchor } from "@/lib/hoodAnchor";
 import { hoodSlug } from "@/lib/hoodSlug";
 import CityNav from "@/components/CityNav";
 import RememberCity from "@/components/RememberCity";
-import { MetroMap } from "@/components/CityMap";
 import { CITY_NAMES, citySlug, cityNameFromSlug, getCity } from "@/lib/data";
 import { getArticleSlugForTitle } from "@/lib/articles";
 import { CITY_COORDS } from "@/lib/coords";
@@ -192,15 +191,11 @@ export default async function CityPage({
             <div className="eyebrow">Se déplacer</div>
             <h2>Aéroport, métro, pass : compris avant d’arriver.</h2>
           </div>
-          <p>Le plan Atlas résume le réseau et donne les options d’arrivée selon le quartier.</p>
+          <p>Le réseau et les options d’arrivée selon votre quartier.</p>
         </div>
         <div className="transgrid">
           <article className="transport">
             <h2>{c.transport}</h2>
-            <div className="metro">
-              <MetroMap city={c} cityName={cityName} />
-            </div>
-            <p>Schéma simplifié, conçu pour comprendre le réseau en quelques secondes.</p>
             {c.transitTicket && (
               <div className="route">
                 <h3>Prix des titres de transport</h3>

@@ -58,9 +58,9 @@ export default function NeighborhoodRealMap({
         const color = HOODMAP_PALETTE[i % HOODMAP_PALETTE.length];
         const icon = L.divIcon({
           className: "hoodpin-leaflet",
-          html: `<span style="background:${color}">${i + 1}</span>`,
-          iconSize: [26, 26],
-          iconAnchor: [13, 13],
+          html: `<span style="background:${color}"></span>`,
+          iconSize: [20, 20],
+          iconAnchor: [10, 10],
         });
         const marker = L.marker([pos.lat, pos.lon], { icon }).addTo(map!);
         marker.bindTooltip(`<b>${h[0]}</b>`, { direction: "top", offset: [0, -15], className: "hoodpin-tooltip" });
