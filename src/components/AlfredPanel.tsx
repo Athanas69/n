@@ -7,17 +7,15 @@ import { citySlug, getCity } from "@/lib/data";
 import { useTrips } from "@/lib/store";
 import { getPracticalInfo } from "@/lib/practical";
 import { ArrowheadMark } from "./Mark";
-import { useT } from "@/lib/i18n";
 
 export function AlfredFab() {
-  const t = useT();
   return (
     <button
       className="alfredfab"
       onClick={() => window.dispatchEvent(new Event(ALFRED_EVENT))}
     >
       <ArrowheadMark size={16} />
-      {t("alfred.cta")}
+      Demander à Alfred
     </button>
   );
 }

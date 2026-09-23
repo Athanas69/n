@@ -168,7 +168,7 @@ export default async function CityPage({
         <div className="hoodlegend">
           {c.neighborhoods.map((h, i) => (
             <Link key={h[0]} id={hoodAnchor(h[0])} href={`/atlas/${citySlug(cityName)}/quartiers/${hoodSlug(h[0])}`}>
-              <i style={{ background: HOODMAP_PALETTE[i % HOODMAP_PALETTE.length] }}>{i + 1}</i>
+              <i style={{ background: HOODMAP_PALETTE[i % HOODMAP_PALETTE.length] }} />
               {h[0]}
             </Link>
           ))}

@@ -5,24 +5,21 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { citySlug, DEFAULT_CITY } from "@/lib/data";
 import { useFavorites, useProfile } from "@/lib/store";
-import { useT } from "@/lib/i18n";
 import Mark from "./Mark";
 import NavHotelPreview from "./NavHotelPreview";
-import LanguageSwitcher from "./LanguageSwitcher";
+
+const mondoLinks = [
+  { href: "/mondo", label: "Accueil" },
+  { href: "/mondo/trips", label: "Voyages" },
+  { href: "/mondo/create", label: "Créer" },
+  { href: "/mondo/community", label: "Communauté" },
+  { href: "/mondo/trip-room", label: "Trip Room" },
+];
 
 export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
   const pathname = usePathname();
   const favorites = useFavorites();
   const profile = useProfile();
-  const t = useT();
-
-  const mondoLinks = [
-    { href: "/mondo", label: t("nav.accueil") },
-    { href: "/mondo/trips", label: t("nav.voyages") },
-    { href: "/mondo/create", label: t("nav.creer") },
-    { href: "/mondo/community", label: t("nav.communaute") },
-    { href: "/mondo/trip-room", label: t("nav.triproom") },
-  ];
   const initials = profile.name
     .split(" ")
     .map((w) => w[0])
@@ -40,11 +37,11 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
   }, []);
 
   const atlasLinks = [
-    { href: "/atlas", label: t("nav.accueil") },
-    { href: "/atlas/destinations", label: t("nav.destinations") },
-    { href: `/atlas/${citySlug(lastCity)}`, label: t("nav.guides") },
-    { href: "/atlas/hotels", label: t("nav.hotels") },
-    { href: "/atlas/flights", label: t("nav.vols") },
+    { href: "/atlas", label: "Accueil" },
+    { href: "/atlas/destinations", label: "Destinations" },
+    { href: `/atlas/${citySlug(lastCity)}`, label: "Guides" },
+    { href: "/atlas/hotels", label: "Hôtels" },
+    { href: "/atlas/flights", label: "Vols" },
   ];
 
   const links = mode === "MONDO" ? mondoLinks : atlasLinks;
@@ -80,8 +77,7 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
           )}
         </nav>
         <div className="navright">
-          <LanguageSwitcher />
-          <Link href="/favorites" className="navfav" aria-label={t("nav.favoris")}>
+          <Link href="/favorites" className="navfav" aria-label="Favoris">
             ♥{favorites.length > 0 && <span className="navfav-count">{favorites.length}</span>}
           </Link>
           <div className="switch">
@@ -92,7 +88,7 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
               Atlas
             </Link>
           </div>
-          <Link href="/profile" className="avatar navavatar" aria-label={t("nav.profil")}>
+          <Link href="/profile" className="avatar navavatar">
             {initials}
           </Link>
         </div>
