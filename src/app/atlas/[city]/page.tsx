@@ -4,9 +4,7 @@ import NotifyButton from "@/components/NotifyButton";
 import ScrollButton from "@/components/ScrollButton";
 import OpenAlfredButton from "@/components/OpenAlfredButton";
 import HotelGrid from "@/components/HotelGrid";
-import NeighborhoodRealMap, { HOODMAP_PALETTE } from "@/components/NeighborhoodRealMap";
-import { hoodAnchor } from "@/lib/hoodAnchor";
-import { hoodSlug } from "@/lib/hoodSlug";
+import NeighborhoodRealMap from "@/components/NeighborhoodRealMap";
 import CityNav from "@/components/CityNav";
 import RememberCity from "@/components/RememberCity";
 import { CITY_NAMES, citySlug, cityNameFromSlug, getCity } from "@/lib/data";
@@ -157,21 +155,13 @@ export default async function CityPage({
             <div className="eyebrow">Quartiers</div>
             <h2>Choisissez l’ambiance avant l’adresse.</h2>
           </div>
-          <p>Survolez un point sur la carte, ou choisissez dans la liste, pour ouvrir le guide du quartier.</p>
+          <p>Survolez un point sur la carte pour découvrir le quartier, cliquez pour ouvrir son guide.</p>
         </div>
         {coords ? (
           <NeighborhoodRealMap neighborhoods={c.neighborhoods} city={cityName} center={coords} />
         ) : (
           <p className="muted">Carte indisponible pour cette destination.</p>
         )}
-        <div className="hoodlegend">
-          {c.neighborhoods.map((h, i) => (
-            <Link key={h[0]} id={hoodAnchor(h[0])} href={`/atlas/${citySlug(cityName)}/quartiers/${hoodSlug(h[0])}`}>
-              <i style={{ background: HOODMAP_PALETTE[i % HOODMAP_PALETTE.length] }} />
-              {h[0]}
-            </Link>
-          ))}
-        </div>
       </section>
 
       <section className="section shell" id="stays">
