@@ -16,6 +16,7 @@ import FavoriteButton from "@/components/FavoriteButton";
 import TripPrepBanner from "@/components/TripPrepBanner";
 import PracticalInfo from "@/components/PracticalInfo";
 import { TRANSIT_LINKS } from "@/lib/transitLinks";
+import { getCityResources } from "@/lib/cityResources";
 
 export function generateStaticParams() {
   return CITY_NAMES.map((name) => ({ city: citySlug(name) }));
@@ -56,6 +57,7 @@ export default async function CityPage({
   const c = getCity(cityName);
   const coords = CITY_COORDS[cityName];
   const transitLink = TRANSIT_LINKS[cityName];
+  const resources = getCityResources(cityName);
   const sp = await searchParams;
   const hasTripPrep = Boolean(sp.checkin && sp.checkout && sp.travelers);
 
@@ -254,6 +256,23 @@ export default async function CityPage({
             );
           })}
         </div>
+        {resources.length > 0 && (
+          <div className="cityresources">
+            <b>Pour aller plus loin</b>
+            <p className="muted">
+              Des sources externes tenues à jour en continu, pour ce qu’un site figé ne peut pas suivre : les
+              nouvelles adresses, les tendances du moment.
+            </p>
+            <div className="cityresources-list">
+              {resources.map((r) => (
+                <a key={r.url} href={r.url} target="_blank" rel="noopener noreferrer" className="cityresource">
+                  <b>{r.label} ↗</b>
+                  <span>{r.description}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       <section className="section shell panel-tint tint-blue" id="before">
