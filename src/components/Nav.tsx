@@ -21,6 +21,11 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
   const favorites = useFavorites();
   const profile = useProfile();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuPathname, setMenuPathname] = useState(pathname);
+  if (pathname !== menuPathname) {
+    setMenuPathname(pathname);
+    setMenuOpen(false);
+  }
   const initials = profile.name
     .split(" ")
     .map((w) => w[0])
@@ -37,14 +42,11 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
     if (stored) setLastCity(stored);
   }, []);
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
-
   const atlasLinks = [
     { href: "/atlas", label: "Accueil" },
     { href: "/atlas/destinations", label: "Destinations" },
     { href: `/atlas/${citySlug(lastCity)}`, label: "Guides" },
+    { href: "/atlas/experiences", label: "Expériences" },
     { href: "/atlas/hotels", label: "Hôtels" },
     { href: "/atlas/flights", label: "Vols" },
   ];

@@ -1004,6 +1004,118 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    city: "Safaris",
+    title: "Kenya, Tanzanie, Afrique du Sud ou Botswana ?",
+    slug: slugify("Kenya, Tanzanie, Afrique du Sud ou Botswana ?"),
+    dek: "Quatre pays, quatre types de safari — le bon choix dépend plus de votre budget et de votre patience que de la destination elle-même.",
+    body: [
+      {
+        text: "« Faire un safari » recouvre des expériences très différentes selon le pays. Avant de comparer les prix, comparez ce que chaque destination fait réellement le mieux.",
+      },
+      {
+        heading: "Kenya : l’accessibilité",
+        text: "Vols directs depuis l’Europe, infrastructure touristique rodée, et le Maasai Mara à 45 minutes de vol de Nairobi. Le meilleur choix pour un premier safari ou un séjour court — mais aussi le plus fréquenté pendant la migration.",
+      },
+      {
+        heading: "Tanzanie : l’espace",
+        text: "Le Serengeti est bien plus vaste que le Mara, avec une densité touristique nettement plus faible. Comptez un budget plus élevé et davantage de temps de trajet entre les zones.",
+      },
+      {
+        heading: "Afrique du Sud : le budget maîtrisé",
+        text: "Le Kruger permet l’autotour, ce qui change radicalement l’équation budgétaire — pas de guide obligatoire, hébergements publics abordables. Le meilleur rapport qualité-prix pour découvrir un safari sans se ruiner.",
+      },
+      {
+        heading: "Botswana : l’exclusivité",
+        text: "Politique de « faible volume, prix élevé » : nombre de lits volontairement limité dans le delta de l’Okavango pour préserver l’expérience. Le choix le plus cher, mais celui où l’on croise le moins d’autres véhicules.",
+      },
+      {
+        heading: "Si vous hésitez",
+        text: "Premier safari et budget serré : Afrique du Sud. Envie de la migration : Kenya (court séjour) ou Tanzanie (plus de temps et de budget). Lune de miel ou occasion spéciale : Botswana.",
+      },
+    ],
+  },
+  {
+    city: "Safaris",
+    title: "Combien coûte vraiment un safari ?",
+    slug: slugify("Combien coûte vraiment un safari ?"),
+    dek: "Le prix affiché n’inclut presque jamais tout — voici ce qui s’ajoute une fois sur place.",
+    body: [
+      {
+        text: "Un safari se vend rarement au prix affiché seul : vols intérieurs, permis de parc, pourboires et boissons s’additionnent souvent à 20-30 % du forfait de base.",
+      },
+      {
+        heading: "Ce qui est presque toujours inclus",
+        text: "Hébergement, pension complète, sorties en véhicule avec guide, et les droits de parc dans la plupart des forfaits lodge ou mobile.",
+      },
+      {
+        heading: "Ce qui s’ajoute souvent",
+        text: "Les vols intérieurs entre parcs (obligatoires en Tanzanie et au Botswana, en petit porteur), les permis spécifiques (gorilles en Ouganda : environ 700 USD par personne et par trek), les boissons hors eau/thé, et les pourboires pour le guide (10-15 USD/jour est la norme informelle).",
+      },
+      {
+        heading: "Le vrai écart de prix",
+        text: "Un safari mobile/camping en Afrique du Sud peut démarrer autour de 150 €/jour tout compris. Un camp exclusif dans le delta de l’Okavango dépasse facilement 1000 €/jour par personne, vols inclus. L’écart tient moins au confort qu’à la rareté : moins de lits, moins de véhicules, prix plus élevé.",
+      },
+      {
+        heading: "Le poste qu’on oublie",
+        text: "L’assurance rapatriement/évacuation médicale est quasi indispensable dans les zones reculées, où l’hôpital le plus proche peut être à plusieurs heures de vol.",
+      },
+    ],
+  },
+  {
+    city: "Croisières",
+    title: "Petit navire ou paquebot géant ?",
+    slug: slugify("Petit navire ou paquebot géant ?"),
+    dek: "De 100 à plus de 6000 passagers : la taille du navire change presque tout, sauf le prix au premier regard.",
+    body: [
+      {
+        text: "Deux croisières sur un même itinéraire peuvent proposer une expérience radicalement différente selon qu’elles embarquent 150 ou 5000 passagers. La taille du navire est souvent le critère le plus sous-estimé au moment de réserver.",
+      },
+      {
+        heading: "Le paquebot géant",
+        text: "Piscines, spectacles, dizaines de restaurants, animation permanente — pensé pour ne jamais s’ennuyer à bord. En contrepartie, les escales se font souvent en même temps que 3-4 autres navires, avec des files d’attente à terre.",
+      },
+      {
+        heading: "Le navire moyen (fjords, Alaska)",
+        text: "Quelques centaines de passagers, moins d’animation à bord mais un accès à des zones que les géants ne peuvent pas naviguer — fjords étroits, ports plus petits, meilleure vue depuis le pont.",
+      },
+      {
+        heading: "Le navire d’expédition",
+        text: "100 à 200 passagers, souvent renforcé pour la glace (Antarctique, Arctique), avec une équipe de naturalistes à bord et des débarquements en zodiac. L’expérience la plus immersive, au prix le plus élevé au jour.",
+      },
+      {
+        heading: "Le vrai critère de choix",
+        text: "Si l’animation à bord et le prix par jour priment, le grand paquebot l’emporte largement. Si le paysage et la faune sont la priorité, chaque mètre de moins sur la longueur du navire se traduit en accès à des endroits plus reculés.",
+      },
+    ],
+  },
+  {
+    city: "Croisières",
+    title: "Combien coûte vraiment une croisière ?",
+    slug: slugify("Combien coûte vraiment une croisière ?"),
+    dek: "Le prix d’appel cache presque toujours des extras qui peuvent représenter la moitié du budget final.",
+    body: [
+      {
+        text: "Le tarif affiché d’une croisière correspond à la cabine et à la pension de base — une part significative du budget se joue une fois à bord ou au moment des excursions.",
+      },
+      {
+        heading: "Ce qui est inclus dans le prix de base",
+        text: "La cabine, la pension complète aux restaurants principaux, l’accès aux piscines et à une partie des animations, et le transport entre les escales.",
+      },
+      {
+        heading: "Ce qui s’ajoute presque toujours",
+        text: "Les excursions à terre (souvent 60-150 € par escale et par personne si réservées auprès de la compagnie), le forfait boissons, le wifi à bord, et les pourboires d’équipage — généralement prélevés automatiquement, de l’ordre de 12-16 €/jour/personne.",
+      },
+      {
+        heading: "L’écart selon le type de cabine",
+        text: "Sur un même navire, une cabine intérieure peut coûter deux fois moins cher qu’une suite avec balcon. Pour les fjords ou l’Alaska où le paysage compte davantage, un balcon change réellement l’expérience ; pour les Caraïbes où l’on passe peu de temps en cabine, l’intérieure reste un choix rationnel.",
+      },
+      {
+        heading: "Le réflexe qui fait économiser",
+        text: "Réserver les excursions en indépendant à quai (quand l’escale le permet) coûte souvent 30-50 % de moins que la même excursion vendue par la compagnie — au prix d’un peu plus d’organisation et du risque, réel, de rater le départ du navire.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(city: string, slug: string) {
