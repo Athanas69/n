@@ -11,8 +11,8 @@ export default function AtlasHome() {
             <div className="eyebrow">Plus qu’un guide de voyage</div>
             <h1>Préparez le voyage, pas quinze onglets.</h1>
             <p>
-              Dites-nous où vous partez et quand. Atlas s’occupe du reste : quartiers, hôtels, vols, transport et
-              connexion sur place, réunis pour vos dates exactes, sur {CITY_NAMES.length} destinations.
+              Quartiers, hôtels, vols, transport, connexion sur place : tout au même endroit, sur {CITY_NAMES.length}{" "}
+              destinations.
             </p>
           </div>
           <div className="hero-photo reveal">
@@ -35,7 +35,7 @@ export default function AtlasHome() {
         </div>
       </section>
 
-      <section className="section shell reveal">
+      <section className="section shell reveal panel-tint tint-blue">
         <div className="section-head">
           <div>
             <div className="eyebrow">Votre Travel OS</div>

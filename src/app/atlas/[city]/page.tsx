@@ -121,7 +121,7 @@ export default async function CityPage({
         <PracticalInfo country={c.country} />
       </section>
 
-      <section className="section shell" id="understand">
+      <section className="section shell panel-tint tint-blue" id="understand">
         <div className="cityintro">
           <article className="storybox">
             <div className="eyebrow">Avant de réserver</div>
@@ -139,7 +139,7 @@ export default async function CityPage({
             <div className="joinrequest" style={{ marginTop: 14 }}>
               <b>{c.neighborhoods.length} quartiers cartographiés</b>
               <p className="muted" style={{ margin: "4px 0 10px", fontSize: 12 }}>
-                Chacun a sa fiche complète : ambiance, hôtels, transport.
+                Repérez-les sur la carte pour choisir où poser vos valises.
               </p>
               <ScrollButton target="hoods" className="btn">
                 Voir la carte interactive ↓
@@ -208,7 +208,7 @@ export default async function CityPage({
         </div>
       </section>
 
-      <section className="section shell" id="esim">
+      <section className="section shell panel-tint tint-blue" id="esim">
         <div className="section-head">
           <div>
             <div className="eyebrow">Atlas eSIM</div>
@@ -260,7 +260,7 @@ export default async function CityPage({
         </div>
       </section>
 
-      <section className="section shell" id="before">
+      <section className="section shell panel-tint tint-blue" id="before">
         <div className="section-head">
           <div>
             <div className="eyebrow">Atlas Before You Go</div>

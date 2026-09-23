@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { citySlug, DEFAULT_CITY } from "@/lib/data";
 import { useFavorites, useProfile } from "@/lib/store";
-import Mark from "./Mark";
+import Mark, { HeartMark } from "./Mark";
 import NavHotelPreview from "./NavHotelPreview";
 
 const mondoLinks = [
@@ -78,7 +78,8 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
         </nav>
         <div className="navright">
           <Link href="/favorites" className="navfav" aria-label="Favoris">
-            ♥{favorites.length > 0 && <span className="navfav-count">{favorites.length}</span>}
+            <HeartMark size={19} filled={favorites.length > 0} />
+            {favorites.length > 0 && <span className="navfav-count">{favorites.length}</span>}
           </Link>
           <div className="switch">
             <Link href="/mondo" className={mode === "MONDO" ? "on" : ""}>

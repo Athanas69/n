@@ -77,7 +77,7 @@ export default function MondoHome() {
         </div>
       </section>
 
-      <section className="section shell reveal">
+      <section className="section shell reveal panel-tint tint-sand">
         <div className="section-head">
           <div>
             <div className="eyebrow">Confiance</div>

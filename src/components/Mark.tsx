@@ -35,6 +35,20 @@ export function MondoMark({ size = 22, className }: MarkProps) {
   );
 }
 
+export function HeartMark({ size = 22, className, filled = false }: MarkProps & { filled?: boolean }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill={filled ? "currentColor" : "none"} className={className} aria-hidden="true">
+      <path
+        d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0L12 5.25l-.77-.67a5.4 5.4 0 0 0-7.65 7.65l.62.61L12 20.5l7.65-7.65.62-.61a5.4 5.4 0 0 0 0-7.66Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 export default function Mark({ mode, size, className }: MarkProps & { mode: "MONDO" | "ATLAS" }) {
   return mode === "MONDO" ? <MondoMark size={size} className={className} /> : <AtlasMark size={size} className={className} />;
 }
