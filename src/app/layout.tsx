@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk, Fraunces } from "next/font/google";
+import { DM_Sans, Space_Grotesk, Playfair_Display } from "next/font/google";
 import Toast from "@/components/Toast";
 import ScrollReveal from "@/components/ScrollReveal";
 import "./globals.css";
@@ -16,11 +16,11 @@ const spaceGrotesk = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
 });
 
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   variable: "--font-fraunces",
   subsets: ["latin"],
   style: ["normal", "italic"],
-  axes: ["opsz", "SOFT"],
+  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export const viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${dmSans.variable} ${spaceGrotesk.variable} ${fraunces.variable}`}>
+    <html lang="fr" className={`${dmSans.variable} ${spaceGrotesk.variable} ${playfair.variable}`}>
       <body>
         {children}
         <Toast />

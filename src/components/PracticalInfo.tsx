@@ -1,8 +1,15 @@
 import { getPracticalInfo } from "@/lib/practical";
 
-export default function PracticalInfo({ country }: { country: string }) {
+export default function PracticalInfo({
+  country,
+  extra = [],
+}: {
+  country: string;
+  extra?: Array<[string, string]>;
+}) {
   const info = getPracticalInfo(country);
   const items: Array<[string, string]> = [
+    ...extra,
     ["Visa", info.visa],
     ["Prise électrique", info.plug],
     ["Urgences", info.emergency],

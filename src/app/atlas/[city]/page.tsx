@@ -15,6 +15,7 @@ import CurrencyConverter from "@/components/CurrencyConverter";
 import FavoriteButton from "@/components/FavoriteButton";
 import TripPrepBanner from "@/components/TripPrepBanner";
 import PracticalInfo from "@/components/PracticalInfo";
+import { TRANSIT_LINKS } from "@/lib/transitLinks";
 
 export function generateStaticParams() {
   return CITY_NAMES.map((name) => ({ city: citySlug(name) }));
@@ -54,6 +55,7 @@ export default async function CityPage({
 
   const c = getCity(cityName);
   const coords = CITY_COORDS[cityName];
+  const transitLink = TRANSIT_LINKS[cityName];
   const sp = await searchParams;
   const hasTripPrep = Boolean(sp.checkin && sp.checkout && sp.travelers);
 
@@ -77,24 +79,6 @@ export default async function CityPage({
           </div>
         </div>
         <CityNav />
-        <div className="facts">
-          <div className="fact">
-            <small>Devise</small>
-            <b>{c.currency}</b>
-          </div>
-          <div className="fact">
-            <small>Meilleure période</small>
-            <b>{c.best}</b>
-          </div>
-          <div className="fact">
-            <small>Aéroport</small>
-            <b>{c.airport}</b>
-          </div>
-          <div className="fact">
-            <small>Réseau</small>
-            <b>{c.transport}</b>
-          </div>
-        </div>
         {hasTripPrep && (
           <TripPrepBanner
             city={cityName}
@@ -103,22 +87,30 @@ export default async function CityPage({
             travelers={Number(sp.travelers)}
           />
         )}
-        {coords && (
-          <div style={{ marginTop: 8 }}>
-            <LiveWeather lat={coords.lat} lon={coords.lon} targetDate={sp.checkin} />
-          </div>
-        )}
       </section>
 
-      <section className="section shell" id="practical">
+      <section className="section shell panel-tint tint-blue" id="practical">
         <div className="section-head">
           <div>
             <div className="eyebrow">Avant de partir</div>
             <h2>Tout ce qu’il faut savoir, en un coup d’œil.</h2>
           </div>
-          <p>Visa, prise, urgences, pourboire, langue, décalage — ce qu’on cherche d’habitude sur cinq sites différents.</p>
+          <p>Devise, météo, visa, prise, urgences, langue — ce qu’on cherche d’habitude sur cinq sites différents.</p>
         </div>
-        <PracticalInfo country={c.country} />
+        {coords && (
+          <div style={{ marginBottom: 12 }}>
+            <LiveWeather lat={coords.lat} lon={coords.lon} targetDate={sp.checkin} />
+          </div>
+        )}
+        <PracticalInfo
+          country={c.country}
+          extra={[
+            ["Devise", c.currency],
+            ["Meilleure période", c.best],
+            ["Aéroport", c.airport],
+            ["Réseau", c.transport],
+          ]}
+        />
       </section>
 
       <section className="section shell panel-tint tint-blue" id="understand">
@@ -191,6 +183,11 @@ export default async function CityPage({
                 <h3>Prix des titres de transport</h3>
                 <p>{c.transitTicket}</p>
               </div>
+            )}
+            {transitLink && (
+              <a href={transitLink.url} target="_blank" rel="noopener noreferrer" className="btn" style={{ marginTop: 12 }}>
+                Plan officiel · {transitLink.label} ↗
+              </a>
             )}
           </article>
           <article className="transport">

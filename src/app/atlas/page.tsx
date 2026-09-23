@@ -9,7 +9,7 @@ export default function AtlasHome() {
         <div className="hero-grid">
           <div className="reveal">
             <div className="eyebrow">Plus qu’un guide de voyage</div>
-            <h1>Préparez le voyage, pas quinze onglets.</h1>
+            <h1>Tout votre voyage, en un seul endroit.</h1>
             <p>
               Quartiers, hôtels, vols, transport, connexion sur place : tout au même endroit, sur {CITY_NAMES.length}{" "}
               destinations.
