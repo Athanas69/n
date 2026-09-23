@@ -57,7 +57,7 @@ export default async function CityPage({
   const c = getCity(cityName);
   const coords = CITY_COORDS[cityName];
   const transitLink = TRANSIT_LINKS[cityName];
-  const resources = getCityResources(cityName);
+  const resources = getCityResources(cityName, c.country);
   const sp = await searchParams;
   const hasTripPrep = Boolean(sp.checkin && sp.checkout && sp.travelers);
 
@@ -256,24 +256,27 @@ export default async function CityPage({
             );
           })}
         </div>
-        {resources.length > 0 && (
-          <div className="cityresources">
-            <b>Pour aller plus loin</b>
-            <p className="muted">
-              Des sources externes tenues à jour en continu, pour ce qu’un site figé ne peut pas suivre : les
-              nouvelles adresses, les tendances du moment.
-            </p>
-            <div className="cityresources-list">
-              {resources.map((r) => (
-                <a key={r.url} href={r.url} target="_blank" rel="noopener noreferrer" className="cityresource">
-                  <b>{r.label} ↗</b>
-                  <span>{r.description}</span>
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
       </section>
+
+      {resources.length > 0 && (
+        <section className="section shell" id="resources">
+          <div className="section-head">
+            <div>
+              <div className="eyebrow">Pour aller plus loin</div>
+              <h2>Ce qu’un site figé ne peut pas suivre.</h2>
+            </div>
+            <p>Les nouvelles adresses et les tendances du moment évoluent plus vite qu’un guide éditorial — ces sources restent à jour en continu, pendant que la nôtre gère l’organisation.</p>
+          </div>
+          <div className="cityresources-list">
+            {resources.map((r) => (
+              <a key={r.url} href={r.url} target="_blank" rel="noopener noreferrer" className="cityresource">
+                <b>{r.label} ↗</b>
+                <span>{r.description}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="section shell panel-tint tint-blue" id="before">
         <div className="section-head">

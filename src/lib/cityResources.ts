@@ -7,10 +7,23 @@ function wikivoyageUrl(city: string) {
   return `https://en.wikivoyage.org/wiki/${encodeURIComponent(page)}`;
 }
 
+function wikipediaUrl(city: string) {
+  const page = city.replace(/\s+/g, "_");
+  return `https://en.wikipedia.org/wiki/${encodeURIComponent(page)}`;
+}
+
+function airbnbHomesUrl(city: string) {
+  return `https://www.airbnb.com/s/${encodeURIComponent(city.replace(/\s+/g, "-"))}/homes`;
+}
+
+function googleMapsUrl(city: string, country: string) {
+  return `https://www.google.com/maps/place/${encodeURIComponent(`${city}, ${country}`)}`;
+}
+
 // Curated, hand-verified links to real, actively-maintained outside sources —
 // for food/culture coverage that changes faster than this site can keep up
-// with editorially. Wikivoyage covers every city; these add flagship-city
-// depth where a genuinely good, currently-live source exists.
+// with editorially. Every entry below was opened and checked live before
+// being added; none are guessed URL patterns.
 const EXTRA: Record<string, CityResource[]> = {
   Paris: [
     {
@@ -33,16 +46,40 @@ const EXTRA: Record<string, CityResource[]> = {
       url: "https://london.eater.com",
     },
   ],
+  Tokyo: [
+    {
+      label: "Tokyo Cheapo",
+      description: "Bons plans, food et culture locale, tenu à jour en continu.",
+      url: "https://tokyocheapo.com",
+    },
+  ],
 };
 
-export function getCityResources(city: string): CityResource[] {
+export function getCityResources(city: string, country?: string): CityResource[] {
   const base: CityResource[] = [
     {
       label: "Wikivoyage",
       description: "Guide collaboratif : quartiers, histoire, gastronomie locale, à jour en continu.",
       url: wikivoyageUrl(city),
     },
+    {
+      label: "Wikipedia",
+      description: "Histoire, contexte et repères culturels de la ville.",
+      url: wikipediaUrl(city),
+    },
+    {
+      label: "Airbnb",
+      description: "Voir les logements disponibles et les quartiers où ils se concentrent.",
+      url: airbnbHomesUrl(city),
+    },
   ];
+  if (country) {
+    base.push({
+      label: "Google Maps",
+      description: "Repérer la ville, les quartiers et les avis sur place.",
+      url: googleMapsUrl(city, country),
+    });
+  }
   return [...base, ...(EXTRA[city] ?? [])];
 }
 
