@@ -12,6 +12,11 @@ export const REAL_TRANSIT: Record<string, TransitLine[]> = {
       color: "#bd1d7c",
       stations: ["Porte de Clignancourt", "Gare du Nord", "Châtelet", "Saint-Michel", "Montparnasse", "Porte d’Orléans"],
     },
+    {
+      name: "Ligne 14",
+      color: "#63247c",
+      stations: ["Saint-Lazare", "Madeleine", "Pyramides", "Châtelet", "Gare de Lyon", "Olympiades"],
+    },
   ],
   Tokyo: [
     {
@@ -23,6 +28,11 @@ export const REAL_TRANSIT: Record<string, TransitLine[]> = {
       name: "Ginza",
       color: "#ff9500",
       stations: ["Shibuya", "Omotesando", "Ginza", "Nihombashi", "Ueno", "Asakusa"],
+    },
+    {
+      name: "Marunouchi",
+      color: "#f62e36",
+      stations: ["Ogikubo", "Shinjuku", "Yotsuya", "Tokyo", "Ginza", "Ikebukuro"],
     },
   ],
   London: [
@@ -36,6 +46,11 @@ export const REAL_TRANSIT: Record<string, TransitLine[]> = {
       color: "#003688",
       stations: ["Heathrow", "Hammersmith", "South Kensington", "Green Park", "King’s Cross", "Cockfosters"],
     },
+    {
+      name: "Jubilee",
+      color: "#a0a5a9",
+      stations: ["Stanmore", "Baker Street", "Bond Street", "Green Park", "London Bridge", "Stratford"],
+    },
   ],
   "New York": [
     {
@@ -47,6 +62,11 @@ export const REAL_TRANSIT: Record<string, TransitLine[]> = {
       name: "Ligne L",
       color: "#a7a9ac",
       stations: ["8 Av", "Union Square", "Bedford Av", "Myrtle–Wyckoff", "Broadway Jct", "Canarsie"],
+    },
+    {
+      name: "Ligne N",
+      color: "#fccc0a",
+      stations: ["Astoria–Ditmars", "Queensboro Plaza", "Times Sq–42 St", "Union Square", "Canal St", "Coney Island"],
     },
   ],
   Barcelona: [

@@ -3,17 +3,28 @@ import { REAL_TRANSIT } from "@/lib/transitLines";
 
 const METRO_COLORS = ["#e25a57", "#3b8edb", "#4ba36d", "#d19a3f", "#9b6bd1"];
 
-const WOBBLE = [
-  [0, 0, 0, 0, 0, 0],
-  [0, -22, -22, 22, 22, 0],
-  [0, 18, -18, -18, 18, 0],
-];
+const W = 640;
+const H = 460;
+const CX = W / 2;
+const CY = H / 2;
+const RADIUS = 195;
 
-const XS = [40, 142, 244, 396, 498, 600];
+type Row = { name: string; color: string; stops: string[] };
 
-type Row = { name: string; color: string; y: number; wobble: number[]; stops: string[] };
+function anchorIndexFor(rowIndex: number, rows: Row[]): number {
+  const own = rows[rowIndex].stops;
+  for (let k = 0; k < own.length; k++) {
+    const s = own[k];
+    if (!s) continue;
+    for (let ri = 0; ri < rows.length; ri++) {
+      if (ri === rowIndex) continue;
+      if (rows[ri].stops.includes(s)) return k;
+    }
+  }
+  return Math.floor((own.length - 1) / 2);
+}
 
-function Diagram({ rows, height, hubLabel }: { rows: Row[]; height: number; hubLabel: string }) {
+function Diagram({ rows, hubLabel }: { rows: Row[]; hubLabel: string }) {
   const interchanges = new Set<string>();
   const seen = new Map<string, number>();
   rows.forEach((r, ri) => {
@@ -25,34 +36,51 @@ function Diagram({ rows, height, hubLabel }: { rows: Row[]; height: number; hubL
     });
   });
 
+  const lines = rows.map((r, i) => {
+    const angleDeg = rows.length === 1 ? 0 : i * (180 / rows.length);
+    const angleRad = (angleDeg * Math.PI) / 180;
+    const dx = Math.cos(angleRad);
+    const dy = Math.sin(angleRad) * 0.72;
+    const anchor = anchorIndexFor(i, rows);
+    const maxSteps = Math.max(anchor, r.stops.length - 1 - anchor, 1);
+    const spacing = RADIUS / maxSteps;
+    const points = r.stops.map((_, k) => {
+      const offset = (k - anchor) * spacing;
+      return { x: CX + dx * offset, y: CY + dy * offset };
+    });
+    return { ...r, angleRad, points };
+  });
+
   return (
     <>
-      <svg viewBox={`0 0 640 ${height}`}>
-        {rows.map((r) => {
-          const pts = XS.map((x, k) => `${x},${r.y + r.wobble[k]}`).join(" ");
+      <svg viewBox={`0 0 ${W} ${H}`}>
+        {lines.map((r) => {
+          const pts = r.points.map((p) => `${p.x},${p.y}`).join(" ");
+          const perp = r.angleRad + Math.PI / 2;
           return (
             <g key={r.name}>
               <polyline points={pts} fill="none" stroke={r.color} strokeWidth={5.5} strokeLinecap="round" strokeLinejoin="round" />
-              {XS.map((x, k) => {
-                const cy = r.y + r.wobble[k];
-                const labelUp = k % 2 === 0;
+              {r.points.map((p, k) => {
                 const stop = r.stops[k];
-                const isTerminus = k === 0 || k === XS.length - 1;
-                const isHub = stop && interchanges.has(stop);
+                const isTerminus = k === 0 || k === r.stops.length - 1;
+                const isHub = Boolean(stop && interchanges.has(stop));
+                const dir = k % 2 === 0 ? 1 : -1;
+                const lx = p.x + Math.cos(perp) * 15 * dir;
+                const ly = p.y + Math.sin(perp) * 15 * dir + 3;
                 return (
-                  <g key={x}>
+                  <g key={k}>
                     {isHub ? (
                       <>
-                        <circle cx={x} cy={cy} r={7.5} fill="#fff" stroke="#27332d" strokeWidth={2.5} />
-                        <circle cx={x} cy={cy} r={3} fill="#27332d" />
+                        <circle cx={p.x} cy={p.y} r={7.5} fill="#fff" stroke="#27332d" strokeWidth={2.5} />
+                        <circle cx={p.x} cy={p.y} r={3} fill="#27332d" />
                       </>
                     ) : (
-                      <circle cx={x} cy={cy} r={isTerminus ? 5.5 : 5} fill="#fff" stroke={r.color} strokeWidth={isTerminus ? 3.5 : 3} />
+                      <circle cx={p.x} cy={p.y} r={isTerminus ? 5.5 : 5} fill="#fff" stroke={r.color} strokeWidth={isTerminus ? 3.5 : 3} />
                     )}
                     {stop && (
                       <text
-                        x={x}
-                        y={labelUp ? cy - 13 : cy + 21}
+                        x={lx}
+                        y={ly}
                         fontSize={8.5}
                         fontWeight={isTerminus || isHub ? 700 : 400}
                         fontFamily="var(--font-dm-sans)"
@@ -91,32 +119,20 @@ export function MetroMap({ city, cityName }: { city: City; cityName: string }) {
   const realLines = REAL_TRANSIT[cityName];
 
   if (realLines) {
-    const rowH = 78;
-    const height = 40 + realLines.length * rowH;
-    const rows: Row[] = realLines.map((l, i) => ({
-      name: l.name,
-      color: l.color,
-      y: 50 + i * rowH,
-      wobble: WOBBLE[i % WOBBLE.length],
-      stops: l.stations,
-    }));
-    return <Diagram rows={rows} height={height} hubLabel="Correspondance" />;
+    const rows: Row[] = realLines.map((l) => ({ name: l.name, color: l.color, stops: l.stations }));
+    return <Diagram rows={rows} hubLabel="Correspondance" />;
   }
 
-  const lines = city.transport.split(" · ").slice(0, 3);
+  const lineLabels = city.transport.split(" · ").slice(0, 3);
   const neighborhoodNames = city.neighborhoods.map((n) => n[0]);
-  const rowH = 78;
-  const height = 40 + lines.length * rowH;
-  const rows: Row[] = lines.map((l, i) => ({
+  const rows: Row[] = lineLabels.map((l, i) => ({
     name: l,
     color: METRO_COLORS[i % METRO_COLORS.length],
-    y: 50 + i * rowH,
-    wobble: WOBBLE[i % WOBBLE.length],
     stops:
       neighborhoodNames.length > 0
-        ? XS.map((_, k) => neighborhoodNames[(k + i * 2) % neighborhoodNames.length])
-        : XS.map(() => ""),
+        ? Array.from({ length: 6 }, (_, k) => neighborhoodNames[(k + i * 2) % neighborhoodNames.length])
+        : Array.from({ length: 6 }, () => ""),
   }));
 
-  return <Diagram rows={rows} height={height} hubLabel="Quartier desservi par plusieurs lignes" />;
+  return <Diagram rows={rows} hubLabel="Quartier desservi par plusieurs lignes" />;
 }
