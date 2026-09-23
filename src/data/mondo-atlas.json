@@ -3089,6 +3089,1246 @@
         "Les erreurs à éviter"
       ],
       "transitTicket": "Bus urbain : ≈ 7 000–9 000 VND · Grab moto courte course : ≈ 15 000–25 000 VND"
+    },
+    "Osaka": {
+      "country": "Japon",
+      "hero": "https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Osaka est la ville la plus décontractée du Japon : street food, humour local et néons de Dotonbori remplacent le protocole feutré de Tokyo.",
+      "currency": "JPY",
+      "best": "mars–mai · oct.–nov.",
+      "airport": "KIX",
+      "transport": "Metro Osaka · JR",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Dotonbori",
+          "Néons · street food · nightlife",
+          "Le cœur électrique d’Osaka, takoyaki et okonomiyaki à chaque coin de rue.",
+          "https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Namba",
+          "Shopping · gares · animé",
+          "Hub de transport et de shopping, connecté directement à Dotonbori.",
+          "https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Umeda",
+          "Affaires · gratte-ciels · gares",
+          "Le quartier nord, plus moderne et calme, avec le Umeda Sky Building.",
+          "https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Shinsekai",
+          "Rétro · local · budget",
+          "Ambiance rétro des années 1950, kushikatsu et prix imbattables.",
+          "https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "KIX",
+          "Train Haruka (JR)",
+          "Direct vers Namba/Umeda, ~45–55 min."
+        ],
+        [
+          "KIX",
+          "Limousine Bus",
+          "Dépose directement à l’hôtel dans de nombreux quartiers."
+        ],
+        [
+          "Ville",
+          "Metro Osaka",
+          "Réseau dense, carte ICOCA rechargeable."
+        ]
+      ],
+      "articles": [
+        "Dotonbori ou Namba ?",
+        "Osaka en 2 jours depuis Kyoto",
+        "Que manger à Osaka",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Osaka Amazing Pass (1 jour) : ≈ 2 700 JPY · Trajet metro simple : ≈ 180–330 JPY"
+    },
+    "Busan": {
+      "country": "Corée du Sud",
+      "hero": "https://images.unsplash.com/photo-1672671187899-a10f547341f1?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Busan a la mer que Séoul n’a pas : plages urbaines, marché aux poissons et un village de collines colorées surnommé le « Machu Picchu coréen ».",
+      "currency": "KRW",
+      "best": "avr.–juin · sept.–nov.",
+      "airport": "PUS",
+      "transport": "Metro Busan · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Haeundae",
+          "Plage · hôtels · animé",
+          "La plage la plus célèbre de Corée, bordée de tours et de restaurants.",
+          "https://images.unsplash.com/photo-1672671187899-a10f547341f1?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gamcheon",
+          "Village coloré · art · photogénique",
+          "Maisons pastel en cascade sur la colline, devenu un village-musée à ciel ouvert.",
+          "https://images.unsplash.com/photo-1672671187899-a10f547341f1?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Nampo-dong",
+          "Marché · centre historique · food",
+          "Le vieux centre, avec le marché Jagalchi aux poissons et les rues de BIFF.",
+          "https://images.unsplash.com/photo-1672671187899-a10f547341f1?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Seomyeon",
+          "Nightlife · shopping · central",
+          "Le quartier le plus animé la nuit, hub de transport central.",
+          "https://images.unsplash.com/photo-1672671187899-a10f547341f1?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "PUS",
+          "Metro (ligne Gimhae)",
+          "Direct vers le centre, économique."
+        ],
+        [
+          "PUS",
+          "Taxi/VTC",
+          "25–40 min selon quartier."
+        ],
+        [
+          "Ville",
+          "Metro Busan",
+          "4 lignes, carte rechargeable disponible."
+        ]
+      ],
+      "articles": [
+        "Haeundae ou Gamcheon ?",
+        "Le marché Jagalchi",
+        "Busan en 2 jours depuis Séoul",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Metro Busan : ≈ 1 500–1 600 KRW/trajet · Taxi courte course : ≈ 5 000–8 000 KRW"
+    },
+    "Xi'an": {
+      "country": "Chine",
+      "hero": "https://images.unsplash.com/photo-1528163186890-de9b86b54b51?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Xi’an fut la capitale de la Chine impériale pendant plus de mille ans — aujourd’hui, c’est surtout la porte d’entrée vers l’armée de terre cuite.",
+      "currency": "CNY",
+      "best": "mars–mai · sept.–nov.",
+      "airport": "XIY",
+      "transport": "Metro Xi’an · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Quartier musulman",
+          "Street food · marché · animé",
+          "Ruelles bondées derrière la Grande Mosquée, le meilleur endroit pour manger la nuit.",
+          "https://images.unsplash.com/photo-1528163186890-de9b86b54b51?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Intra-muros",
+          "Historique · remparts · centre",
+          "Le centre-ville ceinturé par les remparts Ming, encore intacts sur 14 km.",
+          "https://images.unsplash.com/photo-1528163186890-de9b86b54b51?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Grande Pagode de l’Oie sauvage",
+          "Temple · jardins · moderne",
+          "Quartier plus calme autour du temple bouddhiste emblématique de la ville.",
+          "https://images.unsplash.com/photo-1528163186890-de9b86b54b51?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gare / périphérie est",
+          "Pratique · terre cuite · budget",
+          "Côté logistique pour rejoindre le site de l’armée de terre cuite, à 1h de route.",
+          "https://images.unsplash.com/photo-1528163186890-de9b86b54b51?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "XIY",
+          "Bus aéroport",
+          "Direct vers le centre-ville, ~1h."
+        ],
+        [
+          "XIY",
+          "Taxi/VTC",
+          "45–60 min selon trafic."
+        ],
+        [
+          "Ville",
+          "Metro Xi’an",
+          "4 lignes, dessert le centre et la gare."
+        ]
+      ],
+      "articles": [
+        "Voir l’armée de terre cuite sans galère",
+        "Faire le tour des remparts à vélo",
+        "Xi’an en 2 jours depuis Pékin",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Metro Xi’an : ≈ 2–9 CNY selon distance · Bus vers l’armée de terre cuite (306) : ≈ 7 CNY"
+    },
+    "Siem Reap": {
+      "country": "Cambodge",
+      "hero": "https://images.unsplash.com/photo-1594447404209-d0eb453dbcf3?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Siem Reap n’existe presque que pour une raison : servir de porte d’entrée à Angkor, le plus grand site religieux au monde.",
+      "currency": "USD (officiellement KHR)",
+      "best": "nov.–mars, saison sèche",
+      "airport": "REP",
+      "transport": "Tuk-tuk",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Pub Street / centre",
+          "Nightlife · restaurants · animé",
+          "Le cœur touristique, bars et restaurants à toute heure.",
+          "https://images.unsplash.com/photo-1594447404209-d0eb453dbcf3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Vieux marché (Psar Chas)",
+          "Marché local · artisanat · authentique",
+          "Marché traditionnel juste à côté de Pub Street, plus local.",
+          "https://images.unsplash.com/photo-1594447404209-d0eb453dbcf3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Wat Bo",
+          "Calme · résidentiel · boutique",
+          "Quartier calme avec de charmants boutique-hôtels, à 10 min à pied du centre.",
+          "https://images.unsplash.com/photo-1594447404209-d0eb453dbcf3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Sala Kamreuk",
+          "Budget · local · tranquille",
+          "Plus éloigné mais nettement moins cher, bon compromis pour un long séjour.",
+          "https://images.unsplash.com/photo-1594447404209-d0eb453dbcf3?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "REP",
+          "Tuk-tuk",
+          "20–30 min vers le centre, à négocier ou réserver."
+        ],
+        [
+          "REP",
+          "Transfert hôtel",
+          "Souvent inclus ou peu coûteux, réservé à l’avance."
+        ],
+        [
+          "Ville",
+          "Tuk-tuk",
+          "Le moyen de transport standard, y compris pour visiter Angkor."
+        ]
+      ],
+      "articles": [
+        "Combien de jours pour Angkor ?",
+        "Le meilleur itinéraire dans les temples",
+        "Depuis l’aéroport de Siem Reap",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Pass Angkor (1/3/7 jours) : 37/62/72 USD · Tuk-tuk journée temples : ≈ 15–25 USD"
+    },
+    "Luang Prabang": {
+      "country": "Laos",
+      "hero": "https://images.unsplash.com/photo-1744593419072-a19dbbf7e0f3?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Classée à l’UNESCO dans son ensemble, Luang Prabang est une ville-temple posée au confluent de deux rivières, où le rythme est donné par les moines.",
+      "currency": "LAK (USD largement accepté)",
+      "best": "nov.–fév., saison sèche fraîche",
+      "airport": "LPQ",
+      "transport": "À pied · tuk-tuk",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Péninsule / centre historique",
+          "UNESCO · temples · calme",
+          "Le cœur classé, dizaines de temples dorés et maisons coloniales françaises.",
+          "https://images.unsplash.com/photo-1744593419072-a19dbbf7e0f3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Marché de nuit",
+          "Artisanat · food · animé",
+          "S’installe chaque soir sur la rue principale, textiles et cuisine de rue.",
+          "https://images.unsplash.com/photo-1744593419072-a19dbbf7e0f3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Ban Xieng Muan",
+          "Artisans · galeries · authentique",
+          "Quartier des artisans et ateliers, plus tranquille que le centre.",
+          "https://images.unsplash.com/photo-1744593419072-a19dbbf7e0f3?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Rive du Mékong",
+          "Vue · restaurants · coucher de soleil",
+          "Terrasses avec vue sur le fleuve, meilleur endroit pour le coucher de soleil.",
+          "https://images.unsplash.com/photo-1744593419072-a19dbbf7e0f3?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "LPQ",
+          "Tuk-tuk",
+          "15–20 min vers le centre."
+        ],
+        [
+          "LPQ",
+          "Transfert hôtel",
+          "Simple à réserver à l’avance."
+        ],
+        [
+          "Ville",
+          "À pied",
+          "La péninsule se visite entièrement à pied."
+        ]
+      ],
+      "articles": [
+        "Voir la cérémonie de l’aumône aux moines",
+        "Excursion aux chutes de Kuang Si",
+        "Luang Prabang en 2 jours",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Tuk-tuk partagé en ville : ≈ 10 000–20 000 LAK · Location vélo : ≈ 20 000 LAK/jour"
+    },
+    "Chiang Mai": {
+      "country": "Thaïlande",
+      "hero": "https://images.unsplash.com/photo-1644027619988-fc9f7156fca0?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Plus posée que Bangkok, Chiang Mai mélange vieille ville fortifiée, temples de montagne et une scène café/digital nomad parmi les plus actives d’Asie du Sud-Est.",
+      "currency": "THB",
+      "best": "nov.–fév., saison fraîche et sèche",
+      "airport": "CNX",
+      "transport": "Songthaew · scooter",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Vieille ville",
+          "Temples · remparts · historique",
+          "Carré fortifié avec des dizaines de temples, base classique pour un premier séjour.",
+          "https://images.unsplash.com/photo-1644027619988-fc9f7156fca0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Nimmanhaemin",
+          "Cafés · digital nomad · branché",
+          "Le quartier le plus tendance, cafés design et coworking.",
+          "https://images.unsplash.com/photo-1644027619988-fc9f7156fca0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Marché du dimanche",
+          "Marché · artisanat · animé",
+          "Devient un immense marché piéton chaque dimanche soir.",
+          "https://images.unsplash.com/photo-1644027619988-fc9f7156fca0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Riverside (rivière Ping)",
+          "Restaurants · calme · vue",
+          "Terrasses en bord de rivière, ambiance plus posée le soir.",
+          "https://images.unsplash.com/photo-1644027619988-fc9f7156fca0?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "CNX",
+          "Songthaew/taxi",
+          "15–20 min vers la vieille ville."
+        ],
+        [
+          "CNX",
+          "Grab",
+          "Simple et fiable pour tout trajet en ville."
+        ],
+        [
+          "Ville",
+          "Songthaew (camionnette rouge)",
+          "Transport collectif partagé, très économique."
+        ]
+      ],
+      "articles": [
+        "La vieille ville ou Nimman ?",
+        "Visiter un sanctuaire d’éléphants éthique",
+        "Chiang Mai en 2 jours depuis Bangkok",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Songthaew en ville : ≈ 30–40 THB/trajet · Location scooter : ≈ 150–250 THB/jour"
+    },
+    "Yogyakarta": {
+      "country": "Indonésie",
+      "hero": "https://images.unsplash.com/photo-1566559532224-6d65e9fc0f37?auto=format&fit=crop&w=1800&q=90",
+      "intro": "« Jogja » est la capitale culturelle de Java : Borobudur et Prambanan, deux des plus grands sanctuaires bouddhiste et hindou du monde, se trouvent à moins d’une heure du centre.",
+      "currency": "IDR",
+      "best": "mai–sept., saison sèche",
+      "airport": "YIA",
+      "transport": "Taxi · Grab",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Malioboro",
+          "Marché · animé · central",
+          "L’artère commerçante et touristique principale, bordée d’échoppes et de street food.",
+          "https://images.unsplash.com/photo-1566559532224-6d65e9fc0f37?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kraton",
+          "Historique · culture · calme",
+          "Le cœur cérémoniel de la ville, autour du palais du sultan encore habité.",
+          "https://images.unsplash.com/photo-1566559532224-6d65e9fc0f37?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Prawirotaman",
+          "Boutique-hôtels · cafés · calme",
+          "Ancien quartier batik devenu zone d’hébergement prisée, plus tranquille.",
+          "https://images.unsplash.com/photo-1566559532224-6d65e9fc0f37?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kotabaru",
+          "Colonial · résidentiel · vert",
+          "Quartier aux villas coloniales néerlandaises, ombragé et paisible.",
+          "https://images.unsplash.com/photo-1566559532224-6d65e9fc0f37?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "YIA",
+          "Bus DAMRI",
+          "Direct vers le centre, ~1h15 (aéroport excentré)."
+        ],
+        [
+          "YIA",
+          "Taxi/Grab",
+          "1h–1h15 selon trafic."
+        ],
+        [
+          "Ville",
+          "Grab/Gojek",
+          "Le plus simple pour tout déplacement en ville."
+        ]
+      ],
+      "articles": [
+        "Borobudur au lever du soleil, ça vaut le coup ?",
+        "Borobudur et Prambanan en 1 jour",
+        "Yogyakarta en 2 jours depuis Bali",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Bus Trans Jogja : ≈ 3 600 IDR/trajet · Grab courte course : ≈ 15 000–25 000 IDR"
+    },
+    "Ho Chi Minh City": {
+      "country": "Vietnam",
+      "hero": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Toujours appelée Saïgon par ses habitants, Ho Chi Minh-Ville est le moteur économique du Vietnam : plus rapide que Hanoï, avec une scène café et street food tout aussi dense.",
+      "currency": "VND",
+      "best": "déc.–avr., saison sèche",
+      "airport": "SGN",
+      "transport": "Grab (moto/voiture)",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "District 1",
+          "Central · affaires · nightlife",
+          "Le cœur touristique et d’affaires, marché Ben Thanh et rue Bui Vien.",
+          "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "District 3",
+          "Résidentiel · cafés · calme",
+          "Rues ombragées et villas coloniales, plus tranquille que le District 1.",
+          "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Thao Dien",
+          "Expat · branché · calme",
+          "Quartier expat avec cafés design, de l’autre côté de la rivière.",
+          "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Cholon (Chinatown)",
+          "Marchés · temples · authentique",
+          "Le plus grand quartier chinois du Vietnam, marché Binh Tay et temples colorés.",
+          "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "SGN",
+          "Taxi/Grab",
+          "20–30 min vers le District 1, aéroport très central."
+        ],
+        [
+          "SGN",
+          "Bus 109",
+          "Économique, dessert le centre."
+        ],
+        [
+          "Ville",
+          "Grab (moto/voiture)",
+          "Le plus simple pour se déplacer en ville."
+        ]
+      ],
+      "articles": [
+        "District 1 ou Thao Dien ?",
+        "Excursion aux tunnels de Cu Chi",
+        "Ho Chi Minh-Ville en 2 jours depuis Hanoï",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Bus urbain : ≈ 5 000–7 000 VND · Grab moto courte course : ≈ 15 000–25 000 VND"
+    },
+    "Tunis": {
+      "country": "Tunisie",
+      "hero": "https://images.unsplash.com/photo-1722788137347-0df88c467b86?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Tunis combine une médina classée à l’UNESCO et, à quelques stations de train, le village blanc et bleu de Sidi Bou Saïd perché sur la Méditerranée.",
+      "currency": "TND",
+      "best": "avr.–juin · sept.–oct.",
+      "airport": "TUN",
+      "transport": "TGM · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Médina de Tunis",
+          "UNESCO · souks · historique",
+          "Labyrinthe de souks et de palais, cœur historique de la capitale.",
+          "https://images.unsplash.com/photo-1722788137347-0df88c467b86?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Sidi Bou Saïd",
+          "Blanc et bleu · vue mer · photogénique",
+          "Village-carte postale à 20 minutes du centre, incontournable au coucher du soleil.",
+          "https://images.unsplash.com/photo-1722788137347-0df88c467b86?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "La Marsa",
+          "Balnéaire · chic · calme",
+          "Front de mer résidentiel et chic, plus détendu que le centre.",
+          "https://images.unsplash.com/photo-1722788137347-0df88c467b86?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Avenue Habib Bourguiba",
+          "Colonial · animé · central",
+          "L’artère principale, architecture coloniale française et cafés.",
+          "https://images.unsplash.com/photo-1722788137347-0df88c467b86?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "TUN",
+          "Taxi",
+          "20–25 min vers le centre."
+        ],
+        [
+          "TUN",
+          "Bus",
+          "Liaison économique mais moins fréquente."
+        ],
+        [
+          "Ville",
+          "TGM (train littoral)",
+          "Relie le centre à La Marsa et Sidi Bou Saïd le long de la côte."
+        ]
+      ],
+      "articles": [
+        "Médina ou Sidi Bou Saïd ?",
+        "Le TGM, le train qui longe la côte",
+        "Depuis l’aéroport de Tunis",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "TGM (train littoral) : ≈ 0,8–1 TND/trajet · Taxi courte course : ≈ 5–10 TND"
+    },
+    "Algiers": {
+      "country": "Algérie",
+      "hero": "https://images.unsplash.com/photo-1610133290889-0ed892ce5157?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Surnommée « Alger la Blanche » pour ses façades qui dévalent la colline vers la baie, la capitale algérienne reste l’une des destinations les moins visitées de la Méditerranée malgré un patrimoine considérable.",
+      "currency": "DZD",
+      "best": "avr.–juin · sept.–oct.",
+      "airport": "ALG",
+      "transport": "Métro d’Alger · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Casbah",
+          "UNESCO · historique · labyrinthe",
+          "La citadelle ottomane classée UNESCO, ruelles en escalier surplombant la baie.",
+          "https://images.unsplash.com/photo-1610133290889-0ed892ce5157?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Hydra",
+          "Résidentiel · ambassades · calme",
+          "Quartier huppé en hauteur, calme et verdoyant.",
+          "https://images.unsplash.com/photo-1610133290889-0ed892ce5157?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bab El Oued",
+          "Populaire · authentique · marché",
+          "Quartier populaire animé, marché et vie de rue typique.",
+          "https://images.unsplash.com/photo-1610133290889-0ed892ce5157?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Front de mer",
+          "Haussmannien · balades · vue baie",
+          "Grands boulevards de style haussmannien construits face à la baie d’Alger.",
+          "https://images.unsplash.com/photo-1610133290889-0ed892ce5157?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "ALG",
+          "Taxi",
+          "30–40 min vers le centre."
+        ],
+        [
+          "ALG",
+          "Métro d’Alger",
+          "Nouvelle ligne reliant l’aéroport au centre."
+        ],
+        [
+          "Ville",
+          "Métro d’Alger",
+          "Une ligne unique, mais efficace pour le centre."
+        ]
+      ],
+      "articles": [
+        "Visiter la Casbah, mode d’emploi",
+        "Alger, la ville blanche méconnue",
+        "Depuis l’aéroport Houari Boumediene",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Métro d’Alger : ≈ 50 DZD/trajet · Taxi courte course : ≈ 300–600 DZD"
+    },
+    "Amman": {
+      "country": "Jordanie",
+      "hero": "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Amman elle-même se visite en un jour ou deux — sa vraie fonction est d’être la base la plus pratique pour rayonner vers Petra, la mer Morte et le désert du Wadi Rum.",
+      "currency": "JOD",
+      "best": "mars–mai · sept.–nov.",
+      "airport": "AMM",
+      "transport": "Taxi · Uber",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Downtown",
+          "Historique · marchés · authentique",
+          "Le cœur ancien autour du théâtre romain, souks et restaurants populaires.",
+          "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Jabal Amman",
+          "Cafés · galeries · résidentiel",
+          "Collines résidentielles avec la meilleure scène café et restaurant de la ville.",
+          "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Abdoun",
+          "Chic · ambassades · moderne",
+          "Quartier moderne et huppé, restaurants internationaux.",
+          "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Rainbow Street",
+          "Nightlife · cafés · animé",
+          "Rue piétonne animée le soir, prolongement naturel de Jabal Amman.",
+          "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "AMM",
+          "Taxi/Uber",
+          "35–45 min vers le centre."
+        ],
+        [
+          "AMM",
+          "Bus Airport Express",
+          "Liaison directe et économique vers le centre."
+        ],
+        [
+          "Ville",
+          "Taxi/Uber",
+          "Le plus simple, pas de métro à Amman."
+        ]
+      ],
+      "articles": [
+        "Petra en 1 jour depuis Amman",
+        "Amman, la mer Morte et Wadi Rum en une semaine",
+        "Depuis l’aéroport Queen Alia",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Jordan Pass (inclut Petra) : ≈ 70–80 JOD · Taxi en ville : ≈ 2–5 JOD"
+    },
+    "Abu Dhabi": {
+      "country": "Émirats arabes unis",
+      "hero": "https://images.unsplash.com/photo-1590075865003-e48277faa558?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Capitale politique des Émirats, Abu Dhabi cultive une image plus posée et culturelle que Dubaï : la Grande Mosquée Cheikh Zayed et le Louvre Abu Dhabi en sont les meilleures vitrines.",
+      "currency": "AED",
+      "best": "nov.–mars, saison fraîche",
+      "airport": "AUH",
+      "transport": "Taxi · métro (limité)",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Corniche",
+          "Front de mer · balades · familial",
+          "Promenade de 8 km en bord de mer, la plus agréable de la ville.",
+          "https://images.unsplash.com/photo-1590075865003-e48277faa558?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Île de Saadiyat",
+          "Culture · musées · plages",
+          "Le Louvre Abu Dhabi et de futurs musées, plus des plages haut de gamme.",
+          "https://images.unsplash.com/photo-1590075865003-e48277faa558?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Al Maryah Island",
+          "Affaires · shopping · luxe",
+          "Le nouveau centre financier et commercial de la ville.",
+          "https://images.unsplash.com/photo-1590075865003-e48277faa558?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Yas Island",
+          "Parcs à thème · F1 · loisirs",
+          "Ferrari World, circuit de F1 et parcs aquatiques.",
+          "https://images.unsplash.com/photo-1590075865003-e48277faa558?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "AUH",
+          "Taxi",
+          "30–40 min vers le centre."
+        ],
+        [
+          "AUH",
+          "Bus A1",
+          "Liaison économique vers le centre-ville."
+        ],
+        [
+          "Ville",
+          "Taxi",
+          "Le plus pratique, réseau de bus complémentaire mais métro absent."
+        ]
+      ],
+      "articles": [
+        "La Grande Mosquée Cheikh Zayed, mode d’emploi",
+        "Abu Dhabi ou Dubaï, laquelle choisir ?",
+        "Depuis l’aéroport d’Abu Dhabi",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Bus urbain : ≈ 2 AED/trajet · Taxi courte course : ≈ 15–25 AED"
+    },
+    "Jeddah": {
+      "country": "Arabie Saoudite",
+      "hero": "https://images.unsplash.com/photo-1781762258140-fae77c26ae5b?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Porte d’entrée historique vers La Mecque et carrefour marchand depuis des siècles, Jeddah a rouvert au tourisme international récemment — Al-Balad, sa vieille ville classée UNESCO, en est le meilleur symbole.",
+      "currency": "SAR",
+      "best": "nov.–mars, saison fraîche",
+      "airport": "JED",
+      "transport": "Taxi · Uber",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Al-Balad",
+          "UNESCO · historique · architecture",
+          "Vieille ville aux maisons de corail et balcons de bois sculptés, cœur historique du commerce rouge.",
+          "https://images.unsplash.com/photo-1781762258140-fae77c26ae5b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Corniche",
+          "Front de mer · sculptures · familial",
+          "30 km de promenade en bord de mer Rouge, ponctuée de sculptures publiques.",
+          "https://images.unsplash.com/photo-1781762258140-fae77c26ae5b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Al Hamra",
+          "Résidentiel · plages · chic",
+          "Quartier résidentiel côtier avec plages privées et restaurants.",
+          "https://images.unsplash.com/photo-1781762258140-fae77c26ae5b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Tahlia Street",
+          "Shopping · cafés · moderne",
+          "L’artère commerçante et café la plus tendance de la ville.",
+          "https://images.unsplash.com/photo-1781762258140-fae77c26ae5b?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "JED",
+          "Taxi/Uber",
+          "25–35 min vers Al-Balad."
+        ],
+        [
+          "JED",
+          "SAPTCO (bus)",
+          "Liaison économique vers le centre."
+        ],
+        [
+          "Ville",
+          "Uber/Careem",
+          "Le plus simple, pas de transport public dense."
+        ]
+      ],
+      "articles": [
+        "Visiter Al-Balad, le vieux Jeddah",
+        "Jeddah, porte de la mer Rouge",
+        "Depuis l’aéroport Roi Abdelaziz",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Uber/Careem courte course : ≈ 15–25 SAR"
+    },
+    "Muscat": {
+      "country": "Oman",
+      "hero": "https://images.unsplash.com/photo-1504257538320-8a5d5f1c0f31?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Muscat s’étire sur 50 km entre montagnes et mer, sans gratte-ciel : une capitale du Golfe à l’échelle humaine, bâtie autour de forts portugais et d’un souk séculaire.",
+      "currency": "OMR",
+      "best": "oct.–avr., hors forte chaleur",
+      "airport": "MCT",
+      "transport": "Taxi · voiture de location",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Mutrah",
+          "Souk · corniche · historique",
+          "Le vieux port et son souk couvert, l’un des plus authentiques du Golfe.",
+          "https://images.unsplash.com/photo-1504257538320-8a5d5f1c0f31?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Old Muscat",
+          "Forts · palais · historique",
+          "Le noyau historique fortifié, autour du Palais Al Alam.",
+          "https://images.unsplash.com/photo-1504257538320-8a5d5f1c0f31?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Qurum",
+          "Résidentiel · plage · pratique",
+          "Quartier central avec plage urbaine et centres commerciaux.",
+          "https://images.unsplash.com/photo-1504257538320-8a5d5f1c0f31?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Al Mouj",
+          "Marina · moderne · loisirs",
+          "Développement récent en bord de marina, restaurants et golf.",
+          "https://images.unsplash.com/photo-1504257538320-8a5d5f1c0f31?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "MCT",
+          "Taxi",
+          "25–35 min vers Mutrah/centre."
+        ],
+        [
+          "MCT",
+          "Voiture de location",
+          "Recommandée pour explorer au-delà de la ville."
+        ],
+        [
+          "Ville",
+          "Taxi/voiture",
+          "Ville très étendue, peu marchable d’un quartier à l’autre."
+        ]
+      ],
+      "articles": [
+        "Le souk de Mutrah, mode d’emploi",
+        "Louer une voiture pour explorer Oman",
+        "Depuis l’aéroport de Mascate",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Taxi courte course : ≈ 2–4 OMR · Location voiture : à partir de ≈ 15 OMR/jour"
+    },
+    "Manama": {
+      "country": "Bahreïn",
+      "hero": "https://images.unsplash.com/photo-1748066768504-99532da7d1e9?auto=format&fit=crop&w=1800&q=90",
+      "intro": "La plus petite capitale du Golfe est aussi la plus accessible pour une escale courte : souk historique, gratte-ciels et circuit de F1 se trouvent tous à moins de 20 minutes les uns des autres.",
+      "currency": "BHD",
+      "best": "nov.–mars, saison fraîche",
+      "airport": "BAH",
+      "transport": "Taxi · Uber",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Souk de Manama",
+          "Marché · historique · authentique",
+          "Le vieux souk, or et épices, au pied des tours modernes.",
+          "https://images.unsplash.com/photo-1748066768504-99532da7d1e9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bahrain Bay",
+          "Moderne · affaires · vue",
+          "Front de mer futuriste avec le World Trade Center et ses tours à éoliennes.",
+          "https://images.unsplash.com/photo-1748066768504-99532da7d1e9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Adliya",
+          "Cafés · galeries · nightlife",
+          "Le quartier le plus branché, restaurants et scène culturelle.",
+          "https://images.unsplash.com/photo-1748066768504-99532da7d1e9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Juffair",
+          "Hôtels · restaurants · animé",
+          "Zone hôtelière et de restauration prisée des expatriés.",
+          "https://images.unsplash.com/photo-1748066768504-99532da7d1e9?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "BAH",
+          "Taxi/Uber",
+          "15–20 min vers le centre, l’un des aéroports les plus proches du Golfe."
+        ],
+        [
+          "BAH",
+          "Bus",
+          "Liaison économique disponible."
+        ],
+        [
+          "Ville",
+          "Taxi/Uber",
+          "Le plus simple pour une ville compacte."
+        ]
+      ],
+      "articles": [
+        "Manama en une escale de 24h",
+        "Le circuit de F1 de Sakhir",
+        "Depuis l’aéroport de Bahreïn",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Taxi courte course : ≈ 1–3 BHD"
+    },
+    "Kigali": {
+      "country": "Rwanda",
+      "hero": "https://images.unsplash.com/photo-1689013398932-b576a11e07a1?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Bâtie sur des collines et reconnue pour sa propreté et sa sécurité, Kigali est surtout la porte d’entrée vers le trekking des gorilles de montagne dans le parc national des volcans.",
+      "currency": "RWF",
+      "best": "juin–sept. · déc.–fév., saisons sèches",
+      "airport": "KGL",
+      "transport": "Taxi-moto · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Kiyovu",
+          "Central · affaires · hôtels",
+          "Le quartier des affaires et des hôtels, base pratique pour un premier séjour.",
+          "https://images.unsplash.com/photo-1689013398932-b576a11e07a1?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Nyamirambo",
+          "Populaire · vivant · authentique",
+          "Le quartier le plus vivant et multiculturel, marché et vie de rue.",
+          "https://images.unsplash.com/photo-1689013398932-b576a11e07a1?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kimihurura",
+          "Résidentiel · expat · calme",
+          "Quartier calme prisé des expatriés, restaurants internationaux.",
+          "https://images.unsplash.com/photo-1689013398932-b576a11e07a1?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gisozi",
+          "Mémoire · histoire · recueillement",
+          "Site du mémorial du génocide, essentiel pour comprendre l’histoire récente du pays.",
+          "https://images.unsplash.com/photo-1689013398932-b576a11e07a1?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "KGL",
+          "Taxi",
+          "20–30 min vers le centre."
+        ],
+        [
+          "KGL",
+          "Transfert hôtel",
+          "Courant et abordable."
+        ],
+        [
+          "Ville",
+          "Taxi-moto",
+          "Rapide et économique, casque fourni obligatoire."
+        ]
+      ],
+      "articles": [
+        "Réserver un permis gorilles au parc des volcans",
+        "Kigali, ville la plus propre d’Afrique ?",
+        "Depuis l’aéroport de Kigali",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Taxi-moto en ville : ≈ 500–1 500 RWF · Bus urbain : ≈ 250–400 RWF"
+    },
+    "Victoria Falls": {
+      "country": "Zimbabwe",
+      "hero": "https://images.unsplash.com/photo-1788177823884-1905105f5572?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Deux fois plus haute que le Niagara et deux fois plus large, Victoria Falls se visite des deux côtés de la frontière — le côté zimbabwéen offre la meilleure vue d’ensemble.",
+      "currency": "USD (largement utilisé)",
+      "best": "avr.–août, débit maximal des chutes",
+      "airport": "VFA",
+      "transport": "Taxi · navette",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Centre-ville",
+          "Hôtels · restaurants · pratique",
+          "Petite ville concentrée autour de l’entrée du parc des chutes.",
+          "https://images.unsplash.com/photo-1788177823884-1905105f5572?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Zambezi National Park",
+          "Faune · safari léger · nature",
+          "Zone de safari en bordure du fleuve Zambèze, en amont des chutes.",
+          "https://images.unsplash.com/photo-1788177823884-1905105f5572?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Rive zambienne (Livingstone)",
+          "Vue alternative · activités · frontière",
+          "À traverser pour une vue complémentaire et des activités comme le pont suspendu.",
+          "https://images.unsplash.com/photo-1788177823884-1905105f5572?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gorges de Batoka",
+          "Aventure · rafting · adrénaline",
+          "Rafting en eaux vives et saut à l’élastique dans les gorges sous les chutes.",
+          "https://images.unsplash.com/photo-1788177823884-1905105f5572?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "VFA",
+          "Taxi/navette",
+          "10–15 min vers le centre, aéroport très proche."
+        ],
+        [
+          "VFA",
+          "Transfert hôtel",
+          "Quasi systématique, inclus par de nombreux hôtels."
+        ],
+        [
+          "Ville",
+          "À pied",
+          "Le centre et l’entrée des chutes se rejoignent à pied."
+        ]
+      ],
+      "articles": [
+        "Côté zimbabwéen ou zambien ?",
+        "Activités à Victoria Falls : du rafting au survol",
+        "Depuis l’aéroport de Victoria Falls",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Entrée du parc des chutes : ≈ 30 USD · Taxi en ville : ≈ 5–10 USD"
+    },
+    "Addis Ababa": {
+      "country": "Éthiopie",
+      "hero": "https://images.unsplash.com/photo-1647316703389-e114712500e5?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Plus haute capitale d’Afrique et siège de l’Union africaine, Addis-Abeba est aussi la porte d’entrée vers l’un des patrimoines historiques les plus riches du continent.",
+      "currency": "ETB",
+      "best": "oct.–mars, saison sèche",
+      "airport": "ADD",
+      "transport": "Taxi · Ride (VTC local)",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Piazza",
+          "Historique · italien · marché",
+          "Quartier hérité de l’occupation italienne, architecture et cafés historiques.",
+          "https://images.unsplash.com/photo-1647316703389-e114712500e5?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bole",
+          "Moderne · aéroport · affaires",
+          "Quartier d’affaires et hôtelier, proche de l’aéroport.",
+          "https://images.unsplash.com/photo-1647316703389-e114712500e5?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Merkato",
+          "Plus grand marché d’Afrique · authentique · dense",
+          "Marché à ciel ouvert immense, expérience sensorielle intense.",
+          "https://images.unsplash.com/photo-1647316703389-e114712500e5?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kazanchis",
+          "Institutions · hôtels · central",
+          "Quartier administratif et hôtelier central.",
+          "https://images.unsplash.com/photo-1647316703389-e114712500e5?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "ADD",
+          "Taxi/Ride",
+          "20–30 min vers le centre."
+        ],
+        [
+          "ADD",
+          "Transfert hôtel",
+          "Recommandé pour une première arrivée."
+        ],
+        [
+          "Ville",
+          "Ride (VTC local)",
+          "Équivalent local d’Uber, fiable et peu coûteux."
+        ]
+      ],
+      "articles": [
+        "Merkato, le plus grand marché d’Afrique",
+        "Depuis Addis-Abeba vers Lalibela",
+        "Depuis l’aéroport Bole",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Ride (VTC) courte course : ≈ 100–250 ETB · Minibus local : ≈ 10–20 ETB"
+    },
+    "Dakar": {
+      "country": "Sénégal",
+      "hero": "https://images.unsplash.com/photo-1637166514815-8b923a08f8e8?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Pointe la plus occidentale du continent africain, Dakar mêle façades coloniales, art urbain et l’une des scènes musicales les plus vivantes d’Afrique de l’Ouest.",
+      "currency": "XOF",
+      "best": "nov.–mai, saison sèche",
+      "airport": "DSS",
+      "transport": "Taxi · car rapide",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Plateau",
+          "Colonial · affaires · central",
+          "Le centre historique et administratif, architecture coloniale française.",
+          "https://images.unsplash.com/photo-1637166514815-8b923a08f8e8?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Almadies",
+          "Plages · résidentiel · chic",
+          "Pointe la plus à l’ouest, plages et restaurants en bord de mer.",
+          "https://images.unsplash.com/photo-1637166514815-8b923a08f8e8?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Médina",
+          "Populaire · marché · authentique",
+          "Quartier populaire animé, marché Sandaga et vie de rue dense.",
+          "https://images.unsplash.com/photo-1637166514815-8b923a08f8e8?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Île de Gorée",
+          "UNESCO · mémoire · histoire",
+          "Île classée UNESCO au large de Dakar, lieu de mémoire de la traite négrière.",
+          "https://images.unsplash.com/photo-1637166514815-8b923a08f8e8?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "DSS",
+          "Taxi",
+          "45–60 min vers le centre (aéroport excentré)."
+        ],
+        [
+          "DSS",
+          "Transfert hôtel",
+          "Recommandé, l’aéroport est loin du centre."
+        ],
+        [
+          "Ville",
+          "Car rapide / taxi",
+          "Le taxi reste le plus simple pour un visiteur."
+        ]
+      ],
+      "articles": [
+        "Visiter l’île de Gorée",
+        "Dakar, la scène musicale ouest-africaine",
+        "Depuis l’aéroport Blaise Diagne",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Taxi en ville (négocié) : ≈ 2 000–4 000 XOF · Car rapide : ≈ 200 XOF"
+    },
+    "Mauritius": {
+      "country": "Maurice",
+      "hero": "https://images.unsplash.com/photo-1537640685236-a9df2496e232?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Maurice se pense rarement en « ville » : le vrai choix est celui de la côte — nord animé, ouest pour le coucher de soleil, sud-ouest pour le luxe tranquille.",
+      "currency": "MUR",
+      "best": "mai–déc., hors saison cyclonique",
+      "airport": "MRU",
+      "transport": "Taxi · voiture de location",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Grand Baie",
+          "Nightlife · plages · touristique",
+          "La station balnéaire la plus animée, restaurants et sorties en mer.",
+          "https://images.unsplash.com/photo-1537640685236-a9df2496e232?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Port Louis",
+          "Capitale · marché · authentique",
+          "La capitale, marché central et Caudan Waterfront.",
+          "https://images.unsplash.com/photo-1537640685236-a9df2496e232?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Flic en Flac",
+          "Coucher de soleil · plage · familial",
+          "Plage à l’ouest réputée pour ses couchers de soleil et le snorkeling.",
+          "https://images.unsplash.com/photo-1537640685236-a9df2496e232?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Le Morne",
+          "UNESCO · luxe · sauvage",
+          "Péninsule classée UNESCO, kitesurf et hôtels 5 étoiles isolés.",
+          "https://images.unsplash.com/photo-1537640685236-a9df2496e232?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "MRU",
+          "Taxi",
+          "20–45 min selon la côte choisie."
+        ],
+        [
+          "MRU",
+          "Transfert hôtel",
+          "Très courant, à réserver à l’avance."
+        ],
+        [
+          "Ville",
+          "Voiture de location",
+          "Recommandée pour explorer les différentes côtes de l’île."
+        ]
+      ],
+      "articles": [
+        "Quelle côte choisir à Maurice ?",
+        "Louer une voiture pour faire le tour de l’île",
+        "Depuis l’aéroport de Maurice",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Bus local : ≈ 25–50 MUR · Location voiture : à partir de ≈ 25 EUR/jour"
     }
   },
   "hotels": {
@@ -6797,6 +8037,1486 @@
         "neighborhood": "Vieux Quartier (36 rues)",
         "tier": "Premium",
         "price": 105,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Osaka": [
+      {
+        "name": "Dotonbori House",
+        "neighborhood": "Dotonbori",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Namba Stay",
+        "neighborhood": "Namba",
+        "tier": "Budget",
+        "price": 65,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Umeda Hotel",
+        "neighborhood": "Umeda",
+        "tier": "Budget",
+        "price": 75,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Shinsekai Suites",
+        "neighborhood": "Shinsekai",
+        "tier": "Confort",
+        "price": 140,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Dotonbori Rooms",
+        "neighborhood": "Dotonbori",
+        "tier": "Confort",
+        "price": 155,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Namba House",
+        "neighborhood": "Namba",
+        "tier": "Confort",
+        "price": 170,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Umeda Stay",
+        "neighborhood": "Umeda",
+        "tier": "Premium",
+        "price": 230,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Shinsekai Hotel",
+        "neighborhood": "Shinsekai",
+        "tier": "Premium",
+        "price": 250,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Dotonbori Suites",
+        "neighborhood": "Dotonbori",
+        "tier": "Premium",
+        "price": 270,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Busan": [
+      {
+        "name": "Haeundae House",
+        "neighborhood": "Haeundae",
+        "tier": "Budget",
+        "price": 40,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Gamcheon Stay",
+        "neighborhood": "Gamcheon",
+        "tier": "Budget",
+        "price": 48,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Nampo-dong Hotel",
+        "neighborhood": "Nampo-dong",
+        "tier": "Budget",
+        "price": 56,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Seomyeon Suites",
+        "neighborhood": "Seomyeon",
+        "tier": "Confort",
+        "price": 95,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Haeundae Rooms",
+        "neighborhood": "Haeundae",
+        "tier": "Confort",
+        "price": 110,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Gamcheon House",
+        "neighborhood": "Gamcheon",
+        "tier": "Confort",
+        "price": 125,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Nampo-dong Stay",
+        "neighborhood": "Nampo-dong",
+        "tier": "Premium",
+        "price": 180,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Seomyeon Hotel",
+        "neighborhood": "Seomyeon",
+        "tier": "Premium",
+        "price": 200,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Haeundae Suites",
+        "neighborhood": "Haeundae",
+        "tier": "Premium",
+        "price": 220,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Xi'an": [
+      {
+        "name": "Quartier musulman House",
+        "neighborhood": "Quartier musulman",
+        "tier": "Budget",
+        "price": 30,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Intra-muros Stay",
+        "neighborhood": "Intra-muros",
+        "tier": "Budget",
+        "price": 36,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Grande Pagode de l’Oie sauvage Hotel",
+        "neighborhood": "Grande Pagode de l’Oie sauvage",
+        "tier": "Budget",
+        "price": 42,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Gare / périphérie est Suites",
+        "neighborhood": "Gare / périphérie est",
+        "tier": "Confort",
+        "price": 70,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Quartier musulman Rooms",
+        "neighborhood": "Quartier musulman",
+        "tier": "Confort",
+        "price": 80,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Intra-muros House",
+        "neighborhood": "Intra-muros",
+        "tier": "Confort",
+        "price": 90,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Grande Pagode de l’Oie sauvage Stay",
+        "neighborhood": "Grande Pagode de l’Oie sauvage",
+        "tier": "Premium",
+        "price": 130,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Gare / périphérie est Hotel",
+        "neighborhood": "Gare / périphérie est",
+        "tier": "Premium",
+        "price": 145,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Quartier musulman Suites",
+        "neighborhood": "Quartier musulman",
+        "tier": "Premium",
+        "price": 160,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Siem Reap": [
+      {
+        "name": "Pub Street / centre House",
+        "neighborhood": "Pub Street / centre",
+        "tier": "Budget",
+        "price": 20,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Vieux marché (Psar Chas) Stay",
+        "neighborhood": "Vieux marché (Psar Chas)",
+        "tier": "Budget",
+        "price": 25,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Wat Bo Hotel",
+        "neighborhood": "Wat Bo",
+        "tier": "Budget",
+        "price": 30,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Sala Kamreuk Suites",
+        "neighborhood": "Sala Kamreuk",
+        "tier": "Confort",
+        "price": 50,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Pub Street / centre Rooms",
+        "neighborhood": "Pub Street / centre",
+        "tier": "Confort",
+        "price": 60,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Vieux marché (Psar Chas) House",
+        "neighborhood": "Vieux marché (Psar Chas)",
+        "tier": "Confort",
+        "price": 70,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Wat Bo Stay",
+        "neighborhood": "Wat Bo",
+        "tier": "Premium",
+        "price": 90,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Sala Kamreuk Hotel",
+        "neighborhood": "Sala Kamreuk",
+        "tier": "Premium",
+        "price": 105,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Pub Street / centre Suites",
+        "neighborhood": "Pub Street / centre",
+        "tier": "Premium",
+        "price": 120,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Luang Prabang": [
+      {
+        "name": "Péninsule / centre historique House",
+        "neighborhood": "Péninsule / centre historique",
+        "tier": "Budget",
+        "price": 18,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Marché de nuit Stay",
+        "neighborhood": "Marché de nuit",
+        "tier": "Budget",
+        "price": 22,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Ban Xieng Muan Hotel",
+        "neighborhood": "Ban Xieng Muan",
+        "tier": "Budget",
+        "price": 26,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Rive du Mékong Suites",
+        "neighborhood": "Rive du Mékong",
+        "tier": "Confort",
+        "price": 45,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Péninsule / centre historique Rooms",
+        "neighborhood": "Péninsule / centre historique",
+        "tier": "Confort",
+        "price": 52,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Marché de nuit House",
+        "neighborhood": "Marché de nuit",
+        "tier": "Confort",
+        "price": 60,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Ban Xieng Muan Stay",
+        "neighborhood": "Ban Xieng Muan",
+        "tier": "Premium",
+        "price": 85,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Rive du Mékong Hotel",
+        "neighborhood": "Rive du Mékong",
+        "tier": "Premium",
+        "price": 95,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Péninsule / centre historique Suites",
+        "neighborhood": "Péninsule / centre historique",
+        "tier": "Premium",
+        "price": 105,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Chiang Mai": [
+      {
+        "name": "Vieille ville House",
+        "neighborhood": "Vieille ville",
+        "tier": "Budget",
+        "price": 20,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Nimmanhaemin Stay",
+        "neighborhood": "Nimmanhaemin",
+        "tier": "Budget",
+        "price": 25,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Marché du dimanche Hotel",
+        "neighborhood": "Marché du dimanche",
+        "tier": "Budget",
+        "price": 30,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Riverside (rivière Ping) Suites",
+        "neighborhood": "Riverside (rivière Ping)",
+        "tier": "Confort",
+        "price": 50,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Vieille ville Rooms",
+        "neighborhood": "Vieille ville",
+        "tier": "Confort",
+        "price": 60,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Nimmanhaemin House",
+        "neighborhood": "Nimmanhaemin",
+        "tier": "Confort",
+        "price": 70,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Marché du dimanche Stay",
+        "neighborhood": "Marché du dimanche",
+        "tier": "Premium",
+        "price": 95,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Riverside (rivière Ping) Hotel",
+        "neighborhood": "Riverside (rivière Ping)",
+        "tier": "Premium",
+        "price": 110,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Vieille ville Suites",
+        "neighborhood": "Vieille ville",
+        "tier": "Premium",
+        "price": 125,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Yogyakarta": [
+      {
+        "name": "Malioboro House",
+        "neighborhood": "Malioboro",
+        "tier": "Budget",
+        "price": 18,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Kraton Stay",
+        "neighborhood": "Kraton",
+        "tier": "Budget",
+        "price": 22,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Prawirotaman Hotel",
+        "neighborhood": "Prawirotaman",
+        "tier": "Budget",
+        "price": 26,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Kotabaru Suites",
+        "neighborhood": "Kotabaru",
+        "tier": "Confort",
+        "price": 42,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Malioboro Rooms",
+        "neighborhood": "Malioboro",
+        "tier": "Confort",
+        "price": 48,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Kraton House",
+        "neighborhood": "Kraton",
+        "tier": "Confort",
+        "price": 55,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Prawirotaman Stay",
+        "neighborhood": "Prawirotaman",
+        "tier": "Premium",
+        "price": 80,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Kotabaru Hotel",
+        "neighborhood": "Kotabaru",
+        "tier": "Premium",
+        "price": 90,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Malioboro Suites",
+        "neighborhood": "Malioboro",
+        "tier": "Premium",
+        "price": 100,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Ho Chi Minh City": [
+      {
+        "name": "District 1 House",
+        "neighborhood": "District 1",
+        "tier": "Budget",
+        "price": 20,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "District 3 Stay",
+        "neighborhood": "District 3",
+        "tier": "Budget",
+        "price": 25,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Thao Dien Hotel",
+        "neighborhood": "Thao Dien",
+        "tier": "Budget",
+        "price": 30,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Cholon (Chinatown) Suites",
+        "neighborhood": "Cholon (Chinatown)",
+        "tier": "Confort",
+        "price": 48,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "District 1 Rooms",
+        "neighborhood": "District 1",
+        "tier": "Confort",
+        "price": 55,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "District 3 House",
+        "neighborhood": "District 3",
+        "tier": "Confort",
+        "price": 63,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Thao Dien Stay",
+        "neighborhood": "Thao Dien",
+        "tier": "Premium",
+        "price": 90,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Cholon (Chinatown) Hotel",
+        "neighborhood": "Cholon (Chinatown)",
+        "tier": "Premium",
+        "price": 100,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "District 1 Suites",
+        "neighborhood": "District 1",
+        "tier": "Premium",
+        "price": 110,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Tunis": [
+      {
+        "name": "Médina de Tunis House",
+        "neighborhood": "Médina de Tunis",
+        "tier": "Budget",
+        "price": 30,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Sidi Bou Saïd Stay",
+        "neighborhood": "Sidi Bou Saïd",
+        "tier": "Budget",
+        "price": 36,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "La Marsa Hotel",
+        "neighborhood": "La Marsa",
+        "tier": "Budget",
+        "price": 42,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Avenue Habib Bourguiba Suites",
+        "neighborhood": "Avenue Habib Bourguiba",
+        "tier": "Confort",
+        "price": 65,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Médina de Tunis Rooms",
+        "neighborhood": "Médina de Tunis",
+        "tier": "Confort",
+        "price": 75,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Sidi Bou Saïd House",
+        "neighborhood": "Sidi Bou Saïd",
+        "tier": "Confort",
+        "price": 85,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "La Marsa Stay",
+        "neighborhood": "La Marsa",
+        "tier": "Premium",
+        "price": 110,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Avenue Habib Bourguiba Hotel",
+        "neighborhood": "Avenue Habib Bourguiba",
+        "tier": "Premium",
+        "price": 125,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Médina de Tunis Suites",
+        "neighborhood": "Médina de Tunis",
+        "tier": "Premium",
+        "price": 140,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Algiers": [
+      {
+        "name": "Casbah House",
+        "neighborhood": "Casbah",
+        "tier": "Budget",
+        "price": 35,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Hydra Stay",
+        "neighborhood": "Hydra",
+        "tier": "Budget",
+        "price": 42,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Bab El Oued Hotel",
+        "neighborhood": "Bab El Oued",
+        "tier": "Budget",
+        "price": 49,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Front de mer Suites",
+        "neighborhood": "Front de mer",
+        "tier": "Confort",
+        "price": 70,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Casbah Rooms",
+        "neighborhood": "Casbah",
+        "tier": "Confort",
+        "price": 80,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Hydra House",
+        "neighborhood": "Hydra",
+        "tier": "Confort",
+        "price": 90,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Bab El Oued Stay",
+        "neighborhood": "Bab El Oued",
+        "tier": "Premium",
+        "price": 120,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Front de mer Hotel",
+        "neighborhood": "Front de mer",
+        "tier": "Premium",
+        "price": 135,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Casbah Suites",
+        "neighborhood": "Casbah",
+        "tier": "Premium",
+        "price": 150,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Amman": [
+      {
+        "name": "Downtown House",
+        "neighborhood": "Downtown",
+        "tier": "Budget",
+        "price": 40,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Jabal Amman Stay",
+        "neighborhood": "Jabal Amman",
+        "tier": "Budget",
+        "price": 48,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Abdoun Hotel",
+        "neighborhood": "Abdoun",
+        "tier": "Budget",
+        "price": 56,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Rainbow Street Suites",
+        "neighborhood": "Rainbow Street",
+        "tier": "Confort",
+        "price": 90,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Downtown Rooms",
+        "neighborhood": "Downtown",
+        "tier": "Confort",
+        "price": 100,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Jabal Amman House",
+        "neighborhood": "Jabal Amman",
+        "tier": "Confort",
+        "price": 110,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Abdoun Stay",
+        "neighborhood": "Abdoun",
+        "tier": "Premium",
+        "price": 150,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Rainbow Street Hotel",
+        "neighborhood": "Rainbow Street",
+        "tier": "Premium",
+        "price": 165,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Downtown Suites",
+        "neighborhood": "Downtown",
+        "tier": "Premium",
+        "price": 180,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Abu Dhabi": [
+      {
+        "name": "Corniche House",
+        "neighborhood": "Corniche",
+        "tier": "Budget",
+        "price": 70,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Île de Saadiyat Stay",
+        "neighborhood": "Île de Saadiyat",
+        "tier": "Budget",
+        "price": 85,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Al Maryah Island Hotel",
+        "neighborhood": "Al Maryah Island",
+        "tier": "Budget",
+        "price": 100,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Yas Island Suites",
+        "neighborhood": "Yas Island",
+        "tier": "Confort",
+        "price": 180,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Corniche Rooms",
+        "neighborhood": "Corniche",
+        "tier": "Confort",
+        "price": 200,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Île de Saadiyat House",
+        "neighborhood": "Île de Saadiyat",
+        "tier": "Confort",
+        "price": 220,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Al Maryah Island Stay",
+        "neighborhood": "Al Maryah Island",
+        "tier": "Premium",
+        "price": 320,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Yas Island Hotel",
+        "neighborhood": "Yas Island",
+        "tier": "Premium",
+        "price": 360,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Corniche Suites",
+        "neighborhood": "Corniche",
+        "tier": "Premium",
+        "price": 400,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Jeddah": [
+      {
+        "name": "Al-Balad House",
+        "neighborhood": "Al-Balad",
+        "tier": "Budget",
+        "price": 60,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Corniche Stay",
+        "neighborhood": "Corniche",
+        "tier": "Budget",
+        "price": 72,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Al Hamra Hotel",
+        "neighborhood": "Al Hamra",
+        "tier": "Budget",
+        "price": 84,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Tahlia Street Suites",
+        "neighborhood": "Tahlia Street",
+        "tier": "Confort",
+        "price": 150,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Al-Balad Rooms",
+        "neighborhood": "Al-Balad",
+        "tier": "Confort",
+        "price": 165,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Corniche House",
+        "neighborhood": "Corniche",
+        "tier": "Confort",
+        "price": 180,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Al Hamra Stay",
+        "neighborhood": "Al Hamra",
+        "tier": "Premium",
+        "price": 260,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Tahlia Street Hotel",
+        "neighborhood": "Tahlia Street",
+        "tier": "Premium",
+        "price": 290,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Al-Balad Suites",
+        "neighborhood": "Al-Balad",
+        "tier": "Premium",
+        "price": 320,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Muscat": [
+      {
+        "name": "Mutrah House",
+        "neighborhood": "Mutrah",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Old Muscat Stay",
+        "neighborhood": "Old Muscat",
+        "tier": "Budget",
+        "price": 65,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Qurum Hotel",
+        "neighborhood": "Qurum",
+        "tier": "Budget",
+        "price": 75,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Al Mouj Suites",
+        "neighborhood": "Al Mouj",
+        "tier": "Confort",
+        "price": 130,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Mutrah Rooms",
+        "neighborhood": "Mutrah",
+        "tier": "Confort",
+        "price": 145,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Old Muscat House",
+        "neighborhood": "Old Muscat",
+        "tier": "Confort",
+        "price": 160,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Qurum Stay",
+        "neighborhood": "Qurum",
+        "tier": "Premium",
+        "price": 220,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Al Mouj Hotel",
+        "neighborhood": "Al Mouj",
+        "tier": "Premium",
+        "price": 245,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Mutrah Suites",
+        "neighborhood": "Mutrah",
+        "tier": "Premium",
+        "price": 270,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Manama": [
+      {
+        "name": "Souk de Manama House",
+        "neighborhood": "Souk de Manama",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Bahrain Bay Stay",
+        "neighborhood": "Bahrain Bay",
+        "tier": "Budget",
+        "price": 65,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Adliya Hotel",
+        "neighborhood": "Adliya",
+        "tier": "Budget",
+        "price": 75,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Juffair Suites",
+        "neighborhood": "Juffair",
+        "tier": "Confort",
+        "price": 125,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Souk de Manama Rooms",
+        "neighborhood": "Souk de Manama",
+        "tier": "Confort",
+        "price": 140,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Bahrain Bay House",
+        "neighborhood": "Bahrain Bay",
+        "tier": "Confort",
+        "price": 155,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Adliya Stay",
+        "neighborhood": "Adliya",
+        "tier": "Premium",
+        "price": 210,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Juffair Hotel",
+        "neighborhood": "Juffair",
+        "tier": "Premium",
+        "price": 235,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Souk de Manama Suites",
+        "neighborhood": "Souk de Manama",
+        "tier": "Premium",
+        "price": 260,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Kigali": [
+      {
+        "name": "Kiyovu House",
+        "neighborhood": "Kiyovu",
+        "tier": "Budget",
+        "price": 30,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Nyamirambo Stay",
+        "neighborhood": "Nyamirambo",
+        "tier": "Budget",
+        "price": 36,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Kimihurura Hotel",
+        "neighborhood": "Kimihurura",
+        "tier": "Budget",
+        "price": 42,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Gisozi Suites",
+        "neighborhood": "Gisozi",
+        "tier": "Confort",
+        "price": 70,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Kiyovu Rooms",
+        "neighborhood": "Kiyovu",
+        "tier": "Confort",
+        "price": 80,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Nyamirambo House",
+        "neighborhood": "Nyamirambo",
+        "tier": "Confort",
+        "price": 90,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Kimihurura Stay",
+        "neighborhood": "Kimihurura",
+        "tier": "Premium",
+        "price": 130,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Gisozi Hotel",
+        "neighborhood": "Gisozi",
+        "tier": "Premium",
+        "price": 145,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Kiyovu Suites",
+        "neighborhood": "Kiyovu",
+        "tier": "Premium",
+        "price": 160,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Victoria Falls": [
+      {
+        "name": "Centre-ville House",
+        "neighborhood": "Centre-ville",
+        "tier": "Budget",
+        "price": 45,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Zambezi National Park Stay",
+        "neighborhood": "Zambezi National Park",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Rive zambienne (Livingstone) Hotel",
+        "neighborhood": "Rive zambienne (Livingstone)",
+        "tier": "Budget",
+        "price": 65,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Gorges de Batoka Suites",
+        "neighborhood": "Gorges de Batoka",
+        "tier": "Confort",
+        "price": 110,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Centre-ville Rooms",
+        "neighborhood": "Centre-ville",
+        "tier": "Confort",
+        "price": 125,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Zambezi National Park House",
+        "neighborhood": "Zambezi National Park",
+        "tier": "Confort",
+        "price": 140,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Rive zambienne (Livingstone) Stay",
+        "neighborhood": "Rive zambienne (Livingstone)",
+        "tier": "Premium",
+        "price": 200,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Gorges de Batoka Hotel",
+        "neighborhood": "Gorges de Batoka",
+        "tier": "Premium",
+        "price": 225,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Centre-ville Suites",
+        "neighborhood": "Centre-ville",
+        "tier": "Premium",
+        "price": 250,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Addis Ababa": [
+      {
+        "name": "Piazza House",
+        "neighborhood": "Piazza",
+        "tier": "Budget",
+        "price": 25,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Bole Stay",
+        "neighborhood": "Bole",
+        "tier": "Budget",
+        "price": 30,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Merkato Hotel",
+        "neighborhood": "Merkato",
+        "tier": "Budget",
+        "price": 35,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Kazanchis Suites",
+        "neighborhood": "Kazanchis",
+        "tier": "Confort",
+        "price": 55,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Piazza Rooms",
+        "neighborhood": "Piazza",
+        "tier": "Confort",
+        "price": 65,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Bole House",
+        "neighborhood": "Bole",
+        "tier": "Confort",
+        "price": 75,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Merkato Stay",
+        "neighborhood": "Merkato",
+        "tier": "Premium",
+        "price": 100,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Kazanchis Hotel",
+        "neighborhood": "Kazanchis",
+        "tier": "Premium",
+        "price": 115,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Piazza Suites",
+        "neighborhood": "Piazza",
+        "tier": "Premium",
+        "price": 130,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Dakar": [
+      {
+        "name": "Plateau House",
+        "neighborhood": "Plateau",
+        "tier": "Budget",
+        "price": 35,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Almadies Stay",
+        "neighborhood": "Almadies",
+        "tier": "Budget",
+        "price": 42,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Médina Hotel",
+        "neighborhood": "Médina",
+        "tier": "Budget",
+        "price": 49,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Île de Gorée Suites",
+        "neighborhood": "Île de Gorée",
+        "tier": "Confort",
+        "price": 75,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Plateau Rooms",
+        "neighborhood": "Plateau",
+        "tier": "Confort",
+        "price": 85,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Almadies House",
+        "neighborhood": "Almadies",
+        "tier": "Confort",
+        "price": 95,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Médina Stay",
+        "neighborhood": "Médina",
+        "tier": "Premium",
+        "price": 130,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Île de Gorée Hotel",
+        "neighborhood": "Île de Gorée",
+        "tier": "Premium",
+        "price": 145,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Plateau Suites",
+        "neighborhood": "Plateau",
+        "tier": "Premium",
+        "price": 160,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Mauritius": [
+      {
+        "name": "Grand Baie House",
+        "neighborhood": "Grand Baie",
+        "tier": "Budget",
+        "price": 50,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Port Louis Stay",
+        "neighborhood": "Port Louis",
+        "tier": "Budget",
+        "price": 60,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Flic en Flac Hotel",
+        "neighborhood": "Flic en Flac",
+        "tier": "Budget",
+        "price": 70,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Le Morne Suites",
+        "neighborhood": "Le Morne",
+        "tier": "Confort",
+        "price": 130,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Grand Baie Rooms",
+        "neighborhood": "Grand Baie",
+        "tier": "Confort",
+        "price": 150,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Port Louis House",
+        "neighborhood": "Port Louis",
+        "tier": "Confort",
+        "price": 170,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Flic en Flac Stay",
+        "neighborhood": "Flic en Flac",
+        "tier": "Premium",
+        "price": 250,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Le Morne Hotel",
+        "neighborhood": "Le Morne",
+        "tier": "Premium",
+        "price": 290,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Grand Baie Suites",
+        "neighborhood": "Grand Baie",
+        "tier": "Premium",
+        "price": 330,
         "score": 8.4,
         "desc": "Confort prioritaire, service et chambre plus soignées."
       }

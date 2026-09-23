@@ -1116,6 +1116,470 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    city: "Osaka",
+    title: "Dotonbori ou Namba ?",
+    slug: slugify("Dotonbori ou Namba ?"),
+    dek: "Deux noms pour un même quartier au fond, mais une nuance qui change l’ambiance de vos soirées.",
+    body: [
+      {
+        text: "Dotonbori et Namba sont en réalité contigus — la frontière entre les deux est plus administrative que ressentie en marchant. La vraie question est de savoir combien de bruit et de néons vous voulez sous votre fenêtre.",
+      },
+      {
+        heading: "Dotonbori : au cœur du spectacle",
+        text: "Le canal, les enseignes géantes (le crabe de Kani Doraku, le coureur Glico), et la plus forte densité de restaurants au mètre carré d’Osaka. Génial pour l’ambiance, mais les hôtels donnant sur le canal sont bruyants jusque tard.",
+      },
+      {
+        heading: "Namba : la même énergie, un peu plus loin",
+        text: "À 5-10 minutes à pied de Dotonbori, Namba concentre les grands magasins et la gare, avec des rues résidentielles adjacentes nettement plus calmes pour dormir.",
+      },
+      {
+        heading: "Le bon choix",
+        text: "Pour un séjour court et une immersion totale, Dotonbori. Pour un bon compromis entre accès à pied et sommeil correct, une rue légèrement en retrait de Namba fait aussi bien à prix inférieur.",
+      },
+    ],
+  },
+  {
+    city: "Busan",
+    title: "Haeundae ou Gamcheon ?",
+    slug: slugify("Haeundae ou Gamcheon ?"),
+    dek: "La grande plage hôtelière ou le village de collines colorées — deux visages très différents de Busan.",
+    body: [
+      {
+        text: "Haeundae et Gamcheon ne se comparent pas vraiment : l’un est une base pour dormir et se baigner, l’autre une visite d’une demi-journée. La question est plutôt où poser sa valise.",
+      },
+      {
+        heading: "Haeundae : la base pratique",
+        text: "Plage principale de Busan, bordée de tours hôtelières et de restaurants, à 25-30 minutes en métro du reste de la ville. Le choix le plus confortable pour un premier séjour.",
+      },
+      {
+        heading: "Gamcheon : une visite, pas un hébergement",
+        text: "Le village aux maisons pastel se visite en 2-3 heures de marche dans les escaliers — peu d’hébergements sur place et un quartier qui se vide en fin d’après-midi. À prévoir en excursion depuis Nampo-dong ou Haeundae.",
+      },
+      {
+        heading: "Le bon choix",
+        text: "Dormir à Haeundae (ou Nampo-dong si vous préférez le centre historique) et consacrer une demi-journée à Gamcheon, idéalement en fin de matinée pour éviter la chaleur et la foule de l’après-midi.",
+      },
+    ],
+  },
+  {
+    city: "Xi'an",
+    title: "Voir l’armée de terre cuite sans galère",
+    slug: slugify("Voir l’armée de terre cuite sans galère"),
+    dek: "Le site le plus visité de Xi’an est aussi celui où la foule et la chaleur peuvent gâcher la visite si l’on s’y prend mal.",
+    body: [
+      {
+        text: "L’armée de terre cuite se trouve à environ 1h de route du centre de Xi’an, sur le site funéraire de l’empereur Qin Shi Huang. Trois fosses se visitent, mais une seule concentre l’essentiel de l’intérêt.",
+      },
+      {
+        heading: "Quelle fosse prioriser",
+        text: "La fosse 1 est la plus impressionnante : des centaines de soldats alignés dans un immense hangar. Les fosses 2 et 3, plus petites et partiellement fouillées, intéressent surtout si le temps ne manque pas.",
+      },
+      {
+        heading: "Éviter la foule",
+        text: "Arriver à l’ouverture (souvent 8h30) ou en fin d’après-midi réduit nettement l’affluence — le site est pris d’assaut par les groupes entre 10h et 14h.",
+      },
+      {
+        heading: "Comment s’y rendre",
+        text: "Le bus 306 depuis la gare de Xi’an est l’option la plus économique. Un chauffeur privé ou un tour organisé coûte plus cher mais évite la correspondance et inclut souvent un arrêt au mausolée voisin.",
+      },
+    ],
+  },
+  {
+    city: "Siem Reap",
+    title: "Combien de jours pour Angkor ?",
+    slug: slugify("Combien de jours pour Angkor ?"),
+    dek: "Un pass d’un jour suffit à voir l’essentiel — mais Angkor mérite souvent plus que ça.",
+    body: [
+      {
+        text: "Le site d’Angkor s’étend sur plus de 400 km², avec des dizaines de temples de qualité très inégale. Le nombre de jours dépend moins de l’envie de « tout voir » que du rythme que vous voulez tenir sous la chaleur.",
+      },
+      {
+        heading: "1 jour : l’essentiel",
+        text: "Angkor Wat, Bayon (les visages géants) et Ta Prohm (les racines d’arbres sur les ruines) couvrent les trois monuments les plus emblématiques en une journée bien remplie.",
+      },
+      {
+        heading: "3 jours : le format recommandé",
+        text: "Ajoute le petit circuit et le grand circuit, avec des temples moins fréquentés comme Banteay Srei ou Preah Khan, et surtout le temps de repartir se reposer à l’hôtel entre 11h et 15h, quand la chaleur est la plus forte.",
+      },
+      {
+        heading: "Le levé de soleil sur Angkor Wat",
+        text: "Rituel très populaire, donc très fréquenté — des centaines de visiteurs partagent le même point de vue avant l’aube. Une visite en fin d’après-midi, moins courue, offre souvent une meilleure expérience pour le même monument.",
+      },
+    ],
+  },
+  {
+    city: "Luang Prabang",
+    title: "Voir la cérémonie de l’aumône aux moines",
+    slug: slugify("Voir la cérémonie de l’aumône aux moines"),
+    dek: "Un rituel bouddhiste quotidien devenu attraction touristique — la manière de l’observer change tout.",
+    body: [
+      {
+        text: "Chaque matin avant l’aube, des centaines de moines défilent en silence dans les rues de Luang Prabang pour recevoir l’aumône alimentaire des habitants. C’est un moment religieux authentique, pas un spectacle organisé pour les touristes.",
+      },
+      {
+        heading: "Comment bien y assister",
+        text: "Se tenir en retrait sur le trottoir, en silence, sans flash ni contact visuel appuyé avec les moines. Éviter absolument de s’asseoir sur des tabourets vendus par des rabatteurs pour « participer » à l’aumône — cette pratique commerciale dénature le rituel et est critiquée par les autorités religieuses locales.",
+      },
+      {
+        heading: "L’horaire",
+        text: "La procession commence généralement entre 5h30 et 6h, selon la saison. Se positionner sur la rue principale (Sisavangvong) ou dans une ruelle plus calme pour une expérience moins photographiée.",
+      },
+      {
+        heading: "Après la cérémonie",
+        text: "Le marché du matin qui se tient juste après vaut le détour : fruits, légumes et produits locaux, avant que la ville ne se réveille vraiment.",
+      },
+    ],
+  },
+  {
+    city: "Chiang Mai",
+    title: "La vieille ville ou Nimman ?",
+    slug: slugify("La vieille ville ou Nimman ?"),
+    dek: "Le carré fortifié historique ou le quartier café-coworking — deux Chiang Mai qui se répondent.",
+    body: [
+      {
+        text: "La vieille ville et Nimmanhaemin sont à 15-20 minutes à pied l’un de l’autre, mais représentent deux rythmes de voyage très différents.",
+      },
+      {
+        heading: "La vieille ville : les temples au réveil",
+        text: "Carré fortifié avec plus de 30 temples, dont le Wat Phra Singh et le Wat Chedi Luang. Ambiance plus touristique mais on peut visiter la majorité des sites à pied, sans transport.",
+      },
+      {
+        heading: "Nimman : la vie de quartier",
+        text: "Cafés de spécialité, boutiques design et digital nomads — un Chiang Mai plus contemporain, avec une meilleure offre de restaurants végétariens et internationaux.",
+      },
+      {
+        heading: "Le bon choix",
+        text: "Séjour court centré sur les temples : la vieille ville. Séjour plus long avec du travail à distance ou une envie de rythme plus urbain : Nimman, à une courte course de songthaew des principaux sites.",
+      },
+    ],
+  },
+  {
+    city: "Yogyakarta",
+    title: "Borobudur au lever du soleil, ça vaut le coup ?",
+    slug: slugify("Borobudur au lever du soleil, ça vaut le coup ?"),
+    dek: "Une option premium à prix élevé, à comparer honnêtement à la visite classique.",
+    body: [
+      {
+        text: "Borobudur, le plus grand temple bouddhiste du monde, propose une entrée « sunrise » séparée et nettement plus chère que le billet standard. La question mérite d’être posée avant de réserver.",
+      },
+      {
+        heading: "Ce que l’option sunrise inclut",
+        text: "Un accès avant l’ouverture générale, depuis un hôtel voisin (Manohara) ou via un tour organisé, avec la possibilité de voir le soleil se lever sur les volcans environnants depuis le sommet du temple.",
+      },
+      {
+        heading: "Le vrai compromis",
+        text: "Le ciel est souvent brumeux ou nuageux, ce qui rend le lever de soleil imprévisible malgré le prix élevé (le billet sunrise coûte plusieurs fois le tarif standard). Une visite en milieu de matinée, en entrée classique, offre une lumière tout aussi belle avec beaucoup moins de dépense.",
+      },
+      {
+        heading: "Notre recommandation",
+        text: "Réservez le sunrise uniquement si le lever de soleil en lui-même est votre priorité absolue et que le budget le permet. Pour photographier le temple dans de bonnes conditions à moindre coût, une arrivée à l’ouverture standard (souvent 6h) fonctionne presque aussi bien.",
+      },
+    ],
+  },
+  {
+    city: "Ho Chi Minh City",
+    title: "District 1 ou Thao Dien ?",
+    slug: slugify("District 1 ou Thao Dien ?"),
+    dek: "Le centre touristique dense ou le quartier expat calme de l’autre côté de la rivière.",
+    body: [
+      {
+        text: "District 1 et Thao Dien sont séparés par la rivière Saïgon — environ 20 minutes de trajet, mais une ambiance radicalement différente.",
+      },
+      {
+        heading: "District 1 : tout à portée de main",
+        text: "Marché Ben Thanh, rue Bui Vien, la majorité des sites historiques et une offre d’hébergement immense à tous les prix. Le choix le plus pratique pour un premier séjour ou un court passage.",
+      },
+      {
+        heading: "Thao Dien : la pause",
+        text: "Cafés design, restaurants internationaux et rues plus calmes et verdoyantes. Beaucoup d’expatriés y vivent, ce qui se traduit par une offre culinaire variée mais des prix plus élevés qu’ailleurs en ville.",
+      },
+      {
+        heading: "Le bon choix",
+        text: "Pour un séjour de 2-3 jours centré sur les visites, District 1 reste imbattable en logistique. Pour un séjour plus long ou pour souffler après plusieurs villes vietnamiennes denses, Thao Dien change vraiment le rythme.",
+      },
+    ],
+  },
+  {
+    city: "Tunis",
+    title: "Médina ou Sidi Bou Saïd ?",
+    slug: slugify("Médina ou Sidi Bou Saïd ?"),
+    dek: "Le labyrinthe historique du centre ou le village-carte postale en bord de mer.",
+    body: [
+      {
+        text: "La médina de Tunis et Sidi Bou Saïd n’offrent pas la même expérience — l’une est une immersion urbaine dense, l’autre une pause visuelle en hauteur face à la Méditerranée.",
+      },
+      {
+        heading: "La médina : l’immersion",
+        text: "Souks labyrinthiques classés UNESCO, artisanat et palais historiques. Se visite idéalement le matin, avant que la chaleur et l’affluence ne montent.",
+      },
+      {
+        heading: "Sidi Bou Saïd : la carte postale",
+        text: "Ruelles pavées, façades blanches aux volets bleus et vue sur le golfe de Tunis. Accessible en 20-25 minutes de train (le TGM) depuis le centre, idéal en fin d’après-midi pour le coucher de soleil.",
+      },
+      {
+        heading: "Le bon choix",
+        text: "Les deux se complètent plutôt qu’ils ne s’opposent : médina le matin pour l’immersion, Sidi Bou Saïd en fin de journée pour la lumière et le calme. Difficile de choisir l’un sans l’autre sur un séjour de plus de 2 jours.",
+      },
+    ],
+  },
+  {
+    city: "Algiers",
+    title: "Visiter la Casbah, mode d’emploi",
+    slug: slugify("Visiter la Casbah, mode d’emploi"),
+    dek: "La citadelle ottomane d’Alger se mérite : dénivelé, dédale de ruelles et quelques précautions simples.",
+    body: [
+      {
+        text: "Classée à l’UNESCO, la Casbah d’Alger est un entrelacs de ruelles en escalier qui dévale la colline vers la baie. Sa visite demande un peu plus de préparation qu’une simple balade.",
+      },
+      {
+        heading: "Le bon moment",
+        text: "Le matin, en semaine, offre la lumière la plus agréable et l’affluence la plus faible. Certaines parties du quartier restent peu entretenues : de bonnes chaussures sont indispensables.",
+      },
+      {
+        heading: "Avec ou sans guide",
+        text: "La Casbah se prête particulièrement bien à une visite guidée locale : le dédale de ruelles n’est pas signalisé, et un guide donne accès à des points de vue et des récits qu’on ne trouve pas seul.",
+      },
+      {
+        heading: "Ce qu’il ne faut pas manquer",
+        text: "Le palais du Dey, la Grande Mosquée et surtout les points de vue sur la baie d’Alger depuis les hauteurs du quartier, particulièrement spectaculaires en fin de journée.",
+      },
+    ],
+  },
+  {
+    city: "Amman",
+    title: "Petra en 1 jour depuis Amman",
+    slug: slugify("Petra en 1 jour depuis Amman"),
+    dek: "Faisable, mais avec un vrai compromis sur le temps passé sur place.",
+    body: [
+      {
+        text: "Petra se trouve à environ 3h de route au sud d’Amman. Une excursion en une journée est possible mais laisse peu de marge — mieux vaut savoir à quoi s’attendre avant de réserver.",
+      },
+      {
+        heading: "Le format journée",
+        text: "Départ très tôt (5h-6h) pour arriver à l’ouverture du site vers 8h-9h, avec environ 4-5h sur place avant de reprendre la route en fin d’après-midi. Suffisant pour voir le Trésor, le théâtre et le monastère si le rythme est soutenu.",
+      },
+      {
+        heading: "Ce qu’on rate en une journée",
+        text: "Petra by Night (la marche aux bougies jusqu’au Trésor, certains soirs seulement) et l’exploration des sentiers annexes moins fréquentés, qui demandent une deuxième journée.",
+      },
+      {
+        heading: "L’alternative recommandée",
+        text: "Si le programme le permet, une nuit à Wadi Musa (le village au pied de Petra) change complètement l’expérience : arrivée au site dès l’ouverture, sans les heures de route qui fatiguent avant même la visite.",
+      },
+    ],
+  },
+  {
+    city: "Abu Dhabi",
+    title: "La Grande Mosquée Cheikh Zayed, mode d’emploi",
+    slug: slugify("La Grande Mosquée Cheikh Zayed, mode d’emploi"),
+    dek: "Le monument le plus visité d’Abu Dhabi a un dress code strict et des horaires à connaître avant de s’y rendre.",
+    body: [
+      {
+        text: "Avec ses 82 dômes et le plus grand tapis tissé à la main du monde, la Grande Mosquée Cheikh Zayed est gratuite et ouverte à tous les visiteurs, quelle que soit leur religion — à condition de respecter certaines règles.",
+      },
+      {
+        heading: "Le dress code",
+        text: "Épaules et jambes couvertes pour tous, et cheveux couverts par un foulard pour les femmes (des abayas sont prêtées gratuitement à l’entrée si besoin). Prévoir des chaussures faciles à retirer.",
+      },
+      {
+        heading: "Le bon moment",
+        text: "Tôt le matin ou en fin d’après-midi pour éviter la chaleur et la foule. La mosquée ferme aux visiteurs non-musulmans pendant les heures de prière.",
+      },
+      {
+        heading: "Pratique",
+        text: "L’entrée est gratuite mais une réservation en ligne est recommandée les jours de forte affluence (vendredi et week-ends). Comptez 1h30 à 2h sur place, visites guidées gratuites disponibles à heures fixes.",
+      },
+    ],
+  },
+  {
+    city: "Jeddah",
+    title: "Visiter Al-Balad, le vieux Jeddah",
+    slug: slugify("Visiter Al-Balad, le vieux Jeddah"),
+    dek: "Le quartier historique classé UNESCO se découvre différemment selon l’heure de la journée.",
+    body: [
+      {
+        text: "Al-Balad concentre l’histoire marchande de Jeddah, avec ses maisons de corail aux balcons de bois sculptés (rawasheen), certaines vieilles de plusieurs siècles. Le quartier vit à deux vitesses très différentes.",
+      },
+      {
+        heading: "Le jour : l’architecture",
+        text: "La lumière du matin met en valeur les façades et les détails sculptés des balcons. Beaucoup de bâtiments sont en cours de restauration depuis le classement UNESCO en 2014.",
+      },
+      {
+        heading: "Le soir : la vie de quartier",
+        text: "Al-Balad s’anime réellement après le coucher du soleil, avec échoppes, cafés et une ambiance nettement plus vivante que dans la chaleur de la journée.",
+      },
+      {
+        heading: "Pratique",
+        text: "Des visites guidées à pied, souvent gratuites ou à prix libre, sont organisées par des associations locales de préservation du patrimoine — la meilleure façon de comprendre l’histoire du quartier au-delà de l’architecture.",
+      },
+    ],
+  },
+  {
+    city: "Muscat",
+    title: "Le souk de Mutrah, mode d’emploi",
+    slug: slugify("Le souk de Mutrah, mode d’emploi"),
+    dek: "L’un des plus anciens marchés couverts du Golfe, à l’abri du soleil et de la modernisation.",
+    body: [
+      {
+        text: "Contrairement à de nombreux souks du Golfe rénovés à neuf, celui de Mutrah a conservé son architecture et son atmosphère d’origine — ruelles couvertes, encens et échoppes tenues par les mêmes familles depuis des générations.",
+      },
+      {
+        heading: "Ce qu’on y trouve",
+        text: "Encens et myrrhe (Oman est l’un des grands producteurs mondiaux), argenterie, textiles et épices. Le marchandage est attendu et fait partie de l’expérience.",
+      },
+      {
+        heading: "Le bon moment",
+        text: "Fin d’après-midi et début de soirée, quand la chaleur retombe et que le souk est le plus animé. Fermé pendant la pause de la prière du vendredi midi.",
+      },
+      {
+        heading: "Autour du souk",
+        text: "La corniche de Mutrah, juste devant, offre une vue sur les boutres traditionnels amarrés et les collines fortifiées qui encadrent le port — une promenade qui se prête bien à un coucher de soleil.",
+      },
+    ],
+  },
+  {
+    city: "Manama",
+    title: "Manama en une escale de 24h",
+    slug: slugify("Manama en une escale de 24h"),
+    dek: "La plus petite capitale du Golfe se prête particulièrement bien à une escale courte entre deux vols.",
+    body: [
+      {
+        text: "Bahreïn étant une escale fréquente sur les routes du Golfe, beaucoup de voyageurs n’y passent qu’une journée. C’est suffisant pour saisir l’essentiel de Manama.",
+      },
+      {
+        heading: "Le matin : le souk et le vieux Manama",
+        text: "Le souk de Manama, plus authentique et moins touristique que ceux de Dubaï, se visite idéalement tôt pour éviter la chaleur. À proximité, le fort de Bahreïn (Qal’at al-Bahrain), site UNESCO, mérite le détour en taxi.",
+      },
+      {
+        heading: "L’après-midi : Bahrain Bay",
+        text: "Le front de mer moderne autour du World Trade Center, avec ses tours à éoliennes intégrées — l’un des symboles architecturaux les plus photographiés du Golfe.",
+      },
+      {
+        heading: "Le soir : Adliya",
+        text: "Le quartier le plus animé pour dîner, avec une scène restaurant et café plus internationale que le reste de la ville.",
+      },
+    ],
+  },
+  {
+    city: "Kigali",
+    title: "Réserver un permis gorilles au parc des volcans",
+    slug: slugify("Réserver un permis gorilles au parc des volcans"),
+    dek: "L’activité phare depuis Kigali se réserve des mois à l’avance et coûte cher — voici comment s’y prendre.",
+    body: [
+      {
+        text: "Le parc national des volcans, à environ 2-3h de route au nord de Kigali, abrite une partie des derniers gorilles de montagne au monde. Le trekking se fait uniquement sur permis, en nombre très limité chaque jour.",
+      },
+      {
+        heading: "Le prix et la réservation",
+        text: "Le permis coûte 1500 USD par personne (tarif Rwanda Development Board), à réserver plusieurs mois à l’avance en haute saison — le nombre de permis quotidiens est volontairement restreint pour protéger les groupes de gorilles.",
+      },
+      {
+        heading: "Le déroulement",
+        text: "Départ tôt le matin depuis le siège du parc, avec une marche dont la durée est imprévisible (30 minutes à plusieurs heures selon la position du groupe de gorilles ce jour-là) et une heure exactement auprès des gorilles une fois trouvés.",
+      },
+      {
+        heading: "La condition physique",
+        text: "Le terrain est volcanique, humide et parfois pentu — une forme physique correcte est nécessaire, mais aucun niveau sportif particulier n’est exigé. Des porteurs locaux peuvent être engagés sur place pour le sac ou en soutien.",
+      },
+    ],
+  },
+  {
+    city: "Victoria Falls",
+    title: "Côté zimbabwéen ou zambien ?",
+    slug: slugify("Côté zimbabwéen ou zambien ?"),
+    dek: "Les chutes se voient des deux côtés de la frontière, avec un compromis différent selon celui qu’on choisit.",
+    body: [
+      {
+        text: "Victoria Falls se trouve exactement sur la frontière entre le Zimbabwe et la Zambie. Les deux rives donnent accès aux chutes, mais avec des points de vue et des ambiances différentes.",
+      },
+      {
+        heading: "Côté zimbabwéen : la vue d’ensemble",
+        text: "Offre environ 75 % du front des chutes visible, avec des sentiers longeant la quasi-totalité de la cascade — la meilleure option pour une vue panoramique complète.",
+      },
+      {
+        heading: "Côté zambien : les activités et un accès différent",
+        text: "Vue plus rapprochée et intime sur certaines sections, avec l’accès à Devil’s Pool (baignade au bord du précipice, en saison sèche) et davantage d’activités d’aventure organisées depuis Livingstone.",
+      },
+      {
+        heading: "Voir les deux côtés",
+        text: "Un visa journalier permet de traverser la frontière (pont piéton) pour visiter les deux rives dans la même journée — une option courante et recommandée si le temps le permet, pour ne pas avoir à choisir.",
+      },
+    ],
+  },
+  {
+    city: "Addis Ababa",
+    title: "Merkato, le plus grand marché d’Afrique",
+    slug: slugify("Merkato, le plus grand marché d’Afrique"),
+    dek: "Une expérience sensorielle intense — et quelques précautions simples pour en profiter sereinement.",
+    body: [
+      {
+        text: "Merkato est considéré comme le plus grand marché à ciel ouvert d’Afrique, avec des dizaines de milliers de commerçants répartis par spécialité (épices, textiles, artisanat, pièces automobiles) sur plusieurs kilomètres carrés.",
+      },
+      {
+        heading: "Ce qu’on y trouve",
+        text: "Le berbere (mélange d’épices éthiopien), le café éthiopien à la source, et des paniers tissés traditionnels (mesob) parmi les meilleurs prix du pays.",
+      },
+      {
+        heading: "Les précautions",
+        text: "La densité et le dédale de ruelles rendent le pickpocketing possible — objets de valeur discrets, sac fermé devant soi, et idéalement une première visite accompagnée d’un guide local ou d’un habitant.",
+      },
+      {
+        heading: "Le bon moment",
+        text: "Le matin, avant que la chaleur et la densité de la foule n’atteignent leur maximum. Éviter de s’y aventurer seul après la tombée de la nuit.",
+      },
+    ],
+  },
+  {
+    city: "Dakar",
+    title: "Visiter l’île de Gorée",
+    slug: slugify("Visiter l’île de Gorée"),
+    dek: "20 minutes de bateau depuis Dakar pour l’un des lieux de mémoire les plus importants d’Afrique de l’Ouest.",
+    body: [
+      {
+        text: "Classée à l’UNESCO, l’île de Gorée fut un point majeur de la traite négrière transatlantique. Sa Maison des Esclaves, avec sa « porte du voyage sans retour », en est le symbole le plus connu.",
+      },
+      {
+        heading: "Comment s’y rendre",
+        text: "Ferry depuis l’embarcadère du port de Dakar, environ 20-30 minutes de traversée. Plusieurs départs quotidiens, réservation recommandée le week-end quand l’affluence locale est plus forte.",
+      },
+      {
+        heading: "Ce qu’il faut voir",
+        text: "La Maison des Esclaves, le musée historique du Sénégal installé dans l’ancien fort, et simplement flâner dans les ruelles sans voitures de l’île, bordées de maisons coloniales colorées.",
+      },
+      {
+        heading: "Combien de temps prévoir",
+        text: "Une demi-journée suffit pour l’essentiel, mais l’île se prête bien à un déjeuner sur place avant de reprendre le ferry en fin d’après-midi, une fois les groupes du matin repartis.",
+      },
+    ],
+  },
+  {
+    city: "Mauritius",
+    title: "Quelle côte choisir à Maurice ?",
+    slug: slugify("Quelle côte choisir à Maurice ?"),
+    dek: "L’île se pense en côtes, pas en villes — chacune avec son propre climat et son ambiance.",
+    body: [
+      {
+        text: "Maurice a un microclimat différent selon la côte : le nord et l’ouest sont plus secs et ensoleillés, le sud et l’est plus arrosés et venteux. Le choix de la côte pèse autant que celui de l’hôtel.",
+      },
+      {
+        heading: "Nord (Grand Baie) : l’animation",
+        text: "La zone la plus touristique et festive, restaurants, sorties en mer et vie nocturne. Le choix le plus pratique pour un premier séjour ou un voyage entre amis.",
+      },
+      {
+        heading: "Ouest (Flic en Flac) : le compromis",
+        text: "Plages larges, mer calme et les plus beaux couchers de soleil de l’île, avec un bon équilibre entre animation et tranquillité.",
+      },
+      {
+        heading: "Sud-ouest (Le Morne) : le luxe isolé",
+        text: "Péninsule classée UNESCO, spot de kitesurf mondial et grands hôtels 5 étoiles à l’écart de tout — le choix pour une lune de miel ou une déconnexion complète.",
+      },
+      {
+        heading: "Le réflexe utile",
+        text: "Louer une voiture au moins une journée permet de faire le tour des côtes sans être limité à son hôtel — les distances sur l’île restent courtes (2h max d’un bout à l’autre).",
+      },
+    ],
+  },
 ];
 
 export function getArticle(city: string, slug: string) {
