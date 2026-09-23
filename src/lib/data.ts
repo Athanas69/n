@@ -94,6 +94,11 @@ export const CITY_REGIONS: Record<string, string> = {
   Stockholm: "Europe",
   "Kuala Lumpur": "Asie",
   Beijing: "Asie",
+  Lima: "Amériques",
+  Cusco: "Amériques",
+  "Bogotá": "Amériques",
+  Zanzibar: "Afrique & Moyen-Orient",
+  Hanoi: "Asie",
 };
 
 export function citiesByRegion(): [string, string[]][] {
@@ -107,7 +112,11 @@ export function citiesByRegion(): [string, string[]][] {
 }
 
 export function citySlug(name: string) {
-  return name.toLowerCase().replace(/\s+/g, "-");
+  return name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/\s+/g, "-");
 }
 
 export function cityNameFromSlug(slug: string): string | undefined {

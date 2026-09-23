@@ -2773,6 +2773,322 @@
         "Où prendre un bon petit-déjeuner",
         "Vancouver avec un petit budget"
       ]
+    },
+    "Lima": {
+      "country": "Pérou",
+      "hero": "https://images.unsplash.com/photo-1660521844005-015733ce411e?auto=format&fit=crop&w=1800&q=90",
+      "intro": "À Lima, la ville s’étire le long de l’océan sur des kilomètres : le quartier choisi change tout, entre falaise animée et ruelles bohèmes.",
+      "currency": "PEN",
+      "best": "déc.–avr.",
+      "airport": "LIM",
+      "transport": "Metropolitano · taxi/Uber",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Miraflores",
+          "Malecón · sécurité · food",
+          "La base la plus simple pour un premier séjour, au bord de la falaise.",
+          "https://images.unsplash.com/photo-1660521844005-015733ce411e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Barranco",
+          "Bohème · art · nightlife",
+          "Le quartier créatif et coloré de Lima, parfait en soirée.",
+          "https://images.unsplash.com/photo-1610248740126-479743bec5b7?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "San Isidro",
+          "Affaires · calme · vert",
+          "Quartier résidentiel chic, plus calme que Miraflores.",
+          "https://images.unsplash.com/photo-1660521844005-015733ce411e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Centro Histórico",
+          "Colonial · Plaza Mayor · UNESCO",
+          "Le cœur historique, à visiter de jour uniquement.",
+          "https://images.unsplash.com/photo-1660521844005-015733ce411e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Pueblo Libre",
+          "Musées · local · tranquille",
+          "Quartier résidentiel avec les meilleurs musées d’archéologie.",
+          "https://images.unsplash.com/photo-1660521844005-015733ce411e?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "LIM",
+          "Taxi / VTC",
+          "45–60 min selon trafic vers Miraflores."
+        ],
+        [
+          "LIM",
+          "Airport Express Lima",
+          "Bus direct vers Miraflores, San Isidro, Barranco."
+        ],
+        [
+          "Ville",
+          "Metropolitano",
+          "Utile une fois installé, pas depuis l’aéroport."
+        ]
+      ],
+      "articles": [
+        "Miraflores ou Barranco ?",
+        "Depuis l’aéroport Jorge Chávez",
+        "Lima sans voiture ?",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Metropolitano (carte Todo Pago) : ≈ 2,50 PEN/trajet · Taxi/Uber courte course : ≈ 10–20 PEN"
+    },
+    "Cusco": {
+      "country": "Pérou",
+      "hero": "https://images.unsplash.com/photo-1733163013310-5778c3ad78b9?auto=format&fit=crop&w=1800&q=90",
+      "intro": "À 3 400 m d’altitude, Cusco se visite presque entièrement à pied : mieux vaut choisir un quartier proche de la Plaza de Armas et prendre les premiers jours doucement.",
+      "currency": "PEN",
+      "best": "mai–sept.",
+      "airport": "CUZ",
+      "transport": "À pied · taxi",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "San Blas",
+          "Artisanal · bohème · vue",
+          "Ruelles pentues et ateliers d’artisans, le quartier le plus photogénique.",
+          "https://images.unsplash.com/photo-1744295492364-4c9c04b62a8b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Centro / Plaza de Armas",
+          "Historique · restaurants · animé",
+          "Au cœur de tout, mais plus bruyant le soir.",
+          "https://images.unsplash.com/photo-1733163013310-5778c3ad78b9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "San Pedro",
+          "Marché local · authentique · budget",
+          "Autour du marché central, ambiance plus locale.",
+          "https://images.unsplash.com/photo-1733163013310-5778c3ad78b9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Santa Ana",
+          "Calme · gare · résidentiel",
+          "Proche de la gare pour le Machu Picchu, plus tranquille.",
+          "https://images.unsplash.com/photo-1733163013310-5778c3ad78b9?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "CUZ",
+          "Taxi",
+          "10–15 min vers le centre, seule option pratique."
+        ],
+        [
+          "CUZ",
+          "Transfert hôtel",
+          "Recommandé les premiers jours pour gérer l’altitude."
+        ],
+        [
+          "Ville",
+          "À pied",
+          "Le centre historique se fait très bien à pied — prévoir l’altitude."
+        ]
+      ],
+      "articles": [
+        "San Blas ou Plaza de Armas ?",
+        "Gérer l’altitude à Cusco",
+        "Cusco avant le Machu Picchu",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Boleto Turístico (sites inclus) : ≈ 130 PEN · Taxi en ville : ≈ 5–10 PEN"
+    },
+    "Bogotá": {
+      "country": "Colombie",
+      "hero": "https://images.unsplash.com/photo-1761253469057-4a39359889f2?auto=format&fit=crop&w=1800&q=90",
+      "intro": "À Bogotá, l’ambiance change radicalement d’un quartier à l’autre : le choix conditionne autant la sécurité que la vie nocturne.",
+      "currency": "COP",
+      "best": "déc.–mars",
+      "airport": "BOG",
+      "transport": "TransMilenio · taxi/Uber",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "La Candelaria",
+          "Historique · colonial · musées",
+          "Le centre colonial, à visiter de jour, street art partout.",
+          "https://images.unsplash.com/photo-1759375253713-bde59f4f5596?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Chapinero",
+          "Nightlife · jeune · LGBTQ+",
+          "Le quartier le plus vivant le soir, bars et restaurants.",
+          "https://images.unsplash.com/photo-1761253469057-4a39359889f2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Zona Rosa / Chicó",
+          "Chic · shopping · sécurisé",
+          "Le plus premium, hôtels internationaux et centres commerciaux.",
+          "https://images.unsplash.com/photo-1761253469057-4a39359889f2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Usaquén",
+          "Charmant · marché dominical · boutique",
+          "Ancien village colonial absorbé par la ville, marché artisanal le dimanche.",
+          "https://images.unsplash.com/photo-1761253469057-4a39359889f2?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "BOG",
+          "Taxi / Uber",
+          "30–45 min selon trafic et quartier."
+        ],
+        [
+          "BOG",
+          "TransMilenio (Alimentador)",
+          "Économique mais lent avec bagages."
+        ],
+        [
+          "Ville",
+          "TransMilenio",
+          "Efficace une fois installé."
+        ]
+      ],
+      "articles": [
+        "Chapinero ou Zona Rosa ?",
+        "Bogotá est-elle sûre ?",
+        "Depuis l’aéroport El Dorado",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "TransMilenio (carte Tu Llave) : ≈ 2 950 COP/trajet · Taxi/Uber courte course : ≈ 10 000–20 000 COP"
+    },
+    "Zanzibar": {
+      "country": "Tanzanie",
+      "hero": "https://images.unsplash.com/photo-1627913945498-8a3075dcbdd6?auto=format&fit=crop&w=1800&q=90",
+      "intro": "Zanzibar, c’est une île entière : Stone Town pour la culture, le nord et l’est pour les plages — rarement les deux à la fois sans bouger.",
+      "currency": "TZS",
+      "best": "juin–oct.",
+      "airport": "ZNZ",
+      "transport": "Taxi · dala-dala",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Stone Town",
+          "UNESCO · marchés aux épices · historique",
+          "Le cœur culturel, ruelles labyrinthiques et façades sculptées.",
+          "https://images.unsplash.com/photo-1678042956696-e072ff82cff5?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Nungwi",
+          "Plage nord · resorts · coucher de soleil",
+          "La meilleure plage pour nager toute l’année, animée le soir.",
+          "https://images.unsplash.com/photo-1627913945498-8a3075dcbdd6?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Paje",
+          "Kitesurf · plage · backpackers",
+          "Ambiance décontractée, spot mondial de kitesurf.",
+          "https://images.unsplash.com/photo-1627913945498-8a3075dcbdd6?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Jambiani",
+          "Plage calme · authentique · pêcheurs",
+          "Villages de pêcheurs, plus tranquille que Nungwi.",
+          "https://images.unsplash.com/photo-1627913945498-8a3075dcbdd6?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "ZNZ",
+          "Taxi",
+          "20 min vers Stone Town, à négocier ou réserver à l’avance."
+        ],
+        [
+          "ZNZ",
+          "Transfert hôtel",
+          "Indispensable pour les plages du nord (1h+)."
+        ],
+        [
+          "Ville",
+          "Dala-dala",
+          "Bus partagés locaux, économiques mais lents."
+        ]
+      ],
+      "articles": [
+        "Stone Town ou plage directement ?",
+        "Nungwi ou Paje ?",
+        "Depuis l’aéroport de Zanzibar",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Dala-dala (bus local) : ≈ 500–1 500 TZS · Taxi Stone Town–Nungwi : ≈ 40 000–60 000 TZS"
+    },
+    "Hanoi": {
+      "country": "Vietnam",
+      "hero": "https://images.unsplash.com/photo-1727402527960-78ce41e6bdee?auto=format&fit=crop&w=1800&q=90",
+      "intro": "À Hanoï, le Vieux Quartier concentre le chaos et le charme ; à quelques kilomètres, le lac de l’Ouest offre un tout autre rythme.",
+      "currency": "VND",
+      "best": "oct.–déc. · mars–avr.",
+      "airport": "HAN",
+      "transport": "Motos-taxi · Grab",
+      "esim": "Recommandée",
+      "neighborhoods": [
+        [
+          "Vieux Quartier (36 rues)",
+          "Historique · marchés · animé",
+          "Le cœur chaotique et vivant, parfait pour l’immersion.",
+          "https://images.unsplash.com/photo-1727402527960-78ce41e6bdee?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Quartier Français",
+          "Colonial · chic · calme",
+          "Larges avenues, villas coloniales, Opéra.",
+          "https://images.unsplash.com/photo-1727402527960-78ce41e6bdee?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Tay Ho (Lac de l’Ouest)",
+          "Expat · lac · calme",
+          "Le plus reposant, cafés en bord de lac, loin du bruit.",
+          "https://images.unsplash.com/photo-1678461863258-185d001d7a1b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Ba Dinh",
+          "Institutionnel · mausolée · vert",
+          "Quartier administratif, plus spacieux et vert.",
+          "https://images.unsplash.com/photo-1727402527960-78ce41e6bdee?auto=format&fit=crop&w=900&q=86"
+        ]
+      ],
+      "airportRoutes": [
+        [
+          "HAN",
+          "Taxi / Grab",
+          "45 min vers le centre, réserver via l’appli pour éviter les arnaques."
+        ],
+        [
+          "HAN",
+          "Bus 86",
+          "Direct vers le centre, économique."
+        ],
+        [
+          "Ville",
+          "Grab (moto/voiture)",
+          "Le plus simple pour se déplacer en ville."
+        ]
+      ],
+      "articles": [
+        "Vieux Quartier ou Tay Ho ?",
+        "Traverser la rue à Hanoï",
+        "Depuis l’aéroport Noi Bai",
+        "3 jours parfaits",
+        "Budget réel",
+        "Les erreurs à éviter"
+      ],
+      "transitTicket": "Bus urbain : ≈ 7 000–9 000 VND · Grab moto courte course : ≈ 15 000–25 000 VND"
     }
   },
   "hotels": {
@@ -2782,7 +3098,7 @@
         "neighborhood": "Shibuya",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -2822,7 +3138,7 @@
         "neighborhood": "Akihabara",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -2830,7 +3146,7 @@
         "neighborhood": "Shibuya",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -2856,7 +3172,7 @@
         "neighborhood": "Le Marais",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement.",
         "image": "https://images.unsplash.com/photo-1644589104114-41ea93fc02e7?auto=format&fit=crop&w=900&q=88"
       },
@@ -2901,7 +3217,7 @@
         "neighborhood": "Le Marais",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget.",
         "image": "https://images.unsplash.com/photo-1546940084-6333670a0666?auto=format&fit=crop&w=900&q=88"
       },
@@ -2910,7 +3226,7 @@
         "neighborhood": "Saint-Germain",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés.",
         "image": "https://images.unsplash.com/photo-1782233543052-e147fc9f4903?auto=format&fit=crop&w=900&q=88"
       },
@@ -2939,7 +3255,7 @@
         "neighborhood": "Sukhumvit",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -2979,7 +3295,7 @@
         "neighborhood": "Sukhumvit",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -2987,7 +3303,7 @@
         "neighborhood": "Silom",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3013,7 +3329,7 @@
         "neighborhood": "Centro Storico",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3053,7 +3369,7 @@
         "neighborhood": "Trastevere",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3061,7 +3377,7 @@
         "neighborhood": "Monti",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3087,7 +3403,7 @@
         "neighborhood": "Sultanahmet",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3127,7 +3443,7 @@
         "neighborhood": "Karaköy",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3135,7 +3451,7 @@
         "neighborhood": "Beyoğlu",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3161,7 +3477,7 @@
         "neighborhood": "Lower East Side",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3201,7 +3517,7 @@
         "neighborhood": "Lower East Side",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3209,7 +3525,7 @@
         "neighborhood": "Greenwich Village",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3235,7 +3551,7 @@
         "neighborhood": "Médina",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3275,7 +3591,7 @@
         "neighborhood": "Guéliz",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3283,7 +3599,7 @@
         "neighborhood": "Hivernage",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3309,7 +3625,7 @@
         "neighborhood": "Downtown",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3349,7 +3665,7 @@
         "neighborhood": "Dubai Marina",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3357,7 +3673,7 @@
         "neighborhood": "JBR",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3383,7 +3699,7 @@
         "neighborhood": "City Bowl",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3423,7 +3739,7 @@
         "neighborhood": "Camps Bay",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3431,7 +3747,7 @@
         "neighborhood": "Sea Point",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3457,7 +3773,7 @@
         "neighborhood": "Hongdae",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3497,7 +3813,7 @@
         "neighborhood": "Hongdae",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3505,7 +3821,7 @@
         "neighborhood": "Myeongdong",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3531,7 +3847,7 @@
         "neighborhood": "Camden",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3571,7 +3887,7 @@
         "neighborhood": "Notting Hill",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3579,7 +3895,7 @@
         "neighborhood": "Camden",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3605,7 +3921,7 @@
         "neighborhood": "Gothic Quarter",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3645,7 +3961,7 @@
         "neighborhood": "Barceloneta",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3653,7 +3969,7 @@
         "neighborhood": "Gothic Quarter",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3679,7 +3995,7 @@
         "neighborhood": "Jordaan",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3719,7 +4035,7 @@
         "neighborhood": "Museum Quarter",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3727,7 +4043,7 @@
         "neighborhood": "Jordaan",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3753,7 +4069,7 @@
         "neighborhood": "Kreuzberg",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3793,7 +4109,7 @@
         "neighborhood": "Friedrichshain",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3801,7 +4117,7 @@
         "neighborhood": "Kreuzberg",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3827,7 +4143,7 @@
         "neighborhood": "Alfama",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3867,7 +4183,7 @@
         "neighborhood": "Bairro Alto",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3875,7 +4191,7 @@
         "neighborhood": "Alfama",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3901,7 +4217,7 @@
         "neighborhood": "Innere Stadt",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -3941,7 +4257,7 @@
         "neighborhood": "Prater / Leopoldstadt",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -3949,7 +4265,7 @@
         "neighborhood": "Innere Stadt",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -3975,7 +4291,7 @@
         "neighborhood": "Staré Město (Vieille Ville)",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4015,7 +4331,7 @@
         "neighborhood": "Žižkov",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4023,7 +4339,7 @@
         "neighborhood": "Staré Město (Vieille Ville)",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4049,7 +4365,7 @@
         "neighborhood": "Plaka",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4089,7 +4405,7 @@
         "neighborhood": "Plaka",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4097,7 +4413,7 @@
         "neighborhood": "Plaka",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4123,7 +4439,7 @@
         "neighborhood": "San Polo / Rialto",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4163,7 +4479,7 @@
         "neighborhood": "San Marco",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4171,7 +4487,7 @@
         "neighborhood": "San Polo / Rialto",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4197,7 +4513,7 @@
         "neighborhood": "Chinatown",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4237,7 +4553,7 @@
         "neighborhood": "Little India",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4245,7 +4561,7 @@
         "neighborhood": "Chinatown",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4271,7 +4587,7 @@
         "neighborhood": "Mong Kok",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4311,7 +4627,7 @@
         "neighborhood": "Mong Kok",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4319,7 +4635,7 @@
         "neighborhood": "Mong Kok",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4345,7 +4661,7 @@
         "neighborhood": "Gion",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4385,7 +4701,7 @@
         "neighborhood": "Higashiyama",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4393,7 +4709,7 @@
         "neighborhood": "Gion",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4419,7 +4735,7 @@
         "neighborhood": "Bondi",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4459,7 +4775,7 @@
         "neighborhood": "Bondi",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4467,7 +4783,7 @@
         "neighborhood": "Bondi",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4493,7 +4809,7 @@
         "neighborhood": "Venice Beach",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4533,7 +4849,7 @@
         "neighborhood": "Santa Monica",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4541,7 +4857,7 @@
         "neighborhood": "Venice Beach",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4567,7 +4883,7 @@
         "neighborhood": "Coyoacán",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4607,7 +4923,7 @@
         "neighborhood": "Polanco",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4615,7 +4931,7 @@
         "neighborhood": "Coyoacán",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4641,7 +4957,7 @@
         "neighborhood": "Copacabana",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4681,7 +4997,7 @@
         "neighborhood": "Copacabana",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4689,7 +5005,7 @@
         "neighborhood": "Copacabana",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4715,7 +5031,7 @@
         "neighborhood": "La Boca",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4755,7 +5071,7 @@
         "neighborhood": "La Boca",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4763,7 +5079,7 @@
         "neighborhood": "La Boca",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4789,7 +5105,7 @@
         "neighborhood": "Distillery District",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4829,7 +5145,7 @@
         "neighborhood": "Distillery District",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4837,7 +5153,7 @@
         "neighborhood": "Distillery District",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4863,7 +5179,7 @@
         "neighborhood": "Gizeh",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4903,7 +5219,7 @@
         "neighborhood": "Gizeh",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4911,7 +5227,7 @@
         "neighborhood": "Gizeh",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -4937,7 +5253,7 @@
         "neighborhood": "Souq Waqif",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -4977,7 +5293,7 @@
         "neighborhood": "Souq Waqif",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -4985,7 +5301,7 @@
         "neighborhood": "Souq Waqif",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5011,7 +5327,7 @@
         "neighborhood": "Nairobi National Park",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5051,7 +5367,7 @@
         "neighborhood": "Nairobi National Park",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5059,7 +5375,7 @@
         "neighborhood": "Nairobi National Park",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5085,7 +5401,7 @@
         "neighborhood": "Yuyuan Garden (Vieille ville)",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5125,7 +5441,7 @@
         "neighborhood": "Yuyuan Garden (Vieille ville)",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5133,7 +5449,7 @@
         "neighborhood": "Yuyuan Garden (Vieille ville)",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5159,7 +5475,7 @@
         "neighborhood": "Colaba",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5199,7 +5515,7 @@
         "neighborhood": "Colaba",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5207,7 +5523,7 @@
         "neighborhood": "Colaba",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5233,7 +5549,7 @@
         "neighborhood": "Centre d’Ubud",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5273,7 +5589,7 @@
         "neighborhood": "Seminyak",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5281,7 +5597,7 @@
         "neighborhood": "Centre d’Ubud",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5307,7 +5623,7 @@
         "neighborhood": "Haight-Ashbury",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5347,7 +5663,7 @@
         "neighborhood": "Haight-Ashbury",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5355,7 +5671,7 @@
         "neighborhood": "Haight-Ashbury",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5381,7 +5697,7 @@
         "neighborhood": "Millennium Park",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5421,7 +5737,7 @@
         "neighborhood": "Millennium Park",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5429,7 +5745,7 @@
         "neighborhood": "Millennium Park",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5455,7 +5771,7 @@
         "neighborhood": "South Beach",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5495,7 +5811,7 @@
         "neighborhood": "South Beach",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5503,7 +5819,7 @@
         "neighborhood": "South Beach",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5529,7 +5845,7 @@
         "neighborhood": "Marienplatz",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5569,7 +5885,7 @@
         "neighborhood": "Marienplatz",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5577,7 +5893,7 @@
         "neighborhood": "Marienplatz",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5603,7 +5919,7 @@
         "neighborhood": "Temple Bar",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5643,7 +5959,7 @@
         "neighborhood": "Temple Bar",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5651,7 +5967,7 @@
         "neighborhood": "Temple Bar",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5677,7 +5993,7 @@
         "neighborhood": "Quartier des bars-ruines",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5717,7 +6033,7 @@
         "neighborhood": "Quartier des bars-ruines",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5725,7 +6041,7 @@
         "neighborhood": "Quartier des bars-ruines",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5751,7 +6067,7 @@
         "neighborhood": "Gamla Stan",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5791,7 +6107,7 @@
         "neighborhood": "Gamla Stan",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5799,7 +6115,7 @@
         "neighborhood": "Gamla Stan",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5825,7 +6141,7 @@
         "neighborhood": "KLCC",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5865,7 +6181,7 @@
         "neighborhood": "KLCC",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5873,7 +6189,7 @@
         "neighborhood": "KLCC",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5899,7 +6215,7 @@
         "neighborhood": "Cité interdite",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -5939,7 +6255,7 @@
         "neighborhood": "Cité interdite",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -5947,7 +6263,7 @@
         "neighborhood": "Cité interdite",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -5973,7 +6289,7 @@
         "neighborhood": "Vieux-Montréal",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -6013,7 +6329,7 @@
         "neighborhood": "Vieux-Montréal",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -6021,7 +6337,7 @@
         "neighborhood": "Vieux-Montréal",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -6047,7 +6363,7 @@
         "neighborhood": "Stanley Park",
         "tier": "Budget",
         "price": 55,
-        "score": 8.0,
+        "score": 8,
         "desc": "Prix minimum sans sacrifier l’emplacement."
       },
       {
@@ -6087,7 +6403,7 @@
         "neighborhood": "Stanley Park",
         "tier": "Confort",
         "price": 205,
-        "score": 9.0,
+        "score": 9,
         "desc": "Le meilleur équilibre entre confort, quartier et budget."
       },
       {
@@ -6095,7 +6411,7 @@
         "neighborhood": "Stanley Park",
         "tier": "Premium",
         "price": 272,
-        "score": 8.0,
+        "score": 8,
         "desc": "Confort prioritaire, service et chambre plus soignés."
       },
       {
@@ -6113,6 +6429,376 @@
         "price": 306,
         "score": 8.4,
         "desc": "Confort prioritaire, service et chambre plus soignés."
+      }
+    ],
+    "Lima": [
+      {
+        "name": "Miraflores House",
+        "neighborhood": "Miraflores",
+        "tier": "Budget",
+        "price": 38,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Barranco Stay",
+        "neighborhood": "Barranco",
+        "tier": "Budget",
+        "price": 45,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "San Isidro Hotel",
+        "neighborhood": "San Isidro",
+        "tier": "Budget",
+        "price": 52,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Centro Histórico Suites",
+        "neighborhood": "Centro Histórico",
+        "tier": "Confort",
+        "price": 95,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Miraflores Rooms",
+        "neighborhood": "Miraflores",
+        "tier": "Confort",
+        "price": 105,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Barranco House",
+        "neighborhood": "Barranco",
+        "tier": "Confort",
+        "price": 115,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "San Isidro Stay",
+        "neighborhood": "San Isidro",
+        "tier": "Premium",
+        "price": 155,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Centro Histórico Hotel",
+        "neighborhood": "Centro Histórico",
+        "tier": "Premium",
+        "price": 165,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Miraflores Suites",
+        "neighborhood": "Miraflores",
+        "tier": "Premium",
+        "price": 175,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Cusco": [
+      {
+        "name": "San Blas House",
+        "neighborhood": "San Blas",
+        "tier": "Budget",
+        "price": 35,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Centro / Plaza de Armas Stay",
+        "neighborhood": "Centro / Plaza de Armas",
+        "tier": "Budget",
+        "price": 42,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "San Pedro Hotel",
+        "neighborhood": "San Pedro",
+        "tier": "Budget",
+        "price": 49,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Santa Ana Suites",
+        "neighborhood": "Santa Ana",
+        "tier": "Confort",
+        "price": 88,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "San Blas Rooms",
+        "neighborhood": "San Blas",
+        "tier": "Confort",
+        "price": 98,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Centro / Plaza de Armas House",
+        "neighborhood": "Centro / Plaza de Armas",
+        "tier": "Confort",
+        "price": 108,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "San Pedro Stay",
+        "neighborhood": "San Pedro",
+        "tier": "Premium",
+        "price": 148,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Santa Ana Hotel",
+        "neighborhood": "Santa Ana",
+        "tier": "Premium",
+        "price": 158,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "San Blas Suites",
+        "neighborhood": "San Blas",
+        "tier": "Premium",
+        "price": 168,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Bogotá": [
+      {
+        "name": "La Candelaria House",
+        "neighborhood": "La Candelaria",
+        "tier": "Budget",
+        "price": 32,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Chapinero Stay",
+        "neighborhood": "Chapinero",
+        "tier": "Budget",
+        "price": 40,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Zona Rosa / Chicó Hotel",
+        "neighborhood": "Zona Rosa / Chicó",
+        "tier": "Budget",
+        "price": 48,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Usaquén Suites",
+        "neighborhood": "Usaquén",
+        "tier": "Confort",
+        "price": 85,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "La Candelaria Rooms",
+        "neighborhood": "La Candelaria",
+        "tier": "Confort",
+        "price": 95,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Chapinero House",
+        "neighborhood": "Chapinero",
+        "tier": "Confort",
+        "price": 105,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Zona Rosa / Chicó Stay",
+        "neighborhood": "Zona Rosa / Chicó",
+        "tier": "Premium",
+        "price": 145,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Usaquén Hotel",
+        "neighborhood": "Usaquén",
+        "tier": "Premium",
+        "price": 155,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "La Candelaria Suites",
+        "neighborhood": "La Candelaria",
+        "tier": "Premium",
+        "price": 165,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Zanzibar": [
+      {
+        "name": "Stone Town House",
+        "neighborhood": "Stone Town",
+        "tier": "Budget",
+        "price": 45,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Nungwi Stay",
+        "neighborhood": "Nungwi",
+        "tier": "Budget",
+        "price": 55,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Paje Hotel",
+        "neighborhood": "Paje",
+        "tier": "Budget",
+        "price": 65,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Jambiani Suites",
+        "neighborhood": "Jambiani",
+        "tier": "Confort",
+        "price": 110,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Stone Town Rooms",
+        "neighborhood": "Stone Town",
+        "tier": "Confort",
+        "price": 130,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Nungwi House",
+        "neighborhood": "Nungwi",
+        "tier": "Confort",
+        "price": 150,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Paje Stay",
+        "neighborhood": "Paje",
+        "tier": "Premium",
+        "price": 220,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Jambiani Hotel",
+        "neighborhood": "Jambiani",
+        "tier": "Premium",
+        "price": 260,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Stone Town Suites",
+        "neighborhood": "Stone Town",
+        "tier": "Premium",
+        "price": 300,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      }
+    ],
+    "Hanoi": [
+      {
+        "name": "Vieux Quartier (36 rues) House",
+        "neighborhood": "Vieux Quartier (36 rues)",
+        "tier": "Budget",
+        "price": 18,
+        "score": 8,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Quartier Français Stay",
+        "neighborhood": "Quartier Français",
+        "tier": "Budget",
+        "price": 22,
+        "score": 8.2,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Tay Ho (Lac de l’Ouest) Hotel",
+        "neighborhood": "Tay Ho (Lac de l’Ouest)",
+        "tier": "Budget",
+        "price": 26,
+        "score": 8.4,
+        "desc": "Prix minimum sans sacrifier l’emplacement."
+      },
+      {
+        "name": "Ba Dinh Suites",
+        "neighborhood": "Ba Dinh",
+        "tier": "Confort",
+        "price": 45,
+        "score": 8.6,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Vieux Quartier (36 rues) Rooms",
+        "neighborhood": "Vieux Quartier (36 rues)",
+        "tier": "Confort",
+        "price": 52,
+        "score": 8.8,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Quartier Français House",
+        "neighborhood": "Quartier Français",
+        "tier": "Confort",
+        "price": 59,
+        "score": 9,
+        "desc": "Le meilleur équilibre entre confort, quartier et budget."
+      },
+      {
+        "name": "Tay Ho (Lac de l’Ouest) Stay",
+        "neighborhood": "Tay Ho (Lac de l’Ouest)",
+        "tier": "Premium",
+        "price": 85,
+        "score": 8,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Ba Dinh Hotel",
+        "neighborhood": "Ba Dinh",
+        "tier": "Premium",
+        "price": 95,
+        "score": 8.2,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
+      },
+      {
+        "name": "Vieux Quartier (36 rues) Suites",
+        "neighborhood": "Vieux Quartier (36 rues)",
+        "tier": "Premium",
+        "price": 105,
+        "score": 8.4,
+        "desc": "Confort prioritaire, service et chambre plus soignées."
       }
     ]
   },

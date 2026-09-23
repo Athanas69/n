@@ -778,6 +778,232 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    city: "Lima",
+    title: "Miraflores ou Barranco ?",
+    slug: slugify("Miraflores ou Barranco ?"),
+    dek: "Les deux quartiers se touchent presque, mais l’ambiance change du tout au tout.",
+    body: [
+      {
+        text: "Miraflores et Barranco sont séparés d’à peine 15 minutes à pied le long du malecón, mais ils ne s’adressent pas au même voyageur. Le choix se fait moins sur la distance que sur ce que vous voulez faire le soir.",
+      },
+      {
+        heading: "Miraflores : la base pratique",
+        text: "Falaises aménagées, parcs, centres commerciaux, sécurité maximale et la plus forte concentration de bons restaurants de la ville (Central et Maido y sont tous les deux). C’est le choix le plus simple pour un premier séjour, surtout si vous voyagez en famille ou que c’est votre premier passage en Amérique du Sud.",
+      },
+      {
+        heading: "Barranco : l’ambiance",
+        text: "Ruelles colorées, galeries d’art, bars à pisco sour et la meilleure vie nocturne de Lima. Plus petit et moins « lisse » que Miraflores, avec un vrai caractère bohème hérité de son passé de quartier de villégiature du XIXe siècle.",
+      },
+      {
+        heading: "La solution la plus courante",
+        text: "Beaucoup de voyageurs dorment à Miraflores et viennent à Barranco en soirée — un trajet de 10-15 minutes en taxi ou à pied par le malecón. Si la vie nocturne est votre priorité numéro un, dormir directement à Barranco évite l’aller-retour.",
+      },
+    ],
+  },
+  {
+    city: "Lima",
+    title: "Depuis l’aéroport Jorge Chávez",
+    slug: slugify("Depuis l’aéroport Jorge Chávez"),
+    dek: "L’aéroport est loin du centre touristique — mieux vaut anticiper le trajet.",
+    body: [
+      {
+        text: "L’aéroport international Jorge Chávez (LIM) se trouve dans le Callao, à l’opposé de Miraflores et Barranco par rapport au centre-ville. Comptez 45 à 60 minutes de trajet selon l’heure — et beaucoup plus en heure de pointe.",
+      },
+      {
+        heading: "Taxi ou VTC",
+        text: "L’option la plus simple reste le taxi ou Uber réservé depuis l’application, à prendre au comptoir officiel dans le hall des arrivées plutôt qu’avec les rabatteurs à la sortie. Comptez environ 25-35 USD vers Miraflores.",
+      },
+      {
+        heading: "Airport Express Lima",
+        text: "Un bus direct dessert Miraflores, San Isidro et Barranco depuis l’aéroport, à un tarif fixe nettement inférieur au taxi. Moins flexible avec des bagages volumineux, mais fiable et sans négociation.",
+      },
+      {
+        heading: "Le point d’attention",
+        text: "Le Callao a une réputation sécuritaire plus difficile que le reste de Lima : ne vous attardez pas aux abords de l’aéroport et réservez votre transfert plutôt que d’en chercher un sur place.",
+      },
+    ],
+  },
+  {
+    city: "Cusco",
+    title: "San Blas ou Plaza de Armas ?",
+    slug: slugify("San Blas ou Plaza de Armas ?"),
+    dek: "À quelques rues d’écart, deux façons très différentes de vivre le centre historique.",
+    body: [
+      {
+        text: "San Blas et la Plaza de Armas sont contigus — la question n’est pas la distance mais la pente et le bruit. Cusco est une ville qui se vit essentiellement à pied, autant choisir le bon point de départ.",
+      },
+      {
+        heading: "Plaza de Armas : tout à portée de main",
+        text: "Restaurants, agences de voyage, cathédrale, animation permanente. Pratique pour une arrivée avec beaucoup de bagages, mais bruyant tard le soir et l’un des secteurs les plus chers de la ville.",
+      },
+      {
+        heading: "San Blas : le charme, au prix de la pente",
+        text: "Ruelles pavées en forte montée, ateliers d’artisans, vue sur les toits de tuiles. Le quartier le plus photogénique de Cusco, mais les rues pentues sont éprouvantes les deux ou trois premiers jours, le temps de s’acclimater à l’altitude.",
+      },
+      {
+        heading: "Notre recommandation",
+        text: "Si c’est votre première nuit à 3 400 m, privilégiez un hébergement proche de la Plaza de Armas où la marche est plus plate. San Blas devient plus agréable une fois acclimaté, à partir du 2e ou 3e jour.",
+      },
+    ],
+  },
+  {
+    city: "Cusco",
+    title: "Gérer l’altitude à Cusco",
+    slug: slugify("Gérer l’altitude à Cusco"),
+    dek: "3 400 mètres, ce n’est pas anodin — quelques précautions évitent un mal des montagnes qui gâche les deux premiers jours.",
+    body: [
+      {
+        text: "Cusco est plus haute que la plupart des grands sommets alpins accessibles en randonnée. Le soroche (mal des montagnes) touche une large majorité de voyageurs à des degrés divers, quel que soit leur niveau physique.",
+      },
+      {
+        heading: "Les 24 premières heures",
+        text: "Évitez tout effort physique important le jour d’arrivée. Pas d’alcool le premier soir — il aggrave nettement les symptômes. Buvez plus d’eau que d’habitude et mangez léger.",
+      },
+      {
+        heading: "Le mate de coca",
+        text: "Servi partout dans les hôtels dès l’arrivée, l’infusion de feuilles de coca est l’remède traditionnel le plus répandu contre les maux de tête liés à l’altitude. Légal et efficace en usage local.",
+      },
+      {
+        heading: "Si ça ne passe pas",
+        text: "Maux de tête, essoufflement et fatigue disparaissent généralement en 2-3 jours. Des symptômes plus sévères (vertiges importants, difficulté à respirer au repos) justifient une consultation — les pharmacies du centre vendent de l’acétazolamide sans ordonnance stricte, mais l’avis d’un médecin reste préférable avant le départ si vous avez des antécédents cardiaques ou respiratoires.",
+      },
+    ],
+  },
+  {
+    city: "Bogotá",
+    title: "Chapinero ou Zona Rosa ?",
+    slug: slugify("Chapinero ou Zona Rosa ?"),
+    dek: "Deux quartiers du nord de Bogotá, deux ambiances et deux budgets différents.",
+    body: [
+      {
+        text: "Chapinero et la Zona Rosa/Chicó sont voisins mais se sont développés autour de logiques différentes : l’un autour d’une scène culturelle et nocturne, l’autre autour du shopping et des affaires.",
+      },
+      {
+        heading: "Chapinero : la vie nocturne et le mélange",
+        text: "Le quartier le plus vivant de Bogotá le soir, avec la plus forte concentration de bars, restaurants et la scène LGBTQ+ la plus visible de la ville (Chapinero Alto). Ambiance jeune, prix plus raisonnables que la Zona Rosa.",
+      },
+      {
+        heading: "Zona Rosa / Chicó : le confort premium",
+        text: "Hôtels internationaux, centres commerciaux haut de gamme, rues larges et sécurisées. Moins de caractère local, mais le choix le plus rassurant pour un premier séjour en Colombie.",
+      },
+      {
+        heading: "Le vrai critère",
+        text: "Si vous cherchez une immersion et une vie de quartier, Chapinero l’emporte largement. Si la priorité absolue est la tranquillité et la proximité des grandes enseignes, la Zona Rosa reste la valeur sûre.",
+      },
+    ],
+  },
+  {
+    city: "Bogotá",
+    title: "Bogotá est-elle sûre ?",
+    slug: slugify("Bogotá est-elle sûre ?"),
+    dek: "La réputation de la ville a beaucoup évolué — voici ce qui reste vrai et ce qui ne l’est plus.",
+    body: [
+      {
+        text: "Bogotá a une réputation sécuritaire datée qui ne reflète plus la réalité des quartiers touristiques et d’affaires du nord de la ville. Le bon sens habituel s’applique, avec quelques particularités locales à connaître.",
+      },
+      {
+        heading: "Ce qui est globalement sûr",
+        text: "La Candelaria de jour, Chapinero, Zona Rosa, Usaquén et Chicó ne posent pas de problème particulier pour un voyageur attentif. La délinquance visée touche surtout le vol à l’arraché opportuniste, pas la violence gratuite envers les touristes.",
+      },
+      {
+        heading: "Les précautions qui font la différence",
+        text: "Éviter d’exhiber un téléphone ou un appareil photo coûteux en pleine rue, préférer Uber ou Cabify à un taxi hélé dans la rue le soir, et éviter La Candelaria après la tombée de la nuit sauf pour rejoindre directement un lieu connu.",
+      },
+      {
+        heading: "Ce qu’il faut éviter",
+        text: "Certains quartiers du sud de la ville n’ont aucun intérêt touristique et sont à éviter sans raison précise. Ce n’est pas une contrainte réelle : aucun itinéraire de voyage classique ne vous y amène.",
+      },
+    ],
+  },
+  {
+    city: "Zanzibar",
+    title: "Stone Town ou plage directement ?",
+    slug: slugify("Stone Town ou plage directement ?"),
+    dek: "Passer par la ville historique ou filer droit vers le sable — la question se pose dès la réservation.",
+    body: [
+      {
+        text: "Zanzibar concentre deux expériences très différentes sur une même île : la densité culturelle de Stone Town et la décompression pure des plages du nord et de l’est. La plupart des voyages réussis combinent les deux, dans le bon ordre.",
+      },
+      {
+        heading: "Le bon enchaînement",
+        text: "Arriver à Stone Town, y passer une à deux nuits pour visiter les marchés aux épices, le fort et les ruelles classées UNESCO, puis rejoindre la plage pour le reste du séjour. Faire l’inverse est possible mais moins confortable : Stone Town se visite mieux frais et reposé qu’en fin de séjour, fatigué de la plage.",
+      },
+      {
+        heading: "Si le temps manque",
+        text: "Avec moins de 5 jours sur place, il est raisonnable de sauter Stone Town au profit de la plage — l’aéroport ZNZ dessert directement les transferts vers le nord (Nungwi) sans passer par la ville.",
+      },
+    ],
+  },
+  {
+    city: "Zanzibar",
+    title: "Nungwi ou Paje ?",
+    slug: slugify("Nungwi ou Paje ?"),
+    dek: "Les deux meilleures plages de l’île, pour deux profils de voyageurs différents.",
+    body: [
+      {
+        text: "Nungwi, à la pointe nord, et Paje, sur la côte est, sont les deux zones balnéaires les plus populaires de Zanzibar — mais elles ne se ressemblent pas du tout.",
+      },
+      {
+        heading: "Nungwi : la plage « classique »",
+        text: "Sable blanc, mer calme et baignable à toute heure (contrairement à l’est, où la marée découvre parfois de larges bancs de corail), nombreux resorts et une vraie vie nocturne. Le choix le plus simple pour une première visite.",
+      },
+      {
+        heading: "Paje : le spot de kitesurf",
+        text: "Vent constant, écoles de kite réputées mondialement, ambiance plus jeune et décontractée. La marée y est plus marquée : la baignade dépend fortement de l’horaire, à vérifier avant de choisir son hôtel.",
+      },
+      {
+        heading: "Le départage",
+        text: "Pour nager toute la journée sans contrainte de marée, Nungwi l’emporte. Pour le sport nautique et une ambiance backpacker, Paje est la meilleure base — Jambiani, juste à côté, offre une version plus calme du même littoral.",
+      },
+    ],
+  },
+  {
+    city: "Hanoi",
+    title: "Vieux Quartier ou Tay Ho ?",
+    slug: slugify("Vieux Quartier ou Tay Ho ?"),
+    dek: "Le chaos historique ou le calme du lac — deux Hanoï qui coexistent à quelques kilomètres l’une de l’autre.",
+    body: [
+      {
+        text: "Le Vieux Quartier et Tay Ho (le lac de l’Ouest) représentent les deux pôles de l’expérience à Hanoï, et le choix dépend surtout de votre tolérance au bruit et à la densité.",
+      },
+      {
+        heading: "Vieux Quartier : l’immersion totale",
+        text: "36 rues, chacune historiquement spécialisée dans un artisanat, marchés de rue, scooters en continu et une vie qui déborde sur le trottoir à toute heure. Le meilleur choix pour un séjour court et une immersion maximale, au prix d’un sommeil parfois agité par le bruit.",
+      },
+      {
+        heading: "Tay Ho : la pause",
+        text: "Cafés en bord de lac, communauté expatriée importante, restaurants internationaux et un rythme nettement plus calme. Idéal pour un séjour plus long ou pour décompresser après quelques jours dans le Vieux Quartier.",
+      },
+      {
+        heading: "La combinaison qui fonctionne",
+        text: "Beaucoup de voyageurs commencent par 2-3 nuits dans le Vieux Quartier pour l’immersion, puis rejoignent Tay Ho pour la fin du séjour — les deux quartiers sont à 20-25 minutes en taxi ou Grab l’un de l’autre.",
+      },
+    ],
+  },
+  {
+    city: "Hanoi",
+    title: "Traverser la rue à Hanoï",
+    slug: slugify("Traverser la rue à Hanoï"),
+    dek: "La circulation impressionne tous les nouveaux arrivants — la méthode qui marche vraiment.",
+    body: [
+      {
+        text: "Avec des centaines de scooters par minute à certains carrefours et peu de feux respectés à la lettre, traverser une rue à Hanoï déstabilise presque tous les voyageurs les premières heures. Il existe pourtant une méthode simple et fiable.",
+      },
+      {
+        heading: "Le principe : avancer, ne jamais s’arrêter",
+        text: "Les scooters anticipent votre trajectoire et l’ajustent en continu. S’arrêter brusquement au milieu de la rue casse cette anticipation et augmente le risque, contrairement à l’intuition. Avancez à vitesse lente et constante, sans hésitation.",
+      },
+      {
+        heading: "Ce qu’il faut éviter",
+        text: "Courir : cela rend votre trajectoire imprévisible pour les deux-roues qui vous contournent. Regarder son téléphone en marchant. S’arrêter net au milieu si un scooter approche — il vous a déjà anticipé.",
+      },
+      {
+        heading: "Le bon réflexe",
+        text: "Choisissez un moment où le flux n’est pas à son maximum, avancez d’un pas régulier en diagonale plutôt que perpendiculairement, et laissez les scooters s’adapter autour de vous. Après quelques traversées, le réflexe devient naturel.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(city: string, slug: string) {

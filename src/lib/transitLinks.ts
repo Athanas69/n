@@ -1,4 +1,5 @@
 export const TRANSIT_LINKS: Record<string, { label: string; url: string }> = {
+  "Bogotá": { label: "TransMilenio", url: "https://www.transmilenio.gov.co" },
   Paris: { label: "Île-de-France Mobilités", url: "https://www.iledefrance-mobilites.fr/le-reseau/plans" },
   Tokyo: { label: "Tokyo Metro", url: "https://www.tokyometro.jp/en/subwaymap/index.html" },
   Kyoto: { label: "Kyoto City Subway & Bus", url: "https://www.city.kyoto.lg.jp/kotsu/" },

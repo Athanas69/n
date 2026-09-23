@@ -44,4 +44,9 @@ export const CITY_COORDS: Record<string, { lat: number; lon: number }> = {
   Beijing: { lat: 39.9042, lon: 116.4074 },
   Montreal: { lat: 45.5019, lon: -73.5674 },
   Vancouver: { lat: 49.2827, lon: -123.1207 },
+  Lima: { lat: -12.0464, lon: -77.0428 },
+  Cusco: { lat: -13.5319, lon: -71.9675 },
+  "Bogotá": { lat: 4.711, lon: -74.0721 },
+  Zanzibar: { lat: -6.1659, lon: 39.2026 },
+  Hanoi: { lat: 21.0278, lon: 105.8342 },
 };
