@@ -12,10 +12,6 @@ function wikipediaUrl(city: string) {
   return `https://en.wikipedia.org/wiki/${encodeURIComponent(page)}`;
 }
 
-function airbnbHomesUrl(city: string) {
-  return `https://www.airbnb.com/s/${encodeURIComponent(city.replace(/\s+/g, "-"))}/homes`;
-}
-
 function googleMapsUrl(city: string, country: string) {
   return `https://www.google.com/maps/place/${encodeURIComponent(`${city}, ${country}`)}`;
 }
@@ -66,11 +62,6 @@ export function getCityResources(city: string, country?: string): CityResource[]
       label: "Wikipedia",
       description: "Histoire, contexte et repères culturels de la ville.",
       url: wikipediaUrl(city),
-    },
-    {
-      label: "Airbnb",
-      description: "Voir les logements disponibles et les quartiers où ils se concentrent.",
-      url: airbnbHomesUrl(city),
     },
   ];
   if (country) {

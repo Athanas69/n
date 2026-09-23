@@ -155,6 +155,21 @@ export default async function CityPage({
         ) : (
           <p className="muted">Carte indisponible pour cette destination.</p>
         )}
+        {c.neighborhoods.length > 0 && (
+          <div className="hoodpicks">
+            <b>Quartiers emblématiques</b>
+            <div className="hoodpicks-list">
+              {c.neighborhoods.slice(0, 5).map(([name, tags, description]) => (
+                <div className="hoodpick" key={name}>
+                  <b>
+                    {name} <span>· {tags.split(" · ")[0]}</span>
+                  </b>
+                  <p>{description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
 
       <section className="section shell" id="stays">
