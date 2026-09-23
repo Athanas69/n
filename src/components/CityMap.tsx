@@ -10,7 +10,6 @@ const WOBBLE = [
 ];
 
 const XS = [40, 142, 244, 396, 498, 600];
-const HUBS = [244, 498];
 
 export function MetroMap({ city, cityName }: { city: City; cityName: string }) {
   const realLines = REAL_TRANSIT[cityName];
@@ -70,13 +69,19 @@ export function MetroMap({ city, cityName }: { city: City; cityName: string }) {
     );
   }
 
-  const lines = city.transport.split(" · ").slice(0, 5);
-  const h = 70 + lines.length * 46;
+  const lines = city.transport.split(" · ").slice(0, 3);
+  const neighborhoodNames = city.neighborhoods.map((n) => n[0]);
+  const rowH = 78;
+  const h = 40 + lines.length * rowH;
   const rows = lines.map((l, i) => ({
     name: l,
     color: METRO_COLORS[i % METRO_COLORS.length],
-    y: 46 + i * 46,
+    y: 50 + i * rowH,
     wobble: WOBBLE[i % WOBBLE.length],
+    stops:
+      neighborhoodNames.length > 0
+        ? XS.map((_, k) => neighborhoodNames[(k + i * 2) % neighborhoodNames.length])
+        : XS.map(() => ""),
   }));
 
   return (
@@ -87,21 +92,30 @@ export function MetroMap({ city, cityName }: { city: City; cityName: string }) {
           return (
             <g key={r.name}>
               <polyline points={pts} fill="none" stroke={r.color} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />
-              {XS.map((x, k) => (
-                <circle key={x} cx={x} cy={r.y + r.wobble[k]} r={4.5} fill="#fff" stroke={r.color} strokeWidth={3} />
-              ))}
-              <text x={XS[0]} y={r.y - 12} fontSize={10.5} fontWeight={600} fontFamily="var(--font-dm-sans)" fill="#27332d">
-                {r.name}
-              </text>
+              {XS.map((x, k) => {
+                const cy = r.y + r.wobble[k];
+                const labelUp = k % 2 === 0;
+                return (
+                  <g key={x}>
+                    <circle cx={x} cy={cy} r={5} fill="#fff" stroke={r.color} strokeWidth={3} />
+                    {r.stops[k] && (
+                      <text
+                        x={x}
+                        y={labelUp ? cy - 12 : cy + 20}
+                        fontSize={8.5}
+                        fontFamily="var(--font-dm-sans)"
+                        fill="#3a4640"
+                        textAnchor="middle"
+                      >
+                        {r.stops[k]}
+                      </text>
+                    )}
+                  </g>
+                );
+              })}
             </g>
           );
         })}
-        {HUBS.map((hx) => (
-          <g key={hx}>
-            <circle cx={hx} cy={h / 2} r={11} fill="#fff" stroke="#27332d" strokeWidth={3} />
-            <circle cx={hx} cy={h / 2} r={4} fill="#27332d" />
-          </g>
-        ))}
       </svg>
       <div className="metrolegend">
         {rows.map((r) => (
@@ -112,7 +126,7 @@ export function MetroMap({ city, cityName }: { city: City; cityName: string }) {
         ))}
         <span className="metrolegend-hub">
           <i className="metrolegend-hubdot" />
-          Correspondance
+          Quartier desservi
         </span>
       </div>
     </>
