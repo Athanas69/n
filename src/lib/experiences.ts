@@ -7,6 +7,9 @@ export type ExperienceRegion = {
   image: string;
 };
 
+export type ExperienceFaq = { q: string; a: string };
+export type ExperienceStep = { when: string; label: string };
+
 export type Experience = {
   slug: string;
   name: string;
@@ -17,6 +20,9 @@ export type Experience = {
   regions: ExperienceRegion[];
   practical: Array<[string, string]>;
   tiers: Array<{ tier: string; price: string; desc: string }>;
+  timeline: ExperienceStep[];
+  faq: ExperienceFaq[];
+  gateways: string[];
 };
 
 const img = (id: string, w: number) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=88`;
@@ -52,6 +58,15 @@ export const EXPERIENCES: Experience[] = [
         image: img("photo-1564101160531-4838e8a5f4e7", 900),
       },
       {
+        name: "Ngorongoro",
+        country: "Tanzanie",
+        tags: "Cratère · densité exceptionnelle · compact",
+        description:
+          "Un cratère volcanique de 20 km de diamètre concentrant l’une des plus fortes densités de faune d’Afrique — un safari complet possible en une seule journée.",
+        best: "Toute l’année, accès facile",
+        image: img("photo-1745885979468-44a855f8a5fa", 900),
+      },
+      {
         name: "Kruger",
         country: "Afrique du Sud",
         tags: "Autotour · infrastructure · Big Five",
@@ -68,6 +83,15 @@ export const EXPERIENCES: Experience[] = [
           "Un delta qui inonde le désert du Kalahari : camps flottants et sorties en mokoro traditionnel, loin des foules et à prix élevé.",
         best: "Mai–oct., quand le delta est en crue",
         image: img("photo-1759252973843-957dc1b5e0e5", 900),
+      },
+      {
+        name: "South Luangwa",
+        country: "Zambie",
+        tags: "Marche safari · brousse authentique · guides experts",
+        description:
+          "Le berceau du safari à pied : une manière plus lente et plus immersive d’observer la faune, accompagné d’un guide armé à quelques mètres des animaux.",
+        best: "Mai–oct., saison sèche",
+        image: img("photo-1759143861174-74eb31f4ecab", 900),
       },
       {
         name: "Etosha",
@@ -93,12 +117,39 @@ export const EXPERIENCES: Experience[] = [
       ["Réservation", "Permis gorilles et camps de delta se réservent 6–12 mois à l’avance."],
       ["Vols intérieurs", "Fréquents entre parcs — prévoir un budget dédié, hors forfait."],
       ["Bagages", "Sac souple obligatoire sur les vols en petit porteur (poids limité)."],
+      ["Niveau physique", "Aucun requis en véhicule — le trekking gorilles demande une forme correcte."],
+      ["Connexion sur place", "Limitée en brousse, généralement bonne dans les lodges et camps permanents."],
     ],
     tiers: [
       { tier: "Mobile / camping", price: "≈ 150–300 €/jour", desc: "Tentes équipées, guide partagé, le meilleur rapport immersion-prix." },
       { tier: "Lodge", price: "≈ 350–700 €/jour", desc: "Camps permanents avec confort hôtelier, pension complète et activités incluses." },
       { tier: "Luxe / delta", price: "≈ 800–1500 €/jour", desc: "Camps exclusifs à capacité réduite, souvent tout compris vols inclus." },
     ],
+    timeline: [
+      { when: "J-180", label: "Réserver permis gorilles et camps exclusifs (places très limitées)" },
+      { when: "J-90", label: "Réserver vols intérieurs et lodges restants" },
+      { when: "J-30", label: "Vaccins, antipaludéens, assurance évacuation médicale" },
+      { when: "J-7", label: "Bagage souple, jumelles, vêtements de couleurs neutres" },
+    ],
+    faq: [
+      {
+        q: "Faut-il être en forme physiquement ?",
+        a: "Non pour un safari classique en véhicule — s’asseoir plusieurs heures suffit. Le trekking gorilles demande une forme correcte : marche en terrain irrégulier, parfois plusieurs heures.",
+      },
+      {
+        q: "Un safari est-il adapté aux enfants ?",
+        a: "La plupart des camps acceptent les enfants à partir de 6-8 ans ; certains lodges exclusifs imposent un âge minimum plus élevé (souvent 12 ans) pour les sorties à pied ou en canoë.",
+      },
+      {
+        q: "Est-ce dangereux ?",
+        a: "Les sorties se font toujours accompagnées d’un guide formé, depuis un véhicule ou à distance de sécurité. Le risque principal reste sanitaire (paludisme) plus qu’animalier.",
+      },
+      {
+        q: "Peut-on voir le Big Five à coup sûr ?",
+        a: "Non — ce sont des animaux sauvages en liberté, aucune garantie n’existe. Les parcs à forte densité (Kruger, Mara, Ngorongoro) maximisent les chances sur 3-4 jours.",
+      },
+    ],
+    gateways: ["Nairobi", "Cape Town", "Kigali"],
   },
   {
     slug: "croisieres",
@@ -157,18 +208,63 @@ export const EXPERIENCES: Experience[] = [
         best: "Avr.–oct., hors saison des pluies",
         image: img("photo-1738762932370-468a90e0ff68", 900),
       },
+      {
+        name: "Rhin / Danube",
+        country: "Europe fluviale",
+        tags: "Villes européennes · petits bateaux · vignobles",
+        description:
+          "Remonter le Rhin ou le Danube en admirant villages et vignobles depuis un bateau de moins de 200 passagers, sans jamais quitter le confort d’un même hôtel flottant.",
+        best: "Avr.–oct. · marchés de Noël en décembre",
+        image: img("photo-1755104981390-792e58049496", 900),
+      },
+      {
+        name: "Golfe Persique",
+        country: "Émirats arabes unis",
+        tags: "Escale shopping · luxe moderne · courte durée",
+        description:
+          "Croisières courtes (3-7 nuits) au départ de Dubaï, entre gratte-ciels et escales à Abu Dhabi ou Mascate — un format compact pour découvrir le Golfe autrement.",
+        best: "Nov.–avr., hors forte chaleur",
+        image: img("photo-1582120042072-d01e2fc8f3ea", 900),
+      },
     ],
     practical: [
       ["Cabine", "Intérieure, hublot, balcon ou suite — l’écart de prix peut doubler pour la même croisière."],
       ["Inclus généralement", "Pension complète, animations, accès piscine/spa de base."],
       ["Souvent en extra", "Excursions à terre, wifi, boissons, pourboires d’équipage."],
       ["Réservation", "Antarctique et fjords se réservent tôt : cabines limitées sur les petits navires."],
+      ["Mal de mer", "Rare sur grand navire (stabilisateurs), plus fréquent en petit navire ou mer agitée."],
+      ["Connexion à bord", "Wifi satellite, souvent lent et vendu en forfait séparé du prix de base."],
     ],
     tiers: [
       { tier: "Paquebot Caraïbes/Méditerranée", price: "≈ 100–250 €/jour/pers.", desc: "Grand navire, cabine intérieure à balcon, formule tout compris de base." },
       { tier: "Navire moyen (fjords, Alaska)", price: "≈ 300–600 €/jour/pers.", desc: "Capacité réduite, meilleur accès aux paysages, excursions souvent incluses." },
       { tier: "Expédition (Antarctique)", price: "≈ 700–1500 €/jour/pers.", desc: "Moins de 200 passagers, équipe de naturalistes, débarquements en zodiac inclus." },
     ],
+    timeline: [
+      { when: "J-180", label: "Réserver la cabine (fjords et Antarctique se remplissent vite)" },
+      { when: "J-90", label: "Réserver les excursions à terre les plus demandées" },
+      { when: "J-30", label: "Vérifier visa et documents requis selon les escales" },
+      { when: "J-7", label: "Valises, formulaires d’embarquement en ligne, forfait wifi si besoin" },
+    ],
+    faq: [
+      {
+        q: "Le mal de mer est-il fréquent ?",
+        a: "Rare sur les grands paquebots modernes équipés de stabilisateurs, plus probable sur un petit navire d’expédition ou en mer agitée (Antarctique, fjords hors saison).",
+      },
+      {
+        q: "Faut-il un passeport pour chaque escale ?",
+        a: "Oui dans la plupart des cas, même pour une escale de quelques heures — certains pays exigent en plus un visa spécifique à vérifier avant de réserver.",
+      },
+      {
+        q: "Que se passe-t-il si on rate le départ à une escale ?",
+        a: "C’est à la charge du passager de rejoindre le prochain port si l’excursion n’était pas réservée via la compagnie — un argument de poids pour les excursions officielles sur les escales courtes.",
+      },
+      {
+        q: "Le wifi fonctionne-t-il à bord ?",
+        a: "Oui, mais via satellite : plus lent et plus cher qu’à terre, presque toujours vendu en forfait séparé du prix de la croisière.",
+      },
+    ],
+    gateways: ["Miami", "Barcelona", "Dubai"],
   },
 ];
 

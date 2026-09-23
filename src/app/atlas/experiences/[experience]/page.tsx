@@ -3,6 +3,7 @@ import Link from "next/link";
 import NotifyButton from "@/components/NotifyButton";
 import { EXPERIENCES, getExperience } from "@/lib/experiences";
 import { getArticleSlugForTitle } from "@/lib/articles";
+import { citySlug, getCity } from "@/lib/data";
 
 export function generateStaticParams() {
   return EXPERIENCES.map((e) => ({ experience: e.slug }));
@@ -109,6 +110,41 @@ export default async function ExperiencePage({ params }: { params: Promise<{ exp
         </div>
       </section>
 
+      <section className="section shell panel-tint tint-blue" id="timeline">
+        <div className="section-head">
+          <div>
+            <div className="eyebrow">Comment s’organiser</div>
+            <h2>Le calendrier de réservation.</h2>
+          </div>
+          <p>Les places les plus demandées (permis, petits navires) partent en premier — mieux vaut anticiper que comparer les prix au dernier moment.</p>
+        </div>
+        <div className="countdown">
+          {e.timeline.map((step) => (
+            <div className="count" key={step.when}>
+              <b>{step.when}</b>
+              <small>{step.label}</small>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section shell" id="faq">
+        <div className="section-head">
+          <div>
+            <div className="eyebrow">Questions fréquentes</div>
+            <h2>Ce qu’on se demande avant de réserver.</h2>
+          </div>
+        </div>
+        <div className="expfaq">
+          {e.faq.map((item) => (
+            <div className="expfaqitem" key={item.q}>
+              <b>{item.q}</b>
+              <p>{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {articleTitles.length > 0 && (
         <section className="section shell" id="guides">
           <div className="section-head">
@@ -137,6 +173,29 @@ export default async function ExperiencePage({ params }: { params: Promise<{ exp
                     </NotifyButton>
                   )}
                 </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {e.gateways.length > 0 && (
+        <section className="section shell" id="gateways">
+          <div className="section-head">
+            <div>
+              <div className="eyebrow">Villes de départ</div>
+              <h2>Déjà couvertes sur Atlas.</h2>
+            </div>
+            <p>Ces villes servent souvent de porte d’entrée — leurs guides Atlas restent valables pour préparer le reste du séjour.</p>
+          </div>
+          <div className="cityresources-list">
+            {e.gateways.map((name) => {
+              const city = getCity(name);
+              return (
+                <Link key={name} href={`/atlas/${citySlug(name)}`} className="cityresource">
+                  <b>{name} ↗</b>
+                  <span>{city.country}</span>
+                </Link>
               );
             })}
           </div>
