@@ -47,7 +47,7 @@ export default function AlfredPanel() {
   const departureIn = trip ? daysUntil(trip.startDate) : null;
 
   return (
-    <aside id="alfred" className={open ? "open" : ""}>
+    <aside id="alfred" className={`alfred${open ? " open" : ""}`}>
       <button className="btn" style={{ float: "right" }} onClick={() => setOpen(false)}>
         ×
       </button>
