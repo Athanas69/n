@@ -155,10 +155,10 @@ export default async function CityPage({
             <div className="eyebrow">Quartiers</div>
             <h2>Choisissez l’ambiance avant l’adresse.</h2>
           </div>
-          <p>Survolez un point sur la carte pour découvrir le quartier, cliquez pour ouvrir son guide.</p>
+          <p>Survolez un point sur la carte pour découvrir le quartier.</p>
         </div>
         {coords ? (
-          <NeighborhoodRealMap neighborhoods={c.neighborhoods} city={cityName} center={coords} />
+          <NeighborhoodRealMap neighborhoods={c.neighborhoods} center={coords} />
         ) : (
           <p className="muted">Carte indisponible pour cette destination.</p>
         )}

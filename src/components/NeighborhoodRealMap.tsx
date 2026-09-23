@@ -2,10 +2,7 @@
 
 import "leaflet/dist/leaflet.css";
 import { useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
 import type { Neighborhood } from "@/lib/data";
-import { citySlug } from "@/lib/data";
-import { hoodSlug } from "@/lib/hoodSlug";
 
 export const HOODMAP_PALETTE = ["#6e72d9", "#df9b47", "#4ba36d", "#b168a7", "#5a9db7", "#d9707a", "#5fae8c", "#c98f3f"];
 
@@ -23,15 +20,12 @@ function offsetPosition(lat: number, lon: number, i: number, count: number) {
 
 export default function NeighborhoodRealMap({
   neighborhoods,
-  city,
   center,
 }: {
   neighborhoods: Neighborhood[];
-  city: string;
   center: { lat: number; lon: number };
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const router = useRouter();
 
   useEffect(() => {
     let cancelled = false;
@@ -64,7 +58,6 @@ export default function NeighborhoodRealMap({
         });
         const marker = L.marker([pos.lat, pos.lon], { icon }).addTo(map!);
         marker.bindTooltip(`<b>${h[0]}</b>`, { direction: "top", offset: [0, -15], className: "hoodpin-tooltip" });
-        marker.on("click", () => router.push(`/atlas/${citySlug(city)}/quartiers/${hoodSlug(h[0])}`));
       });
     })();
 
@@ -72,7 +65,7 @@ export default function NeighborhoodRealMap({
       cancelled = true;
       map?.remove();
     };
-  }, [neighborhoods, city, center.lat, center.lon, router]);
+  }, [neighborhoods, center.lat, center.lon]);
 
   return <div ref={ref} className="hoodmap-real" />;
 }
