@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ALFRED_EVENT } from "@/lib/notify";
-import { citySlug } from "@/lib/data";
+import { citySlug, getCity } from "@/lib/data";
 import { useTrips } from "@/lib/store";
+import { getPracticalInfo } from "@/lib/practical";
 import { ArrowheadMark } from "./Mark";
 import { useT } from "@/lib/i18n";
 
@@ -47,6 +48,8 @@ export default function AlfredPanel() {
   }
 
   const departureIn = trip ? daysUntil(trip.startDate) : null;
+  const cityInfo = trip ? getCity(trip.city) : null;
+  const practical = cityInfo ? getPracticalInfo(cityInfo.country) : null;
 
   return (
     <aside id="alfred" className={`alfred${open ? " open" : ""}`}>
@@ -80,6 +83,25 @@ export default function AlfredPanel() {
               </>
             )}
           </div>
+          {practical && (
+            <div className="alfredcard">
+              <b>Avant de partir pour {trip.city}</b>
+              <ul className="alfredfacts">
+                <li>
+                  <small>Visa</small>
+                  {practical.visa}
+                </li>
+                <li>
+                  <small>Urgences</small>
+                  {practical.emergency}
+                </li>
+                <li>
+                  <small>Prise</small>
+                  {practical.plug}
+                </li>
+              </ul>
+            </div>
+          )}
           <div className="actions">
             <button className="btn" onClick={() => { setOpen(false); router.push(`/mondo/trips/mine/${trip.id}`); }}>
               Ouvrir le voyage
