@@ -2,7 +2,7 @@
 
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { CITY_NAMES, citySlug, getCities } from "@/lib/data";
+import { CITY_NAMES, citySlug, getCities, normalizeSearch } from "@/lib/data";
 
 function defaultDates() {
   const start = new Date();
@@ -27,11 +27,11 @@ export default function AtlasSearchBar() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = normalizeSearch(query.trim());
     if (!q) return [];
     return CITY_NAMES.filter((name) => {
       const c = cities[name];
-      return name.toLowerCase().includes(q) || c.country.toLowerCase().includes(q);
+      return normalizeSearch(name).includes(q) || normalizeSearch(c.country).includes(q);
     }).slice(0, 6);
   }, [query, cities]);
 
@@ -43,7 +43,8 @@ export default function AtlasSearchBar() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const target = city ?? results[0] ?? (CITY_NAMES.includes(query.trim()) ? query.trim() : null);
+    const exactMatch = CITY_NAMES.find((name) => normalizeSearch(name) === normalizeSearch(query.trim()));
+    const target = city ?? results[0] ?? exactMatch ?? null;
     if (!target) {
       inputRef.current?.focus();
       setOpen(true);

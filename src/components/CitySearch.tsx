@@ -2,7 +2,7 @@
 
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { CITY_NAMES, citySlug, getCities } from "@/lib/data";
+import { CITY_NAMES, citySlug, getCities, normalizeSearch } from "@/lib/data";
 
 export default function CitySearch() {
   const [query, setQuery] = useState("");
@@ -12,11 +12,11 @@ export default function CitySearch() {
   const cities = getCities();
 
   const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = normalizeSearch(query.trim());
     if (!q) return [];
     return CITY_NAMES.filter((name) => {
       const c = cities[name];
-      return name.toLowerCase().includes(q) || c.country.toLowerCase().includes(q);
+      return normalizeSearch(name).includes(q) || normalizeSearch(c.country).includes(q);
     }).slice(0, 7);
   }, [query, cities]);
 

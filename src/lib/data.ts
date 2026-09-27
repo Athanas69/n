@@ -220,6 +220,15 @@ export function citySlug(name: string) {
     .replace(/\s+/g, "-");
 }
 
+// Strips accents so a search for "Cancun" or "Bogota" (no diacritics — the
+// common case on non-French keyboards) still matches "Cancún" / "Bogotá".
+export function normalizeSearch(s: string) {
+  return s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "");
+}
+
 export function cityNameFromSlug(slug: string): string | undefined {
   return CITY_NAMES.find((n) => citySlug(n) === slug);
 }

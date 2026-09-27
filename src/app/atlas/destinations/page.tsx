@@ -9,7 +9,7 @@ export default function DestinationsPage() {
       <section className="hero shell" style={{ paddingBottom: 20 }}>
         <div className="eyebrow">Destinations</div>
         <h1>{CITY_NAMES.length} villes qu’Atlas connaît vraiment.</h1>
-        <p>Peu de destinations pour chaque continent, mais chacune doit être exceptionnellement utile.</p>
+        <p>La liste s’allonge continent par continent, mais chaque destination doit rester exceptionnellement utile.</p>
         <div style={{ marginTop: 20 }}>
           <CitySearch />
         </div>
