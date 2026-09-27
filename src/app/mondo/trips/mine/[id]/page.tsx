@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useTrips, saveTrip, deleteTrip, newPackingId, useProfile, type ItineraryDay, type PackingItem } from "@/lib/store";
 import { getCity, citySlug } from "@/lib/data";
 import { CITY_COORDS } from "@/lib/coords";
+import { AUDIENCE_LABELS } from "@/lib/trips";
 import LiveWeather from "@/components/LiveWeather";
 
 function daysBetween(a: string, b: string) {
@@ -95,7 +96,7 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
           <img src={city.hero} alt={trip.city} />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
-              Votre voyage
+              Votre voyage · {AUDIENCE_LABELS[trip.audience ?? "Mixte"]}
             </div>
             <h1>{trip.title}</h1>
             <p>

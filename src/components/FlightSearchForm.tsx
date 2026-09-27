@@ -2,16 +2,9 @@
 
 import { useMemo, useState } from "react";
 import NotifyButton from "./NotifyButton";
+import { generateFlights, filterAndSortFlights, getOriginNames, type FlightSort } from "@/lib/flights";
 
-const ORIGINS = ["Paris (CDG / Orly)", "Lyon (LYS)", "Marseille (MRS)", "Bruxelles (BRU)", "Genève (GVA)", "Montréal (YUL)"];
 const CABINS = ["Économique", "Premium éco", "Affaires"];
-const CABIN_MULT: Record<string, number> = { "Économique": 1, "Premium éco": 1.65, Affaires: 2.9 };
-
-const BASE_OFFERS: Array<[tag: string, subtitle: string, base: number, desc: string]> = [
-  ["Prix minimum", "1 escale · arrivée tardive", 548, "Vous économisez, mais perdez probablement votre première soirée."],
-  ["Choix Atlas", "1 escale courte · bons horaires", 612, "Le meilleur compromis pour un premier jour réussi."],
-  ["Direct", "Temps et fatigue minimisés", 742, "Plus cher, mais vous arrivez frais pour commencer le voyage."],
-];
 
 function todayPlus(days: number) {
   const d = new Date();
@@ -20,7 +13,8 @@ function todayPlus(days: number) {
 }
 
 export default function FlightSearchForm({ cityName, destAirport }: { cityName: string; destAirport: string }) {
-  const [origin, setOrigin] = useState(ORIGINS[0]);
+  const origins = getOriginNames();
+  const [origin, setOrigin] = useState(origins[0]);
   const [tripType, setTripType] = useState<"round" | "oneway">("round");
   const [depart, setDepart] = useState(todayPlus(21));
   const [ret, setRet] = useState(todayPlus(35));
@@ -28,18 +22,35 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
   const [cabin, setCabin] = useState(CABINS[0]);
   const [searched, setSearched] = useState(false);
 
-  const offers = useMemo(() => {
-    const cabinMult = CABIN_MULT[cabin] ?? 1;
-    const tripMult = tripType === "oneway" ? 0.62 : 1;
-    return BASE_OFFERS.map(([tag, subtitle, base, desc]) => {
-      const perPerson = Math.round(base * cabinMult * tripMult);
-      return { tag, subtitle, desc, perPerson, total: perPerson * travelers };
-    });
-  }, [cabin, tripType, travelers]);
+  const [directOnly, setDirectOnly] = useState(false);
+  const [baggageOnly, setBaggageOnly] = useState(false);
+  const [sort, setSort] = useState<FlightSort>("price");
+
+  const allOffers = useMemo(
+    () => generateFlights({ origin, destCity: cityName, cabin, travelers, tripType, depart }),
+    [origin, cityName, cabin, travelers, tripType, depart]
+  );
+
+  const offers = useMemo(
+    () => filterAndSortFlights(allOffers, { directOnly, baggageOnly }, sort),
+    [allOffers, directOnly, baggageOnly, sort]
+  );
+
+  const cheapestId = useMemo(() => {
+    if (allOffers.length === 0) return null;
+    return [...allOffers].sort((a, b) => a.pricePerPerson - b.pricePerPerson)[0].id;
+  }, [allOffers]);
+
+  const fastestId = useMemo(() => {
+    if (allOffers.length === 0) return null;
+    return [...allOffers].sort((a, b) => a.durationMinutes - b.durationMinutes)[0].id;
+  }, [allOffers]);
 
   return (
     <div className="flightsearch">
-      <h2>{origin.split(" (")[0]} → {cityName}</h2>
+      <h2>
+        {origin} → {cityName}
+      </h2>
       <div className="tabs">
         <button type="button" className={tripType === "round" ? "on" : ""} onClick={() => setTripType("round")}>
           Aller-retour
@@ -52,7 +63,7 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
         <label className="flightfield">
           <small>Départ de</small>
           <select value={origin} onChange={(e) => setOrigin(e.target.value)}>
-            {ORIGINS.map((o) => (
+            {origins.map((o) => (
               <option key={o} value={o}>
                 {o}
               </option>
@@ -107,22 +118,94 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
       </div>
 
       {searched && (
-        <div className="flightoptions">
-          {offers.map((o) => (
-            <article className="flightcard" key={o.tag}>
-              <span className="tag">{o.tag}</span>
-              <h3>{o.subtitle}</h3>
-              <div className="flightprice">{o.perPerson.toLocaleString("fr-FR")} €</div>
-              <p className="muted" style={{ fontSize: 10, margin: "2px 0 8px" }}>
-                par personne · {o.total.toLocaleString("fr-FR")} € au total pour {travelers} voyageur
-                {travelers > 1 ? "s" : ""}
-              </p>
-              <p>{o.desc}</p>
-              <NotifyButton className="btn primary" message="Lien de réservation partenaire à connecter.">
-                Voir l’offre
-              </NotifyButton>
-            </article>
-          ))}
+        <div className="flightresults">
+          <div className="flightfilters">
+            <button
+              type="button"
+              className={directOnly ? "flightfilter on" : "flightfilter"}
+              onClick={() => setDirectOnly((v) => !v)}
+              aria-pressed={directOnly}
+            >
+              Vols directs uniquement
+            </button>
+            <button
+              type="button"
+              className={baggageOnly ? "flightfilter on" : "flightfilter"}
+              onClick={() => setBaggageOnly((v) => !v)}
+              aria-pressed={baggageOnly}
+            >
+              Bagage en soute inclus
+            </button>
+            <div className="flightsort">
+              <small>Trier par</small>
+              <select value={sort} onChange={(e) => setSort(e.target.value as FlightSort)}>
+                <option value="price">Prix</option>
+                <option value="duration">Durée</option>
+              </select>
+            </div>
+          </div>
+
+          <p className="flightresults-count">
+            {offers.length} vol{offers.length > 1 ? "s" : ""} trouvé{offers.length > 1 ? "s" : ""}
+            {(directOnly || baggageOnly) && offers.length !== allOffers.length ? ` sur ${allOffers.length}` : ""} ·
+            plusieurs compagnies comparées
+          </p>
+
+          {offers.length === 0 ? (
+            <p className="muted" style={{ padding: "20px 0" }}>
+              Aucun vol ne correspond à ces filtres — essayez de désactiver « vols directs uniquement » ou « bagage
+              inclus ».
+            </p>
+          ) : (
+            <div className="flightresults-list">
+              {offers.map((o) => (
+                <article className="flightrow" key={o.id}>
+                  <div className="flightrow-airline">
+                    <span className="flightrow-badge">{o.airlineCode}</span>
+                    <div>
+                      <b>{o.airline}</b>
+                      {o.id === cheapestId && <span className="flighttag cheapest">Moins cher</span>}
+                      {o.id === fastestId && o.id !== cheapestId && <span className="flighttag fastest">Plus rapide</span>}
+                    </div>
+                  </div>
+                  <div className="flightrow-times">
+                    <div className="flightrow-time">
+                      <b>{o.departTime}</b>
+                      <small>{origin}</small>
+                    </div>
+                    <div className="flightrow-path">
+                      <small>{o.durationLabel}</small>
+                      <span className="flightrow-line" />
+                      <small>{o.stops === 0 ? "Direct" : `${o.stops} escale${o.stops > 1 ? "s" : ""}${o.stopCity ? " · " + o.stopCity : ""}`}</small>
+                    </div>
+                    <div className="flightrow-time">
+                      <b>
+                        {o.arriveTime}
+                        {o.arriveNextDay && <span className="flightrow-nextday">+1</span>}
+                      </b>
+                      <small>{cityName}</small>
+                    </div>
+                  </div>
+                  <div className="flightrow-baggage">
+                    {o.baggageIncluded ? (
+                      <span className="flighttag baggage-yes">Bagage inclus</span>
+                    ) : (
+                      <span className="flighttag baggage-no">Bagage en option</span>
+                    )}
+                  </div>
+                  <div className="flightrow-price">
+                    <b>{o.pricePerPerson.toLocaleString("fr-FR")} €</b>
+                    <small className="muted">
+                      par pers. · {o.totalPrice.toLocaleString("fr-FR")} € total
+                    </small>
+                    <NotifyButton className="btn primary" message="Lien de réservation partenaire à connecter.">
+                      Voir l’offre
+                    </NotifyButton>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>

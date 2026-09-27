@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CITY_NAMES, getCity } from "@/lib/data";
 import { saveTrip, newTripId, type UserTrip } from "@/lib/store";
+import { AUDIENCE_LABELS, AUDIENCE_OPTIONS, type TripAudience } from "@/lib/trips";
 
 function defaultDates() {
   const start = new Date();
@@ -25,6 +26,7 @@ export default function CreateTripPage() {
   const [budget, setBudget] = useState(1500);
   const [notes, setNotes] = useState("");
   const [story, setStory] = useState("");
+  const [audience, setAudience] = useState<TripAudience>("Mixte");
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -38,6 +40,7 @@ export default function CreateTripPage() {
       budgetPerPerson: budget,
       notes,
       story,
+      audience,
       days: [],
       packing: [],
       createdAt: Date.now(),
@@ -101,6 +104,20 @@ export default function CreateTripPage() {
                   value={budget}
                   onChange={(e) => setBudget(Math.max(0, Number(e.target.value)))}
                 />
+              </label>
+              <label className="field">
+                <small>Composition du groupe</small>
+                <select
+                  value={audience}
+                  onChange={(e) => setAudience(e.target.value as TripAudience)}
+                  style={{ width: "100%", border: 0, background: "transparent", color: "inherit", outline: 0 }}
+                >
+                  {AUDIENCE_OPTIONS.map((a) => (
+                    <option key={a} value={a}>
+                      {AUDIENCE_LABELS[a]}
+                    </option>
+                  ))}
+                </select>
               </label>
               <label className="field full">
                 <small>L’idée en une ligne</small>

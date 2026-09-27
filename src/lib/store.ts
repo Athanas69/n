@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore, useCallback } from "react";
+import type { TripAudience } from "./trips";
 
 const EVENT = "atlas:store-change";
 
@@ -89,6 +90,8 @@ export type UserTrip = {
   days: ItineraryDay[];
   packing: PackingItem[];
   createdAt: number;
+  // Optional: absent on trips saved before this field existed.
+  audience?: TripAudience;
 };
 
 const TRIPS_KEY = "atlas:trips";

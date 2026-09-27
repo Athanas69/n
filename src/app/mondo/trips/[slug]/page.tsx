@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCity } from "@/lib/data";
-import { demoTrips, getTripBySlug } from "@/lib/trips";
+import { AUDIENCE_LABELS, demoTrips, getTripBySlug } from "@/lib/trips";
 
 export function generateStaticParams() {
   return demoTrips.map((t) => ({ slug: t.slug }));
@@ -28,7 +28,7 @@ export default async function TripDetailPage({ params }: { params: Promise<{ slu
           <img src={city.hero} alt={trip.title} />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
-              Voyage de groupe
+              Voyage de groupe · {AUDIENCE_LABELS[trip.audience]}
             </div>
             <h1>{trip.title}</h1>
             <p>

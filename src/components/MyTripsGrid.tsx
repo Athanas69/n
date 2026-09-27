@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTrips } from "@/lib/store";
 import { getCity } from "@/lib/data";
+import { AUDIENCE_LABELS } from "@/lib/trips";
 
 export default function MyTripsGrid() {
   const trips = useTrips();
@@ -33,7 +34,7 @@ export default function MyTripsGrid() {
               </p>
               <div className="tripmeta">
                 <span className="tag">
-                  {t.travelers} voyageur{t.travelers > 1 ? "s" : ""}
+                  {t.travelers} voyageur{t.travelers > 1 ? "s" : ""} · {AUDIENCE_LABELS[t.audience ?? "Mixte"]}
                 </span>
                 <b>{(t.budgetPerPerson * t.travelers).toLocaleString("fr-FR")} €</b>
               </div>
