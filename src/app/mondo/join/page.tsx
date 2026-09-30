@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import NotifyButton from "@/components/NotifyButton";
+
+export const metadata: Metadata = {
+  title: "Demander à rejoindre un voyage",
+  description: "Présentez-vous à l’organisateur pour rejoindre un voyage de groupe.",
+};
 
 export default function JoinTripPage() {
   return (

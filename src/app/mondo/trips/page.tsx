@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import TripGrid from "@/components/TripCard";
 import MyTripsGrid from "@/components/MyTripsGrid";
+
+export const metadata: Metadata = {
+  title: "Vos voyages",
+  robots: { index: false, follow: true },
+};
 
 export default function TripsPage() {
   return (

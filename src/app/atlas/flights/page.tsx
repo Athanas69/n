@@ -1,6 +1,15 @@
 import FlightSearchForm from "@/components/FlightSearchForm";
 import { DEFAULT_CITY, cityNameFromSlug, getCity } from "@/lib/data";
 
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ city?: string }> }) {
+  const { city: citySlugParam } = await searchParams;
+  const cityName = (citySlugParam && cityNameFromSlug(citySlugParam)) || DEFAULT_CITY;
+  return {
+    title: `Vols vers ${cityName}`,
+    description: `Comparez les vols vers ${cityName} : plusieurs compagnies, direct ou avec escale, bagages inclus ou non.`,
+  };
+}
+
 export default async function FlightsPage({
   searchParams,
 }: {

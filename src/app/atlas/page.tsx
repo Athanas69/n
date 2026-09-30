@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import AtlasSearchBar from "@/components/AtlasSearchBar";
 import { CITY_NAMES } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Guides de voyage, hôtels, vols et croisières",
+  description: `Explorez ${CITY_NAMES.length} destinations : quartiers, hôtels, vols, transport et connexion sur place, au même endroit.`,
+};
 
 export default function AtlasHome() {
   return (

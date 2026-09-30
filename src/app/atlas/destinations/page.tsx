@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import DestGrid from "@/components/DestGrid";
 import CitySearch from "@/components/CitySearch";
 import { CITY_NAMES, citiesByRegion } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Toutes les destinations",
+  description: `${CITY_NAMES.length} villes couvertes par Atlas, classées par continent — cherchez une ville ou un pays.`,
+};
 
 export default function DestinationsPage() {
   const regions = citiesByRegion();

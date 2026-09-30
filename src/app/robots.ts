@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/mondo/trips/mine/", "/profile"],
+      disallow: ["/mondo/trips/mine/", "/profile", "/favorites"],
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
