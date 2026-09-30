@@ -236,7 +236,7 @@ export default async function CityPage({
                   Lire le guide
                 </Link>
               ) : (
-                <NotifyButton className="btn" message="Article éditorial à produire dans le CMS Atlas.">
+                <NotifyButton className="btn" message="Ce guide est en cours de rédaction — revenez bientôt.">
                   Lire le guide
                 </NotifyButton>
               )}
@@ -361,7 +361,7 @@ function EsimPlans() {
           <NotifyButton
             className={`btn ${i === 1 ? "primary" : ""}`}
             style={{ width: "100%", marginTop: 10 }}
-            message="Comparateur eSIM affilié à connecter."
+            message="Comparateur eSIM disponible très prochainement."
           >
             Voir les forfaits
           </NotifyButton>

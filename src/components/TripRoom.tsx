@@ -21,10 +21,11 @@ export default function TripRoom({ trip }: { trip: Trip }) {
   return (
     <>
       <section className="hero shell" style={{ paddingBottom: 20 }}>
-        <div className="eyebrow">Trip Room · JP-1048</div>
+        <div className="eyebrow">Exemple de Trip Room</div>
         <h1>{trip.title}</h1>
         <p>
-          {trip.dates} · {trip.budget} · {trip.members.length} voyageurs
+          {trip.dates} · {trip.budget} · {trip.members.length} voyageurs · un aperçu du fonctionnement de la
+          fonctionnalité sur un voyage exemple.
         </p>
       </section>
       <section className="section shell" style={{ paddingTop: 0 }}>

@@ -198,7 +198,7 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
                     <small className="muted">
                       par pers. · {o.totalPrice.toLocaleString("fr-FR")} € total
                     </small>
-                    <NotifyButton className="btn primary" message="Lien de réservation partenaire à connecter.">
+                    <NotifyButton className="btn primary" message="La réservation en ligne arrive très prochainement.">
                       Voir l’offre
                     </NotifyButton>
                   </div>

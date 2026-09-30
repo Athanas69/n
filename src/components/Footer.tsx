@@ -45,6 +45,14 @@ export default function Footer({ mode = "MONDO" }: { mode?: "MONDO" | "ATLAS" })
           <Link href="/profile">Profil</Link>
         </div>
       </div>
+      <div className="footer-bottom">
+        <small>© {new Date().getFullYear()} Mondo × Atlas. Tous droits réservés.</small>
+        <div className="footer-legal-links">
+          <Link href="/mentions-legales">Mentions légales</Link>
+          <Link href="/confidentialite">Confidentialité</Link>
+          <Link href="/cgu">CGU</Link>
+        </div>
+      </div>
     </footer>
   );
 }

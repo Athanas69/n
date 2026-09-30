@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Space_Grotesk, Playfair_Display } from "next/font/google";
 import Toast from "@/components/Toast";
 import ScrollReveal from "@/components/ScrollReveal";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -23,15 +24,34 @@ const playfair = Playfair_Display({
   weight: ["500", "600", "700"],
 });
 
+const SITE_DESCRIPTION =
+  "Mondo × Atlas — trouvez vos compagnons, organisez le voyage, préparez chaque ville et réservez dans une seule expérience.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Mondo × Atlas",
     template: "%s · Mondo × Atlas",
   },
-  description:
-    "Mondo × Atlas — trouvez vos compagnons, organisez le voyage, préparez chaque ville et réservez dans une seule expérience.",
+  description: SITE_DESCRIPTION,
   manifest: "/manifest.webmanifest",
   applicationName: "Mondo × Atlas",
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Mondo × Atlas",
+    title: "Mondo × Atlas",
+    description: SITE_DESCRIPTION,
+    url: "/",
+    images: [{ url: "/assets/mondo-hero.jpg", width: 1200, height: 800, alt: "Mondo × Atlas" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mondo × Atlas",
+    description: SITE_DESCRIPTION,
+    images: ["/assets/mondo-hero.jpg"],
+  },
 };
 
 export const viewport = {

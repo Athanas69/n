@@ -47,10 +47,10 @@ export default function HotelGrid({ city }: { city: string }) {
                 <span className="stayprice">{h.price} €</span>
               </div>
               <div className="stayactions">
-                <NotifyButton className="btn" message="Fiche Atlas : literie, douche, bruit, breakfast, défauts.">
+                <NotifyButton className="btn" message="Fiche détaillée (literie, douche, bruit, petit-déjeuner…) bientôt disponible.">
                   Voir la fiche
                 </NotifyButton>
-                <NotifyButton className="btn primary" message="Réservation affiliée à connecter.">
+                <NotifyButton className="btn primary" message="La réservation en ligne arrive très prochainement.">
                   Réserver
                 </NotifyButton>
               </div>

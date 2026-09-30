@@ -168,7 +168,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ exp
                       Lire le guide
                     </Link>
                   ) : (
-                    <NotifyButton className="btn" message="Article éditorial à produire dans le CMS Atlas.">
+                    <NotifyButton className="btn" message="Ce guide est en cours de rédaction — revenez bientôt.">
                       Lire le guide
                     </NotifyButton>
                   )}
