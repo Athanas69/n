@@ -2,9 +2,18 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCity } from "@/lib/data";
 import { AUDIENCE_LABELS, demoTrips, getTripBySlug } from "@/lib/trips";
+import { pageOG } from "@/lib/site";
 
 export function generateStaticParams() {
   return demoTrips.map((t) => ({ slug: t.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const trip = getTripBySlug(slug);
+  if (!trip) return {};
+  const routeLabel = trip.route.map((s) => s.city).join(" → ");
+  return pageOG(trip.title, `${routeLabel} · ${trip.dates} · ${trip.duration}, budget ${trip.budget}.`);
 }
 
 export default async function TripDetailPage({ params }: { params: Promise<{ slug: string }> }) {
