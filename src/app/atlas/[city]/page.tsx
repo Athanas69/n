@@ -16,6 +16,7 @@ import TripPrepBanner from "@/components/TripPrepBanner";
 import PracticalInfo from "@/components/PracticalInfo";
 import { TRANSIT_LINKS } from "@/lib/transitLinks";
 import { getCityResources } from "@/lib/cityResources";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return CITY_NAMES.map((name) => ({ city: citySlug(name) }));
@@ -26,10 +27,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const cityName = cityNameFromSlug(slug);
   if (!cityName) return {};
   const c = getCity(cityName);
+  const title = `${cityName} — guide, quartiers, hôtels`;
   return {
-    title: `${cityName} — guide, quartiers, hôtels`,
+    title,
     description: c.intro,
-    openGraph: { images: [c.hero] },
+    openGraph: { title, description: c.intro, images: [c.hero] },
+    twitter: { title, description: c.intro, images: [c.hero] },
   };
 }
 
@@ -60,8 +63,22 @@ export default async function CityPage({
   const sp = await searchParams;
   const hasTripPrep = Boolean(sp.checkin && sp.checkout && sp.travelers);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    name: cityName,
+    description: c.intro,
+    image: c.hero,
+    url: `${SITE_URL}/atlas/${citySlug(cityName)}`,
+    address: { "@type": "PostalAddress", addressCountry: c.country },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <RememberCity city={cityName} />
       <section className="cityhero shell">
         <div className="cityphoto">

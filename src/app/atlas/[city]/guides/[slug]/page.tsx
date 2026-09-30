@@ -2,9 +2,19 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { cityNameFromSlug, citySlug } from "@/lib/data";
 import { articles, getArticle } from "@/lib/articles";
+import { pageOG, SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ city: citySlug(a.city), slug: a.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ city: string; slug: string }> }) {
+  const { city: citySlugParam, slug } = await params;
+  const cityName = cityNameFromSlug(citySlugParam);
+  if (!cityName) return {};
+  const article = getArticle(cityName, slug);
+  if (!article) return {};
+  return pageOG(article.title, article.dek);
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ city: string; slug: string }> }) {
@@ -15,8 +25,24 @@ export default async function GuidePage({ params }: { params: Promise<{ city: st
   const article = getArticle(cityName, slug);
   if (!article) notFound();
 
+  const pageUrl = `${SITE_URL}/atlas/${citySlug(cityName)}/guides/${slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.dek,
+    about: cityName,
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    publisher: { "@type": "Organization", name: "Mondo × Atlas" },
+  };
+
   return (
     <section className="section shell" style={{ paddingTop: 40, maxWidth: 760, margin: "0 auto" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="eyebrow">{cityName}</div>
       <h1 style={{ fontSize: "clamp(32px,5vw,48px)", marginTop: 8 }}>{article.title}</h1>
       <p className="muted" style={{ fontSize: 15, marginTop: 10 }}>

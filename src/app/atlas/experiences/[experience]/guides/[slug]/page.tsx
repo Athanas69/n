@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { EXPERIENCES, getExperience } from "@/lib/experiences";
 import { articles, getArticle } from "@/lib/articles";
+import { pageOG, SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return articles
@@ -12,6 +13,15 @@ export function generateStaticParams() {
     }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ experience: string; slug: string }> }) {
+  const { experience: expSlug, slug } = await params;
+  const e = getExperience(expSlug);
+  if (!e) return {};
+  const article = getArticle(e.name, slug);
+  if (!article) return {};
+  return pageOG(article.title, article.dek);
+}
+
 export default async function ExperienceGuidePage({ params }: { params: Promise<{ experience: string; slug: string }> }) {
   const { experience: expSlug, slug } = await params;
   const e = getExperience(expSlug);
@@ -20,8 +30,24 @@ export default async function ExperienceGuidePage({ params }: { params: Promise<
   const article = getArticle(e.name, slug);
   if (!article) notFound();
 
+  const pageUrl = `${SITE_URL}/atlas/experiences/${e.slug}/guides/${slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.dek,
+    about: e.name,
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    publisher: { "@type": "Organization", name: "Mondo × Atlas" },
+  };
+
   return (
     <section className="section shell" style={{ paddingTop: 40, maxWidth: 760, margin: "0 auto" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="eyebrow">{e.name}</div>
       <h1 style={{ fontSize: "clamp(32px,5vw,48px)", marginTop: 8 }}>{article.title}</h1>
       <p className="muted" style={{ fontSize: 15, marginTop: 10 }}>

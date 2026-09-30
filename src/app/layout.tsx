@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   applicationName: "Mondo × Atlas",
   robots: { index: true, follow: true },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -58,10 +61,34 @@ export const viewport = {
   themeColor: "#18211d",
 };
 
+const ORG_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Mondo × Atlas",
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  logo: `${SITE_URL}/icon-512.png`,
+};
+
+const WEBSITE_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Mondo × Atlas",
+  url: SITE_URL,
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${dmSans.variable} ${spaceGrotesk.variable} ${playfair.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSON_LD) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_JSON_LD) }}
+        />
         {children}
         <Toast />
         <ScrollReveal />
