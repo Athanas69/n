@@ -13,7 +13,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const trip = getTripBySlug(slug);
   if (!trip) return {};
   const routeLabel = trip.route.map((s) => s.city).join(" → ");
-  return pageOG(trip.title, `${routeLabel} · ${trip.dates} · ${trip.duration}, budget ${trip.budget}.`);
+  const description = `${routeLabel} · ${trip.dates} · ${trip.duration}, budget ${trip.budget}.`;
+  const image = getCity(trip.city).hero;
+  return {
+    ...pageOG(trip.title, description),
+    openGraph: { title: trip.title, description, images: [image] },
+    twitter: { title: trip.title, description, images: [image] },
+  };
 }
 
 export default async function TripDetailPage({ params }: { params: Promise<{ slug: string }> }) {
