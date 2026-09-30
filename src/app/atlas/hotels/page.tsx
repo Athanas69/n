@@ -1,13 +1,14 @@
 import HotelGrid from "@/components/HotelGrid";
 import { DEFAULT_CITY, cityNameFromSlug } from "@/lib/data";
+import { pageOG } from "@/lib/site";
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ city?: string }> }) {
   const { city: citySlugParam } = await searchParams;
   const cityName = (citySlugParam && cityNameFromSlug(citySlugParam)) || DEFAULT_CITY;
-  return {
-    title: `Hôtels à ${cityName}`,
-    description: `Une sélection courte d’hôtels à ${cityName}, par budget : Budget, Confort, Premium.`,
-  };
+  return pageOG(
+    `Hôtels à ${cityName}`,
+    `Une sélection courte d’hôtels à ${cityName}, par budget : Budget, Confort, Premium.`
+  );
 }
 
 export default async function HotelsPage({

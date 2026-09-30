@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import NotifyButton from "@/components/NotifyButton";
+import { pageOG } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Demander à rejoindre un voyage",
-  description: "Présentez-vous à l’organisateur pour rejoindre un voyage de groupe.",
-};
+export const metadata: Metadata = pageOG(
+  "Demander à rejoindre un voyage",
+  "Présentez-vous à l’organisateur pour rejoindre un voyage de groupe."
+);
 
 export default function JoinTripPage() {
   return (

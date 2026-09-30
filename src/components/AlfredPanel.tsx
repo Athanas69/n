@@ -51,7 +51,7 @@ export default function AlfredPanel() {
 
   return (
     <aside id="alfred" className={`alfred${open ? " open" : ""}`}>
-      <button className="btn" style={{ float: "right" }} onClick={() => setOpen(false)}>
+      <button className="btn" style={{ float: "right" }} onClick={() => setOpen(false)} aria-label="Fermer">
         ×
       </button>
       <div className="eyebrow" style={{ color: "#bad4c8" }}>

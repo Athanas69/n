@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageOG } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Mentions légales",
-  description: "Informations légales sur l’éditeur et l’hébergeur de Mondo × Atlas.",
-};
+export const metadata: Metadata = pageOG(
+  "Mentions légales",
+  "Informations légales sur l’éditeur et l’hébergeur de Mondo × Atlas."
+);
 
 export default function MentionsLegalesPage() {
   return (

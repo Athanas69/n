@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageOG } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Conditions générales d’utilisation",
-  description: "Les règles d’utilisation de Mondo × Atlas.",
-};
+export const metadata: Metadata = pageOG(
+  "Conditions générales d’utilisation",
+  "Les règles d’utilisation de Mondo × Atlas."
+);
 
 export default function CguPage() {
   return (

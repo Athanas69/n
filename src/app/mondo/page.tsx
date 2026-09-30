@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import TripGrid from "@/components/TripCard";
 import MemberGrid from "@/components/MemberGrid";
+import { pageOG } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Trouvez vos compagnons de voyage",
-  description: "Rejoignez ou créez un voyage de groupe, organisez l’itinéraire et le budget ensemble.",
-};
+export const metadata: Metadata = pageOG(
+  "Trouvez vos compagnons de voyage",
+  "Rejoignez ou créez un voyage de groupe, organisez l’itinéraire et le budget ensemble."
+);
 
 export default function MondoHome() {
   return (

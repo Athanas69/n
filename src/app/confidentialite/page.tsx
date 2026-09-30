@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { pageOG } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Politique de confidentialité",
-  description: "Comment Mondo × Atlas traite (et ne traite pas) vos données.",
-};
+export const metadata: Metadata = pageOG(
+  "Politique de confidentialité",
+  "Comment Mondo × Atlas traite (et ne traite pas) vos données."
+);
 
 export default function ConfidentialitePage() {
   return (

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import TripGrid from "@/components/TripCard";
 import MemberGrid from "@/components/MemberGrid";
+import { pageOG } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Communauté de voyageurs",
-  description: "Parcourez les voyages de groupe à venir et les profils de voyageurs vérifiés.",
-};
+export const metadata: Metadata = pageOG(
+  "Communauté de voyageurs",
+  "Parcourez les voyages de groupe à venir et les profils de voyageurs vérifiés."
+);
 
 export default function CommunityPage() {
   return (
