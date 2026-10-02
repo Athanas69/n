@@ -51,7 +51,11 @@ export default function ProfilePage() {
 
   return (
     <main className="theme-mondo">
+      <a href="#main-content" className="skip-link">
+        Aller au contenu
+      </a>
       <Nav mode="MONDO" />
+      <div id="main-content">
       <section className="hero shell" style={{ paddingBottom: 20 }}>
         <div className="eyebrow">Profil voyageur</div>
         <h1>{profile.name}</h1>
@@ -169,6 +173,7 @@ export default function ProfilePage() {
           </div>
         </section>
       )}
+      </div>
 
       <Footer />
       <AlfredFab />

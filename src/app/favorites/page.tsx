@@ -18,7 +18,11 @@ export default function FavoritesPage() {
 
   return (
     <main>
+      <a href="#main-content" className="skip-link">
+        Aller au contenu
+      </a>
       <Nav mode="ATLAS" />
+      <div id="main-content">
       <section className="hero shell" style={{ paddingBottom: 20 }}>
         <div className="eyebrow">Favoris</div>
         <h1>Ce que vous avez gardé de côté.</h1>
@@ -92,6 +96,7 @@ export default function FavoritesPage() {
           </Link>
         </section>
       )}
+      </div>
 
       <Footer mode="ATLAS" />
       <AlfredFab />
