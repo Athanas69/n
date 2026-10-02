@@ -4,7 +4,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Demander à rejoindre un voyage",
-  "Présentez-vous à l’organisateur pour rejoindre un voyage de groupe."
+  "Présentez-vous à l’organisateur pour rejoindre un voyage de groupe.",
+  "/mondo/join"
 );
 
 export default function JoinTripPage() {

@@ -5,7 +5,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Communauté de voyageurs",
-  "Parcourez les voyages de groupe à venir et les profils de voyageurs vérifiés."
+  "Parcourez les voyages de groupe à venir et les profils de voyageurs vérifiés.",
+  "/mondo/community"
 );
 
 export default function CommunityPage() {

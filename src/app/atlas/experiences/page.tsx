@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { EXPERIENCES } from "@/lib/experiences";
+import { pageOG } from "@/lib/site";
 
-export const metadata = {
-  title: "Expériences — safaris, croisières",
-  description: "Au-delà des villes : safaris et croisières, deux façons de voyager qui suivent une saison et une logistique très différentes.",
-};
+export const metadata = pageOG(
+  "Expériences — safaris, croisières",
+  "Au-delà des villes : safaris et croisières, deux façons de voyager qui suivent une saison et une logistique très différentes.",
+  "/atlas/experiences"
+);
 
 export default function ExperiencesPage() {
   return (

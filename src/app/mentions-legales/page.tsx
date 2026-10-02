@@ -4,7 +4,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Mentions légales",
-  "Informations légales sur l’éditeur et l’hébergeur de Mondo × Atlas."
+  "Informations légales sur l’éditeur et l’hébergeur de Mondo × Atlas.",
+  "/mentions-legales"
 );
 
 export default function MentionsLegalesPage() {

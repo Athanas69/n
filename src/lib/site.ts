@@ -8,10 +8,11 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://n-green-si
 // openGraph block automatically — without this, a page with its own title
 // still shows the root layout's generic title/image when shared on
 // social/chat apps. Spreading this keeps both in sync from one source.
-export function pageOG(title: string, description: string) {
+export function pageOG(title: string, description: string, path?: string) {
   return {
     title,
     description,
+    ...(path ? { alternates: { canonical: path } } : {}),
     openGraph: { title, description },
     twitter: { title, description },
   };

@@ -13,10 +13,13 @@ export async function generateMetadata({ params }: { params: Promise<{ experienc
   const { experience: slug } = await params;
   const e = getExperience(slug);
   if (!e) return {};
+  const title = `${e.name} — Atlas Expériences`;
   return {
-    title: `${e.name} — Atlas Expériences`,
+    title,
     description: e.intro,
-    openGraph: { images: [e.hero] },
+    alternates: { canonical: `/atlas/experiences/${e.slug}` },
+    openGraph: { title, description: e.intro, images: [e.hero] },
+    twitter: { title, description: e.intro, images: [e.hero] },
   };
 }
 

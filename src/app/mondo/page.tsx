@@ -6,7 +6,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Trouvez vos compagnons de voyage",
-  "Rejoignez ou créez un voyage de groupe, organisez l’itinéraire et le budget ensemble."
+  "Rejoignez ou créez un voyage de groupe, organisez l’itinéraire et le budget ensemble.",
+  "/mondo"
 );
 
 export default function MondoHome() {

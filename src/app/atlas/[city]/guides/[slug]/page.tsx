@@ -14,7 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   if (!cityName) return {};
   const article = getArticle(cityName, slug);
   if (!article) return {};
-  return pageOG(article.title, article.dek);
+  return {
+    ...pageOG(article.title, article.dek),
+    alternates: { canonical: `/atlas/${citySlug(cityName)}/guides/${slug}` },
+  };
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ city: string; slug: string }> }) {

@@ -19,7 +19,10 @@ export async function generateMetadata({ params }: { params: Promise<{ experienc
   if (!e) return {};
   const article = getArticle(e.name, slug);
   if (!article) return {};
-  return pageOG(article.title, article.dek);
+  return {
+    ...pageOG(article.title, article.dek),
+    alternates: { canonical: `/atlas/experiences/${e.slug}/guides/${slug}` },
+  };
 }
 
 export default async function ExperienceGuidePage({ params }: { params: Promise<{ experience: string; slug: string }> }) {

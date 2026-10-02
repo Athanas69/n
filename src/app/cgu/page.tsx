@@ -4,7 +4,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Conditions générales d’utilisation",
-  "Les règles d’utilisation de Mondo × Atlas."
+  "Les règles d’utilisation de Mondo × Atlas.",
+  "/cgu"
 );
 
 export default function CguPage() {

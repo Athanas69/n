@@ -6,7 +6,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Toutes les destinations",
-  `${CITY_NAMES.length} villes couvertes par Atlas, classées par continent — cherchez une ville ou un pays.`
+  `${CITY_NAMES.length} villes couvertes par Atlas, classées par continent — cherchez une ville ou un pays.`,
+  "/atlas/destinations"
 );
 
 export default function DestinationsPage() {

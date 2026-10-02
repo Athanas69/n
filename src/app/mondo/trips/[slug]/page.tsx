@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const image = getCity(trip.city).hero;
   return {
     ...pageOG(trip.title, description),
+    alternates: { canonical: `/mondo/trips/${slug}` },
     openGraph: { title: trip.title, description, images: [image] },
     twitter: { title: trip.title, description, images: [image] },
   };

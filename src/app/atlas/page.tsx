@@ -6,7 +6,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Guides de voyage, hôtels, vols et croisières",
-  `Explorez ${CITY_NAMES.length} destinations : quartiers, hôtels, vols, transport et connexion sur place, au même endroit.`
+  `Explorez ${CITY_NAMES.length} destinations : quartiers, hôtels, vols, transport et connexion sur place, au même endroit.`,
+  "/atlas"
 );
 
 export default function AtlasHome() {

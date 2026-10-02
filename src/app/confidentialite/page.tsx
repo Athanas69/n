@@ -4,7 +4,8 @@ import { pageOG } from "@/lib/site";
 
 export const metadata: Metadata = pageOG(
   "Politique de confidentialité",
-  "Comment Mondo × Atlas traite (et ne traite pas) vos données."
+  "Comment Mondo × Atlas traite (et ne traite pas) vos données.",
+  "/confidentialite"
 );
 
 export default function ConfidentialitePage() {
