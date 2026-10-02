@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useTrips } from "@/lib/store";
 import { getCity } from "@/lib/data";
@@ -26,7 +27,9 @@ export default function MyTripsGrid() {
         const city = getCity(t.city);
         return (
           <Link href={`/mondo/trips/mine/${t.id}`} className="tripcard" key={t.id}>
-            <img src={city.hero} alt={t.title} />
+            <div className="tripcard-photo">
+              <Image src={city.hero} alt={t.title} fill sizes="(max-width: 980px) 100vw, 33vw" />
+            </div>
             <div className="tripbody">
               <h3>{t.title}</h3>
               <p className="muted">

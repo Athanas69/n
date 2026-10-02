@@ -2,6 +2,7 @@
 
 import { use, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { useTrips, saveTrip, deleteTrip, newPackingId, useProfile, type ItineraryDay, type PackingItem } from "@/lib/store";
 import { getCity, citySlug } from "@/lib/data";
@@ -93,7 +94,7 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
     <>
       <section className="cityhero shell">
         <div className="cityphoto" style={{ height: 280 }}>
-          <img src={city.hero} alt={trip.city} />
+          <Image src={city.hero} alt={trip.city} fill sizes="100vw" />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
               Votre voyage · {AUDIENCE_LABELS[trip.audience ?? "Mixte"]}

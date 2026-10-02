@@ -2,6 +2,7 @@
 
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { CITY_NAMES, citySlug, getCities, normalizeSearch } from "@/lib/data";
 
 export default function CitySearch() {
@@ -49,7 +50,7 @@ export default function CitySearch() {
             const c = cities[name];
             return (
               <button key={name} onMouseDown={() => go(name)}>
-                <img src={c.hero} alt={name} />
+                <Image src={c.hero} alt={name} width={42} height={42} />
                 <span>
                   <b>{name}</b>
                   <small>{c.country}</small>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import TripGrid from "@/components/TripCard";
 import MemberGrid from "@/components/MemberGrid";
@@ -32,7 +33,7 @@ export default function MondoHome() {
             </div>
           </div>
           <div className="hero-photo reveal">
-            <img src="/assets/mondo-hero.jpg" alt="Mondo" />
+            <Image src="/assets/mondo-hero.jpg" alt="Mondo" fill sizes="(max-width: 980px) 100vw, 50vw" priority />
             <div className="hero-caption">
               <h3>Une route, des inconnus, puis une histoire.</h3>
               <p>Mondo doit donner envie de faire partie du groupe.</p>

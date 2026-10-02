@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { getCity } from "@/lib/data";
 import { demoTrips } from "@/lib/trips";
@@ -43,7 +44,7 @@ export default function TripGrid() {
             return (
               <article className="tripcard" key={t.slug}>
                 <Link href={`/mondo/trips/${t.slug}`} className="tripcard-photo">
-                  <img src={city.hero} alt={t.title} />
+                  <Image src={city.hero} alt={t.title} fill sizes="(max-width: 980px) 100vw, 33vw" />
                   <span className="verified tripcard-audience">{AUDIENCE_LABELS[t.audience]}</span>
                 </Link>
                 <div className="tripbody">

@@ -2,6 +2,7 @@
 
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { CITY_NAMES, citySlug, getCities, normalizeSearch } from "@/lib/data";
 
 function defaultDates() {
@@ -74,7 +75,7 @@ export default function AtlasSearchBar() {
           <div className="atlassearch-results">
             {results.map((name) => (
               <button type="button" key={name} onMouseDown={() => pick(name)}>
-                <img src={cities[name].hero} alt={name} />
+                <Image src={cities[name].hero} alt={name} width={40} height={40} />
                 <span>
                   <b>{name}</b>
                   <small>{cities[name].country}</small>

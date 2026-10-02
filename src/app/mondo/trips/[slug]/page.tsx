@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { getCity } from "@/lib/data";
 import { AUDIENCE_LABELS, demoTrips, getTripBySlug } from "@/lib/trips";
@@ -41,7 +42,7 @@ export default async function TripDetailPage({ params }: { params: Promise<{ slu
     <>
       <section className="cityhero shell">
         <div className="cityphoto">
-          <img src={city.hero} alt={trip.title} />
+          <Image src={city.hero} alt={trip.title} fill sizes="100vw" priority />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
               Voyage de groupe · {AUDIENCE_LABELS[trip.audience]}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import AtlasSearchBar from "@/components/AtlasSearchBar";
 import { CITY_NAMES } from "@/lib/data";
@@ -24,9 +25,12 @@ export default function AtlasHome() {
             </p>
           </div>
           <div className="hero-photo reveal">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1786897162869-b0ccd067affd?auto=format&fit=crop&w=1800&q=90"
               alt="Atlas"
+              fill
+              sizes="(max-width: 980px) 100vw, 50vw"
+              priority
             />
             <div className="hero-caption">
               <h3>Le monde est immense. Votre voyage ne doit pas l’être.</h3>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { EXPERIENCES } from "@/lib/experiences";
 import { pageOG } from "@/lib/site";
@@ -22,7 +23,7 @@ export default function ExperiencesPage() {
         <div className="experiencehub">
           {EXPERIENCES.map((e) => (
             <Link href={`/atlas/experiences/${e.slug}`} className="experiencecard" key={e.slug}>
-              <img src={e.hero} alt={e.name} />
+              <Image src={e.hero} alt={e.name} fill sizes="(max-width: 980px) 100vw, 50vw" />
               <div className="experiencecardtext">
                 <div className="eyebrow" style={{ color: "#fff" }}>
                   {e.regions.length} destinations

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -7,6 +8,8 @@ import AlfredPanel, { AlfredFab } from "@/components/AlfredPanel";
 import FavoriteButton from "@/components/FavoriteButton";
 import { useFavorites } from "@/lib/store";
 import { citySlug } from "@/lib/data";
+
+const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=88";
 
 export default function FavoritesPage() {
   const favorites = useFavorites();
@@ -37,7 +40,7 @@ export default function FavoritesPage() {
           <div className="destgrid">
             {cities.map((f) => (
               <Link href={`/atlas/${citySlug(f.city)}`} className="dest" key={f.id}>
-                <img src={f.image} alt={f.name} />
+                <Image src={f.image ?? FALLBACK_IMAGE} alt={f.name} fill sizes="(max-width: 980px) 50vw, 25vw" />
                 <div className="destcopy">
                   <h3>{f.name}</h3>
                 </div>
@@ -59,7 +62,7 @@ export default function FavoritesPage() {
             {hotels.map((f) => (
               <article className="stay" key={f.id}>
                 <div className="stayimg">
-                  <img src={f.image} alt={f.name} />
+                  <Image src={f.image ?? FALLBACK_IMAGE} alt={f.name} fill sizes="(max-width: 980px) 100vw, 33vw" />
                   <FavoriteButton className="favbtn-float" favorite={f} />
                 </div>
                 <div className="staybody">

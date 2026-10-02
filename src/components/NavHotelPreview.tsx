@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getHotels, citySlug } from "@/lib/data";
 
@@ -18,7 +19,7 @@ export default function NavHotelPreview({ city }: { city: string }) {
       <div className="navpreview-grid">
         {hotels.map((h, i) => (
           <Link href={`/atlas/hotels?city=${citySlug(city)}`} className="navpreview-card" key={h.name}>
-            <img src={h.image ?? FALLBACK_IMAGES[i % 3]} alt={h.name} />
+            <Image src={h.image ?? FALLBACK_IMAGES[i % 3]} alt={h.name} width={104} height={64} />
             <b>{h.name}</b>
             <span>{h.price} €</span>
           </Link>

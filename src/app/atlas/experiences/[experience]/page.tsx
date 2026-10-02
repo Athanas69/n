@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import NotifyButton from "@/components/NotifyButton";
 import { EXPERIENCES, getExperience } from "@/lib/experiences";
@@ -39,7 +40,7 @@ export default async function ExperiencePage({ params }: { params: Promise<{ exp
     <>
       <section className="cityhero shell">
         <div className="cityphoto">
-          <img src={e.hero} alt={e.name} />
+          <Image src={e.hero} alt={e.name} fill sizes="100vw" priority />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
               {e.eyebrow}
@@ -61,7 +62,9 @@ export default async function ExperiencePage({ params }: { params: Promise<{ exp
         <div className="hoodpicks-list explist">
           {e.regions.map((r) => (
             <div className="hoodpick explistcard" key={r.name}>
-              <img src={r.image} alt={r.name} />
+              <div className="explistcard-photo">
+                <Image src={r.image} alt={r.name} fill sizes="(max-width: 980px) 100vw, 240px" />
+              </div>
               <div className="explistcardtext">
                 <b>
                   {r.name} <span>· {r.country}</span>

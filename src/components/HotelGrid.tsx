@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import NotifyButton from "./NotifyButton";
 import FavoriteButton from "./FavoriteButton";
@@ -17,7 +18,7 @@ export default function HotelGrid({ city }: { city: string }) {
         {hotels.map((h, i) => (
           <article className="stay" key={h.name + h.tier}>
             <div className="stayimg">
-              <img src={h.image ?? IMAGES[i % 3]} alt={h.name} />
+              <Image src={h.image ?? IMAGES[i % 3]} alt={h.name} fill sizes="(max-width: 980px) 100vw, 33vw" />
               <span className="verified" style={{ position: "absolute", left: 10, top: 10 }}>
                 {h.tier}
               </span>

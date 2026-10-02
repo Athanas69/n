@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import NotifyButton from "@/components/NotifyButton";
 import OpenAlfredButton from "@/components/OpenAlfredButton";
@@ -83,7 +84,7 @@ export default async function CityPage({
       <RememberCity city={cityName} />
       <section className="cityhero shell">
         <div className="cityphoto">
-          <img src={c.hero} alt={cityName} />
+          <Image src={c.hero} alt={cityName} fill sizes="100vw" priority />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
               {c.country}
