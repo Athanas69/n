@@ -19,6 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/mondo/community`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${SITE_URL}/mondo/create`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE_URL}/mondo/trip-room`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${SITE_URL}/mentions-legales`, lastModified: now, changeFrequency: "yearly", priority: 0.1 },
+    { url: `${SITE_URL}/confidentialite`, lastModified: now, changeFrequency: "yearly", priority: 0.1 },
+    { url: `${SITE_URL}/cgu`, lastModified: now, changeFrequency: "yearly", priority: 0.1 },
   ];
 
   const cityRoutes: MetadataRoute.Sitemap = CITY_NAMES.map((name) => ({
