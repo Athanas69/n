@@ -1,7 +1,7 @@
 "use client";
 
 import { useSyncExternalStore, useCallback } from "react";
-import type { TripAudience } from "./trips";
+import { AUDIENCE_OPTIONS, type TripAudience } from "./trips";
 import { safeGet, safeSet } from "./safeStorage";
 
 const EVENT = "atlas:store-change";
@@ -10,13 +10,17 @@ const EVENT = "atlas:store-change";
 // useSyncExternalStore — a fresh object per call would re-render forever).
 const cache = new Map<string, unknown>();
 
-function read<T>(key: string, fallback: T): T {
+function read<T>(key: string, fallback: T, sanitize?: (raw: unknown) => T | null): T {
   if (cache.has(key)) return cache.get(key) as T;
   if (typeof window === "undefined") return fallback;
   let value = fallback;
   try {
     const raw = safeGet(key);
-    if (raw) value = JSON.parse(raw) as T;
+    if (raw) {
+      const parsed: unknown = JSON.parse(raw);
+      const clean = sanitize ? sanitize(parsed) : (parsed as T);
+      if (clean !== null) value = clean;
+    }
   } catch {
     // keep fallback
   }
@@ -58,7 +62,7 @@ export type Favorite = {
 const FAVORITES_KEY = "atlas:favorites";
 
 export function getFavorites(): Favorite[] {
-  return read<Favorite[]>(FAVORITES_KEY, []);
+  return read<Favorite[]>(FAVORITES_KEY, [], sanitizeFavorites);
 }
 
 export function isFavorited(id: string): boolean {
@@ -98,7 +102,7 @@ export type UserTrip = {
 const TRIPS_KEY = "atlas:trips";
 
 export function getTrips(): UserTrip[] {
-  return read<UserTrip[]>(TRIPS_KEY, []);
+  return read<UserTrip[]>(TRIPS_KEY, [], sanitizeTrips);
 }
 
 export function getTripById(id: string): UserTrip | undefined {
@@ -144,7 +148,7 @@ export const DEFAULT_PROFILE: Profile = {
 };
 
 export function getProfile(): Profile {
-  return read<Profile>(PROFILE_KEY, DEFAULT_PROFILE);
+  return read<Profile>(PROFILE_KEY, DEFAULT_PROFILE, sanitizeProfile);
 }
 
 export function saveProfile(profile: Profile) {
@@ -179,6 +183,79 @@ export function useProfile(): Profile {
   return useWatch(PROFILE_KEY, getProfile, DEFAULT_PROFILE);
 }
 
+
+// ---- Sanitizers ----
+// Stored data and imported backups are untrusted: a malformed entry would
+// otherwise be persisted and break every page that renders it, with no way
+// out short of clearing site data. Unusable entries are dropped, missing
+// optional fields get safe defaults.
+
+const isObj = (v: unknown): v is Record<string, unknown> => typeof v === "object" && v !== null && !Array.isArray(v);
+const str = (v: unknown, d = "") => (typeof v === "string" ? v : d);
+const num = (v: unknown, d: number) => (typeof v === "number" && Number.isFinite(v) ? v : d);
+
+export function sanitizeFavorites(raw: unknown): Favorite[] | null {
+  if (!Array.isArray(raw)) return null;
+  return raw.flatMap((f): Favorite[] => {
+    if (!isObj(f) || typeof f.id !== "string" || typeof f.name !== "string" || typeof f.city !== "string") return [];
+    if (f.type !== "city" && f.type !== "hotel") return [];
+    return [
+      {
+        id: f.id,
+        type: f.type,
+        city: f.city,
+        name: f.name,
+        image: typeof f.image === "string" && f.image ? f.image : undefined,
+        meta: typeof f.meta === "string" ? f.meta : undefined,
+        savedAt: num(f.savedAt, 0),
+      },
+    ];
+  });
+}
+
+export function sanitizeTrips(raw: unknown): UserTrip[] | null {
+  if (!Array.isArray(raw)) return null;
+  return raw.flatMap((t): UserTrip[] => {
+    if (!isObj(t) || typeof t.id !== "string" || typeof t.title !== "string" || typeof t.city !== "string") return [];
+    const days = Array.isArray(t.days)
+      ? t.days.filter(isObj).map((d) => ({ title: str(d.title), notes: str(d.notes) }))
+      : [];
+    const packing = Array.isArray(t.packing)
+      ? t.packing
+          .filter(isObj)
+          .filter((p) => typeof p.id === "string")
+          .map((p) => ({ id: p.id as string, text: str(p.text), done: p.done === true }))
+      : [];
+    const audience = AUDIENCE_OPTIONS.find((a) => a === t.audience);
+    return [
+      {
+        id: t.id,
+        title: t.title,
+        city: t.city,
+        startDate: str(t.startDate),
+        endDate: str(t.endDate),
+        travelers: Math.max(1, num(t.travelers, 1)),
+        budgetPerPerson: Math.max(0, num(t.budgetPerPerson, 0)),
+        notes: str(t.notes),
+        story: str(t.story),
+        days,
+        packing,
+        createdAt: num(t.createdAt, 0),
+        audience,
+      },
+    ];
+  });
+}
+
+export function sanitizeProfile(raw: unknown): Profile | null {
+  if (!isObj(raw)) return null;
+  return {
+    name: str(raw.name, DEFAULT_PROFILE.name) || DEFAULT_PROFILE.name,
+    bio: str(raw.bio),
+    interests: Array.isArray(raw.interests) ? raw.interests.filter((i): i is string => typeof i === "string") : [],
+  };
+}
+
 // ---- Backup (export / import) ----
 // Everything lives in this browser's localStorage only — no account, no
 // server. Export/import is the honest way to protect against clearing
@@ -203,7 +280,10 @@ export function exportBackup(): Backup {
 }
 
 export function importBackup(data: Backup) {
-  if (Array.isArray(data.favorites)) write(FAVORITES_KEY, data.favorites);
-  if (Array.isArray(data.trips)) write(TRIPS_KEY, data.trips);
-  if (data.profile) write(PROFILE_KEY, data.profile);
+  const favorites = sanitizeFavorites(data.favorites);
+  const trips = sanitizeTrips(data.trips);
+  const profile = sanitizeProfile(data.profile);
+  if (favorites) write(FAVORITES_KEY, favorites);
+  if (trips) write(TRIPS_KEY, trips);
+  if (profile) write(PROFILE_KEY, profile);
 }
