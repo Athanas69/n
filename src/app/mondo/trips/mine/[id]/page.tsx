@@ -208,6 +208,7 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
               <input
                 className="field"
                 style={{ flex: 1, border: "1px solid var(--line)" }}
+                aria-label="Ajouter un objet à la checklist bagages"
                 placeholder="Ajouter un objet…"
                 value={packingText}
                 onChange={(e) => setPackingText(e.target.value)}

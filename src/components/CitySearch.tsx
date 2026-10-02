@@ -32,6 +32,7 @@ export default function CitySearch() {
       <input
         ref={inputRef}
         type="text"
+        aria-label="Chercher une ville ou un pays"
         placeholder="Chercher une ville, un pays… (Tokyo, Italie, Maroc…)"
         value={query}
         onChange={(e) => {

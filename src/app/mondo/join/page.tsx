@@ -22,6 +22,7 @@ export default function JoinTripPage() {
             <h2>Votre message</h2>
             <textarea
               className="field"
+              aria-label="Votre message à l’organisateur"
               style={{ width: "100%", minHeight: 150, border: 0 }}
               defaultValue="Salut ! Je cherche justement un voyage au Japon en octobre. J’aime la food et la culture, le rythme me convient et le budget aussi."
             />

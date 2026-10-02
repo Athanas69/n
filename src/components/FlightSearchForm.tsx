@@ -136,13 +136,13 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
             >
               Bagage en soute inclus
             </button>
-            <div className="flightsort">
+            <label className="flightsort">
               <small>Trier par</small>
               <select value={sort} onChange={(e) => setSort(e.target.value as FlightSort)}>
                 <option value="price">Prix</option>
                 <option value="duration">Durée</option>
               </select>
-            </div>
+            </label>
           </div>
 
           <p className="flightresults-count">
