@@ -58,8 +58,11 @@ export default function AtlasSearchBar() {
   return (
     <form className="atlassearch" onSubmit={handleSubmit}>
       <div className="atlassearch-field atlassearch-dest">
-        <small>Destination</small>
+        <label htmlFor="atlassearch-dest-input">
+          <small>Destination</small>
+        </label>
         <input
+          id="atlassearch-dest-input"
           ref={inputRef}
           placeholder="Où partez-vous ?"
           value={query}
@@ -85,15 +88,15 @@ export default function AtlasSearchBar() {
           </div>
         )}
       </div>
-      <div className="atlassearch-field">
+      <label className="atlassearch-field">
         <small>Aller</small>
         <input type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} />
-      </div>
-      <div className="atlassearch-field">
+      </label>
+      <label className="atlassearch-field">
         <small>Retour</small>
         <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} />
-      </div>
-      <div className="atlassearch-field">
+      </label>
+      <label className="atlassearch-field">
         <small>Voyageurs</small>
         <input
           type="number"
@@ -101,7 +104,7 @@ export default function AtlasSearchBar() {
           value={travelers}
           onChange={(e) => setTravelers(Math.max(1, Number(e.target.value)))}
         />
-      </div>
+      </label>
       <button type="submit" className="btn primary atlassearch-submit">
         Préparer le voyage
       </button>
