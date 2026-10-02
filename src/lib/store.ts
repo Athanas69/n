@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore, useCallback } from "react";
 import type { TripAudience } from "./trips";
+import { safeGet, safeSet } from "./safeStorage";
 
 const EVENT = "atlas:store-change";
 
@@ -14,7 +15,7 @@ function read<T>(key: string, fallback: T): T {
   if (typeof window === "undefined") return fallback;
   let value = fallback;
   try {
-    const raw = window.localStorage.getItem(key);
+    const raw = safeGet(key);
     if (raw) value = JSON.parse(raw) as T;
   } catch {
     // keep fallback
@@ -25,7 +26,7 @@ function read<T>(key: string, fallback: T): T {
 
 function write<T>(key: string, value: T) {
   cache.set(key, value);
-  window.localStorage.setItem(key, JSON.stringify(value));
+  safeSet(key, JSON.stringify(value));
   window.dispatchEvent(new CustomEvent(EVENT, { detail: key }));
 }
 

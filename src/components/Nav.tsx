@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { citySlug, DEFAULT_CITY } from "@/lib/data";
+import { safeGet } from "@/lib/safeStorage";
 import { useFavorites, useProfile } from "@/lib/store";
 import Mark, { HeartMark } from "./Mark";
 import NavHotelPreview from "./NavHotelPreview";
@@ -37,7 +38,7 @@ export default function Nav({ mode }: { mode: "MONDO" | "ATLAS" }) {
   useEffect(() => {
     // Synced after mount (not in the lazy initial state) to avoid a hydration
     // mismatch between the server-rendered default and the visitor's stored city.
-    const stored = window.localStorage.getItem("atlasCity");
+    const stored = safeGet("atlasCity");
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (stored) setLastCity(stored);
   }, []);

@@ -1,3 +1,5 @@
+import { safeGet, safeSet } from "./safeStorage";
+
 // Frankfurter/ECB only covers ~30 major currencies (no VND, KHR, XPF, MVR, etc.),
 // which silently dropped the converter on ~49 of the site's destinations.
 // This CDN-hosted dataset covers 300+ currencies with no API key required.
@@ -11,7 +13,7 @@ export async function fetchRate(base: string, target: string): Promise<number | 
   const baseLower = base.toLowerCase();
   const targetLower = target.toLowerCase();
   const cacheKey = `fx:${base}:${target}`;
-  const cached = sessionStorage.getItem(cacheKey);
+  const cached = safeGet(cacheKey, "session");
   if (cached) return Number(cached);
 
   for (const source of SOURCES) {
@@ -21,7 +23,7 @@ export async function fetchRate(base: string, target: string): Promise<number | 
       const data = await res.json();
       const rate = data[baseLower]?.[targetLower];
       if (typeof rate !== "number") continue;
-      sessionStorage.setItem(cacheKey, String(rate));
+      safeSet(cacheKey, String(rate), "session");
       return rate;
     } catch {
       continue;

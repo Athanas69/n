@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ALFRED_EVENT } from "@/lib/notify";
 import { citySlug, getCity } from "@/lib/data";
 import { useTrips } from "@/lib/store";
+import { safeSet } from "@/lib/safeStorage";
 import { getPracticalInfo } from "@/lib/practical";
 import { ArrowheadMark } from "./Mark";
 
@@ -40,7 +41,7 @@ export default function AlfredPanel() {
   }, []);
 
   function goToCity(city: string) {
-    window.localStorage.setItem("atlasCity", city);
+    safeSet("atlasCity", city);
     setOpen(false);
     router.push(`/atlas/${citySlug(city)}`);
   }
