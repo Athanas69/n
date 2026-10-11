@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getHotels, citySlug } from "@/lib/data";
+import { getHotels, citySlug, cityLabel } from "@/lib/data";
 
 function nightsBetween(a: string, b: string) {
   const ms = new Date(b).getTime() - new Date(a).getTime();
@@ -32,7 +32,7 @@ export default function TripPrepBanner({
           Votre séjour
         </div>
         <h2 style={{ fontSize: 24 }}>
-          {city}, {new Date(checkin).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })} →{" "}
+          {cityLabel(city)}, {new Date(checkin).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })} →{" "}
           {new Date(checkout).toLocaleDateString("fr-FR", { day: "numeric", month: "short" })}
         </h2>
         <p className="muted" style={{ fontSize: 12 }}>

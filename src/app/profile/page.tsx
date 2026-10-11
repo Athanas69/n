@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import AlfredPanel, { AlfredFab } from "@/components/AlfredPanel";
 import { useProfile, saveProfile, useTrips, useFavorites } from "@/lib/store";
 import DataBackup from "@/components/DataBackup";
+import { cityLabel } from "@/lib/data";
 
 const INTEREST_OPTIONS = [
   "Aventure",
@@ -162,7 +163,7 @@ export default function ProfilePage() {
                     <Link href={`/mondo/trips/mine/${t.id}`}>
                       <b>{t.title}</b>
                     </Link>
-                    <span>{t.city}</span>
+                    <span>{cityLabel(t.city)}</span>
                   </div>
                 ))
               )}

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { CITY_NAMES, getCity } from "@/lib/data";
+import { CITY_NAMES, getCity, cityIn, cityLabel } from "@/lib/data";
 import { saveTrip, newTripId, type UserTrip } from "@/lib/store";
 import { AUDIENCE_LABELS, AUDIENCE_OPTIONS, type TripAudience } from "@/lib/trips";
 
@@ -32,7 +32,7 @@ export default function CreateTripPage() {
     e.preventDefault();
     const trip: UserTrip = {
       id: newTripId(),
-      title: title.trim() || `Voyage à ${city}`,
+      title: title.trim() || `Voyage ${cityIn(city)}`,
       city,
       startDate,
       endDate,
@@ -64,7 +64,7 @@ export default function CreateTripPage() {
               <label className="field full">
                 <small>Titre du voyage</small>
                 <input
-                  placeholder={`Voyage à ${city}`}
+                  placeholder={`Voyage ${cityIn(city)}`}
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
                 />
@@ -74,7 +74,7 @@ export default function CreateTripPage() {
                 <select value={city} onChange={(e) => setCity(e.target.value)} style={{ width: "100%", border: 0, background: "transparent", color: "inherit", outline: 0 }}>
                   {CITY_NAMES.map((name) => (
                     <option key={name} value={name}>
-                      {name} — {getCity(name).country}
+                      {cityLabel(name)} — {getCity(name).country}
                     </option>
                   ))}
                 </select>

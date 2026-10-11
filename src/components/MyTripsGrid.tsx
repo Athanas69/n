@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTrips } from "@/lib/store";
-import { getCity } from "@/lib/data";
+import { getCity, cityLabel } from "@/lib/data";
 import { AUDIENCE_LABELS } from "@/lib/trips";
 
 export default function MyTripsGrid() {
@@ -33,7 +33,7 @@ export default function MyTripsGrid() {
             <div className="tripbody">
               <h3>{t.title}</h3>
               <p className="muted">
-                {t.city} · {new Date(t.startDate).toLocaleDateString("fr-FR")}
+                {cityLabel(t.city)} · {new Date(t.startDate).toLocaleDateString("fr-FR")}
               </p>
               <div className="tripmeta">
                 <span className="tag">

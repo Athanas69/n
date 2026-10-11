@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import NotifyButton from "./NotifyButton";
 import { generateFlights, filterAndSortFlights, getOriginNames, type FlightSort } from "@/lib/flights";
+import { cityLabel } from "@/lib/data";
 
 const CABINS = ["Économique", "Premium éco", "Affaires"];
 
@@ -49,7 +50,7 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
   return (
     <div className="flightsearch">
       <h2>
-        {origin} → {cityName}
+        {origin} → {cityLabel(cityName)}
       </h2>
       <div className="tabs">
         <button type="button" className={tripType === "round" ? "on" : ""} onClick={() => setTripType("round")}>
@@ -73,7 +74,7 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
         <div className="flightfield">
           <small>Destination</small>
           <b style={{ display: "block", paddingTop: 4, fontSize: 12 }}>
-            {cityName} ({destAirport})
+            {cityLabel(cityName)} ({destAirport})
           </b>
         </div>
         <label className="flightfield">
@@ -183,7 +184,7 @@ export default function FlightSearchForm({ cityName, destAirport }: { cityName: 
                         {o.arriveTime}
                         {o.arriveNextDay && <span className="flightrow-nextday">+1</span>}
                       </b>
-                      <small>{cityName}</small>
+                      <small>{cityLabel(cityName)}</small>
                     </div>
                   </div>
                   <div className="flightrow-baggage">

@@ -3,7 +3,7 @@
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { CITY_NAMES, citySlug, getCities, normalizeSearch } from "@/lib/data";
+import { CITY_NAMES, citySlug, getCities, normalizeSearch, cityMatches, cityLabel } from "@/lib/data";
 
 function defaultDates() {
   const start = new Date();
@@ -32,19 +32,19 @@ export default function AtlasSearchBar() {
     if (!q) return [];
     return CITY_NAMES.filter((name) => {
       const c = cities[name];
-      return normalizeSearch(name).includes(q) || normalizeSearch(c.country).includes(q);
+      return cityMatches(name, c.country, q);
     }).slice(0, 6);
   }, [query, cities]);
 
   function pick(name: string) {
     setCity(name);
-    setQuery(name);
+    setQuery(cityLabel(name));
     setOpen(false);
   }
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const exactMatch = CITY_NAMES.find((name) => normalizeSearch(name) === normalizeSearch(query.trim()));
+    const exactMatch = CITY_NAMES.find((name) => normalizeSearch(name) === normalizeSearch(query.trim()) || normalizeSearch(cityLabel(name)) === normalizeSearch(query.trim()));
     const target = city ?? results[0] ?? exactMatch ?? null;
     if (!target) {
       inputRef.current?.focus();
@@ -78,9 +78,9 @@ export default function AtlasSearchBar() {
           <div className="atlassearch-results">
             {results.map((name) => (
               <button type="button" key={name} onMouseDown={() => pick(name)}>
-                <Image src={cities[name].hero} alt={name} width={40} height={40} />
+                <Image src={cities[name].hero} alt={cityLabel(name)} width={40} height={40} />
                 <span>
-                  <b>{name}</b>
+                  <b>{cityLabel(name)}</b>
                   <small>{cities[name].country}</small>
                 </span>
               </button>

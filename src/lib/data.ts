@@ -212,6 +212,78 @@ export function citiesByRegion(): [string, string[]][] {
   return order.filter((r) => groups[r]?.length).map((r) => [r, groups[r]]);
 }
 
+// City keys are English (and stable: they drive URLs and stored data). What
+// readers of the French site should see is the French name.
+const CITY_FR: Record<string, string> = {
+  Seoul: "Séoul",
+  London: "Londres",
+  Barcelona: "Barcelone",
+  Lisbon: "Lisbonne",
+  Vienna: "Vienne",
+  Athens: "Athènes",
+  Venice: "Venise",
+  Singapore: "Singapour",
+  "Mexico City": "Mexico",
+  Cairo: "Le Caire",
+  Beijing: "Pékin",
+  Montreal: "Montréal",
+  Algiers: "Alger",
+  Muscat: "Mascate",
+  "Addis Ababa": "Addis-Abeba",
+  Mauritius: "Maurice",
+  Seville: "Séville",
+  Copenhagen: "Copenhague",
+  Warsaw: "Varsovie",
+  Krakow: "Cracovie",
+  Geneva: "Genève",
+  Brussels: "Bruxelles",
+  Edinburgh: "Édimbourg",
+  Santorini: "Santorin",
+  Hamburg: "Hambourg",
+  Valencia: "Valence",
+  "Washington DC": "Washington",
+  "New Orleans": "La Nouvelle-Orléans",
+  Havana: "La Havane",
+  "Quebec City": "Québec",
+  Kathmandu: "Katmandou",
+  Male: "Malé",
+  Hanoi: "Hanoï",
+  "Ho Chi Minh City": "Hô Chi Minh-Ville",
+  Jerusalem: "Jérusalem",
+  Beirut: "Beyrouth",
+  Fes: "Fès",
+  Dubai: "Dubaï",
+  "Cape Town": "Le Cap",
+  "Kuwait City": "Koweït",
+  Jeddah: "Djeddah",
+  Riyadh: "Riyad",
+  Luxor: "Louxor",
+  Fiji: "Fidji",
+  Macau: "Macao",
+  "Santiago de Chile": "Santiago du Chili",
+  "Sharm El Sheikh": "Charm el-Cheikh",
+  "Xi'an": "Xi’an",
+};
+
+export function cityLabel(name: string) {
+  return CITY_FR[name] ?? name;
+}
+
+// "à Londres", "au Cap", "au Caire"
+export function cityIn(name: string) {
+  const l = cityLabel(name);
+  if (l.startsWith("Le ")) return `au ${l.slice(3)}`;
+  return `à ${l}`;
+}
+
+// "de Londres", "du Cap", "d’Athènes"
+export function cityOf(name: string) {
+  const l = cityLabel(name);
+  if (l.startsWith("Le ")) return `du ${l.slice(3)}`;
+  if (/^[AEIOUÉÈÎÔ]/.test(l) || (/^H/.test(l) && !/^(Hong|Hambourg)/.test(l))) return `d’${l}`;
+  return `de ${l}`;
+}
+
 export function citySlug(name: string) {
   return name
     .toLowerCase()
@@ -227,6 +299,15 @@ export function normalizeSearch(s: string) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "");
+}
+
+// Matches the French name, the English key and the country, accent-insensitively.
+export function cityMatches(name: string, country: string, normalizedQuery: string) {
+  return (
+    normalizeSearch(cityLabel(name)).includes(normalizedQuery) ||
+    normalizeSearch(name).includes(normalizedQuery) ||
+    normalizeSearch(country).includes(normalizedQuery)
+  );
 }
 
 export function cityNameFromSlug(slug: string): string | undefined {

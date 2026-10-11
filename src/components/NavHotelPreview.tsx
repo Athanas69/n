@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getHotels, citySlug } from "@/lib/data";
+import { getHotels, citySlug, cityIn, cityOf } from "@/lib/data";
 
 const FALLBACK_IMAGES = [
   "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80",
@@ -14,7 +14,7 @@ export default function NavHotelPreview({ city }: { city: string }) {
   return (
     <div className="navpreview">
       <div className="navpreview-head">
-        <small>Hôtels à {city}</small>
+        <small>Hôtels {cityIn(city)}</small>
       </div>
       <div className="navpreview-grid">
         {hotels.map((h, i) => (
@@ -26,7 +26,7 @@ export default function NavHotelPreview({ city }: { city: string }) {
         ))}
       </div>
       <Link href={`/atlas/hotels?city=${citySlug(city)}`} className="navpreview-more">
-        Voir tous les hôtels de {city} →
+        Voir tous les hôtels {cityOf(city)} →
       </Link>
     </div>
   );

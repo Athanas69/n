@@ -7,7 +7,7 @@ import HotelGrid from "@/components/HotelGrid";
 import NeighborhoodRealMap from "@/components/NeighborhoodRealMap";
 import CityNav from "@/components/CityNav";
 import RememberCity from "@/components/RememberCity";
-import { CITY_NAMES, citySlug, cityNameFromSlug, getCity } from "@/lib/data";
+import { CITY_NAMES, citySlug, cityNameFromSlug, getCity, cityLabel, cityIn, cityOf } from "@/lib/data";
 import { getArticleSlugForTitle } from "@/lib/articles";
 import { CITY_COORDS } from "@/lib/coords";
 import LiveWeather from "@/components/LiveWeather";
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const cityName = cityNameFromSlug(slug);
   if (!cityName) return {};
   const c = getCity(cityName);
-  const title = `${cityName} — guide, quartiers, hôtels`;
+  const title = `${cityLabel(cityName)} — guide, quartiers, hôtels`;
   return {
     title,
     description: c.intro,
@@ -68,7 +68,7 @@ export default async function CityPage({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TouristDestination",
-    name: cityName,
+    name: cityLabel(cityName),
     description: c.intro,
     image: c.hero,
     url: `${SITE_URL}/atlas/${citySlug(cityName)}`,
@@ -84,15 +84,15 @@ export default async function CityPage({
       <RememberCity city={cityName} />
       <section className="cityhero shell">
         <div className="cityphoto">
-          <Image src={c.hero} alt={cityName} fill sizes="100vw" priority />
+          <Image src={c.hero} alt={cityLabel(cityName)} fill sizes="100vw" priority />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
               {c.country}
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-              <h1>{cityName}</h1>
+              <h1>{cityLabel(cityName)}</h1>
               <FavoriteButton
-                favorite={{ id: `city:${cityName}`, type: "city", city: cityName, name: cityName, image: c.hero }}
+                favorite={{ id: `city:${cityName}`, type: "city", city: cityName, name: cityLabel(cityName), image: c.hero }}
               />
             </div>
             <p>{c.intro}</p>
@@ -140,7 +140,7 @@ export default async function CityPage({
             <div className="eyebrow">Quartiers</div>
             <h2>Choisissez l’ambiance avant l’adresse.</h2>
           </div>
-          <p>Repérez les quartiers de {cityName} sur la carte avant de choisir où dormir.</p>
+          <p>Repérez les quartiers {cityOf(cityName)} sur la carte avant de choisir où dormir.</p>
         </div>
         {coords ? (
           <NeighborhoodRealMap center={coords} />
@@ -241,7 +241,7 @@ export default async function CityPage({
             return [(
             <article className={`article ${i < 2 ? "actionarticle" : ""}`} key={a}>
               <div>
-                <div className="eyebrow">{cityName}</div>
+                <div className="eyebrow">{cityLabel(cityName)}</div>
                 <h3>{a}</h3>
                 <p>Guide Atlas pensé pour répondre à une décision concrète du voyage, pas pour remplir un blog.</p>
               </div>
@@ -316,7 +316,7 @@ export default async function CityPage({
         </div>
         <div className="cityintro">
           <article className="first24">
-            <h2>Bienvenue à {cityName}.</h2>
+            <h2>Bienvenue {cityIn(cityName)}.</h2>
             <div className="firststeps">
               {[
                 { step: "Activer l’eSIM", text: `${c.esim}. ${c.esim.startsWith("Optionnelle") ? "Si vous en voulez une, installez le profil avant le départ." : "Installez le profil avant le départ pour être connecté dès l’atterrissage."}` },

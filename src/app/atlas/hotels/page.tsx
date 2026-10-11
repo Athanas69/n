@@ -1,5 +1,5 @@
 import HotelGrid from "@/components/HotelGrid";
-import { DEFAULT_CITY, citySlug, cityNameFromSlug } from "@/lib/data";
+import { DEFAULT_CITY, citySlug, cityNameFromSlug, cityIn, cityLabel } from "@/lib/data";
 import { pageOG } from "@/lib/site";
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ city?: string }> }) {
@@ -7,8 +7,8 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const cityName = (citySlugParam && cityNameFromSlug(citySlugParam)) || DEFAULT_CITY;
   return {
     ...pageOG(
-      `Hôtels à ${cityName}`,
-      `Une sélection courte d’hôtels à ${cityName}, par budget : Budget, Confort, Premium.`
+      `Hôtels ${cityIn(cityName)}`,
+      `Une sélection courte d’hôtels ${cityIn(cityName)}, par budget : Budget, Confort, Premium.`
     ),
     alternates: { canonical: `/atlas/hotels?city=${citySlug(cityName)}` },
   };
@@ -25,7 +25,7 @@ export default async function HotelsPage({
   return (
     <>
       <section className="hero shell" style={{ paddingBottom: 20 }}>
-        <div className="eyebrow">Atlas Stays · {cityName}</div>
+        <div className="eyebrow">Atlas Stays · {cityLabel(cityName)}</div>
         <h1>Choisissez peu. Choisissez bien.</h1>
         <p>Budget, Confort, Premium et bientôt le véritable Choix Atlas.</p>
       </section>

@@ -1,5 +1,5 @@
 import FlightSearchForm from "@/components/FlightSearchForm";
-import { DEFAULT_CITY, citySlug, cityNameFromSlug, getCity } from "@/lib/data";
+import { DEFAULT_CITY, citySlug, cityNameFromSlug, getCity, cityLabel } from "@/lib/data";
 import { pageOG } from "@/lib/site";
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ city?: string }> }) {
@@ -7,8 +7,8 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const cityName = (citySlugParam && cityNameFromSlug(citySlugParam)) || DEFAULT_CITY;
   return {
     ...pageOG(
-      `Vols vers ${cityName}`,
-      `Comparez les vols vers ${cityName} : plusieurs compagnies, direct ou avec escale, bagages inclus ou non.`
+      `Vols vers ${cityLabel(cityName)}`,
+      `Comparez les vols vers ${cityLabel(cityName)} : plusieurs compagnies, direct ou avec escale, bagages inclus ou non.`
     ),
     alternates: { canonical: `/atlas/flights?city=${citySlug(cityName)}` },
   };

@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import AlfredPanel, { AlfredFab } from "@/components/AlfredPanel";
 import FavoriteButton from "@/components/FavoriteButton";
 import { useFavorites } from "@/lib/store";
-import { citySlug } from "@/lib/data";
+import { citySlug, cityLabel } from "@/lib/data";
 
 const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=88";
 
@@ -44,9 +44,9 @@ export default function FavoritesPage() {
           <div className="destgrid">
             {cities.map((f) => (
               <Link href={`/atlas/${citySlug(f.city)}`} className="dest" key={f.id}>
-                <Image src={f.image ?? FALLBACK_IMAGE} alt={f.name} fill sizes="(max-width: 980px) 50vw, 25vw" />
+                <Image src={f.image ?? FALLBACK_IMAGE} alt={cityLabel(f.city)} fill sizes="(max-width: 980px) 50vw, 25vw" />
                 <div className="destcopy">
-                  <h3>{f.name}</h3>
+                  <h3>{cityLabel(f.city)}</h3>
                 </div>
               </Link>
             ))}
@@ -71,7 +71,7 @@ export default function FavoritesPage() {
                 </div>
                 <div className="staybody">
                   <h3>{f.name}</h3>
-                  <p className="muted">{f.city}</p>
+                  <p className="muted">{cityLabel(f.city)}</p>
                   <div className="staymeta">
                     <span>
                       <small>{f.meta}</small>
@@ -79,7 +79,7 @@ export default function FavoritesPage() {
                   </div>
                   <div className="stayactions">
                     <Link href={`/atlas/${citySlug(f.city)}`} className="btn primary" style={{ gridColumn: "1/-1" }}>
-                      Voir {f.city}
+                      Voir {cityLabel(f.city)}
                     </Link>
                   </div>
                 </div>

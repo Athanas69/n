@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { useTrips, saveTrip, deleteTrip, newPackingId, useProfile, type ItineraryDay, type PackingItem } from "@/lib/store";
-import { getCity, citySlug } from "@/lib/data";
+import { getCity, citySlug, cityLabel } from "@/lib/data";
 import { CITY_COORDS } from "@/lib/coords";
 import { AUDIENCE_LABELS } from "@/lib/trips";
 import LiveWeather from "@/components/LiveWeather";
@@ -94,14 +94,14 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
     <>
       <section className="cityhero shell">
         <div className="cityphoto" style={{ height: 280 }}>
-          <Image src={city.hero} alt={trip.city} fill sizes="100vw" />
+          <Image src={city.hero} alt={cityLabel(trip.city)} fill sizes="100vw" />
           <div className="citytitle">
             <div className="eyebrow" style={{ color: "#fff" }}>
               Votre voyage · {AUDIENCE_LABELS[trip.audience ?? "Mixte"]}
             </div>
             <h1>{trip.title}</h1>
             <p>
-              {trip.city} · {new Date(trip.startDate).toLocaleDateString("fr-FR")} –{" "}
+              {cityLabel(trip.city)} · {new Date(trip.startDate).toLocaleDateString("fr-FR")} –{" "}
               {new Date(trip.endDate).toLocaleDateString("fr-FR")} · {nights} nuits · {trip.travelers} voyageur
               {trip.travelers > 1 ? "s" : ""}
             </p>
@@ -222,7 +222,7 @@ export default function MyTripPage({ params }: { params: Promise<{ id: string }>
 
         <div className="actions no-print" style={{ marginTop: 20 }}>
           <Link href={`/atlas/${citySlug(trip.city)}`} className="btn primary">
-            Préparer {trip.city} dans Atlas
+            Préparer {cityLabel(trip.city)} dans Atlas
           </Link>
           <Link href="/mondo/trips" className="btn">
             Tous vos voyages

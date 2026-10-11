@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getCities, citySlug } from "@/lib/data";
+import { getCities, citySlug, cityLabel } from "@/lib/data";
 
 export default function DestGrid({ names }: { names: string[] }) {
   const cities = getCities();
@@ -10,9 +10,9 @@ export default function DestGrid({ names }: { names: string[] }) {
         const c = cities[name];
         return (
           <Link href={`/atlas/${citySlug(name)}`} className="dest" key={name}>
-            <Image src={c.hero} alt={name} fill sizes="(max-width: 980px) 50vw, 25vw" />
+            <Image src={c.hero} alt={cityLabel(name)} fill sizes="(max-width: 980px) 50vw, 25vw" />
             <div className="destcopy">
-              <h3>{name}</h3>
+              <h3>{cityLabel(name)}</h3>
               <p>{c.neighborhoods.slice(0, 3).map((n) => n[0]).join(" · ")}</p>
             </div>
           </Link>

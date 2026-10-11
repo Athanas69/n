@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { CITY_NAMES, CITY_REGIONS, citySlug, cityNameFromSlug, getCity, getHotels } from "./data";
+import { CITY_NAMES, CITY_REGIONS, cityIn, cityLabel, cityMatches, cityOf, citySlug, cityNameFromSlug, getCity, getHotels, normalizeSearch } from "./data";
 import { CITY_COORDS } from "./coords";
 import { articles, getArticleSlugForTitle } from "./articles";
 import { EXPERIENCES } from "./experiences";
@@ -65,5 +65,38 @@ describe("demo trips", () => {
       expect(CITY_NAMES).toContain(t.city);
       expect(["Mixte", "Hommes", "Femmes", "Musulman"]).toContain(t.audience);
     }
+  });
+});
+
+describe("French city names", () => {
+  it("uses the French name and the right prepositions", () => {
+    expect(cityLabel("London")).toBe("Londres");
+    expect(cityLabel("Tokyo")).toBe("Tokyo");
+    expect(cityIn("London")).toBe("à Londres");
+    expect(cityIn("Cape Town")).toBe("au Cap");
+    expect(cityIn("Cairo")).toBe("au Caire");
+    expect(cityOf("Cape Town")).toBe("du Cap");
+    expect(cityOf("Edinburgh")).toBe("d’Édimbourg");
+    expect(cityOf("Paris")).toBe("de Paris");
+    expect(cityOf("Hong Kong")).toBe("de Hong Kong");
+    expect(cityOf("Istanbul")).toBe("d’Istanbul");
+  });
+
+  it("finds a city by its French name, English name or country, ignoring accents", () => {
+    for (const q of ["londres", "london", "royaume"]) expect(cityMatches("London", "Royaume-Uni", normalizeSearch(q)), q).toBe(true);
+    expect(cityMatches("Seoul", "Corée du Sud", normalizeSearch("seoul"))).toBe(true);
+    expect(cityMatches("Seoul", "Corée du Sud", normalizeSearch("séoul"))).toBe(true);
+    expect(cityMatches("London", "Royaume-Uni", normalizeSearch("paris"))).toBe(false);
+  });
+
+  it("never shows an English name inside a guide title once a French one exists", () => {
+    const bad: string[] = [];
+    for (const name of CITY_NAMES) {
+      const label = cityLabel(name);
+      if (label === name) continue;
+      const re = new RegExp(`(^|[^\\p{L}])${name}([^\\p{L}]|$)`, "u");
+      for (const title of getCity(name).articles) if (re.test(title)) bad.push(`${name}: ${title}`);
+    }
+    expect(bad).toEqual([]);
   });
 });

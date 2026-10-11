@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { cityNameFromSlug, citySlug } from "@/lib/data";
+import { cityNameFromSlug, citySlug, cityLabel, cityOf } from "@/lib/data";
 import { articles, getArticle } from "@/lib/articles";
 import { pageOG, SITE_URL } from "@/lib/site";
 
@@ -34,7 +34,7 @@ export default async function GuidePage({ params }: { params: Promise<{ city: st
     "@type": "Article",
     headline: article.title,
     description: article.dek,
-    about: cityName,
+    about: cityLabel(cityName),
     url: pageUrl,
     mainEntityOfPage: pageUrl,
     publisher: { "@type": "Organization", name: "Mondo × Atlas" },
@@ -46,7 +46,7 @@ export default async function GuidePage({ params }: { params: Promise<{ city: st
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="eyebrow">{cityName}</div>
+      <div className="eyebrow">{cityLabel(cityName)}</div>
       <h1 style={{ fontSize: "clamp(32px,5vw,48px)", marginTop: 8 }}>{article.title}</h1>
       <p className="muted" style={{ fontSize: 15, marginTop: 10 }}>
         {article.dek}
@@ -61,7 +61,7 @@ export default async function GuidePage({ params }: { params: Promise<{ city: st
       </div>
       <div className="actions" style={{ marginTop: 32 }}>
         <Link href={`/atlas/${citySlug(cityName)}#guides`} className="btn">
-          Retour aux guides {cityName}
+          Retour aux guides {cityOf(cityName)}
         </Link>
       </div>
     </section>

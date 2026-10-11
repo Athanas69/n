@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ALFRED_EVENT } from "@/lib/notify";
-import { citySlug, getCity } from "@/lib/data";
+import { citySlug, getCity, cityLabel } from "@/lib/data";
 import { useTrips } from "@/lib/store";
 import { safeSet } from "@/lib/safeStorage";
 import { getPracticalInfo } from "@/lib/practical";
@@ -65,7 +65,7 @@ export default function AlfredPanel() {
           <div className="alfredcard">
             <b>{trip.title}</b>
             <br />
-            {trip.city} · {new Date(trip.startDate).toLocaleDateString("fr-FR")} –{" "}
+            {cityLabel(trip.city)} · {new Date(trip.startDate).toLocaleDateString("fr-FR")} –{" "}
             {new Date(trip.endDate).toLocaleDateString("fr-FR")} · {trip.travelers} voyageur
             {trip.travelers > 1 ? "s" : ""} · budget {(trip.budgetPerPerson * trip.travelers).toLocaleString("fr-FR")} €
           </div>
@@ -84,7 +84,7 @@ export default function AlfredPanel() {
           </div>
           {practical && (
             <div className="alfredcard">
-              <b>Avant de partir pour {trip.city}</b>
+              <b>Avant de partir pour {cityLabel(trip.city)}</b>
               <ul className="alfredfacts">
                 <li>
                   <small>Visa</small>
@@ -106,7 +106,7 @@ export default function AlfredPanel() {
               Ouvrir le voyage
             </button>
             <button className="btn" onClick={() => goToCity(trip.city)}>
-              Préparer {trip.city}
+              Préparer {cityLabel(trip.city)}
             </button>
           </div>
         </>

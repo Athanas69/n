@@ -215,7 +215,7 @@
         ],
         [
           "Orly",
-          "Métro 14 (Orlyval)",
+          "Métro 14",
           "≈ 30 min vers Châtelet · billet 13,10 €."
         ],
         [
@@ -805,7 +805,7 @@
       "articles": [
         "Sea Point ou Camps Bay ?",
         "Depuis l’aéroport",
-        "Cape Town sans voiture ?",
+        "Le Cap sans voiture ?",
         "3 jours parfaits",
         "Budget réel",
         "Les erreurs à éviter"
@@ -964,12 +964,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à London ?",
+        "Quel quartier choisir à Londres ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "London en 3 jours",
+        "Londres en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "London avec un petit budget"
+        "Londres avec un petit budget"
       ]
     },
     "Barcelona": {
@@ -1038,12 +1038,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Barcelona ?",
+        "Quel quartier choisir à Barcelone ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Barcelona en 3 jours",
+        "Barcelone en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Barcelona avec un petit budget"
+        "Barcelone avec un petit budget"
       ]
     },
     "Amsterdam": {
@@ -1224,12 +1224,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Lisbon ?",
+        "Quel quartier choisir à Lisbonne ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Lisbon en 3 jours",
+        "Lisbonne en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Lisbon avec un petit budget"
+        "Lisbonne avec un petit budget"
       ]
     },
     "Vienna": {
@@ -1280,12 +1280,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Vienna ?",
+        "Quel quartier choisir à Vienne ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Vienna en 3 jours",
+        "Vienne en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Vienna avec un petit budget"
+        "Vienne avec un petit budget"
       ]
     },
     "Prague": {
@@ -1386,12 +1386,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Athens ?",
+        "Quel quartier choisir à Athènes ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Athens en 3 jours",
+        "Athènes en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Athens avec un petit budget"
+        "Athènes avec un petit budget"
       ]
     },
     "Venice": {
@@ -1442,12 +1442,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Venice ?",
+        "Quel quartier choisir à Venise ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Venice en 3 jours",
+        "Venise en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Venice avec un petit budget"
+        "Venise avec un petit budget"
       ]
     },
     "Singapore": {
@@ -1498,12 +1498,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Singapore ?",
+        "Quel quartier choisir à Singapour ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Singapore en 3 jours",
+        "Singapour en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Singapore avec un petit budget"
+        "Singapour avec un petit budget"
       ]
     },
     "Hong Kong": {
@@ -1766,12 +1766,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Mexico City ?",
+        "Quel quartier choisir à Mexico ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Mexico City en 3 jours",
+        "Mexico en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Mexico City avec un petit budget"
+        "Mexico avec un petit budget"
       ]
     },
     "Rio de Janeiro": {
@@ -1966,12 +1966,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Cairo ?",
+        "Quel quartier choisir au Caire ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Cairo en 3 jours",
+        "Le Caire en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Cairo avec un petit budget"
+        "Le Caire avec un petit budget"
       ]
     },
     "Doha": {
@@ -2666,12 +2666,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Beijing ?",
+        "Quel quartier choisir à Pékin ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Beijing en 3 jours",
+        "Pékin en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Beijing avec un petit budget"
+        "Pékin avec un petit budget"
       ]
     },
     "Montreal": {
@@ -2716,12 +2716,12 @@
         ]
       ],
       "articles": [
-        "Quel quartier choisir à Montreal ?",
+        "Quel quartier choisir à Montréal ?",
         "Comment rejoindre le centre depuis l’aéroport",
-        "Montreal en 3 jours",
+        "Montréal en 3 jours",
         "Les quartiers pour sortir",
         "Où prendre un bon petit-déjeuner",
-        "Montreal avec un petit budget"
+        "Montréal avec un petit budget"
       ]
     },
     "Vancouver": {
@@ -3887,8 +3887,8 @@
         ]
       ],
       "articles": [
-        "Visiter Al-Balad, le vieux Jeddah",
-        "Jeddah, porte de la mer Rouge",
+        "Visiter Al-Balad, le vieux Djeddah",
+        "Djeddah, porte de la mer Rouge",
         "Depuis l’aéroport Roi Abdelaziz",
         "3 jours parfaits",
         "Budget réel",
@@ -8104,8 +8104,8 @@
       ],
       "articles": [
         "Le centre historique portugais, mode d’emploi",
-        "Macau ou Hong Kong en excursion ?",
-        "Macau en 2 jours",
+        "Macao ou Hong Kong en excursion ?",
+        "Macao en 2 jours",
         "3 jours parfaits",
         "Budget réel",
         "Les erreurs à éviter"
@@ -8787,7 +8787,7 @@
       "articles": [
         "Plonger dans le parc national de Ras Mohammed",
         "Sharm ou Hurghada, laquelle choisir ?",
-        "Sharm El Sheikh en 2 jours",
+        "Charm el-Cheikh en 2 jours",
         "3 jours parfaits",
         "Budget réel",
         "Les erreurs à éviter"

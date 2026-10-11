@@ -3,7 +3,7 @@
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { CITY_NAMES, citySlug, getCities, normalizeSearch } from "@/lib/data";
+import { CITY_NAMES, citySlug, getCities, normalizeSearch, cityMatches, cityLabel } from "@/lib/data";
 
 export default function CitySearch() {
   const [query, setQuery] = useState("");
@@ -17,7 +17,7 @@ export default function CitySearch() {
     if (!q) return [];
     return CITY_NAMES.filter((name) => {
       const c = cities[name];
-      return normalizeSearch(name).includes(q) || normalizeSearch(c.country).includes(q);
+      return cityMatches(name, c.country, q);
     }).slice(0, 7);
   }, [query, cities]);
 
@@ -51,9 +51,9 @@ export default function CitySearch() {
             const c = cities[name];
             return (
               <button key={name} onMouseDown={() => go(name)}>
-                <Image src={c.hero} alt={name} width={42} height={42} />
+                <Image src={c.hero} alt={cityLabel(name)} width={42} height={42} />
                 <span>
-                  <b>{name}</b>
+                  <b>{cityLabel(name)}</b>
                   <small>{c.country}</small>
                 </span>
               </button>
