@@ -235,9 +235,10 @@ export default async function CityPage({
           <p>Chaque article doit pouvoir déclencher une action : choisir un quartier, filtrer un vol, ajouter une journée ou réserver.</p>
         </div>
         <div className="articlegrid">
-          {c.articles.map((a, i) => {
+          {c.articles.flatMap((a, i) => {
             const slug = getArticleSlugForTitle(cityName, a);
-            return (
+            if (!slug) return [];
+            return [(
             <article className={`article ${i < 2 ? "actionarticle" : ""}`} key={a}>
               <div>
                 <div className="eyebrow">{cityName}</div>
@@ -250,17 +251,11 @@ export default async function CityPage({
                   {GUIDE_ACTIONS[i]} →
                 </div>
               )}
-              {slug ? (
-                <Link href={`/atlas/${citySlug(cityName)}/guides/${slug}`} className="btn">
-                  Lire le guide
-                </Link>
-              ) : (
-                <NotifyButton className="btn" message="Ce guide est en cours de rédaction — revenez bientôt.">
-                  Lire le guide
-                </NotifyButton>
-              )}
+              <Link href={`/atlas/${citySlug(cityName)}/guides/${slug}`} className="btn">
+                Lire le guide
+              </Link>
             </article>
-            );
+            )];
           })}
         </div>
       </section>
