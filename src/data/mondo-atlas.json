@@ -2896,6 +2896,24 @@
           "Historique · bibliothèque · étudiant",
           "Le Long Room et le Livre de Kells, cœur académique de Dublin.",
           "https://images.unsplash.com/photo-1646435517735-076ec89e610d?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Saint Stephen’s Green / Grafton Street",
+          "Central · shopping · parc",
+          "Le centre commerçant, avec la rue piétonne de Grafton Street et l’un des plus beaux parcs de la ville.",
+          "https://images.unsplash.com/photo-1651127403819-6c15d8b5f589?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Smithfield",
+          "Local · pubs · marché",
+          "Quartier populaire au nord de la Liffey, avec pubs de quartier, marchés et distillerie.",
+          "https://images.unsplash.com/photo-1651127403819-6c15d8b5f589?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Docklands",
+          "Moderne · bord d’eau · théâtres",
+          "Anciens docks aménagés, avec bureaux, restaurants et théâtres au bord de l’eau.",
+          "https://images.unsplash.com/photo-1651127403819-6c15d8b5f589?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2939,6 +2957,24 @@
           "Quartier des bars-ruines",
           "Nightlife · alternatif · Erzsébetváros",
           "Bars insolites installés dans d’anciens bâtiments délabrés.",
+          "https://images.unsplash.com/photo-1788882681232-4dd3b1016ccd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Château de Buda",
+          "Panorama · historique · calme",
+          "La colline de Buda avec le palais royal, l’église Matthias et le Bastion des pêcheurs.",
+          "https://images.unsplash.com/photo-1788882681232-4dd3b1016ccd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Belváros / Lipótváros",
+          "Central · Parlement · basilique",
+          "Le centre de Pest, entre le Parlement, la basilique Saint-Étienne et les rives du Danube.",
+          "https://images.unsplash.com/photo-1788882681232-4dd3b1016ccd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gellért",
+          "Bains thermaux · Danube · pratique",
+          "Quartier des bains thermaux du Gellért, au pied de la colline, relié au centre par le pont de la Liberté.",
           "https://images.unsplash.com/photo-1788882681232-4dd3b1016ccd?auto=format&fit=crop&w=900&q=86"
         ]
       ],
@@ -2990,6 +3026,24 @@
           "Branché · vues · cafés",
           "Quartier créatif avec les meilleures vues sur la ville.",
           "https://images.unsplash.com/photo-1553798081-85009962337f?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Djurgården",
+          "Musées · parc · île",
+          "L’île des grands musées, dont le Vasa et Skansen, entourée de parcs et de promenades.",
+          "https://images.unsplash.com/photo-1596636478939-59fed7a083f2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Östermalm",
+          "Chic · design · marché",
+          "Quartier élégant, avec boutiques de design, restaurants et halle gourmande.",
+          "https://images.unsplash.com/photo-1596636478939-59fed7a083f2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Norrmalm",
+          "Central · gare · shopping",
+          "Le centre moderne, autour de la gare centrale, de ses rues piétonnes et de ses grands magasins.",
+          "https://images.unsplash.com/photo-1596636478939-59fed7a083f2?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -3040,6 +3094,24 @@
           "Shopping · nightlife · street food",
           "Le quartier commerçant et nocturne le plus animé de la ville.",
           "https://images.unsplash.com/photo-1679113230029-a11884eb7293?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Chinatown (Petaling Street)",
+          "Marché · temples · street food",
+          "Marché de rue très animé, temples chinois et hindou, et cuisine de rue jusque tard le soir.",
+          "https://images.unsplash.com/photo-1508062878650-88b52897f298?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Bangsar",
+          "Bars · restaurants · décontracté",
+          "Quartier résidentiel de l’ouest, apprécié des expatriés pour ses restaurants et ses bars.",
+          "https://images.unsplash.com/photo-1508062878650-88b52897f298?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Brickfields (Little India)",
+          "Indien · temples · cuisine",
+          "Le quartier indien de Kuala Lumpur, près de la gare de KL Sentral, avec temples et restaurants.",
+          "https://images.unsplash.com/photo-1508062878650-88b52897f298?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -3090,6 +3162,30 @@
           "Ruelles · traditionnel · authentique",
           "Ruelles traditionnelles à explorer en vélo ou pousse-pousse.",
           "https://images.unsplash.com/photo-1774404541165-65604e3de17e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Wangfujing",
+          "Shopping · street food · central",
+          "Grande rue piétonne commerçante près de la Cité interdite, avec un marché de snacks.",
+          "https://images.unsplash.com/photo-1614555383820-941c466f1b52?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Sanlitun",
+          "Bars · clubs · international",
+          "Le quartier le plus cosmopolite pour sortir, avec bars, restaurants et boutiques.",
+          "https://images.unsplash.com/photo-1614555383820-941c466f1b52?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Houhai",
+          "Lacs · hutong · bars",
+          "Quartier de lacs entouré de ruelles, avec bars et restaurants au bord de l’eau.",
+          "https://images.unsplash.com/photo-1614555383820-941c466f1b52?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "798 (Dashanzi)",
+          "Art contemporain · galeries · usines",
+          "Ancien complexe industriel reconverti en quartier de galeries et d’ateliers d’art.",
+          "https://images.unsplash.com/photo-1614555383820-941c466f1b52?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -3140,6 +3236,24 @@
           "Escaliers colorés · bohème · cafés",
           "Maisons à escaliers extérieurs typiques et ambiance créative.",
           "https://images.unsplash.com/photo-1576375801517-45814f908aa4?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Mile End",
+          "Créatif · bagels · cafés",
+          "Quartier bohème et créatif, célèbre pour ses bagels, ses cafés et ses boutiques indépendantes.",
+          "https://images.unsplash.com/photo-1770488767468-234694839ede?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Quartier Latin",
+          "Étudiant · bars · terrasses",
+          "Quartier étudiant de la rue Saint-Denis, avec bars, cafés et salles de spectacle.",
+          "https://images.unsplash.com/photo-1770488767468-234694839ede?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Quartier des spectacles",
+          "Festivals · salles · central",
+          "Le pôle culturel du centre, avec salles de concert, théâtres et festivals en plein air.",
+          "https://images.unsplash.com/photo-1770488767468-234694839ede?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -3190,6 +3304,24 @@
           "Historique · pavés · horloge à vapeur",
           "Le quartier historique, célèbre pour son horloge à vapeur.",
           "https://images.unsplash.com/photo-1601310960741-599135fc3337?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Yaletown",
+          "Restaurants · terrasses · moderne",
+          "Anciens entrepôts reconvertis en restaurants et en terrasses, près du bord de l’eau.",
+          "https://images.unsplash.com/photo-1664813128436-a5c35a42e78b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Granville Island",
+          "Marché · artisans · ferry",
+          "Presqu’île avec marché couvert, ateliers d’artisans et petits théâtres, accessible en aquabus.",
+          "https://images.unsplash.com/photo-1664813128436-a5c35a42e78b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kitsilano",
+          "Plage · décontracté · yoga",
+          "Quartier balnéaire apprécié des locaux, avec plage, cafés et vue sur les montagnes.",
+          "https://images.unsplash.com/photo-1664813128436-a5c35a42e78b?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -3726,7 +3858,7 @@
       "intro": "Siem Reap n’existe presque que pour une raison : servir de porte d’entrée à Angkor, le plus grand site religieux au monde.",
       "currency": "USD",
       "best": "nov.–mars, saison sèche",
-      "airport": "REP",
+      "airport": "SAI",
       "transport": "Tuk-tuk",
       "esim": "Recommandée",
       "neighborhoods": [
@@ -3757,19 +3889,19 @@
       ],
       "airportRoutes": [
         [
-          "REP",
-          "Tuk-tuk",
-          "20–30 min vers le centre, à négocier ou réserver."
+          "SAI",
+          "Taxi / transfert hôtel",
+          "≈ 45–60 min vers le centre : le nouvel aéroport est à une quarantaine de kilomètres, réservez le trajet à l’avance."
         ],
         [
-          "REP",
-          "Transfert hôtel",
-          "Souvent inclus ou peu coûteux, réservé à l’avance."
+          "SAI",
+          "Navette",
+          "Option économique, à vérifier selon l’horaire de votre vol."
         ],
         [
           "Ville",
           "Tuk-tuk",
-          "Le moyen de transport standard, y compris pour visiter Angkor."
+          "Le moyen de transport standard en ville, y compris pour visiter Angkor."
         ]
       ],
       "articles": [
