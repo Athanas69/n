@@ -19,6 +19,8 @@ describe("destinations", () => {
     expect(c.hero).toMatch(/^https:\/\/images\.unsplash\.com\//);
     expect(c.currency).toBeTruthy();
     expect(c.neighborhoods.length).toBeGreaterThan(0);
+    expect(c.airportRoutes.length, "First 24h needs an airport route").toBeGreaterThan(0);
+    expect(c.esim).toBeTruthy();
     expect(CITY_COORDS[name], "missing coordinates").toBeDefined();
     expect(CITY_REGIONS[name], "missing region").toBeDefined();
     const hotels = getHotels(name);

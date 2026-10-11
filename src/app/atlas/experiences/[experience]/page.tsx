@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import NotifyButton from "@/components/NotifyButton";
 import { EXPERIENCES, getExperience } from "@/lib/experiences";
 import { getArticleSlugForTitle } from "@/lib/articles";
 import { citySlug, getCity } from "@/lib/data";
@@ -160,26 +159,21 @@ export default async function ExperiencePage({ params }: { params: Promise<{ exp
             </div>
           </div>
           <div className="articlegrid">
-            {articleTitles.map((a) => {
+            {articleTitles.flatMap((a) => {
               const articleSlug = getArticleSlugForTitle(e.name, a);
-              return (
+              if (!articleSlug) return [];
+              return [(
                 <article className="article" key={a}>
                   <div>
                     <div className="eyebrow">{e.name}</div>
                     <h3>{a}</h3>
                     <p>Guide Atlas pensé pour répondre à une décision concrète du voyage.</p>
                   </div>
-                  {articleSlug ? (
-                    <Link href={`/atlas/experiences/${e.slug}/guides/${articleSlug}`} className="btn">
-                      Lire le guide
-                    </Link>
-                  ) : (
-                    <NotifyButton className="btn" message="Ce guide est en cours de rédaction — revenez bientôt.">
-                      Lire le guide
-                    </NotifyButton>
-                  )}
+                  <Link href={`/atlas/experiences/${e.slug}/guides/${articleSlug}`} className="btn">
+                    Lire le guide
+                  </Link>
                 </article>
-              );
+              )];
             })}
           </div>
         </section>

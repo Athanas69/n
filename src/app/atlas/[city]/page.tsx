@@ -319,18 +319,18 @@ export default async function CityPage({
             <h2>Bienvenue à {cityName}.</h2>
             <div className="firststeps">
               {[
-                "Activer l’eSIM",
-                "Passer l’immigration",
-                "Rejoindre votre quartier",
-                "Check-in",
-                "Premier repas",
-                "Première balade légère",
-              ].map((step, i) => (
+                { step: "Activer l’eSIM", text: `${c.esim}. ${c.esim.startsWith("Optionnelle") ? "Si vous en voulez une, installez le profil avant le départ." : "Installez le profil avant le départ pour être connecté dès l’atterrissage."}` },
+                { step: "Passer l’immigration", text: "Gardez passeport, billet retour et adresse du premier hébergement à portée de main ; vérifiez le visa dans « Avant de partir »." },
+                { step: "Rejoindre votre quartier", text: `Depuis ${c.airportRoutes[0][0]} : ${c.airportRoutes[0][1]}. ${c.airportRoutes[0][2]}` },
+                { step: "Check-in", text: "Prévenez l’hôtel de votre heure d’arrivée. Chambre pas prête ? Laissez vos bagages et allez marcher." },
+                { step: "Premier repas", text: "Restez près de l’hôtel et choisissez simple : l’objectif est de manger, puis de vous coucher à une heure raisonnable pour caler le décalage." },
+                { step: "Première balade légère", text: `Sans programme précis : ${c.neighborhoods[0][0]}. ${c.neighborhoods[0][2]}` },
+              ].map(({ step, text }, i) => (
                 <div className="firststep" key={step}>
                   <span>{i + 1}</span>
                   <div>
                     <b>{step}</b>
-                    <p className="muted">Atlas affiche ici l’instruction utile au bon moment.</p>
+                    <p className="muted">{text}</p>
                   </div>
                 </div>
               ))}
