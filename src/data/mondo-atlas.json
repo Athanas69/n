@@ -1148,6 +1148,18 @@
           "Élégant · palais · shopping",
           "Château de Charlottenburg et grandes avenues commerçantes.",
           "https://images.unsplash.com/photo-1561929651-072653c8b9ea?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Mitte",
+          "Historique · musées · central",
+          "Porte de Brandebourg, île aux Musées et grands boulevards : le cœur historique et le plus touristique de Berlin.",
+          "https://images.unsplash.com/photo-1567886190186-52e1d9766504?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Neukölln",
+          "Multiculturel · bars · créatif",
+          "Quartier cosmopolite en pleine mutation, avec bars, cafés et scène artistique alternative.",
+          "https://images.unsplash.com/photo-1567886190186-52e1d9766504?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1204,6 +1216,24 @@
           "Nightlife · bars · miradouros",
           "Bars serrés et l’un des meilleurs points de vue de la ville.",
           "https://images.unsplash.com/photo-1562762562-8670c946876c?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Chiado",
+          "Élégant · librairies · cafés historiques",
+          "Quartier élégant entre Baixa et Bairro Alto, avec librairies anciennes, théâtres et cafés d’époque.",
+          "https://images.unsplash.com/photo-1536663060084-a0d9eeeaf44b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Baixa",
+          "Central · plat · pratique",
+          "Le centre reconstruit après le tremblement de terre de 1755, en damier, plat et très bien desservi.",
+          "https://images.unsplash.com/photo-1536663060084-a0d9eeeaf44b?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Príncipe Real",
+          "Chic · jardins · boutiques",
+          "Quartier résidentiel et tendance, avec jardins, boutiques de créateurs et terrasses.",
+          "https://images.unsplash.com/photo-1536663060084-a0d9eeeaf44b?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1260,6 +1290,18 @@
           "Parc d’attractions · grande roue",
           "La célèbre grande roue du Prater et son parc populaire.",
           "https://images.unsplash.com/photo-1784556360363-da6777635151?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "MuseumsQuartier / Neubau",
+          "Musées · créatif · cafés",
+          "Grand complexe culturel installé dans d’anciennes écuries impériales, entouré de cafés et de boutiques indépendantes.",
+          "https://images.unsplash.com/photo-1660488669954-d57c590d9405?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Josefstadt",
+          "Calme · résidentiel · théâtres",
+          "Le plus petit arrondissement de Vienne, calme et élégant, avec cafés historiques et petits théâtres près du centre.",
+          "https://images.unsplash.com/photo-1660488669954-d57c590d9405?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1316,6 +1358,24 @@
           "Alternatif · bars · local",
           "Le quartier le plus dense en bars d’Europe, loin des cars de touristes.",
           "https://images.unsplash.com/photo-1754064328810-922632940bcd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Nové Město (Nouvelle Ville)",
+          "Central · place Venceslas · pratique",
+          "Large quartier du XIVe siècle autour de la place Venceslas, très bien desservi et plus calme le soir que la Vieille Ville.",
+          "https://images.unsplash.com/photo-1668364333285-9540bda3d4b0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Vinohrady",
+          "Résidentiel · parcs · restaurants",
+          "Quartier élégant aux immeubles Art nouveau, parcs, restaurants et bars à vin, apprécié des habitants.",
+          "https://images.unsplash.com/photo-1668364333285-9540bda3d4b0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Holešovice",
+          "Art contemporain · créatif · local",
+          "Ancien quartier industriel devenu pôle d’art contemporain, avec galeries, cafés et vie locale.",
+          "https://images.unsplash.com/photo-1668364333285-9540bda3d4b0?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1366,6 +1426,30 @@
           "Marché aux puces · animé · central",
           "Marché coloré et point de rencontre entre ancien et moderne.",
           "https://images.unsplash.com/photo-1676453650053-86a1e4bbcee6?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Syntagma",
+          "Central · Parlement · transport",
+          "La place du Parlement, très bien desservie, point de départ naturel pour explorer le centre.",
+          "https://images.unsplash.com/photo-1684196922832-f1caa34e6a14?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Psyrri",
+          "Bars · tavernes · street art",
+          "Ruelles animées en soirée, entre bars, tavernes, musique live et fresques murales.",
+          "https://images.unsplash.com/photo-1684196922832-f1caa34e6a14?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Koukaki",
+          "Local · calme · près de l’Acropole",
+          "Quartier résidentiel au sud de l’Acropole, plus tranquille et plus authentique, très pratique à pied.",
+          "https://images.unsplash.com/photo-1684196922832-f1caa34e6a14?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kolonaki",
+          "Chic · cafés · shopping",
+          "Le quartier élégant d’Athènes, au pied de la colline du Lycabette, avec boutiques et terrasses.",
+          "https://images.unsplash.com/photo-1684196922832-f1caa34e6a14?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1422,6 +1506,24 @@
           "Basilique · place · touristique",
           "La place Saint-Marc, cœur historique et touristique de Venise.",
           "https://images.unsplash.com/photo-1535159994443-5d05daa62298?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Cannaregio",
+          "Local · authentique · bacari",
+          "Quartier résidentiel au nord, avec le ghetto historique et des bars à cicchetti loin de la foule de Saint-Marc.",
+          "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Dorsoduro",
+          "Étudiant · musées · calme",
+          "Quartier des musées et de l’université, avec les Zattere au bord de l’eau et la place Santa Margherita.",
+          "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Castello",
+          "Calme · authentique · Arsenal",
+          "Le plus vaste quartier de Venise, plus tranquille, avec l’Arsenal et les jardins de la Biennale.",
+          "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1478,6 +1580,24 @@
           "Coloré · épices · authentique",
           "Façades colorées, épices et guirlandes de jasmin.",
           "https://images.unsplash.com/photo-1508141052667-829251113b81?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Marina Bay",
+          "Gratte-ciel · Gardens by the Bay · vue",
+          "Le visage futuriste de Singapour : hôtel Marina Bay Sands, Gardens by the Bay et front de mer aménagé.",
+          "https://images.unsplash.com/photo-1628072380638-21b16e95c562?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Orchard Road",
+          "Shopping · centres commerciaux · central",
+          "La grande avenue commerçante de Singapour, bordée de centres commerciaux climatisés.",
+          "https://images.unsplash.com/photo-1628072380638-21b16e95c562?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Clarke Quay",
+          "Bars · bord de rivière · soirées",
+          "Anciens entrepôts au bord de la rivière devenus bars et restaurants, très animés en soirée.",
+          "https://images.unsplash.com/photo-1628072380638-21b16e95c562?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1528,6 +1648,24 @@
           "Affaires · vue · Victoria Peak",
           "Quartier des affaires et la meilleure vue depuis Victoria Peak.",
           "https://images.unsplash.com/photo-1669250480690-3017208a73b6?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Tsim Sha Tsui",
+          "Front de mer · musées · Star Ferry",
+          "La pointe de Kowloon, avec sa promenade face à la skyline et l’embarcadère du Star Ferry.",
+          "https://images.unsplash.com/photo-1750658659043-76407ff8d677?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Causeway Bay",
+          "Shopping · animé · dense",
+          "Quartier commerçant très dense de l’île de Hong Kong, ouvert tard le soir.",
+          "https://images.unsplash.com/photo-1750658659043-76407ff8d677?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Sheung Wan / Soho",
+          "Cafés · galeries · restaurants",
+          "Ruelles en pente avec cafés, galeries et restaurants, entre vieux commerces et adresses branchées.",
+          "https://images.unsplash.com/photo-1750658659043-76407ff8d677?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1584,6 +1722,24 @@
           "Kiyomizu-dera · pentes · authentique",
           "Ruelles pentues menant au temple Kiyomizu-dera.",
           "https://images.unsplash.com/photo-1665706896821-319040b81753?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kawaramachi / Pontochō",
+          "Shopping · restaurants · soirées",
+          "Le centre commerçant de Kyoto, avec la ruelle de Pontochō, ses restaurants et ses terrasses au-dessus de la rivière.",
+          "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Gare de Kyoto",
+          "Pratique · transports · central",
+          "Le grand pôle de transports de la ville, très pratique pour rayonner vers Nara, Osaka ou l’aéroport.",
+          "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Fushimi",
+          "Sanctuaire · saké · local",
+          "Le sanctuaire Fushimi Inari et ses milliers de portiques rouges, entouré d’un quartier réputé pour son saké.",
+          "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1634,6 +1790,24 @@
           "Historique · pont · marché",
           "Le plus vieux quartier de Sydney, au pied du Harbour Bridge.",
           "https://images.unsplash.com/photo-1544698202-afeeb997d98c?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Circular Quay",
+          "Opera House · ferries · central",
+          "Le port historique, avec l’Opéra, les ferries et le départ de nombreuses promenades.",
+          "https://images.unsplash.com/photo-1555029941-a475f4e50810?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Surry Hills",
+          "Cafés · bars · restaurants",
+          "Quartier branché du centre-est, réputé pour ses cafés et sa scène gastronomique.",
+          "https://images.unsplash.com/photo-1555029941-a475f4e50810?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Manly",
+          "Plage · ferry · détente",
+          "Station balnéaire accessible en ferry depuis le centre, avec une plage de surf et une ambiance décontractée.",
+          "https://images.unsplash.com/photo-1555029941-a475f4e50810?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1690,6 +1864,24 @@
           "Pier · plage · familial",
           "La jetée emblématique et son parc d’attractions au bord de l’eau.",
           "https://images.unsplash.com/photo-1505887579242-c7bc04062e98?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Downtown LA",
+          "Culture · architecture · rooftops",
+          "Le centre redevenu vivant, avec musées, salles de concert, marché couvert et bars sur les toits.",
+          "https://images.unsplash.com/photo-1573397286878-0ff40aa140cd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "West Hollywood",
+          "Nightlife · restaurants · Sunset Strip",
+          "Petite ville dans la ville, connue pour ses bars, ses clubs et sa vie nocturne ouverte.",
+          "https://images.unsplash.com/photo-1573397286878-0ff40aa140cd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Silver Lake",
+          "Alternatif · cafés · musique",
+          "Quartier créatif et décontracté, avec cafés, boutiques indépendantes et salles de concert.",
+          "https://images.unsplash.com/photo-1573397286878-0ff40aa140cd?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1746,6 +1938,24 @@
           "Chic · musées · gastronomie",
           "Le quartier le plus huppé, entre musées et restaurants étoilés.",
           "https://images.unsplash.com/photo-1787382207889-31dad69fa492?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Centro Histórico",
+          "Zócalo · cathédrale · histoire",
+          "Le cœur colonial et aztèque de la ville, autour du Zócalo, de la cathédrale et du Templo Mayor.",
+          "https://images.unsplash.com/photo-1636573533532-fdf7c44af2d5?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Juárez",
+          "Cafés · bars · architecture",
+          "Quartier voisin de Roma, en pleine renaissance, avec bars, restaurants et belles façades du début du XXe siècle.",
+          "https://images.unsplash.com/photo-1636573533532-fdf7c44af2d5?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Chapultepec",
+          "Parc · musées · culture",
+          "Le grand parc de la ville, avec le musée national d’anthropologie et le château de Chapultepec.",
+          "https://images.unsplash.com/photo-1636573533532-fdf7c44af2d5?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1796,6 +2006,24 @@
           "Bohème · tramway · artistes",
           "Quartier d’artistes sur les collines, célèbre pour son tramway jaune.",
           "https://images.unsplash.com/photo-1774451606955-c06dff8d5796?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Ipanema",
+          "Plage · chic · coucher de soleil",
+          "La plage la plus élégante de Rio, avec ses boutiques, ses restaurants et le coucher de soleil d’Arpoador.",
+          "https://images.unsplash.com/photo-1637876308735-74230b34461a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Lapa",
+          "Samba · soirées · arches",
+          "Le quartier des nuits de Rio, avec ses arches, ses salles de samba et ses escaliers colorés.",
+          "https://images.unsplash.com/photo-1637876308735-74230b34461a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Botafogo",
+          "Vue Pain de Sucre · cafés · local",
+          "Quartier résidentiel au bord de la baie, avec vue sur le Pain de Sucre, cafés et restaurants.",
+          "https://images.unsplash.com/photo-1637876308735-74230b34461a?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1846,6 +2074,24 @@
           "Élégant · cimetière · culture",
           "Quartier chic, cimetière monumental et vie culturelle riche.",
           "https://images.unsplash.com/photo-1665256072769-fdb5870b326d?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Palermo",
+          "Branché · cafés · parcs",
+          "Le quartier le plus vaste et le plus tendance, avec boutiques de créateurs, bars et grands parcs.",
+          "https://images.unsplash.com/photo-1691216011700-681f22d79339?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "San Telmo",
+          "Tango · antiquaires · pavés",
+          "Ruelles pavées, bars historiques, milongas et grande foire dominicale d’antiquités.",
+          "https://images.unsplash.com/photo-1691216011700-681f22d79339?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Puerto Madero",
+          "Moderne · restaurants · bord d’eau",
+          "Anciens docks reconvertis en quartier moderne de restaurants et de tours au bord de l’eau.",
+          "https://images.unsplash.com/photo-1691216011700-681f22d79339?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1896,6 +2142,24 @@
           "Multiculturel · marché · alternatif",
           "Marché bohème aux influences du monde entier.",
           "https://images.unsplash.com/photo-1565481710128-a1f96b16ac98?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Queen West",
+          "Branché · galeries · bars",
+          "Rue longue de boutiques indépendantes, de galeries et de bars, au cœur de la scène créative.",
+          "https://images.unsplash.com/photo-1616472423851-e233b558bec9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Yorkville",
+          "Chic · boutiques · gastronomie",
+          "Quartier élégant du centre, avec boutiques de luxe, galeries et restaurants.",
+          "https://images.unsplash.com/photo-1616472423851-e233b558bec9?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Downtown / Entertainment District",
+          "Central · CN Tower · théâtres",
+          "Le centre, avec la CN Tower, les théâtres et les salles de spectacle, très bien desservi.",
+          "https://images.unsplash.com/photo-1616472423851-e233b558bec9?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1946,6 +2210,24 @@
           "Bazar · artisanat · authentique",
           "Le grand bazar historique du Caire, épices et artisanat.",
           "https://images.unsplash.com/photo-1710211288826-b7df3ab71588?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Zamalek",
+          "Île du Nil · cafés · galeries",
+          "Île résidentielle sur le Nil, avec cafés, galeries d’art et restaurants, plus calme que le centre.",
+          "https://images.unsplash.com/photo-1708992485876-f193e746f6dd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Downtown (Wust el-Balad)",
+          "Architecture · cafés · central",
+          "Le centre historique moderne, avec ses immeubles du XIXe siècle, ses cafés et son animation.",
+          "https://images.unsplash.com/photo-1708992485876-f193e746f6dd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Le Caire copte",
+          "Églises · histoire · calme",
+          "Quartier ancien aux églises coptes et à la synagogue, entre les plus anciens lieux de culte de la ville.",
+          "https://images.unsplash.com/photo-1708992485876-f193e746f6dd?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -1996,6 +2278,24 @@
           "Luxe · marina · moderne",
           "Île artificielle de luxe, marina et boutiques haut de gamme.",
           "https://images.unsplash.com/photo-1763811937711-09b7c680d990?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "West Bay",
+          "Gratte-ciel · hôtels · front de mer",
+          "Le quartier d’affaires et ses tours futuristes, avec de nombreux hôtels face à la baie.",
+          "https://images.unsplash.com/photo-1646205028143-dbf6880accc2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Msheireb",
+          "Moderne · musées · pratique",
+          "Le nouveau centre-ville, planifié, avec musées, boutiques et station de métro.",
+          "https://images.unsplash.com/photo-1646205028143-dbf6880accc2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Katara",
+          "Culture · théâtres · plage",
+          "Village culturel au bord de la mer, avec galeries, théâtre et restaurants.",
+          "https://images.unsplash.com/photo-1646205028143-dbf6880accc2?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2046,6 +2346,24 @@
           "Affaires · animé · central",
           "Le centre des affaires, point de départ de la plupart des visites.",
           "https://images.unsplash.com/photo-1554490593-98163f5150f7?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Westlands",
+          "Restaurants · bars · moderne",
+          "Quartier moderne et animé, réputé pour ses restaurants, ses bars et ses centres commerciaux.",
+          "https://images.unsplash.com/photo-1683435299487-12296f884718?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Karen",
+          "Résidentiel · verdure · faune",
+          "Quartier résidentiel et vert, proche du Giraffe Centre et du musée Karen Blixen.",
+          "https://images.unsplash.com/photo-1683435299487-12296f884718?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kilimani",
+          "Calme · cafés · pratique",
+          "Quartier résidentiel central, avec hôtels de taille moyenne, cafés et restaurants.",
+          "https://images.unsplash.com/photo-1683435299487-12296f884718?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2096,6 +2414,30 @@
           "Arbres · boutiques · charme",
           "Larges avenues arborées, boutiques et cafés élégants.",
           "https://images.unsplash.com/photo-1776612601727-bb2160d71105?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Le Bund",
+          "Front de fleuve · architecture · skyline",
+          "La promenade historique face aux gratte-ciel de Pudong, bordée de bâtiments des années 1920 et 1930.",
+          "https://images.unsplash.com/photo-1609088399054-7661a95fe0e2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Pudong (Lujiazui)",
+          "Gratte-ciel · vues · moderne",
+          "Le quartier financier futuriste, avec la tour de Shanghai et la tour de la Perle orientale.",
+          "https://images.unsplash.com/photo-1609088399054-7661a95fe0e2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Xintiandi",
+          "Chic · ruelles shikumen · restaurants",
+          "Anciennes maisons de pierre rénovées, aujourd’hui bars, boutiques et restaurants élégants.",
+          "https://images.unsplash.com/photo-1609088399054-7661a95fe0e2?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Jing’an",
+          "Temple · shopping · central",
+          "Un temple bouddhiste doré au milieu de grands centres commerciaux, très bien desservi par le métro.",
+          "https://images.unsplash.com/photo-1609088399054-7661a95fe0e2?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2146,6 +2488,24 @@
           "Branché · mer · Bollywood",
           "Quartier chic relié par le Bandra-Worli Sea Link, prisé des stars.",
           "https://images.unsplash.com/photo-1569758267239-d08deb78bb1a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Kala Ghoda",
+          "Art · galeries · cafés",
+          "Quartier culturel du sud de la ville, avec galeries, musées et cafés dans des bâtiments coloniaux.",
+          "https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Marine Drive",
+          "Front de mer · coucher de soleil · promenade",
+          "La grande corniche en arc de cercle, où les habitants viennent se promener au coucher du soleil.",
+          "https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Juhu",
+          "Plage · stars · street food",
+          "Quartier balnéaire du nord, avec une plage populaire, de la street food et des résidences d’acteurs.",
+          "https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2202,6 +2562,18 @@
           "Beach clubs · chic · sunset",
           "Plages animées et beach clubs pour admirer le coucher de soleil.",
           "https://images.unsplash.com/photo-1662950267280-0cdf5f7139b4?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Sanur",
+          "Plage calme · familial · lever de soleil",
+          "Station balnéaire tranquille de la côte est, avec une plage protégée par un récif.",
+          "https://images.unsplash.com/photo-1761521998544-272ad6456514?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Uluwatu",
+          "Falaises · surf · temple",
+          "Les falaises de la péninsule sud, spots de surf et temple perché au-dessus de l’océan.",
+          "https://images.unsplash.com/photo-1761521998544-272ad6456514?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2252,6 +2624,24 @@
           "Port · phoques · touristique",
           "Front de mer animé, otaries de Pier 39 et vue sur Alcatraz.",
           "https://images.unsplash.com/photo-1717934923772-a3deabd33512?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Mission District",
+          "Fresques · restaurants · soleil",
+          "Quartier latino aux fresques murales, aux restaurants et au parc Dolores, souvent plus ensoleillé.",
+          "https://images.unsplash.com/photo-1719143313439-0fa59c78680a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "North Beach",
+          "Little Italy · cafés · librairies",
+          "L’ancien quartier italien, avec cafés, restaurants et la célèbre librairie City Lights.",
+          "https://images.unsplash.com/photo-1719143313439-0fa59c78680a?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Union Square",
+          "Central · shopping · transport",
+          "Le cœur commerçant du centre, très bien desservi par les cable cars, le métro et le tramway.",
+          "https://images.unsplash.com/photo-1719143313439-0fa59c78680a?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2302,6 +2692,24 @@
           "Architecture · croisière · galeries",
           "Croisières d’architecture sur la rivière Chicago.",
           "https://images.unsplash.com/photo-1718980888858-16365e9e5a80?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "The Loop",
+          "Central · architecture · transports",
+          "Le centre historique, ceinturé par la ligne de métro aérien qui lui donne son nom.",
+          "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Wicker Park",
+          "Branché · bars · boutiques",
+          "Quartier créatif, avec boutiques indépendantes, bars et salles de concert.",
+          "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Lincoln Park",
+          "Parc · zoo · résidentiel",
+          "Grand parc au bord du lac, avec un zoo gratuit, et quartier résidentiel élégant.",
+          "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2352,6 +2760,24 @@
           "Street art · galeries · branché",
           "Fresques monumentales et scène artistique en plein essor.",
           "https://images.unsplash.com/photo-1548209454-8548045387bc?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Little Havana",
+          "Cubain · café · musique",
+          "Le cœur de la communauté cubaine, entre cafés, orchestres et fabriques de cigares.",
+          "https://images.unsplash.com/photo-1603888613934-ee2f7d143dd0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Brickell",
+          "Affaires · gratte-ciel · rooftops",
+          "Le quartier financier, avec ses tours, ses restaurants et ses bars en terrasse.",
+          "https://images.unsplash.com/photo-1603888613934-ee2f7d143dd0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Coconut Grove",
+          "Verdure · bord de mer · calme",
+          "Quartier résidentiel arboré au bord de la baie, avec marina, parcs et restaurants.",
+          "https://images.unsplash.com/photo-1603888613934-ee2f7d143dd0?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
@@ -2402,6 +2828,24 @@
           "Parc · détente · surf urbain",
           "L’un des plus grands parcs urbains au monde, surf sur l’Eisbach.",
           "https://images.unsplash.com/photo-1588744349807-e5f0e99abed0?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Maxvorstadt",
+          "Musées · Pinakotheken · étudiant",
+          "Le quartier des grands musées d’art et de l’université, avec cafés et librairies.",
+          "https://images.unsplash.com/photo-1682495867747-aa7ae4dbf9fd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Schwabing",
+          "Cafés · bohème · Englischer Garten",
+          "Ancien quartier d’artistes, voisin du grand parc, avec cafés et restaurants.",
+          "https://images.unsplash.com/photo-1682495867747-aa7ae4dbf9fd?auto=format&fit=crop&w=900&q=86"
+        ],
+        [
+          "Glockenbachviertel",
+          "Bars · restaurants · ouvert",
+          "Quartier animé et ouvert, très apprécié pour ses bars, ses restaurants et sa vie nocturne.",
+          "https://images.unsplash.com/photo-1682495867747-aa7ae4dbf9fd?auto=format&fit=crop&w=900&q=86"
         ]
       ],
       "airportRoutes": [
