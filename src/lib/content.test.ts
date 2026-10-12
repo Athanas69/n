@@ -18,7 +18,7 @@ describe("destinations", () => {
     expect(c.intro.length).toBeGreaterThan(20);
     expect(c.hero).toMatch(/^https:\/\/images\.unsplash\.com\//);
     expect(c.currency).toBeTruthy();
-    expect(c.neighborhoods.length).toBeGreaterThan(0);
+    expect(c.neighborhoods.length).toBeGreaterThanOrEqual(4);
     expect(c.airportRoutes.length, "First 24h needs an airport route").toBeGreaterThan(0);
     expect(c.esim).toBeTruthy();
     expect(CITY_COORDS[name], "missing coordinates").toBeDefined();
@@ -52,9 +52,14 @@ describe("guides", () => {
     }
   });
 
-  it("gives every city at least one real guide (the city page only shows guides that exist)", () => {
-    const empty = CITY_NAMES.filter((name) => !getCity(name).articles.some((title) => getArticleSlugForTitle(name, title)));
-    expect(empty).toEqual([]);
+  it("has a written guide behind every guide title listed on a city page", () => {
+    const missing: string[] = [];
+    for (const name of CITY_NAMES) {
+      for (const title of getCity(name).articles) {
+        if (!getArticleSlugForTitle(name, title)) missing.push(`${name}: ${title}`);
+      }
+    }
+    expect(missing).toEqual([]);
   });
 });
 
